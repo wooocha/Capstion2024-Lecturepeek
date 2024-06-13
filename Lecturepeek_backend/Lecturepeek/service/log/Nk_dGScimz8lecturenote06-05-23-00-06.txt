@@ -1,0 +1,70 @@
+소요시간 : 166.10060667991638 
+영상링크 : https://www.youtube.com/watch?v=Nk_dGScimz8
+추출방식 : 2
+{
+  "videoTitle": "Data Structures and Algorithms: Stacks and Queues",
+  "videoDescription": "이번 영상에서는 스택과 큐에 대해 배웁니다.",
+  "Lecture Note": [
+    {
+      "timestamp": "00:00:00",
+      "section_title": "📚 스택과 큐 소개",
+      "content": "스택과 큐는 대부분의 프로그래밍 언어에서 사용되는 자료 구조입니다. 스택과 큐는 추상적인 데이터 구조로, 구조의 동작 방식을 정의한 것입니다. 스택과 큐의 동작 방식을 따르면 스택과 큐를 직접 구현할 수 있습니다."
+    },
+    {
+      "timestamp": "00:00:59",
+      "section_title": "🔍 스택",
+      "content": "스택은 Pancake의 더미와 같이 새로운 요소가 항상 맨 위에 추가되고 맨 위의 요소만 읽거나 제거할 수 있는 자료 구조입니다. 스택은 Last-In-First-Out(LIFO)의 원리를 따릅니다."
+    },
+    {
+      "timestamp": "00:01:59",
+      "section_title": "🔍 큐",
+      "content": "큐는 대기열과 같이 새로운 요소가 항상 뒤에 추가되고 맨 앞의 요소만 제거하거나 읽을 수 있는 자료 구조입니다. 큐는 First-In-First-Out(FIFO)의 원리를 따릅니다."
+    },
+    {
+      "timestamp": "00:02:59",
+      "section_title": "📈 스택과 큐의 활용",
+      "content": "스택과 큐는 실제로 많은 곳에서 사용됩니다. 예를 들어, 브라우저의 뒤로 가기 버튼은 스택의 동작 원리를 사용합니다. 또한, 취소 기능을 구현할 때도 스택을 사용할 수 있습니다. 큐는 이메일 배송 시스템이나 푸시 알림 시스템, 쇼핑 몰의 주문 처리 시스템 등에서 사용될 수 있습니다."
+    },
+    {
+      "timestamp": "00:03:59",
+      "section_title": "📚 결론",
+      "content": "스택과 큐는 데이터를 조직적으로 다룰 수 있게 해주는 규칙을 제공합니다. 다른 사람들이 스택과 큐를 사용하는 코드를 볼 때 이해할 수 있게 됩니다."
+    }
+  ],
+  "questions": [
+    {
+      "question": "스택은 어떤 원리를 따르는 자료 구조인가요?",
+      "answer": "스택은 Last-In-First-Out(LIFO)의 원리를 따릅니다."
+    },
+    {
+      "question": "큐는 어떤 원리를 따르는 자료 구조인가요?",
+      "answer": "큐는 First-In-First-Out(FIFO)의 원리를 따릅니다."
+    },
+    {
+      "question": "스택과 큐는 어떤 상황에서 활용될 수 있나요?",
+      "answer": "스택은 브라우저의 뒤로 가기 버튼이나 취소 기능 구현에 사용될 수 있으며, 큐는 이메일 배송 시스템이나 푸시 알림 시스템, 주문 처리 시스템 등에서 사용될 수 있습니다."
+    }
+  ],
+  "script": [
+    {
+      "timestamp": "0:00:00",
+      "content": "I know Nicholas welcome to one more video on this data structures and algorithms mysterious today. We're going to learn very easy L structures that actually exist believe in our imagination structures are twos and stacks and when I say that is because you are actually going to find them in most languages out there instead tax included or just basically a set of rules that shoot photo of the destructors are known as abstract as data structures or a V8. It is Best Buy, but instead just the behavior of the structure is this means that as long as you follow the rules are we going to discuss you can implement it starts and queues by yourself."
+    },
+    {
+      "timestamp": "0:00:59",
+      "content": "Very easy to understand before we can go and just remember how an array looks like because it stalks and q's. I just erased with some restrictions on top to do understand the rules that our stock has to follow listing of a pile of Pancakes in a pile of Pancakes. Then you'll recoup pancake goes on top of the pile pile of panties. You have to eat the pancakes at the top of the pile as tax is an array that you can imagine an array in a vertical position where you can only read when you remove the element at the top of the pile is also called the last in first out ride to my place will be the first one to be eaten about you is very easy to understand because we have all seen people queuing up before waiting for the bus."
+    },
+    {
+      "timestamp": "0:01:59",
+      "content": "Front of the queue will be the first one to leave the queue and board the bus aversion to arrived later to lick. You will go to the end of the queue and it will be the last person to board the bus. So i q is just like an array where the first element to get in the queue with me the first element to get out of the cube of this dance is called 50 which means first in first out so let's recap a stock is like a pile of Pancakes where the new element goes on top of the stack and also only from the top of the stack we can read or remove elf in a cue is like a line before boarding the plane where the new element go to the back of the queue and only the elements on the front of the queue can be removed or red."
+    },
+    {
+      "timestamp": "0:02:59",
+      "content": "Collection of rules that you can use them and using any real data structure like an array in a couple of function when you click the back button of your browser, you are basically using a sack it when you press the back button, you're going to be basically taking one page from the top of that history or when you are writing something and you keep calling Rosie to undo that is also a stack. If you need to implement undo operations in your application. All you have to do is push the actions that the user has taken to a stuck in the moment that they do on do you can just go back in time in order things to do where the sack behave as an example of a q would be something like a email delivery or push notification system. Maybe even a shopping mall. Where the first order to arrive you this first order to get executed or the back end of a call center. Where the first phone call to the right is the first one to get picked up?"
+    },
+    {
+      "timestamp": "0:03:59",
+      "content": "Shoes are everywhere and also shoes and socks are used in order a great ever going to see later. We are very easy to understand, but also very very useful even exist in the real world. They give us some rules that allow us to think about our data in a more organized way. Also now if you're working in a company with more people and you see on the code that somebody is using a que hora starts now, you know how it works and what it means. Thank you so much for watching this video. If you like this content, if you want me to continue this serious, please leave a like & subscribe. That's all I ask. Please. Stay happy."
+    }
+  ]
+}

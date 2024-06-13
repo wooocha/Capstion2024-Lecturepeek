@@ -1,0 +1,403 @@
+소요시간 : 38.09256172180176 
+영상링크 : https://www.youtube.com/watch?v=DuDz6B4cqVc
+추출방식 : 1
+{
+  "videoTitle": "자료 구조 - 컴퓨터 과학 소개",
+  "videoDescription": "이 비디오는 컴퓨터 과학에서 자료 구조에 대한 소개를 제공합니다.",
+  "Lecture Note": [
+    {
+      "timestamp": "00:00:05",
+      "section_title": "자료 구조 소개",
+      "content": "자료 구조는 컴퓨터 메모리에 데이터를 구성하고 저장하는 데 사용됩니다."
+    },
+    {
+      "timestamp": "00:00:39",
+      "section_title": "배열",
+      "content": "배열은 메모리에 저장된 값의 연속입니다. 대부분의 프로그래밍 언어에서 인덱스를 사용하여 액세스할 수 있습니다. 인덱스는 대부분 0부터 시작합니다."
+    },
+    {
+      "timestamp": "00:02:06",
+      "section_title": "문자열",
+      "content": "문자열은 문자의 배열입니다. 문자열은 끝을 나타내기 위해 메모리에 널 문자로 저장됩니다."
+    },
+    {
+      "timestamp": "00:03:12",
+      "section_title": "행렬",
+      "content": "행렬은 이차원 배열입니다. 두 개의 인덱스를 사용하여 액세스할 수 있습니다."
+    },
+    {
+      "timestamp": "00:04:05",
+      "section_title": "구조체",
+      "content": "구조체는 관련 변수를 함께 저장하는 데 사용됩니다. 구조체는 메모리에 번들로 묶일 수 있으며 구조체 배열을 생성할 수 있습니다."
+    },
+    {
+      "timestamp": "00:04:46",
+      "section_title": "연결 리스트",
+      "content": "연결 리스트는 많은 노드를 저장할 수 있는 유연한 자료 구조입니다. 각 노드는 값과 다음 노드를 가리키는 포인터를 포함합니다."
+    },
+    {
+      "timestamp": "00:06:11",
+      "section_title": "스택",
+      "content": "연결 리스트는 후입선출 (LIFO) 원칙을 따르는 스택으로 사용될 수 있습니다."
+    },
+    {
+      "timestamp": "00:06:36",
+      "section_title": "트리",
+      "content": "트리는 루트에서 잎으로의 일방향 경로를 가진 자료 구조입니다. 노드와 포인터를 사용하여 구축할 수 있습니다."
+    },
+    {
+      "timestamp": "00:07:06",
+      "section_title": "그래프",
+      "content": "그래프는 모든 것이 서로를 가리킬 수 있는 자료 구조입니다. 임의의 연결을 나타내는 데 사용됩니다."
+    },
+    {
+      "timestamp": "00:07:27",
+      "section_title": "결론",
+      "content": "자료 구조는 컴퓨터 과학의 기본적인 구성 요소입니다. 효율적인 프로그래밍을 위해 올바른 자료 구조를 선택하는 것이 중요합니다."
+    }
+  ],
+  "questions": [
+    {
+      "question": "배열에서 첫 번째 요소의 인덱스는 무엇인가요?",
+      "answer": "0"
+    },
+    {
+      "question": "관련 변수를 함께 저장하는 데 사용되는 자료 구조는 무엇인가요?",
+      "answer": "구조체"
+    },
+    {
+      "question": "스택이 따르는 원칙은 무엇인가요?",
+      "answer": "LIFO"
+    }
+  ],
+  "script": [
+    {
+      "timestamp": "0:00:03",
+      "content": "Hi, I'm Carrie Anne, and welcome to Crash Course Computer Science!"
+    },
+    {
+      "timestamp": "0:00:05",
+      "content": "Last episode, we discussed a few example classic algorithms, like sorting a list of numbers."
+    },
+    {
+      "timestamp": "0:00:09",
+      "content": "and finding the shortest path in a graph."
+    },
+    {
+      "timestamp": "0:00:11",
+      "content": "What we didn’t talk much about, is how the data the algorithms ran on was stored in computer memory."
+    },
+    {
+      "timestamp": "0:00:16",
+      "content": "You don’t want your data to be like John Green’s college dorm room, with food, clothing, and papers strewn everywhere."
+    },
+    {
+      "timestamp": "0:00:21",
+      "content": "Instead, we want our data to be structured, so that it’s organized, allowing things to be easily retrieved and read."
+    },
+    {
+      "timestamp": "0:00:27",
+      "content": "For this, computer scientists use Data Structures!"
+    },
+    {
+      "timestamp": "0:00:29",
+      "content": "INTRO"
+    },
+    {
+      "timestamp": "0:00:39",
+      "content": "We already introduced one basic data structure last episode, Arrays, also called lists or Vectors in some languages."
+    },
+    {
+      "timestamp": "0:00:45",
+      "content": "These are a series of values stored in memory."
+    },
+    {
+      "timestamp": "0:00:47",
+      "content": "So instead of just a single value being saved into a variable, like ‘j equals 5’, we can define a whole series of numbers, and save that into an array variable."
+    },
+    {
+      "timestamp": "0:00:55",
+      "content": "To be able to find a particular value in this array, we have to specify an index."
+    },
+    {
+      "timestamp": "0:00:59",
+      "content": "Almost all programing languages start arrays at index 0, and use a square bracket syntax to denote array access."
+    },
+    {
+      "timestamp": "0:01:05",
+      "content": "So, for example, if we want to add the values in the first and third spots of our array ‘j’, and save that into a variable ‘a’, we would write a line of code like this."
+    },
+    {
+      "timestamp": "0:01:14",
+      "content": "How an array is stored in memory is pretty straightforward."
+    },
+    {
+      "timestamp": "0:01:16",
+      "content": "For simplicity, let’s say that the compiler chose to store ours at memory location 1,000."
+    },
+    {
+      "timestamp": "0:01:21",
+      "content": "The array contains 7 numbers, and these are stored one after another in memory, as seen here."
+    },
+    {
+      "timestamp": "0:01:26",
+      "content": "So when we write “j index of 0”, the computer goes to memory location 1,000, with an offset of 0, and we get the value 5."
+    },
+    {
+      "timestamp": "0:01:33",
+      "content": "If we wanted to retrieve “j index of 5”, our program goes to memory location 1000, plus an offset of 5, which in this case, holds a value of 4."
+    },
+    {
+      "timestamp": "0:01:42",
+      "content": "It’s easy to confuse the fifth number in the array with the number at index 5."
+    },
+    {
+      "timestamp": "0:01:45",
+      "content": "They are not the same."
+    },
+    {
+      "timestamp": "0:01:46",
+      "content": "Remember, the number at index 5 is the 6th number in the array because the first number is at index 0."
+    },
+    {
+      "timestamp": "0:01:51",
+      "content": "Arrays are extremely versatile data structures, used all the time, and so there are many functions that can handle them to do useful things."
+    },
+    {
+      "timestamp": "0:01:57",
+      "content": "For example, pretty much every programming language comes with a built-in sort function, where you just pass in your array, and it comes back sorted."
+    },
+    {
+      "timestamp": "0:02:06",
+      "content": "Very closely related are Strings, which are just arrays of characters, like letters, numbers, punctuation and other written symbols."
+    },
+    {
+      "timestamp": "0:02:13",
+      "content": "We talked about how computers store characters way back in Episode 4."
+    },
+    {
+      "timestamp": "0:02:16",
+      "content": "Most often, to save a string into memory, you just put it in quotes, like so."
+    },
+    {
+      "timestamp": "0:02:23",
+      "content": "Behind the scenes, the memory looks like this."
+    },
+    {
+      "timestamp": "0:02:24",
+      "content": "Note that the string ends with a zero in memory."
+    },
+    {
+      "timestamp": "0:02:27",
+      "content": "It’s not the character zero, but the binary value 0."
+    },
+    {
+      "timestamp": "0:02:31",
+      "content": "This is called the null character, and denotes the end of the string in memory."
+    },
+    {
+      "timestamp": "0:02:34",
+      "content": "This is important because if I call a function like “print quote”, which writes the string to the screen, it prints out each character in turn starting at the first memory location, but it needs to know when to stop!"
+    },
+    {
+      "timestamp": "0:02:44",
+      "content": "The zero tells string functions when to stop."
+    },
+    {
+      "timestamp": "0:02:50",
+      "content": "Because computers work with text so often, there are many functions that specifically handle strings."
+    },
+    {
+      "timestamp": "0:02:55",
+      "content": "For example, many programming languages have a string concatenation function, or “strcat”, which takes in two strings, and copies the second one to the end of the first."
+    },
+    {
+      "timestamp": "0:03:03",
+      "content": "We can use arrays for making one dimensional lists, but sometimes you want to manipulate data that is two dimensional, like a grid of numbers in a spreadsheet, or the pixels on your computer screen."
+    },
+    {
+      "timestamp": "0:03:12",
+      "content": "For this, we need a Matrix."
+    },
+    {
+      "timestamp": "0:03:14",
+      "content": "You can think of a Matrix as an array of arrays!"
+    },
+    {
+      "timestamp": "0:03:17",
+      "content": "So a 3 by 3 matrix is really an array of size 3, with each index storing an array of size 3."
+    },
+    {
+      "timestamp": "0:03:24",
+      "content": "In memory, this is packed together in order like this."
+    },
+    {
+      "timestamp": "0:03:27",
+      "content": "To access a value, you need to specify two indexes, like “J index of 2, then index of 1” - this tells the computer you’re looking for the item in subarray 2 at position 1."
+    },
+    {
+      "timestamp": "0:03:39",
+      "content": "The cool thing about matrices is we’re not limited to 3 by 3 -- we can make them any size we want -- and we can also make them any number of dimensions we want."
+    },
+    {
+      "timestamp": "0:03:50",
+      "content": "That’s right, you now know how to access a five dimensional matrix -- tell your friends!"
+    },
+    {
+      "timestamp": "0:03:59",
+      "content": "So far, we’ve been storing individual numbers or letters into our arrays or matrices."
+    },
+    {
+      "timestamp": "0:04:02",
+      "content": "But often it’s useful to store a block of related variables together."
+    },
+    {
+      "timestamp": "0:04:05",
+      "content": "Like, you might want to store a bank account number along with its balance."
+    },
+    {
+      "timestamp": "0:04:09",
+      "content": "Groups of variables like these can be bundled together into a Struct."
+    },
+    {
+      "timestamp": "0:04:16",
+      "content": "We can even make arrays of structs that we define, which are automatically bundled together in memory."
+    },
+    {
+      "timestamp": "0:04:21",
+      "content": "If we access, for example, J index of 0, we get back the whole struct stored there, and we can pull the specific account number and balance data we want."
+    },
+    {
+      "timestamp": "0:04:34",
+      "content": "Also, arrays must be stored in order in memory, making it hard to add a new item to the middle."
+    },
+    {
+      "timestamp": "0:04:38",
+      "content": "But, the struct data structure can be used for building more complicated data structures that avoid these restrictions."
+    },
+    {
+      "timestamp": "0:04:44",
+      "content": "Let’s take a look at this struct that’s called a “node”."
+    },
+    {
+      "timestamp": "0:04:46",
+      "content": "It stores a variable, like a number, and also a pointer."
+    },
+    {
+      "timestamp": "0:04:49",
+      "content": "A pointer is a special variable that points, hence the name, to a location in memory."
+    },
+    {
+      "timestamp": "0:04:54",
+      "content": "Using this struct, we can create a linked list, which is a flexible data structure that can store many nodes."
+    },
+    {
+      "timestamp": "0:05:02",
+      "content": "Let’s imagine we have three node structs saved in memory, at locations 1000, 1002 and 1008."
+    },
+    {
+      "timestamp": "0:05:09",
+      "content": "They might be spaced apart, because they were created at different times, and other data can sit between them."
+    },
+    {
+      "timestamp": "0:05:14",
+      "content": "So, you see that the first node contains the value 7, and the location 1008 in its “next” pointer."
+    },
+    {
+      "timestamp": "0:05:20",
+      "content": "This means that the next node in the linked list is located at memory location 1008."
+    },
+    {
+      "timestamp": "0:05:24",
+      "content": "Looking down the linked list, to the next node, we see it stores the value 112 and points to another node at location 1002."
+    },
+    {
+      "timestamp": "0:05:31",
+      "content": "If we follow that, we find a node that contains the value 14 and points back to the first node at location 1000."
+    },
+    {
+      "timestamp": "0:05:37",
+      "content": "So this linked list happened to be circular, but it could also have been terminated by using a next pointer value of 0 -- the null value -- which would indicate we’ve reached the end of the list."
+    },
+    {
+      "timestamp": "0:05:47",
+      "content": "When programmers use linked lists, they rarely look at the memory values stored in the next pointers."
+    },
+    {
+      "timestamp": "0:05:51",
+      "content": "Instead, they can use an abstraction of a linked list, that looks like this, which is much easier to conceptualize."
+    },
+    {
+      "timestamp": "0:05:56",
+      "content": "Unlike an array, whose size has to be pre-defined, linked lists can be dynamically extended or shortened."
+    },
+    {
+      "timestamp": "0:06:07",
+      "content": "With just a small change, we can use linked lists as stacks, which are LIFO…"
+    },
+    {
+      "timestamp": "0:06:11",
+      "content": "Last-In First-Out."
+    },
+    {
+      "timestamp": "0:06:13",
+      "content": "You can think of this like a stack of pancakes... as you make them, you add them to the top of stack."
+    },
+    {
+      "timestamp": "0:06:19",
+      "content": "And when you want to eat one, you take them from the top of the stack."
+    },
+    {
+      "timestamp": "0:06:23",
+      "content": "Delicious!"
+    },
+    {
+      "timestamp": "0:06:27",
+      "content": "Instead of enqueueing and dequeuing, data is pushed onto the stack and popped from the stacks."
+    },
+    {
+      "timestamp": "0:06:36",
+      "content": "If we update our node struct to contain not just one, but two pointers, we can build trees, another data structure that’s used in many algorithms."
+    },
+    {
+      "timestamp": "0:06:48",
+      "content": "An important property of trees – both in real life and in data structures – is that there’s a one-way path from roots to leaves."
+    },
+    {
+      "timestamp": "0:06:54",
+      "content": "For data that links arbitrarily, that include things like loops, we can use a graph data structure instead."
+    },
+    {
+      "timestamp": "0:07:02",
+      "content": "Remember our graph from last episode of cities connected by roads?"
+    },
+    {
+      "timestamp": "0:07:06",
+      "content": "This can be stored as nodes with many pointers, very much like a tree, but there is no notion of roots and leaves, and children and parents… Anything can point to anything!"
+    },
+    {
+      "timestamp": "0:07:20",
+      "content": "So that’s a whirlwind overview of pretty much all of the fundamental data structures used in computer science."
+    },
+    {
+      "timestamp": "0:07:27",
+      "content": "On top of these basic building blocks, programmers have built all sorts of clever variants, with slightly different properties -- data structures like red-black trees and heaps, which we don’t have time to cover."
+    },
+    {
+      "timestamp": "0:08:02",
+      "content": "The right choice of data structure can make your job a lot easier, so it pays off to think about how you want to structure your data before you jump in."
+    },
+    {
+      "timestamp": "0:08:15",
+      "content": "Fortunately, most programming languages come with libraries packed full of ready-made data structures."
+    },
+    {
+      "timestamp": "0:08:23",
+      "content": "These mean programmers don’t have to waste time implementing things from scratch, and can instead wield the power of data structures to do more interesting things, once again allowing us to operate at a new level of abstraction!"
+    },
+    {
+      "timestamp": "0:09:05",
+      "content": "I’ll see you next week."
+    }
+  ]
+}

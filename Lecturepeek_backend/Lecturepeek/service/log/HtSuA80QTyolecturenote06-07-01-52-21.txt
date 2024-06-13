@@ -1,0 +1,1214 @@
+소요시간 : 812.7591307163239 
+영상링크 : https://www.youtube.com/watch?v=HtSuA80QTyo
+추출방식 : 2
+{
+  "videoTitle": "알고리즘 소개",
+  "videoDescription": "이 강의는 강의 내용을 개요로 제공하며 대규모 입력 문제를 해결하기 위한 효율적인 알고리즘의 중요성에 대해 논의합니다.",
+  "Lecture Note": [
+    {
+      "timestamp": "00:00:22",
+      "section_title": "소개",
+      "content": "이 강의는 강의와 강의 내용을 소개합니다."
+    },
+    {
+      "timestamp": "00:01:10",
+      "section_title": "강의 개요",
+      "content": "이 강의는 알고리즘과 알고리즘의 복잡성을 다룹니다. 강의 내용 개요와 peak finding 문제에 대한 소개를 포함합니다."
+    },
+    {
+      "timestamp": "00:02:10",
+      "section_title": "선수 요구 사항",
+      "content": "이 강의의 선수 요구 사항은 60-42로, 점근적 복잡성을 다룹니다. 강의에서는 점근적 복잡성을 기준으로 간단한 알고리즘을 분석합니다."
+    },
+    {
+      "timestamp": "00:04:49",
+      "section_title": "대규모 입력에 대한 효율적인 절차",
+      "content": "이 강의는 미국 고속도로 시스템, 인간 유전체 및 소셜 네트워크와 같은 대규모 입력 문제를 해결하기 위한 효율적인 절차에 초점을 맞춥니다. '대규모'의 정의는 시간이 지남에 따라 변화했지만, 효율성은 여전히 중요합니다."
+    },
+    {
+      "timestamp": "00:06:05",
+      "section_title": "고전적인 데이터 구조",
+      "content": "이 강의는 이진 탐색 트리, 해시 테이블 및 사전과 같은 고전적인 데이터 구조를 다룹니다. 이러한 데이터 구조는 시간에 따라 검증되었으며 특정 문제를 해결하기 위해 확장될 수 있습니다."
+    },
+    {
+      "timestamp": "00:07:21",
+      "section_title": "실제 구현",
+      "content": "이 강의에는 Python에서 논의된 데이터 구조와 알고리즘을 구현하는 프로그래밍 과제가 포함됩니다."
+    },
+    {
+      "timestamp": "00:08:38",
+      "section_title": "모듈 및 문제 세트",
+      "content": "이 강의는 8개의 모듈로 나뉘며 각각에는 문제 세트가 있습니다. 모듈은 알고리즘적 사고, 정렬 및 트리, 해싱, 숫자, 그래프 문제, 동적 프로그래밍 및 고급 주제와 같은 주제를 다룹니다."
+    },
+    {
+      "timestamp": "00:15:22",
+      "section_title": "Peak Finding 문제",
+      "content": "이 강의에서는 1차원 배열에서 Peak Finding 문제를 소개합니다. Peak는 이웃보다 크거나 같은 숫자로 정의됩니다. Peak Finding을 위한 직관적인 알고리즘은 배열을 왼쪽에서 오른쪽으로 탐색하는 것입니다."
+    },
+    {
+      "timestamp": "00:18:49",
+      "section_title": "직관적인 알고리즘의 복잡성",
+      "content": "직관적인 알고리즘의 최악의 경우 복잡성은 배열의 요소 수인 n에 대해 O(n)입니다."
+    },
+    {
+      "timestamp": "00:24:36",
+      "section_title": "알고리즘 개선",
+      "content": "분할 정복 전략을 사용하여 Peak Finding 알고리즘의 복잡성을 낮출 수 있습니다. 배열을 재귀적으로 작은 부분으로 분할하여 복잡성을 줄일 수 있습니다."
+    },
+    {
+      "timestamp": "00:25:33",
+      "section_title": "소개",
+      "content": "이 강의는 간단한 소개와 강의실에서의 좌석 배치에 대한 설명으로 시작합니다."
+    },
+    {
+      "timestamp": "00:26:18",
+      "section_title": "인터랙티브 활동",
+      "content": "강사는 학생들에게 참여를 위해 쿠션과 루빅스 큐브를 제공하여 학생들과 상호 작용합니다."
+    },
+    {
+      "timestamp": "00:27:41",
+      "section_title": "재귀 알고리즘",
+      "content": "강사는 재귀 알고리즘의 개념을 소개하고 분할 정복 접근 방식을 설명합니다."
+    },
+    {
+      "timestamp": "00:28:01",
+      "section_title": "알고리즘 개요",
+      "content": "강사는 1차원 배열에서 Peak를 찾기 위한 재귀 알고리즘의 단계를 설명합니다."
+    },
+    {
+      "timestamp": "00:30:41",
+      "section_title": "알고리즘의 정확성",
+      "content": "강사는 정확성에 대한 공식적인 증명은 제공되지 않지만 알고리즘이 정확하다고 보장합니다."
+    },
+    {
+      "timestamp": "00:31:48",
+      "section_title": "알고리즘 복잡성",
+      "content": "강사는 알고리즘의 시간 복잡성을 논의하고 직관적인 접근 방식과 비교합니다."
+    },
+    {
+      "timestamp": "00:35:38",
+      "section_title": "효율성",
+      "content": "강사는 대규모 입력에 대한 복잡성을 줄이는 중요성을 강조하고 두 가지 접근 방식 사이의 시간 차이를 제시합니다."
+    },
+    {
+      "timestamp": "00:36:08",
+      "section_title": "2D 버전",
+      "content": "강사는 2D 버전의 문제를 소개하고 2D 행렬에서 Peak의 정의를 설명합니다."
+    },
+    {
+      "timestamp": "00:37:23",
+      "section_title": "Greedy Ascent 알고리즘",
+      "content": "강사는 2D 행렬에서 Peak를 찾기 위한 Greedy Ascent 알고리즘을 설명합니다."
+    },
+    {
+      "timestamp": "00:39:57",
+      "section_title": "Greedy Ascent 알고리즘의 제한",
+      "content": "강사는 Greedy Ascent 알고리즘은 항상 실제 Peak를 찾지 못할 수 있다고 지적합니다."
+    },
+    {
+      "timestamp": "00:41:04",
+      "section_title": "2D Peak를 찾기 위한 분할 정복 알고리즘",
+      "content": "강사는 2D Peak를 찾기 위한 분할 정복 알고리즘을 소개하고 관련 단계를 설명합니다."
+    },
+    {
+      "timestamp": "00:44:38",
+      "section_title": "이전 알고리즘의 제한",
+      "content": "강사는 이전 분할 정복 알고리즘이 모든 경우에 작동하지 않는 이유를 설명합니다."
+    },
+    {
+      "timestamp": "00:47:14",
+      "section_title": "개선된 분할 정복 알고리즘",
+      "content": "강사는 2D Peak를 찾기 위한 개선된 분할 정복 알고리즘을 제시하고 관련 단계를 설명합니다."
+    },
+    {
+      "timestamp": "00:51:30",
+      "section_title": "재귀 관계 및 복잡성",
+      "content": "강사는 개선된 분할 정복 알고리즘의 복잡성에 대한 재귀 관계를 제시하고 전체 복잡성을 논의합니다."
+    },
+    {
+      "timestamp": "00:52:53",
+      "section_title": "결론",
+      "content": "강사는 학생들이 문제 세트에서 다른 버전의 알고리즘을 만날 것이라고 언급하며 강의를 마무리합니다."
+    }
+  ],
+  "questions": [
+    {
+      "question": "이 강의의 선수 요구 사항은 무엇인가요?",
+      "answer": "60-42"
+    },
+    {
+      "question": "1차원 경우 Peak의 정의는 무엇인가요?",
+      "answer": "이웃보다 크거나 같은 숫자"
+    },
+    {
+      "question": "Peak 찾기 알고리즘의 복잡성을 낮추기 위해 어떤 전략을 사용할 수 있나요?",
+      "answer": "분할 정복"
+    },
+    {
+      "question": "재귀 알고리즘과 직관적인 접근 방식의 주요 차이점은 무엇인가요?",
+      "answer": "효율성"
+    },
+    {
+      "question": "Greedy Ascent 알고리즘의 제한은 무엇인가요?",
+      "answer": "실제 Peak를 항상 찾지 못할 수 있음"
+    },
+    {
+      "question": "개선된 분할 정복 알고리즘의 복잡성은 어떻게 되나요?",
+      "answer": "O(n log m)"
+    }
+  ],
+  "script": [
+    {
+      "timestamp": "0:00:00",
+      "content": "The following content is provided under a Creative Commons license your support will help MIT, opencourseware continue to offer high-quality educational resources for free to make a donation or view additional materials from hundreds of MIT courses visit MIT opencourseware at ocw. Mit.edu."
+    },
+    {
+      "timestamp": "0:00:22",
+      "content": "Hi, I'm swinging David. Also, I'm a professor of electrical engineering and computer science. I'm going to be cool X-Ring 60060 introduction to algorithms the storm with Professor Eric Domaine, Eric. Say hi."
+    },
+    {
+      "timestamp": "0:00:38",
+      "content": "And that we hope by you can have a fun time in 60069. I've already of algorithms. What I want to do today is spend literally a minute or so on administrative details. I may be even less. What I like to do is to tell you to go to the website that's listed up there and read it."
+    },
+    {
+      "timestamp": "0:01:00",
+      "content": "And you'll get all the information you need about what this class is about from a standpoint of syllabus what's expected off you?"
+    },
+    {
+      "timestamp": "0:01:10",
+      "content": "Add a problem set schedule the Chris schedule and so on and so forth. I want to Dive Right In and tell you about interesting things like algorithms and complexity of algorithms. I want to spend some time giving you an overview of the course content and then we going to Dive Right In and look at a particular problem of peak finding both a one-dimensional version and a two-dimensional version and talk about algorithms to solve the speak finding problem and you'll find that there's really a difference between these various out with them is that we look at in terms of their complexity."
+    },
+    {
+      "timestamp": "0:01:56",
+      "content": "And what I mean by that is you going to have a different wrong time. So he's out of them's depending on input size."
+    },
+    {
+      "timestamp": "0:02:05",
+      "content": "Based on how efficient these albums are."
+    },
+    {
+      "timestamp": "0:02:10",
+      "content": "A prerequisite for this class is a 60 42 and in 60 42 you learned about asymptotic complexity and you'll see that in this lecture will analyze relatively simple algorithms today in terms of their asymptotic complexity and you'll be able to compare and say that this out with them is faster than this other one is your mean that you have large inputs because it's as likely less complex."
+    },
+    {
+      "timestamp": "0:02:40",
+      "content": "So, let's Dive Right In and talk about the class."
+    },
+    {
+      "timestamp": "0:02:52",
+      "content": "So the one sentence summary of this class is that this is about efficient procedures for solving problems on large inputs."
+    },
+    {
+      "timestamp": "0:03:04",
+      "content": "And when I say large inputs, I mean things like"
+    },
+    {
+      "timestamp": "0:03:08",
+      "content": "The US Highway System a map of all of the highways in the United States the human genome which has a million letters in its alphabet is social network responding to Facebook that I guess has 500 million nodes or so. So these are large inputs. Now I definition of large is really changed with the times and so relieved the 21st century definition of of large is I guess a trillion right back when I was your age large was like a thousand. I guess. I'm dating myself here back when Eric was your age was a million, right? But what's happening really the world is moving faster things are getting bigger. We have the capability of computing on large inputs, but that doesn't mean that efficiency isn't of Paramount concern."
+    },
+    {
+      "timestamp": "0:04:05",
+      "content": "Are the fact of the matter is that you can maybe scan a billion elements in a matter of seconds. But if you had an algorithm that required to be complexity suddenly, you're not talking about 10 Race 29, you're talkin about 10 razor 27 and even Karan computers can't really handle that kind of those kind of numbers."
+    },
+    {
+      "timestamp": "0:04:28",
+      "content": "so efficiency is a concern and as inputs get larger, it becomes more so"
+    },
+    {
+      "timestamp": "0:04:37",
+      "content": "We concerned about."
+    },
+    {
+      "timestamp": "0:04:43",
+      "content": "efficient procedures"
+    },
+    {
+      "timestamp": "0:04:49",
+      "content": "for solving large-scale problems in this class"
+    },
+    {
+      "timestamp": "0:04:58",
+      "content": "and a song about scalability"
+    },
+    {
+      "timestamp": "0:05:01",
+      "content": "because"
+    },
+    {
+      "timestamp": "0:05:03",
+      "content": "just ask"
+    },
+    {
+      "timestamp": "0:05:06",
+      "content": "in a 1000 was a big number a couple of decades ago. And now it's it's kind of a small number quite possible that"
+    },
+    {
+      "timestamp": "0:05:14",
+      "content": "by by the time you guys are professors teaching this class in some University that a trillion is going to be a small number and they're going to be talking about 18 as as being something bad."
+    },
+    {
+      "timestamp": "0:05:29",
+      "content": "Be concerned with from a standpoint of a common case input for an algorithm is important and we want to be able to track. How are out isn't going to do as inputs get larger and larger."
+    },
+    {
+      "timestamp": "0:05:47",
+      "content": "You going to learn a bunch of different data structures will call him."
+    },
+    {
+      "timestamp": "0:05:54",
+      "content": "classic data structures"
+    },
+    {
+      "timestamp": "0:05:56",
+      "content": "like binary search tree hash tables medical dictionary in Python"
+    },
+    {
+      "timestamp": "0:06:03",
+      "content": "and"
+    },
+    {
+      "timestamp": "0:06:05",
+      "content": "data structures such as balanced binary search tree that are more efficient than just a regular binary search trees and these are all data structures that were invented many decades ago, but there stood the test of time and they continue to be useful. I'll be able to augment these data structures in various ways to make them more efficient for certain kinds of problems. And while you're not going to be doing a whole lot of algorithm design in this class. You will be doing some design and a whole lot of analysis."
+    },
+    {
+      "timestamp": "0:06:40",
+      "content": "The class was following this 16046 design and Analysis of algorithms is a class that you should take if you like this one and you can do a whole lot more design of algorithms in 60046."
+    },
+    {
+      "timestamp": "0:06:57",
+      "content": "But you will look at Classic data structures and classical out resumes."
+    },
+    {
+      "timestamp": "0:07:03",
+      "content": "for these data structures including things like"
+    },
+    {
+      "timestamp": "0:07:08",
+      "content": "Sorting and matching and so on."
+    },
+    {
+      "timestamp": "0:07:12",
+      "content": "And one of the nice things about this class."
+    },
+    {
+      "timestamp": "0:07:17",
+      "content": "Is that you'll be doing real implementations?"
+    },
+    {
+      "timestamp": "0:07:21",
+      "content": "of these data structures and algorithms in Python"
+    },
+    {
+      "timestamp": "0:07:28",
+      "content": "and in particular each of the problem sets."
+    },
+    {
+      "timestamp": "0:07:32",
+      "content": "In this class are going to have both a part to them and a programming part to them. So hopefully they'll all tied together the kinds of things were going to be talking about and lectures and presentations are going to be directly connected to the Terry farce of the problem sets and you'll be programming the algorithms that we talked about in lecture or inventing them running them figuring out whether they work well on large inputs or not."
+    },
+    {
+      "timestamp": "0:08:06",
+      "content": "So let me talk a little bit about the modules in this class and the problem sets and we hope that these problems that's going to be fun for you or end by fun. I don't mean easy. I mean challenging and worthwhile. So at the end of it, you'll feel like you've learned something and you had some fun along the way."
+    },
+    {
+      "timestamp": "0:08:28",
+      "content": "so constant wise"
+    },
+    {
+      "timestamp": "0:08:37",
+      "content": "we have it."
+    },
+    {
+      "timestamp": "0:08:38",
+      "content": "8 modules into class Each of which roughly speaking has a problem set associated with it by the first of these."
+    },
+    {
+      "timestamp": "0:08:49",
+      "content": "Is what we call algorithmic thinking."
+    },
+    {
+      "timestamp": "0:08:55",
+      "content": "And with Kik stopped at 1 today."
+    },
+    {
+      "timestamp": "0:08:58",
+      "content": "I've been look at a particular problem as I mentioned the feet finding and as part of this you're going to have a plum set that's going to go out today as well and you'll find that in this problem set."
+    },
+    {
+      "timestamp": "0:09:12",
+      "content": "Some of these albums have talked about today will be coded in Python and give them to you a couple of I'm not going to have bugs in them."
+    },
+    {
+      "timestamp": "0:09:19",
+      "content": "You have to analyze the complexity of these algorithms figure out which ones to correct an efficient and write a proof for one of them. I'd so that's sort of an example problem set and you can expect that. Most of the problem sets are going to follow that sort of template so"
+    },
+    {
+      "timestamp": "0:09:42",
+      "content": "You'll get a better sense of this in by the end of the day today for sure or the concrete fence of this because we'll be done with lecture and you'll see your first problem set."
+    },
+    {
+      "timestamp": "0:09:52",
+      "content": "We're going to be doing a module on sorting and trees starting, you know about starting a bunch of numbers. Imagine if you had a trillion numbers and you wanted to start them."
+    },
+    {
+      "timestamp": "0:10:04",
+      "content": "What kind of album could you use for that trees are a wonderful day to structure a different varieties the most common being binary tree's and there's ways of doing all sorts of things like scheduling and sorting using various kinds of trees including binary tree's and we have a problem set on stimulating."
+    },
+    {
+      "timestamp": "0:10:29",
+      "content": "A logic network using a particular kind of sorting out with them on and I did a structure at that that is going to be your second problem set."
+    },
+    {
+      "timestamp": "0:10:41",
+      "content": "and more quickly we going to have"
+    },
+    {
+      "timestamp": "0:10:45",
+      "content": "Modules on hashing where we do things like genome comparison in pass terms are they compared to human genome to Iraq genome and discovered. They are pretty similar 99% similar to this kind of amazing. I'll bet against these things are so large. I bet you have to have the efficiency and the comparison methods that you use and you'll find that if you don't get the complexity low enough, you just won't be able to complete your program won't be able to finish running within the time that you probably said is you right which is a bit of a problem. So so that's something to keep in mind as you test your code the factors that you will get large inputs run you a code and you want to keep complexity in mind as your coding and thinking about the the pseudocode if you will be around with himself."
+    },
+    {
+      "timestamp": "0:11:43",
+      "content": "Are we will talk about a lot of the time you talk about such large numbers that 32-bit isn't enough or 64-bit and enough to represent these numbers. These numbers have thousands of bits a good example does RSA encryption that is used in ASL for example, and then you use HTTP on websites. Irsa is used at the back end and typically your work with prime numbers that are thousands of bits long in RSA. So, how do you handle that? How does python handled at how do you write algorithms that can deal with waterfall infinite position numbers? So we have a module on numerics in the middle of the term that talks about that grass."
+    },
+    {
+      "timestamp": "0:12:33",
+      "content": "Really fundamental data structure in all of computer signs. You might have heard of the famous Rubik's Cube assignment from double o six two by two by two Rubik's Cube. I what's the minimum number of moves necessary to go from a given starting configuration do the Final End configuration? We're all of the faces each of the faces has uniform color. I am that can be posed as a graph problem. I will probably do that one the storm in previous rounds, you've done other things like the 15 puzzle. And so some of these are tentative. I will definitely know what the first problem seems like, but the rest of them are at this moment tentative."
+    },
+    {
+      "timestamp": "0:13:18",
+      "content": "Our shortest path again until I'm fast. We've asked you to write code using a particular out with them that finds the shortest bad from Caltech to MIT."
+    },
+    {
+      "timestamp": "0:13:30",
+      "content": "This time you may do things a little differently Avira thinking I maybe will give you a street map of Boston and you know, go figure out of Paul Revere used to shut his fat to get the ready was going or things like that. You're trying to make it fun programming is"
+    },
+    {
+      "timestamp": "0:13:51",
+      "content": "An important algorithm design technique that's used in many many problems and it can be used to do a variety of things including image compression."
+    },
+    {
+      "timestamp": "0:14:06",
+      "content": "How do you compress an image? So the number of pixels reduces but it still looks like the image that you started out with that had many more pixels. I think it is dynamic programming for that and finally Advanced topics complexity Theory research and algorithms."
+    },
+    {
+      "timestamp": "0:14:25",
+      "content": "Hopefully, bye. Bye. Bye this time in the in the course. You'd have been sold and most if not all the field 14 Seer and what else is just scratching the surface in this class and there's many many classes that you can possibly take. If you want to continue to learn about some sort to pursue a career in art."
+    },
+    {
+      "timestamp": "0:14:51",
+      "content": "So that's the story of the class of the synopsis of the class and I encourage you to go spend a few minutes on the left side in particular. Please read the collaboration policy and get a sense of what is expected of you of what the rules are in terms of doing the problem sets and the court agreed and break down to the grading policies are all listed on the website as well."
+    },
+    {
+      "timestamp": "0:15:22",
+      "content": "Okay, so let's get started. I want to talk about specific problem and talk about algorithms for a specific problem. We picked this problem because it's so easy to understand and they're fairly straightforward algorithms that are not particularly efficient to solve this problem. And so this is a problem but like a lot of toy problems. It's very evocative in that it points out the issues involved in designing a fish and algorithms dimensional version of what we call Pig finding."
+    },
+    {
+      "timestamp": "0:16:05",
+      "content": "And a pic finder is something in the one-dimensional case."
+    },
+    {
+      "timestamp": "0:16:14",
+      "content": "ramzan an array of numbers"
+    },
+    {
+      "timestamp": "0:16:18",
+      "content": "and I'm just putting"
+    },
+    {
+      "timestamp": "0:16:22",
+      "content": "symbols for each of these numbers here"
+    },
+    {
+      "timestamp": "0:16:26",
+      "content": "and"
+    },
+    {
+      "timestamp": "0:16:28",
+      "content": "the numbers are positive and negative will just assume they're all positive. It doesn't really matter for them to be described with work."
+    },
+    {
+      "timestamp": "0:16:38",
+      "content": "And so we have this one dimensional array that has nine different positions and"
+    },
+    {
+      "timestamp": "0:16:44",
+      "content": "hoi numbers"
+    },
+    {
+      "timestamp": "0:16:49",
+      "content": "and we want to find a peak and so we have to Define what we mean by a peek and so in particular as an example position to"
+    },
+    {
+      "timestamp": "0:17:02",
+      "content": "is a peek."
+    },
+    {
+      "timestamp": "0:17:06",
+      "content": "if and only if"
+    },
+    {
+      "timestamp": "0:17:11",
+      "content": "be greater than or equal to a"
+    },
+    {
+      "timestamp": "0:17:14",
+      "content": "And be greater than or equal to see local property responding to a peak in the one-dimensional case. It's trivial look to your left to right if your equal or greater than"
+    },
+    {
+      "timestamp": "0:17:31",
+      "content": "both of the elements that you see on the left and the right you repeat. Okay, and in the case of the edges, you only have to look to one side so position 9"
+    },
+    {
+      "timestamp": "0:17:44",
+      "content": "Is a peek."
+    },
+    {
+      "timestamp": "0:17:48",
+      "content": "if"
+    },
+    {
+      "timestamp": "0:17:50",
+      "content": "I greater than equal to a h."
+    },
+    {
+      "timestamp": "0:17:53",
+      "content": "So you just have to look to your left there because you're all the way on the right hand side. All right, so that's it and the statement of the problem the one-dimensional version is."
+    },
+    {
+      "timestamp": "0:18:08",
+      "content": "Find a peak."
+    },
+    {
+      "timestamp": "0:18:12",
+      "content": "If it exists."
+    },
+    {
+      "timestamp": "0:18:21",
+      "content": "That's all the rest of it."
+    },
+    {
+      "timestamp": "0:18:24",
+      "content": "I'm going to give you a straightforward out with them."
+    },
+    {
+      "timestamp": "0:18:27",
+      "content": "And then see if you can prove it you can imagine to the straightforward out with them. Is it something that just wiener walks across that array?"
+    },
+    {
+      "timestamp": "0:18:39",
+      "content": "But we need that as a starting point."
+    },
+    {
+      "timestamp": "0:18:42",
+      "content": "For building something more sophisticated."
+    },
+    {
+      "timestamp": "0:18:49",
+      "content": "So let me start from left."
+    },
+    {
+      "timestamp": "0:18:56",
+      "content": "and all we have"
+    },
+    {
+      "timestamp": "0:18:59",
+      "content": "Is one traversal really?"
+    },
+    {
+      "timestamp": "0:19:05",
+      "content": "So they say we have 12 and then we have an over to over here. There's wanting to the middle of this m element array and then we have in mind as one."
+    },
+    {
+      "timestamp": "0:19:17",
+      "content": "And then what I'm interested in doing is not only coming up with a straightforward out with them, but also precisely characterizing what is complexity is in relation to M. Which is the number of inputs question."
+    },
+    {
+      "timestamp": "0:19:41",
+      "content": "That's exactly right. I was going to get to that so if you look at the definition of peak"
+    },
+    {
+      "timestamp": "0:19:50",
+      "content": "Then what I have here is a greater than or equal to. Okay. And so this that's a great question that was asked. Why is there if it exists in this problem now in the case where I have greater than or equal to then this is a homework question for for you and the rest of you argued that any array."
+    },
+    {
+      "timestamp": "0:20:17",
+      "content": "We'll always have a peek. Okay. Now if you didn't have the greater than or equal to and you had a greater then then I can you make that argument. Right? So great question in this case is just a question. You would want to modify this problem statement to find a peek. But if I if I had a different definition of a peek and this is part of algorithmic thinking you want to be able to create out of them. Is that a general? So if the problem definition changes on you, you still have a starting point to go attack the second version of the problem, so"
+    },
+    {
+      "timestamp": "0:20:59",
+      "content": "You could eliminate breast in the case of the greater than or equal to definition that if it exists because the people always exist, but you probably want to argue that when you want to show the correctness of your out with them. And if in fact you had a different definition about you would have to create an algorithm that tells you for sure that a pig doesn't exist or find a peek if it exists, right? So that's only the general case many a time is possible that you were at your ass to do something and you can actually give an answer to the to the to the question or find something that satisfies all the constraints required. And in that case you want to be able to put up your hand and say, you know what I searched long and hard I searched exhaustively here's my argument that I searched exhaustively and I can find it right you do that you get to keep your job, right? Otherwise, it's always the case that you didn't search hard enough."
+    },
+    {
+      "timestamp": "0:21:59",
+      "content": "Nice to have that argument."
+    },
+    {
+      "timestamp": "0:22:02",
+      "content": "Alright great. Thanks for the question. Feel free to interrupt raise your hand and and I'm watching you guys and I'm happy to answer questions at any time."
+    },
+    {
+      "timestamp": "0:22:10",
+      "content": "So let's talk about the straightforward album The straightforward algorithm is something that starts from the left and just walks across and you might have something that looks like that. All right by that by this. I mean the numbers are increasing as you start from the left the peak is somewhere in the middle and then things. Decreasing right? So in this case, this might be the peak."
+    },
+    {
+      "timestamp": "0:22:46",
+      "content": "It you also may have a situation where the big is all the way on the right you're starting from the left and is 1 2 3 4 5 6 literally in terms of the numbers and you're going to look at them and elements going all the way to the right in order to find the pee. So in the case of the middle."
+    },
+    {
+      "timestamp": "0:23:07",
+      "content": "you look at"
+    },
+    {
+      "timestamp": "0:23:09",
+      "content": "Andover two elements"
+    },
+    {
+      "timestamp": "0:23:13",
+      "content": "if it was right in the middle."
+    },
+    {
+      "timestamp": "0:23:18",
+      "content": "And the complexity worst case complexity."
+    },
+    {
+      "timestamp": "0:23:26",
+      "content": "Is what we call Sarah Ann."
+    },
+    {
+      "timestamp": "0:23:29",
+      "content": "and its beta end because in the worst-case you may have to look at all and elements and that would be the case ready starting from the left and he had to go all the way to the right now is essentially something that says of the order of them so gives you about the lower bound and upper bound big event is just a bong and what we're saying here this we're saying the sound of them to start from the left is going to essentially"
+    },
+    {
+      "timestamp": "0:24:01",
+      "content": "Requiring the worst case something. That's a constant X am. Okay, and you know that constant could be could be one you could send me set things up that way honored if you had a different kind of outgrew them. Maybe you could work on the on the on the constant but bottom line we are only concerned at this moment about is as its complexity and 2013 complexity of this algorithm is Linnea."
+    },
+    {
+      "timestamp": "0:24:31",
+      "content": "Okay, so"
+    },
+    {
+      "timestamp": "0:24:36",
+      "content": "Someone help me do better. How can we do better? How can we lower the azimzadeh complexity of a one-dimensional peakfinder?"
+    },
+    {
+      "timestamp": "0:24:46",
+      "content": "Anybody want to take a stab at that got back there?"
+    },
+    {
+      "timestamp": "0:24:58",
+      "content": "You know, there's a peak during the middle of the right side. There's a higher number on the right side. Then you would just look at that until the key somewhere in there and you can can you cut it in half so you can you can do something different which is essentially try and break up this problem use a divide-and-conquer strategy and recursive we break up this one dimensional array into smaller erase and and try and get this complexity down. Yeah."
+    },
+    {
+      "timestamp": "0:25:31",
+      "content": "one piece"
+    },
+    {
+      "timestamp": "0:25:33",
+      "content": "No, they're not if it's a find a peek. If it exists in this case is fine up here because of the definition. We don't really need this as it was. All right. Okay, so that was a great answer and you know this class after why I was going to get boring right every class gets boring. I saw you trying to break the monotony here a bit. And so and then the other thing that we realize was that these seats you're sitting on does the nice classroom, but the seats are sitting on our kind of hard, right? So whatever and I did was I was inside of you help you guys out especially the ones who are who are interacting with us and we have these"
+    },
+    {
+      "timestamp": "0:26:18",
+      "content": "Christian's that are six double o six cushions and invited to buy two by two Rubik's Cube here. And since you answered the first question, you got a question. This is kind of like a frisbee but not really. So, I'm not sure. I'm not sure I'm going to get it to you, but I don't think I want to say is this is not a baseball game right where you just grab the balls that can bite. This is meant for him my my friend in the red shirt. So here you go."
+    },
+    {
+      "timestamp": "0:26:45",
+      "content": "Too bad. All right, so it won't hurt you if it hits you all right, he's at and raise your hands. You know, there's going to be I think I did a trivial questions if you want to ask just to make sure you're awake. So in answer to that doesn't get you a question, but you don't answer like what's the name Jace. Jace just gave is that's a good answer to trivia question that gets you a question. Okay. All right, great. So, let's put up a Jason sounded in my PR. I'm going to ride it out for the 1D version."
+    },
+    {
+      "timestamp": "0:27:41",
+      "content": "So what we have here is a recursive algorithm."
+    },
+    {
+      "timestamp": "0:28:01",
+      "content": "Send a picture you want to keep in your head is this picture that I put up there? And this is a divide-and-conquer algorithm. You going to see this over and over the Paradigm over and over in 60006?"
+    },
+    {
+      "timestamp": "0:28:21",
+      "content": "the end over to position"
+    },
+    {
+      "timestamp": "0:28:25",
+      "content": "and I'll be going to look to the left and we're going to look to the right and you can do that in sequence."
+    },
+    {
+      "timestamp": "0:28:33",
+      "content": "so"
+    },
+    {
+      "timestamp": "0:28:36",
+      "content": "if a n / 2"
+    },
+    {
+      "timestamp": "0:28:40",
+      "content": "is less than"
+    },
+    {
+      "timestamp": "0:28:42",
+      "content": "a n / 2 - 1"
+    },
+    {
+      "timestamp": "0:28:45",
+      "content": "then"
+    },
+    {
+      "timestamp": "0:28:50",
+      "content": "only look at"
+    },
+    {
+      "timestamp": "0:28:53",
+      "content": "laptop"
+    },
+    {
+      "timestamp": "0:28:57",
+      "content": "one through 10 / 2 - 1"
+    },
+    {
+      "timestamp": "0:29:01",
+      "content": "to look for paint"
+    },
+    {
+      "timestamp": "0:29:03",
+      "content": "corapeake"
+    },
+    {
+      "timestamp": "0:29:08",
+      "content": "I'd say that's step one on the right hand side of the left hand side doesn't really matter."
+    },
+    {
+      "timestamp": "0:29:15",
+      "content": "I chose to do the left hand side first the left half."
+    },
+    {
+      "timestamp": "0:29:20",
+      "content": "So what I've done is through that one step if in fact"
+    },
+    {
+      "timestamp": "0:29:26",
+      "content": "you have that condition and over to is less than the end of it you might as well then you move your left and your work on one half of the problem. But if that's not the case then if staying over and over to is less than a over and over and buy 2 + 1 then."
+    },
+    {
+      "timestamp": "0:29:49",
+      "content": "only look at"
+    },
+    {
+      "timestamp": "0:29:52",
+      "content": "+ 2 + 1 through an for a pic. So I haven't bothered writing out all the words. They're exactly the same as the left inside. You just look to the right inside."
+    },
+    {
+      "timestamp": "0:30:05",
+      "content": "Otherwise, if both of these conditions don't fire, you're actually dumb. Okay, that's actually the best case and some finishing early at least in this recursive step because now that I know where to position"
+    },
+    {
+      "timestamp": "0:30:21",
+      "content": "is a p"
+    },
+    {
+      "timestamp": "0:30:27",
+      "content": "but your phone is that they know what your position is greater than or equal to both of its adjacent positions and that's exactly the definition of a pee. So you're done. Okay, so"
+    },
+    {
+      "timestamp": "0:30:41",
+      "content": "All of this is good."
+    },
+    {
+      "timestamp": "0:30:43",
+      "content": "you want to"
+    },
+    {
+      "timestamp": "0:30:46",
+      "content": "right"
+    },
+    {
+      "timestamp": "0:30:50",
+      "content": "an argument that this album is correct, and I'm not going to bother with that. I just"
+    },
+    {
+      "timestamp": "0:30:56",
+      "content": "Wave my hands a bit and you also noted that but the point being you will see in your problem set a precise argument for more complicated. I'll do them the 22d version of this and then that should be a template for you to go write a proof or an argument or formal argument that happened to go around them is cracked but it does what it claims to do. And in this case, it's two three lines of careful reasoning that essentially say given the definition of the peak that this is going to find o peak in the area that you're given. So we all believe that this is correct. Alex talk now about the complexity of this out with them."
+    },
+    {
+      "timestamp": "0:31:48",
+      "content": "Because the whole point of this out of them was because we didn't like the stator and complexity corresponding to the straightforward. I wasn't so it's like to do better."
+    },
+    {
+      "timestamp": "0:32:08",
+      "content": "So what I like to do is ask one of you to give me a recurrence relation of the kind Unity of n equals blah blah blah."
+    },
+    {
+      "timestamp": "0:32:17",
+      "content": "Add that would correspond to this recursive album this divide-and-conquer out with them. And then using that I'd like to get to the actual complexity in terms of what the Tater of complexity corresponds to."
+    },
+    {
+      "timestamp": "0:32:45",
+      "content": "investigate"
+    },
+    {
+      "timestamp": "0:32:48",
+      "content": "Andover to Great exactly, right this is acting right. So if you look at this album in you you say from a computation standpoint. Can I write an equation responding to the execution of this algorithm? And you say to your band is the work that this out of them does on as input of size are okay?"
+    },
+    {
+      "timestamp": "0:33:25",
+      "content": "Then I can ride."
+    },
+    {
+      "timestamp": "0:33:27",
+      "content": "this equation"
+    },
+    {
+      "timestamp": "0:33:31",
+      "content": "and this date of one corresponds to the two comparisons that you do looking at potentially the two comparisons that you do looking at the left hand side and the right hand side. So that's why she was a constant. So that's like a potato one. All right, so you got a question to watch out guys."
+    },
+    {
+      "timestamp": "0:33:49",
+      "content": "Why should I want to so bad beers left? And you start."
+    },
+    {
+      "timestamp": "0:34:02",
+      "content": "Expanding it. Eventually you're going to get through the base case, which is"
+    },
+    {
+      "timestamp": "0:34:09",
+      "content": "Do you have one instead of one because you have a 1 elements and Ray you just for that as a peek?"
+    },
+    {
+      "timestamp": "0:34:19",
+      "content": "And so if you do that in your expanded all the way out are then you can ride tfn equals 1."
+    },
+    {
+      "timestamp": "0:34:28",
+      "content": "Last date of one and you going to do this."
+    },
+    {
+      "timestamp": "0:34:33",
+      "content": "Log in the base 2 of an X."
+    },
+    {
+      "timestamp": "0:34:39",
+      "content": "And adding this all up."
+    },
+    {
+      "timestamp": "0:34:43",
+      "content": "Gives you a complexity that along to a fan."
+    },
+    {
+      "timestamp": "0:34:48",
+      "content": "So now you can pair this with that."
+    },
+    {
+      "timestamp": "0:34:53",
+      "content": "And this really a huge difference this in exponential difference if you cut it off this out of them in Python."
+    },
+    {
+      "timestamp": "0:35:01",
+      "content": "And I did both these out of them for the one diversion and if you wanted."
+    },
+    {
+      "timestamp": "0:35:08",
+      "content": "On am being 10 million or so."
+    },
+    {
+      "timestamp": "0:35:14",
+      "content": "Then this out with them takes 13 seconds. Okay, the pita and out of them takes 13 seconds. And this one takes the point 0 0 1 seconds. Okay. I'm so there is a big difference between theater and then they to log in and it's usually the difference between two ways to end in m. It makes sense to try."
+    },
+    {
+      "timestamp": "0:35:38",
+      "content": "And reduce complexity as you can see especially if you're talking about a large inputs and you'll see that more clearly as we go to a 2d version of this problem. All right, so you can truly do better for the onesie. The one day is a straightforward problem. It gets a little more interesting the problems get a little more sophisticated been relocated to new version of finding"
+    },
+    {
+      "timestamp": "0:36:08",
+      "content": "so let's talk about the 2D version."
+    },
+    {
+      "timestamp": "0:36:15",
+      "content": "So as you can imagine it that you need words and you have a matrix or a two-dimensional array."
+    },
+    {
+      "timestamp": "0:36:23",
+      "content": "And will say this thing has and Rose and M columns."
+    },
+    {
+      "timestamp": "0:36:34",
+      "content": "And now we have to Define what a peak is and it's a hill. It's the obvious definition of a peek. So if you had a in here cbdee man as you can guess."
+    },
+    {
+      "timestamp": "0:36:53",
+      "content": "Is a 2d Peak?"
+    },
+    {
+      "timestamp": "0:36:59",
+      "content": "if and only if"
+    },
+    {
+      "timestamp": "0:37:02",
+      "content": "a greater than or equal to be a greater than or equal to."
+    },
+    {
+      "timestamp": "0:37:07",
+      "content": "See any up there. So that's the case that you'll always find a peek in any 2D Matrix."
+    },
+    {
+      "timestamp": "0:37:23",
+      "content": "No again, I'll give you the straight forward out of them."
+    },
+    {
+      "timestamp": "0:37:28",
+      "content": "I think we call it the greedy essential rhythm."
+    },
+    {
+      "timestamp": "0:37:41",
+      "content": "And the greediest sent out with him essentially picks the direction or and tries to follow that direction."
+    },
+    {
+      "timestamp": "0:37:50",
+      "content": "In order to find a peek. So for example if I had this particular"
+    },
+    {
+      "timestamp": "0:38:01",
+      "content": "Matrix 14 13 12"
+    },
+    {
+      "timestamp": "0:38:06",
+      "content": "15 9/11"
+    },
+    {
+      "timestamp": "0:38:16",
+      "content": "then what might happen is if I started at some other jewelry midpoint, so the video I sent out with them has to make choices as to where to start just like we had different cases here. Are you have to make a choice as to where to start you might want to start in the middle and you might want to work your left first or you could just keep going left like that or keep going right? And if you hit an edge you go down so you make some choices as to what the default traversal directions are. And so if you say you want to start with 12, are you going to go look for something to your left and it was greater?"
+    },
+    {
+      "timestamp": "0:38:55",
+      "content": "Again, are you going to follow that direction? If it's not if it's less than you going to go in another Direction in this case, for example, send this case 12 13, 14, 15, 16, 17 19 and 20 and you'll find your finder's fee."
+    },
+    {
+      "timestamp": "0:39:17",
+      "content": "I haven't given you a specific details of a greedy Ascent out with them, but"
+    },
+    {
+      "timestamp": "0:39:25",
+      "content": "I think if you"
+    },
+    {
+      "timestamp": "0:39:29",
+      "content": "look at the"
+    },
+    {
+      "timestamp": "0:39:31",
+      "content": "worst-case possibility is here with respect to a given Matrix and for any given starting point and for any given strategy in terms of choosing left first, right first or down first versus up first, you will have a situation where I'm just like we had in the ones in case you may end up watching."
+    },
+    {
+      "timestamp": "0:39:57",
+      "content": "A large fraction of the elements in the studio Ray. Okay. So in this case, I'll be ended up touching a bunch of different elements and it's quite possible that you could end up touching starting from the midpoint. You could end up searching half the elements and in some cases touching all of the elements. So if you do a worse case analysis of this algorithm"
+    },
+    {
+      "timestamp": "0:40:22",
+      "content": "epitec around Earth with particular choice of symptoms of the starting point and the direction of search ingredients sent out with them would have pizza and M complexity and in case where an equal or unequal"
+    },
+    {
+      "timestamp": "0:40:42",
+      "content": "You have data and square to plastic."
+    },
+    {
+      "timestamp": "0:40:46",
+      "content": "I want to spend way too much time on this because I wanted to talk to you about the divide-and-conquer versions of this out with them for the to DP but hopefully you're all with me with respect to what the worst-case complexity is. All right."
+    },
+    {
+      "timestamp": "0:41:04",
+      "content": "people buy that? There"
+    },
+    {
+      "timestamp": "0:41:14",
+      "content": "So there are specific media center and specific matrices. If I give you the code for the alderman I give you a specific metrics that I could make your touch. I all of these elements. That's correct. So you're being very paranoid when you talk about worst-case complexity and so I'm simply because I haven't given you the specifics of Alder them yet. This is really a on a set of algorithms because I haven't given you the code. I haven't told you about it starts and which direction that goes but you go do that fix it and then I would be the person who tries to find the worst-case complexity suddenly. It's very easy to get to Pita & M in terms of having some constant multiplying and times about you can definitely get to that constant being very close to 1, okay."
+    },
+    {
+      "timestamp": "0:42:09",
+      "content": "If not one, alright, so let's talk about divide and conquer let's say that I did something like this where I just tried to Jim binary search algorithm into the to Diversion."
+    },
+    {
+      "timestamp": "0:42:37",
+      "content": "So what I'm going to do is"
+    },
+    {
+      "timestamp": "0:42:43",
+      "content": "I'm going to pick."
+    },
+    {
+      "timestamp": "0:42:46",
+      "content": "the middle"
+    },
+    {
+      "timestamp": "0:42:49",
+      "content": "Call O."
+    },
+    {
+      "timestamp": "0:42:51",
+      "content": "J equals m / 2"
+    },
+    {
+      "timestamp": "0:42:55",
+      "content": "And I'm going to find."
+    },
+    {
+      "timestamp": "0:42:57",
+      "content": "at 1 D Peak"
+    },
+    {
+      "timestamp": "0:43:00",
+      "content": "using water, but I'll do them I want and I'll probably end up using the more efficient algorithm the binary search version that's gone all the way to the left of the word there."
+    },
+    {
+      "timestamp": "0:43:10",
+      "content": "And let's say I find wine replica thaij take the column and I'm just finding the one DP."
+    },
+    {
+      "timestamp": "0:43:19",
+      "content": "This is Jay Cole's. That's all I"
+    },
+    {
+      "timestamp": "0:43:25",
+      "content": "No, I use."
+    },
+    {
+      "timestamp": "0:43:29",
+      "content": "IGA in particular Road, I"
+    },
+    {
+      "timestamp": "0:43:32",
+      "content": "as a star"
+    },
+    {
+      "timestamp": "0:43:37",
+      "content": "Define"
+    },
+    {
+      "timestamp": "0:43:40",
+      "content": "At 1 DP Conroe. I"
+    },
+    {
+      "timestamp": "0:43:47",
+      "content": "And I stand up here and I'm really happy. Okay, because I say wow. I picked the middle call him. I found a 1D Peak that is taida and complexity to find a 1D because we argued and once I'd like to be all that's what this was better have that your login complexity. And then once I do that, I can find a 1tb Conroe. I in this case, I would be a m w o g log and complexity if n equals m that have a couple of steps of log in and I'm done I am I done."
+    },
+    {
+      "timestamp": "0:44:38",
+      "content": "No, can someone tell someone tell me why I'm not done at precisely yet."
+    },
+    {
+      "timestamp": "0:44:54",
+      "content": "That's exactly correct. So it doesn't work. It's okay you want to be correct in a being got correct an inefficient? This is definitely better than being inefficient and being Incorrect and efficient. So this is efficient dealt with them in the sense that it would only take"
+    },
+    {
+      "timestamp": "0:45:20",
+      "content": "log in time, but it doesn't work and I'll I'll give you a simple example here where it doesn't work."
+    },
+    {
+      "timestamp": "0:45:32",
+      "content": "the problem is"
+    },
+    {
+      "timestamp": "0:45:35",
+      "content": "a2dp"
+    },
+    {
+      "timestamp": "0:45:39",
+      "content": "may not exist."
+    },
+    {
+      "timestamp": "0:45:43",
+      "content": "Conroe I"
+    },
+    {
+      "timestamp": "0:45:45",
+      "content": "and there's an example of that."
+    },
+    {
+      "timestamp": "0:45:53",
+      "content": "I took this is this is exactly the example of that. Let's say that I started with this row since it's the middle row and I can start with this one or that one. It's a I started with them, but that one I end up finding a peek. And if this where can I buy pure I choose 12 as a peek and it's quite possible that I've returned 12 is a peek. Even though 19 is bigger because 12 is a peek given 10 and 11 up here. And then when I choose this particular, oh and I find a peek on this road. It would be 14. That is a 1D pecan this road, but 14 is not a true teepee. Okay. So this particular example 1414"
+    },
+    {
+      "timestamp": "0:46:47",
+      "content": "and 14 is not a charity."
+    },
+    {
+      "timestamp": "0:46:53",
+      "content": "You can collect your question after the class."
+    },
+    {
+      "timestamp": "0:46:57",
+      "content": "abso"
+    },
+    {
+      "timestamp": "0:46:59",
+      "content": "Not so good."
+    },
+    {
+      "timestamp": "0:47:01",
+      "content": "Look like an efficient out with him but doesn't work. All right, so, how can we get to something that actually works? So the last out of them that I'm going to show you?"
+    },
+    {
+      "timestamp": "0:47:14",
+      "content": "And you'll see a four different albums in your problem set."
+    },
+    {
+      "timestamp": "0:47:21",
+      "content": "That you'll have to analyze the complexity for and decided they're efficient. And if that correct my tears up."
+    },
+    {
+      "timestamp": "0:47:30",
+      "content": "a recursive version"
+    },
+    {
+      "timestamp": "0:47:33",
+      "content": "is better than in terms of complexity than the greedy is sent out with them and this one work."
+    },
+    {
+      "timestamp": "0:47:43",
+      "content": "So what I'm going to do is pick a middle column."
+    },
+    {
+      "timestamp": "0:47:49",
+      "content": "Jake was Mo virtue as before."
+    },
+    {
+      "timestamp": "0:47:53",
+      "content": "I'm going to find."
+    },
+    {
+      "timestamp": "0:47:56",
+      "content": "the global maximum"
+    },
+    {
+      "timestamp": "0:48:00",
+      "content": "on Call of J."
+    },
+    {
+      "timestamp": "0:48:05",
+      "content": "And that's what I'll be at IGA."
+    },
+    {
+      "timestamp": "0:48:09",
+      "content": "Android compare"
+    },
+    {
+      "timestamp": "0:48:12",
+      "content": "I, j minus one."
+    },
+    {
+      "timestamp": "0:48:16",
+      "content": "Hi, Jay."
+    },
+    {
+      "timestamp": "0:48:18",
+      "content": "And I G + 1 which means that once I found the maximum in this row all I'm going to I'm going to look to the left and the right and compare."
+    },
+    {
+      "timestamp": "0:48:27",
+      "content": "I'm going to pick."
+    },
+    {
+      "timestamp": "0:48:29",
+      "content": "the left columns"
+    },
+    {
+      "timestamp": "0:48:33",
+      "content": "if i, j - 1 is greater than"
+    },
+    {
+      "timestamp": "0:48:38",
+      "content": "hi, Jay."
+    },
+    {
+      "timestamp": "0:48:40",
+      "content": "And similarly for the right."
+    },
+    {
+      "timestamp": "0:48:49",
+      "content": "and if in fact I either of these two"
+    },
+    {
+      "timestamp": "0:48:55",
+      "content": "conditions don't fire that and what I have is I, Jay is greater than or equal to i, j minus one and I G A J + 1 then I'm done. Just like I had"
+    },
+    {
+      "timestamp": "0:49:10",
+      "content": "for the one diversion if is greater than or equal to -1 + 8 + 1"
+    },
+    {
+      "timestamp": "0:49:22",
+      "content": "Employs IGA is a2dp."
+    },
+    {
+      "timestamp": "0:49:28",
+      "content": "Text reason that's the case is because I, J was the maximum element in that column. So, you know that I am compared it to all of the adjacent elements looking up and looking down. That's the maximum element. Now, you've looked at the left and the right and in fact is greater than or equal to the elements on the left and the right and so therefore is it to DP? Okay. So in this case when you pick the left or the right column going to pick one of them you going to solve?"
+    },
+    {
+      "timestamp": "0:50:01",
+      "content": "the new problem"
+    },
+    {
+      "timestamp": "0:50:06",
+      "content": "half the number of columns"
+    },
+    {
+      "timestamp": "0:50:16",
+      "content": "All right, and again and you have to go through an analysis or an argument to make sure that this algorithm is correct, but it's totally correct simply because it matches the one diversion much more closely and you also have your condition that you break away."
+    },
+    {
+      "timestamp": "0:50:37",
+      "content": "Right here where you have a 2d pink just like the one diversion and what you've done is break this Matrix up into half the size and that's essentially why this out of the works. I've been you have a single column."
+    },
+    {
+      "timestamp": "0:51:01",
+      "content": "find"
+    },
+    {
+      "timestamp": "0:51:02",
+      "content": "the global maximum"
+    },
+    {
+      "timestamp": "0:51:07",
+      "content": "and you're done."
+    },
+    {
+      "timestamp": "0:51:09",
+      "content": "Bites the Dust up the bass case. So I let me end with just riding out what the recurrence relation for the complexity of this is and argue."
+    },
+    {
+      "timestamp": "0:51:20",
+      "content": "What the overall complexity of the sound of The Miz?"
+    },
+    {
+      "timestamp": "0:51:25",
+      "content": "And then I'll give you the bad news."
+    },
+    {
+      "timestamp": "0:51:30",
+      "content": "All right. So over all what you have is you have something like T of NM equals T of n m / 2 + data and why is that well and is the number of Rose Amazon number of columns in one case you will be breaking things down into half the number of columns, which is m / 2 and in order to find the global maximum. You'll be doing pizza and work cuz you finding the global maximum, right? You just have to scan it this that's the way that's what it's going to take."
+    },
+    {
+      "timestamp": "0:52:08",
+      "content": "And so if you do that and you go running through you and you know that she of anwan is stated in which is this last part over here."
+    },
+    {
+      "timestamp": "0:52:19",
+      "content": "I got your base case you got T of NM is fed up and"
+    },
+    {
+      "timestamp": "0:52:26",
+      "content": "add potatoes and log of m x"
+    },
+    {
+      "timestamp": "0:52:32",
+      "content": "log two of them times, which is theater of n"
+    },
+    {
+      "timestamp": "0:52:39",
+      "content": "Talk to a fan."
+    },
+    {
+      "timestamp": "0:52:43",
+      "content": "So you're not done the thick finding what you see is at 4 out of them is coded in Python."
+    },
+    {
+      "timestamp": "0:52:53",
+      "content": "I'm not going to get away with this out cuz I'm sorry but you have to recognize them. You will have seen versions of those out rhythms already in lecture and your job is going to be too and like I said before prove that one of them is correct and find concrete samples for the ones that are incorrect are the core staff of stick around here to answer questions logistical questions are questions about lecture."
+    }
+  ]
+}

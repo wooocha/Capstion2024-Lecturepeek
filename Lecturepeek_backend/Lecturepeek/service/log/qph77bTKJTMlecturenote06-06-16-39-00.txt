@@ -1,0 +1,149 @@
+소요시간 : 26.197143077850342 
+영상링크 : https://www.youtube.com/watch?v=qph77bTKJTM
+추출방식 : 1
+{
+  "videoTitle": "공개 키 암호화에 대한 설명",
+  "videoDescription": "공개 키 암호화는 현대 통신에서 널리 사용되는 암호화 방식입니다.",
+  "Lecture Note": [
+    {
+      "timestamp": "00:00:05",
+      "section_title": "📚 공개 키 암호화란?",
+      "content": "공개 키 암호화는 현대 통신에서 널리 사용되는 암호화 방식입니다. 이 방식은 소수와 모듈러 산술을 기반으로 합니다."
+    },
+    {
+      "timestamp": "00:00:14",
+      "section_title": "🔍 소수와 모듈러 산술",
+      "content": "소수는 자기 자신과 1로만 나누어지는 수입니다. 우리는 무한히 많은 소수가 있다는 것을 알고 있지만, 아직도 소수에 대해 많은 것을 알지 못하고 있습니다. 소수와 모듈러 산술은 공개 키 암호화의 핵심 구성 요소입니다. 컴퓨터를 사용하여 소수를 찾는 방법은 좋지만, 숫자를 소수 인수로 분해하는 것은 여전히 매우 어렵습니다."
+    },
+    {
+      "timestamp": "00:00:47",
+      "section_title": "📈 공개 키 암호화의 작동 방식",
+      "content": "공개 키 암호화는 소수와 모듈러 산술을 사용하여 메시지를 암호화하고 해독합니다. 메시지를 암호화하기 위해 두 개의 소수 p와 q를 선택하고, 이를 곱하여 n을 얻습니다. 그런 다음, (p-1) * (q-1)과 서로소인 숫자 e를 선택합니다. 메시지를 인코딩하기 위해 e의 거듭제곱을 계산하고 n으로 모듈러 산술을 수행합니다. 결과는 암호화된 메시지입니다. 메시지를 해독하기 위해서는 (p-1) * (q-1)에 대해 d * e가 1과 합동이 되는 숫자 d를 찾아야 합니다. 그런 다음, 암호화된 메시지를 d의 거듭제곱으로 계산하고 n으로 모듈러 산술을 수행합니다. 결과는 원래의 메시지입니다."
+    },
+    {
+      "timestamp": "00:02:22",
+      "section_title": "📈 공개 키 암호화의 실제 적용",
+      "content": "실제로는 보안을 보장하기 위해 훨씬 큰 소수가 사용됩니다. 이것은 공개 키 암호화의 간략한 개요일 뿐이며, Simon Singh의 책 'The Code Book'과 같은 자료를 통해 더 많이 배울 수 있습니다."
+    }
+  ],
+  "questions": [
+    {
+      "question": "공개 키 암호화는 어떤 수학적 개념을 기반으로 하나요?",
+      "answer": "공개 키 암호화는 소수와 모듈러 산술을 기반으로 합니다."
+    },
+    {
+      "question": "공개 키 암호화에서 메시지를 암호화하기 위해 어떤 과정을 거치나요?",
+      "answer": "메시지를 암호화하기 위해 두 개의 소수 p와 q를 선택하고, 이를 곱하여 n을 얻습니다. 그런 다음, (p-1) * (q-1)과 서로소인 숫자 e를 선택하여 메시지를 인코딩합니다."
+    },
+    {
+      "question": "공개 키 암호화에서 메시지를 해독하기 위해 어떤 과정을 거치나요?",
+      "answer": "메시지를 해독하기 위해서는 (p-1) * (q-1)에 대해 d * e가 1과 합동이 되는 숫자 d를 찾아야 합니다. 그런 다음, 암호화된 메시지를 d의 거듭제곱으로 계산하고 n으로 모듈러 산술을 수행합니다."
+    }
+  ],
+  "script": [
+    {
+      "timestamp": "0:00:00",
+      "content": "This video is sponsored by Blinkist."
+    },
+    {
+      "timestamp": "0:00:03",
+      "content": "I thought I'd explain public key cryptography."
+    },
+    {
+      "timestamp": "0:00:05",
+      "content": "Public key cryptography is the kind of cryptography that's used ubiquitously in modern communications."
+    },
+    {
+      "timestamp": "0:00:09",
+      "content": "It relies on remarkably simple mathematics, specifically prime numbers and modular arithmetic."
+    },
+    {
+      "timestamp": "0:00:14",
+      "content": "Prime numbers are numbers divisible only by themselves and one."
+    },
+    {
+      "timestamp": "0:00:20",
+      "content": "We know there are infinitely many prime numbers, but there's still a lot we don't know about them."
+    },
+    {
+      "timestamp": "0:00:24",
+      "content": "Prime numbers and modular arithmetic are the key components of public key cryptography."
+    },
+    {
+      "timestamp": "0:00:29",
+      "content": "We have good methods for finding prime numbers with computers, but breaking numbers down into their prime factors is still extremely difficult."
+    },
+    {
+      "timestamp": "0:00:37",
+      "content": "This asymmetry is critical to public key cryptography."
+    },
+    {
+      "timestamp": "0:00:39",
+      "content": "It's like making a cake - it's easy to find the constituent parts, but once you've mixed them together, it's very hard to separate them back out again."
+    },
+    {
+      "timestamp": "0:00:47",
+      "content": "Public key cryptography also relies on modular arithmetic, which is the idea of doing arithmetic with remainders."
+    },
+    {
+      "timestamp": "0:00:51",
+      "content": "It's similar to reading time on a clock, where you only record the time up to 12."
+    },
+    {
+      "timestamp": "0:00:59",
+      "content": "For example, 10 is congruent to 3 modulo 7 because if you subtract off 7 from 10, you get 3."
+    },
+    {
+      "timestamp": "0:01:07",
+      "content": "These two components, prime numbers and modular arithmetic, are used to encrypt and decrypt messages in public key cryptography."
+    },
+    {
+      "timestamp": "0:01:18",
+      "content": "To encrypt a message, you start with two prime numbers, p and q, and multiply them together to get n."
+    },
+    {
+      "timestamp": "0:01:26",
+      "content": "Then, you choose a number e that is co-prime to (p-1) * (q-1)."
+    },
+    {
+      "timestamp": "0:01:34",
+      "content": "To encode a message, you raise it to the power of e and do arithmetic modulo n."
+    },
+    {
+      "timestamp": "0:01:44",
+      "content": "The result is the encoded message, which is difficult for others to decode without knowing p and q."
+    },
+    {
+      "timestamp": "0:02:02",
+      "content": "To decode the message, you need to find a number d such that d * e is congruent to 1 modulo (p-1) * (q-1)."
+    },
+    {
+      "timestamp": "0:02:13",
+      "content": "Then, you raise the encoded message to the power of d and do arithmetic modulo n."
+    },
+    {
+      "timestamp": "0:02:20",
+      "content": "The result is the original message."
+    },
+    {
+      "timestamp": "0:02:22",
+      "content": "This is how public key cryptography works, and it relies on the difficulty of factoring large numbers into their prime factors."
+    },
+    {
+      "timestamp": "0:02:34",
+      "content": "In practice, much larger prime numbers are used to ensure the security of the encryption."
+    },
+    {
+      "timestamp": "0:02:43",
+      "content": "This is just a brief overview of public key cryptography, but there are many resources available to learn more about it, such as the book \"The Code Book\" by Simon Singh."
+    },
+    {
+      "timestamp": "0:03:09",
+      "content": "With Blinkist, you can access key ideas from non-fiction books in just 15 minutes."
+    },
+    {
+      "timestamp": "0:03:20",
+      "content": "Start your 7-day free trial and get 25% off Blinkist Premium by clicking on the link below."
+    }
+  ]
+}

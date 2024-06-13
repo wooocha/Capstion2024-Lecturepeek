@@ -1,0 +1,3 @@
+소요시간 : 0.0 
+영상링크 : # Byte-compiled / optimized / DLL files
+추출방식 : __pycache__/

@@ -1,0 +1,76 @@
+소요시간 : 24.625035762786865 
+영상링크 : https://www.youtube.com/watch?v=VAt2mR7gY0k
+추출방식 : 1
+{
+  "videoTitle": "데이터 구조와 알고리즘",
+  "videoDescription": "데이터 구조와 알고리즘에 대한 이해",
+  "Lecture Note": [
+    {
+      "timestamp": "00:00:00",
+      "section_title": "📚 데이터 구조와 알고리즘",
+      "content": "데이터 구조와 알고리즘은 복잡한 개념으로 생각될 수 있지만, 다음과 같은 비유를 통해 이해할 수 있습니다. 데이터 구조는 정보를 구성하는 방법이며, 알고리즘은 정보를 처리하여 목표를 달성하는 방법입니다."
+    },
+    {
+      "timestamp": "00:01:00",
+      "section_title": "🔍 데이터 구조와 알고리즘 예시",
+      "content": "책을 쌓아놓은 책 더미를 데이터 구조로 생각할 수 있으며, 특정 책을 찾기 위해 책을 하나씩 더미에서 빼는 과정을 알고리즘이라고 생각할 수 있습니다. 또한, 책을 알파벳 순서로 정렬한 책장을 데이터 구조로 생각할 수 있으며, 책을 찾기 위해 알파벳 순서에 따라 찾아가는 과정을 알고리즘이라고 생각할 수 있습니다. 마지막으로, 장르와 저자의 알파벳 순서에 따라 책을 분류한 도서관을 데이터 구조로 생각할 수 있으며, 책을 찾기 위해 장르를 식별하고 해당 섹션에서 책을 찾는 과정을 알고리즘이라고 생각할 수 있습니다."
+    },
+    {
+      "timestamp": "00:02:40",
+      "section_title": "📈 데이터 구조와 알고리즘의 의미",
+      "content": "데이터 구조는 정보를 구성하는 방법이며, 알고리즘은 정보를 처리하여 목표를 달성하는 방법입니다. 데이터 구조와 알고리즘은 다양한 정보의 구성과 처리 방법을 제공하며, 이러한 선택에는 장단점이 있습니다. 이후의 강의에서는 몇 가지 기본적인 데이터 구조를 소개하고, 설계 방법과 성능에 대해 이야기하며, 이러한 데이터 구조를 사용하여 다양한 문제를 해결하는 중요한 알고리즘에 대해 다룰 예정입니다."
+    }
+  ],
+  "questions": [
+    {
+      "question": "데이터 구조와 알고리즘은 무엇인가요?",
+      "answer": "데이터 구조는 정보를 구성하는 방법이며, 알고리즘은 정보를 처리하여 목표를 달성하는 방법입니다."
+    },
+    {
+      "question": "데이터 구조와 알고리즘의 예시는 무엇인가요?",
+      "answer": "책을 쌓아놓은 책 더미를 데이터 구조로 생각할 수 있으며, 특정 책을 찾기 위해 책을 하나씩 더미에서 빼는 과정을 알고리즘이라고 생각할 수 있습니다. 또한, 책을 알파벳 순서로 정렬한 책장을 데이터 구조로 생각할 수 있으며, 책을 찾기 위해 알파벳 순서에 따라 찾아가는 과정을 알고리즘이라고 생각할 수 있습니다. 마지막으로, 장르와 저자의 알파벳 순서에 따라 책을 분류한 도서관을 데이터 구조로 생각할 수 있으며, 책을 찾기 위해 장르를 식별하고 해당 섹션에서 책을 찾는 과정을 알고리즘이라고 생각할 수 있습니다."
+    },
+    {
+      "question": "데이터 구조와 알고리즘은 어떤 의미를 가지고 있나요?",
+      "answer": "데이터 구조는 정보를 구성하는 방법이며, 알고리즘은 정보를 처리하여 목표를 달성하는 방법입니다. 데이터 구조와 알고리즘은 다양한 정보의 구성과 처리 방법을 제공하며, 이러한 선택에는 장단점이 있습니다."
+    }
+  ],
+  "script": [
+    {
+      "timestamp": "0:00:00",
+      "content": "What is a data structure? What is an algorithm? If you look at standard definitions of these terms, it's easy to think that they are super complicated concepts. How do we really interpret these definitions? I like to think about data structures and algorithms using the following analogy."
+    },
+    {
+      "timestamp": "0:00:16",
+      "content": "Let's say you've been buying a few books recently. Right now, you have a pretty simple organization scheme. As soon as you get a book, you stack it on top of the last book. This ingenious organization scheme has been patented by college students all over the world and has proved to be highly effective."
+    },
+    {
+      "timestamp": "0:00:40",
+      "content": "Now, let's say you want to find a specific book from this stack. How would you do it? The most straightforward way to find a book is by taking a book off the stack until you find the book that you're looking for."
+    },
+    {
+      "timestamp": "0:01:00",
+      "content": "I know what you're thinking, what does this have to do with data structures and algorithms? But believe it or not, you just saw a textbook example of a data structure and an algorithm. In this example, you can think of a data structure as our stack of books, and the algorithm we use to find a book is the process of taking books off the top of the stack until we find the book that we are looking for."
+    },
+    {
+      "timestamp": "0:01:24",
+      "content": "But as time goes on and you start getting a lot of books, you decide to become a little bit more organized. You decide to buy a bookshelf and put all your books in alphabetical order by the authors. What do we do now if we want to find a book? You probably would start in the middle and slowly hone in to the appropriate place of the book based on the order of the alphabet. Here, the data structure would be the bookshelf organized alphabetically, and your algorithm would be your search process."
+    },
+    {
+      "timestamp": "0:01:58",
+      "content": "Now, let's say as you get even more books, you decide to change your organization scheme one more time. You now basically have a small library, and each shelf is split based on fiction or nonfiction and then the respective genre. Within each genre, you keep the same alphabetical organization of authors. And now, if you want to find a book, you can narrow your search to the corresponding section. Here, your data structure is this hierarchical organization of books based on genre, and your algorithm is the process by which you identify the genre and then find your book."
+    },
+    {
+      "timestamp": "0:02:40",
+      "content": "Taking a step away from this analogy, I think a really simple way to think about data structures and algorithms is the following: the data structure is a way to organize information, and an algorithm is a way to process information to reach an end goal."
+    },
+    {
+      "timestamp": "0:02:54",
+      "content": "Some of the ways of organizing and using information are not at all obvious, but they all have their strengths and weaknesses, and a lot of the subject is about understanding these trade-offs. In the following videos, I'll introduce some fundamental data structures, talk about how you would go about designing them, and then talk about their performance. After we get through some key data structures, we'll get into some important algorithms that use these data structures to solve a variety of problems."
+    },
+    {
+      "timestamp": "0:03:27",
+      "content": "If you enjoyed this video, I really appreciate it if you took a moment to like the video and subscribe to get notified when future videos come out. If you would like to support this channel, check out the Patreon page linked in the description. Thanks for watching, and I'll see you in the next video."
+    }
+  ]
+}

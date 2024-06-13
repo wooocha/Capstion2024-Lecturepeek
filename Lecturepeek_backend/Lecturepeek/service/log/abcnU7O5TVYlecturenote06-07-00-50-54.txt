@@ -1,0 +1,262 @@
+소요시간 : 29.897340297698975 
+영상링크 : https://www.youtube.com/watch?v=abcnU7O5TVY
+추출방식 : 1
+{
+  "videoTitle": "trpc 소개: 타입 안전한 API 프레임워크",
+  "videoDescription": "trpc는 TypeScript 유효성 검사, 타입 추론 및 자동 완성을 제공하는 타입 안전한 API 프레임워크에 대해 알아보세요.",
+  "Lecture Note": [
+    {
+      "timestamp": "00:00:00",
+      "section_title": "📝 trpc 소개",
+      "content": "trpc는 REST 또는 GraphQL을 사용하여 API를 구축하는 것과 비교하여 개발자들에게 더 나은 개발 경험과 생산성을 제공하는 패키지입니다. 백엔드 데이터 구조가 변경될 때 타입 안전성과 실시간 오류 감지를 보장합니다."
+    },
+    {
+      "timestamp": "00:01:00",
+      "section_title": "📝 trpc API 생성하기",
+      "content": "trpc API를 생성하려면 'init trpc' 함수를 가져와 'create' 함수를 사용하여 초기화합니다. 그런 다음 프로시저가 발생할 라우터를 생성합니다. trpc는 URL 대신 프로시저를 사용합니다. 데이터베이스에서 데이터를 가져오기 위해 'query' 함수를 사용합니다. 'zod'와 같은 유효성 검사 라이브러리를 사용하여 입력이 있는 프로시저를 정의합니다. 클라이언트에서 사용할 수 있도록 라우터 타입을 내보냅니다. 'create HTTP server' 함수를 사용하여 API를 제공합니다."
+    },
+    {
+      "timestamp": "00:02:20",
+      "section_title": "📝 trpc API 소비하기",
+      "content": "trpc API를 소비하려면 trpc 클라이언트 패키지에서 라우터 타입과 필요한 함수를 가져옵니다. 'create trpc client' 함수를 사용하여 클라이언트를 생성하고, 라우터 타입과 서버 위치를 제공합니다. 이제 클라이언트는 정의된 프로시저를 호출할 때 완전한 TypeScript 유효성 검사와 자동 완성을 사용할 수 있습니다."
+    },
+    {
+      "timestamp": "00:03:41",
+      "section_title": "📝 변이 프로시저",
+      "content": "변이 프로시저는 데이터를 생성, 수정 또는 삭제하는 데 사용됩니다. 쿼리 프로시저와 유사하게 생성됩니다. 차이점은 변이 프로시저는 데이터를 변경하고, 쿼리 프로시저는 데이터를 가져온다는 것입니다."
+    },
+    {
+      "timestamp": "00:04:09",
+      "section_title": "📝 자동 업데이트",
+      "content": "trpc는 백엔드에 변경 사항이 발생할 때 클라이언트를 자동으로 업데이트합니다. 예를 들어, 속성 이름이 'synopsis'에서 'overview'로 변경되면 클라이언트는 변경 사항을 인식하고 그에 맞게 업데이트됩니다. trpc는 URL 및 fetch 요청의 생성을 처리하여 수동 코딩이 필요하지 않습니다."
+    }
+  ],
+  "questions": [
+    {
+      "question": "trpc는 전체 스택 개발자에게 무엇을 제공하나요?",
+      "answer": "더 나은 개발 경험과 생산성"
+    },
+    {
+      "question": "trpc는 어떻게 타입 안전성을 보장하나요?",
+      "answer": "백엔드 데이터 구조가 변경될 때 실시간 오류 감지를 제공함으로써"
+    },
+    {
+      "question": "쿼리와 변이 프로시저의 차이점은 무엇인가요?",
+      "answer": "쿼리 프로시저는 데이터를 가져오고, 변이 프로시저는 데이터를 변경한다는 것입니다"
+    }
+  ],
+  "script": [
+    {
+      "timestamp": "0:00:00",
+      "content": "Today I want to tell you about trpc."
+    },
+    {
+      "timestamp": "0:00:03",
+      "content": "It is an incredibly cool package that you are going to love if you are a full-stack developer."
+    },
+    {
+      "timestamp": "0:00:06",
+      "content": "After using trpc, there is no way I can go back to building APIs using REST or GraphQL."
+    },
+    {
+      "timestamp": "0:00:11",
+      "content": "Trpc is just too good. My developer experience and productivity are off the charts when working with it."
+    },
+    {
+      "timestamp": "0:00:18",
+      "content": "With trpc, you can move fast and break nothing, like their website says."
+    },
+    {
+      "timestamp": "0:00:24",
+      "content": "We have overwritten code like this code where we fetch a URL, extract data from the response, and then use the data."
+    },
+    {
+      "timestamp": "0:00:32",
+      "content": "The problem with this code is that it isn't type safe."
+    },
+    {
+      "timestamp": "0:00:35",
+      "content": "Our code is expecting the response data to always be an object with a name property."
+    },
+    {
+      "timestamp": "0:00:39",
+      "content": "This means that if, for some reason, the backend starts to return data with a different shape, our code will break."
+    },
+    {
+      "timestamp": "0:00:46",
+      "content": "How cool would it be if the moment something changes in the backend, TypeScript could show us an error saying that the name was changed to full name, for example?"
+    },
+    {
+      "timestamp": "0:00:54",
+      "content": "That is what trpc does in real time, sponsored by TypeScript."
+    },
+    {
+      "timestamp": "0:01:00",
+      "content": "Let's create our first trpc API."
+    },
+    {
+      "timestamp": "0:01:03",
+      "content": "After importing init trpc from the trpc server package, we run the create function to initialize it."
+    },
+    {
+      "timestamp": "0:01:07",
+      "content": "After that is done, we create our router, which is where the action will happen."
+    },
+    {
+      "timestamp": "0:01:11",
+      "content": "In trpc, we don't have URLs, we have procedures instead."
+    },
+    {
+      "timestamp": "0:01:16",
+      "content": "We create an \"all movies\" procedure and call the query function to say that the procedure is for fetching data."
+    },
+    {
+      "timestamp": "0:01:20",
+      "content": "Inside of the query function, we hit the database to return all movies. Super easy so far."
+    },
+    {
+      "timestamp": "0:01:26",
+      "content": "Let's now define another procedure, this time to get a movie by ID."
+    },
+    {
+      "timestamp": "0:01:31",
+      "content": "We call the procedure function again, and this time we also call the input function."
+    },
+    {
+      "timestamp": "0:01:33",
+      "content": "Here, we use zod, a validation library, to say that as an input for this procedure, we are expecting a string."
+    },
+    {
+      "timestamp": "0:01:40",
+      "content": "In our query function, we grab the input and use it to find the movie in the database."
+    },
+    {
+      "timestamp": "0:01:46",
+      "content": "I know that so far this does not look amazing, but stay with me because here is where things get spicy."
+    },
+    {
+      "timestamp": "0:01:50",
+      "content": "The last thing we need to do is export the type of our router so we can give it to the client later."
+    },
+    {
+      "timestamp": "0:01:55",
+      "content": "To serve the API we just made, we use the create HTTP server function and start it on port 3000."
+    },
+    {
+      "timestamp": "0:02:02",
+      "content": "It is important to know that most of the time, you won't be serving the API like that."
+    },
+    {
+      "timestamp": "0:02:06",
+      "content": "Trpc is meant to be used inside of a framework."
+    },
+    {
+      "timestamp": "0:02:10",
+      "content": "Most of the time, you will be using trpc adapters to run it inside of Express, Fastify, Next.js, AWS Lambda, Dino, and more."
+    },
+    {
+      "timestamp": "0:02:16",
+      "content": "Consuming the API we just made is a piece of cake."
+    },
+    {
+      "timestamp": "0:02:20",
+      "content": "In our front end, we import the router type we exported before and a couple of functions from the trpc client package."
+    },
+    {
+      "timestamp": "0:02:26",
+      "content": "Then, we run the create trpc client function to create the client."
+    },
+    {
+      "timestamp": "0:02:29",
+      "content": "We give it the router type and point it to where the server is running, which in our case is localhost:3000."
+    },
+    {
+      "timestamp": "0:02:35",
+      "content": "That is all. Now we can use the client to call the procedures we defined before."
+    },
+    {
+      "timestamp": "0:02:38",
+      "content": "And as you can see, we will get full TypeScript validation, type inference, and auto-complete. How cool is that?"
+    },
+    {
+      "timestamp": "0:02:47",
+      "content": "We now have a fully type-safe API."
+    },
+    {
+      "timestamp": "0:02:50",
+      "content": "If you were working with React, you can fetch data in your component using the trpc react-query integration."
+    },
+    {
+      "timestamp": "0:02:56",
+      "content": "In the backend, we create a router, and in the router, we create procedures or functions that our client can call to fetch or send us data."
+    },
+    {
+      "timestamp": "0:03:07",
+      "content": "Using functions like input, we specify which type of data the client can send us."
+    },
+    {
+      "timestamp": "0:03:13",
+      "content": "We use the query function to write the logic of our procedure."
+    },
+    {
+      "timestamp": "0:03:19",
+      "content": "Finally, we export the type of the router so we can share its type with the client."
+    },
+    {
+      "timestamp": "0:03:23",
+      "content": "Then, in the front end, we construct a client, give it the type, and point it to where our API is running."
+    },
+    {
+      "timestamp": "0:03:28",
+      "content": "And then, almost like magic, we get a client that can call each procedure in our backend and that is fully aware of the return and input types."
+    },
+    {
+      "timestamp": "0:03:41",
+      "content": "Now that we are experts at creating query procedures, we can create mutation procedures."
+    },
+    {
+      "timestamp": "0:03:46",
+      "content": "The difference is that a query procedure gets data, and a mutation procedure creates, modifies, or deletes data."
+    },
+    {
+      "timestamp": "0:03:52",
+      "content": "Mutation procedures are as easy to create as the query ones."
+    },
+    {
+      "timestamp": "0:04:09",
+      "content": "We can now go back to our front end, where we will find that our client is now aware of the create movie mutation with autocomplete and validation."
+    },
+    {
+      "timestamp": "0:04:18",
+      "content": "How easy was this? Think about how long it would take us to create an API endpoint the normal way compared to how long it took us with trpc."
+    },
+    {
+      "timestamp": "0:04:27",
+      "content": "And now, because we are using trpc, if I, for example, decide to change from \"synopsis\" to \"overview\" in my backend, the client in the front end will be aware of that change automatically. How cool is that?"
+    },
+    {
+      "timestamp": "0:04:47",
+      "content": "Behind the scenes, when we use the RPC and we create a query or a mutation procedure, the RPC will generate URLs like these ones in our server."
+    },
+    {
+      "timestamp": "0:04:55",
+      "content": "And those URLs will be then called by the client. But we don't have to worry about that. We don't have to create those URLs and the code to handle them."
+    },
+    {
+      "timestamp": "0:05:05",
+      "content": "And we also don't have to write the code to send fetch requests to them. Trpc does it all for us. Amazing!"
+    },
+    {
+      "timestamp": "0:05:17",
+      "content": "I hope you found this video useful. If you did, please like it, share it with your friends, and subscribe to the channel."
+    },
+    {
+      "timestamp": "0:05:28",
+      "content": "Your subscription means a lot to me. It motivates me in creating quality content every week, so please don't forget to hit that button."
+    },
+    {
+      "timestamp": "0:05:37",
+      "content": "Thank you for watching. As always, let me know in the comments what do you think about trpc. Do you want to use it? Are you using it already? Write it all below. See you on the next one. Bye-bye."
+    }
+  ]
+}

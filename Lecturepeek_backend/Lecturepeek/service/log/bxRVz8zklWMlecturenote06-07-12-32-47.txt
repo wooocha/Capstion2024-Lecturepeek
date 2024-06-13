@@ -1,0 +1,250 @@
+소요시간 : 464.4422972202301 
+영상링크 : https://www.youtube.com/watch?v=bxRVz8zklWM
+추출방식 : 2
+{
+  "videoTitle": "스택 소개",
+  "videoDescription": "이 비디오는 스택에 대한 소개를 제공하며, 스택의 주요 특성과 작업을 설명합니다.",
+  "Lecture Note": [
+    {
+      "timestamp": "00:00:00",
+      "section_title": "📝 스택",
+      "content": "스택은 후입선출 (LIFO) 원칙을 따르는 데이터 구조입니다. 한쪽 끝에서만 데이터를 삽입하고 삭제할 수 있습니다."
+    },
+    {
+      "timestamp": "00:01:08",
+      "section_title": "📝 스택 작업",
+      "content": "스택의 주요 작업은 삽입 (push)과 삭제 (pop)입니다. 또한, 가장 위의 요소에 접근할 수 있으며 (top), 스택이 비어 있는지 확인할 수 있습니다 (isEmpty)."
+    },
+    {
+      "timestamp": "00:02:34",
+      "section_title": "📝 스택 시각화",
+      "content": "스택은 접시의 스택으로 시각화할 수 있으며, 접시를 맨 위에서만 놓거나 제거할 수 있습니다. 이는 후입선출 원칙을 따릅니다."
+    },
+    {
+      "timestamp": "00:05:06",
+      "section_title": "📝 삽입 작업",
+      "content": "삽입 작업은 스택의 맨 위에 요소를 추가합니다."
+    },
+    {
+      "timestamp": "00:06:57",
+      "section_title": "📝 삭제 작업",
+      "content": "삭제 작업은 스택의 가장 위의 요소를 제거합니다."
+    },
+    {
+      "timestamp": "00:09:44",
+      "section_title": "📝 스택 구현",
+      "content": "스택은 배열이나 연결 리스트를 사용하여 구현할 수 있습니다. 스택의 크기는 용량을 결정합니다."
+    },
+    {
+      "timestamp": "00:10:51",
+      "section_title": "📝 오버플로 조건",
+      "content": "스택이 가득 차 있고 삽입 작업이 수행되면 오버플로 조건이 발생합니다."
+    },
+    {
+      "timestamp": "00:12:23",
+      "section_title": "📝 언더플로 조건",
+      "content": "스택이 비어 있고 삭제 작업이 수행되면 언더플로 조건이 발생합니다."
+    },
+    {
+      "timestamp": "00:14:42",
+      "section_title": "📝 스택의 응용",
+      "content": "스택은 문자열 뒤집기, 균형 잡힌 괄호 확인 및 후위 표기식 평가 등 다양한 응용이 있습니다."
+    }
+  ],
+  "questions": [
+    {
+      "question": "스택이 따르는 주요 원칙은 무엇인가요?",
+      "answer": "LIFO"
+    },
+    {
+      "question": "스택의 주요 작업은 무엇인가요?",
+      "answer": "Push와 Pop"
+    },
+    {
+      "question": "스택의 오버플로 조건은 어떤 경우에 발생하나요?",
+      "answer": "스택이 가득 찬 경우"
+    }
+  ],
+  "script": [
+    {
+      "timestamp": "0:00:00",
+      "content": "We have discussed. Just like Arianne list. How did I store in are what are the different operation fanari what is linked list in order the different operations in English. How did I stored in England right now? So you can see it is a destruction random axis as possible. You can directly access any data in a constant. I'm limited access as possible. You can say it is what it is and order the list or you can say it is a selection all you can say to the container."
+    },
+    {
+      "timestamp": "0:00:50",
+      "content": "Which is linked to follow a rule for insertion and deletion of the data. And what is that? What is that restriction you can say or what is that shipping which that a standard test after?"
+    },
+    {
+      "timestamp": "0:01:07",
+      "content": "so"
+    },
+    {
+      "timestamp": "0:01:08",
+      "content": "the cruelest insertion and deletion is Possible only from one end."
+    },
+    {
+      "timestamp": "0:01:17",
+      "content": "This is applied on both insertion and deletion insertion and deletion is possible from only one end CDs."
+    },
+    {
+      "timestamp": "0:01:34",
+      "content": "You're going to put CDs hair first CD then second third fourth fifth kiss. You have only one way to insert CD from that's so funny. You cannot insert CD second-guesses. If you want to take out the CD from the series stand suppose you want to take out the CD the first CD so you will have to take out all the CDs which are placed in in stock."
+    },
+    {
+      "timestamp": "0:02:34",
+      "content": "So in this world, you will see how to replace a center stack. What are the interaction introductory part of Staff some basic operations staff. What are what are the meaning of those operations as well as an application."
+    },
+    {
+      "timestamp": "0:02:59",
+      "content": "Like this if you mop this real life. This is what a strap only you can see a stack of plates. If you want to play place another place, then you can put on display at 10th and 4th and 5th grade lesson, if you want to remove a plate so the principal is what last in first out you can say"
+    },
+    {
+      "timestamp": "0:03:29",
+      "content": "This is the last played for you can say this is the last CD you have food in the sweetest and would be the first one to last."
+    },
+    {
+      "timestamp": "0:03:47",
+      "content": "So the rule on which data structure works is what people asking for stuff or you can say in his last out the CD was first in but if you want to take out the city would be the last one you can take out because for taking out the city outside of the Cities. Can you how to take out all the above series Forester phone has what?"
+    },
+    {
+      "timestamp": "0:04:32",
+      "content": "This is what the staff presented which has only one open and you can insert data. You can delete the data from here. There's no other way. This is what a staff staff in such an operation manual and sort some Daytime the stand that operation is known as Bush."
+    },
+    {
+      "timestamp": "0:05:06",
+      "content": "Frank Ocean operation is known as"
+    },
+    {
+      "timestamp": "0:05:12",
+      "content": "the four fundamental operations are there on the step one is for inserting deleting the top most data from the staff from where you are going to push and pop the data rights to this is known as"
+    },
+    {
+      "timestamp": "0:05:45",
+      "content": "you can sort of data from top of the stack is known as top from then you can insert you can push and fold it. So now we're going to see some operations that are performed on Busch."
+    },
+    {
+      "timestamp": "0:06:05",
+      "content": "Insert into Star-Lord something like this."
+    },
+    {
+      "timestamp": "0:06:37",
+      "content": "Make hair if you don't pass any argument because it's always the topmost element would be formed in this function."
+    },
+    {
+      "timestamp": "0:06:57",
+      "content": "Awesome. Eric is also known as operation without removing that anime from the stack see it on the top most elements from the stacks as well as it will remove that element from the step C suppose. This is what I have staff and I have effect on this tack, you will perform the operation or operations. It means"
+    },
+    {
+      "timestamp": "0:07:47",
+      "content": "What operation maybe is empathy mean on phones babies are not the only operation you can go from there are many more oppression. You can perform on staff. You can find out from the staff elements from the staff at the temptation of Staff as well as we're going to perform these operations."
+    },
+    {
+      "timestamp": "0:08:41",
+      "content": "So this is how we logically represent the staff right now actually in the memory. This is just a logical."
+    },
+    {
+      "timestamp": "0:08:52",
+      "content": "What do you want? We want to push some Daytime this chat, right? So you need to know the capacity of the stats to the size of the Stag. So you need to locate some mum to the stuff fixed that size how you get to know the size of the staff. You can locate the memory either using static memory location to ways to implement steps to using arrays. You can implement it means using list you can Implement stacks for these implementations. You will see in the next video with the proper suppose. I have taken the size of the status 5"
+    },
+    {
+      "timestamp": "0:09:44",
+      "content": "means the Staten store only five elements even using by your settings so you can search five elements only top is what"
+    },
+    {
+      "timestamp": "0:10:05",
+      "content": "top bicycle 2 - 1"
+    },
+    {
+      "timestamp": "0:10:07",
+      "content": "5 means you can say you can sort five elements. The index would be 0 festivals in ones and twos and threes and fours from 0 to 5 elements. I can store this is the capacity of the stand somewhere here - 10 - 1 index what would happen? If you don't have anything starts with a T in this case it is what and the floor condition."
+    },
+    {
+      "timestamp": "0:10:51",
+      "content": "It will determine what the status in Petit. So this is what are under the floor condition you can say"
+    },
+    {
+      "timestamp": "0:11:04",
+      "content": "Flight actual implementation or lose also even see how to write down the code for pushing for the only one in supposed to hold what would happen?"
+    },
+    {
+      "timestamp": "0:11:24",
+      "content": "It means stop becomes 20 now."
+    },
+    {
+      "timestamp": "0:11:34",
+      "content": "If you will call for 3."
+    },
+    {
+      "timestamp": "0:11:39",
+      "content": "What's up. Plus plus?"
+    },
+    {
+      "timestamp": "0:11:43",
+      "content": "Becomes this one cop is pointing to this 11 and if you call."
+    },
+    {
+      "timestamp": "0:11:55",
+      "content": "no need to pass any arguments are because only the top most element always this cold three to three would be removed from this check and Knoxville Zoo top - -"
+    },
+    {
+      "timestamp": "0:12:23",
+      "content": "Again office again if you in that case again or simply you can do top minus minus."
+    },
+    {
+      "timestamp": "0:12:43",
+      "content": "-1 remove this if you will not seek out this from the staff that is also fine because this is not a Guard base."
+    },
+    {
+      "timestamp": "0:12:54",
+      "content": "We do we do not care what Barbie's value is there in the staff again for push for"
+    },
+    {
+      "timestamp": "0:13:03",
+      "content": "first row. Plus plus mean South Africans 0 - 120"
+    },
+    {
+      "timestamp": "0:13:17",
+      "content": "listing of Ford Fusion cooperation * 156 + 756 + 7"
+    },
+    {
+      "timestamp": "0:13:30",
+      "content": "now the SEC is full 50."
+    },
+    {
+      "timestamp": "0:13:39",
+      "content": "Discuss what is under flood condition now, this is what overflow condition."
+    },
+    {
+      "timestamp": "0:13:44",
+      "content": "If the stop is pointing to the maximum size is -1 youth cannot insert any daytime the status status."
+    },
+    {
+      "timestamp": "0:14:02",
+      "content": "so this is what organization and now hair if you will call is full function means it would return true if the status full and now the conditional status full so it won't get done at this time has full function would."
+    },
+    {
+      "timestamp": "0:14:16",
+      "content": "B anyways when there is nothing in the stack supposed to help with all the data and after that is impotent sympathy how you are going to hold this function will see what are the applications of Taxi."
+    },
+    {
+      "timestamp": "0:14:40",
+      "content": "silverstream"
+    },
+    {
+      "timestamp": "0:14:42",
+      "content": "What is your voice a word when you visit news staff is very simple suppose. I want to reverse."
+    },
+    {
+      "timestamp": "0:14:49",
+      "content": "I have a string a b c d a b c and d I guess everybody have used the single mechanism supposed to have written something ABCDE shortcut key for undo."
+    },
+    {
+      "timestamp": "0:15:38",
+      "content": "Turn up the kitchen. Maybe you can use it in because you know, you can sing function call function called a function is called that goes we will discuss when we will discuss recursion. For verifying the balance of the princesses suppose here is opening again here. I opened again here. I opened it means there should be three closing records using step."
+    },
+    {
+      "timestamp": "0:16:38",
+      "content": "Listen, once we will discuss in detail and fix to prefix Staffing to be used as a no problem. Also, we are going to use staff staff application post fix expression Daily News staff that is also discuss all application. We will discuss in detail just an introductory video of the strength to get you familiar with Steph."
+    }
+  ]
+}

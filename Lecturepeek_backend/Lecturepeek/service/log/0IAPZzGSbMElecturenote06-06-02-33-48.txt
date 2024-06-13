@@ -1,0 +1,148 @@
+소요시간 : 25.578078031539917 
+영상링크 : https://www.youtube.com/watch?v=0IAPZzGSbME
+추출방식 : 1
+{
+  "videoTitle": "알고리즘 강의",
+  "videoDescription": "알고리즘에 대한 강의입니다.",
+  "Lecture Note": [
+    {
+      "timestamp": "00:00:00",
+      "section_title": "📚 강의 소개",
+      "content": "알고리즘은 컴퓨터 공학 전공 학생들을 위한 공통 과목입니다. 대부분의 대학에서 이 과목을 과정의 일부로 제공합니다. 이 과목은 매우 중요하고 흥미로운데, 학생들은 종종 일부 주제를 이해하는 데 어려움을 겪습니다. 이해가 잘 되지 않을 수 있습니다. 그래서 이 과목을 이해하고 연습하기 쉽도록 설명하겠습니다. 이 과목의 중요성은 이론적인 시험에만 국한되지 않습니다. 경쟁 시험과 프로그래밍 대회에도 중요합니다. 대부분의 프로그래밍 도전 과제는 이 과목에서 디자인됩니다. 학생들은 다양한 유형의 문제를 해결하고 전략을 개발하는 기회를 얻을 수 있습니다. 일부 학생들은 제대로 이해하지 못하고 프로그래밍의 논리와 전략 개발에 어려움을 겪습니다. 저는 기초부터 고급 주제까지 모든 내용을 깊이 있게 다룰 예정입니다. 알고리즘과 관련된 어떤 유형의 질문에도 답할 수 있게 될 것입니다. 주제를 순서대로 다룰 예정이므로 순서를 따라가도록 해주세요. 비디오와 오디오 품질을 개선하고 싶으므로 피드백을 제공해주시기 바랍니다."
+    },
+    {
+      "timestamp": "00:02:09",
+      "section_title": "📚 알고리즘 소개",
+      "content": "알고리즘은 계산 문제를 해결하기 위한 단계별 절차입니다. 이는 설계 시간에 작성되며 하드웨어 및 소프트웨어와 독립적입니다. 알고리즘을 작성하는 사람은 도메인 지식과 문제에 대한 이해력이 있어야 합니다. 알고리즘은 어떤 언어나 수학적 표기법으로 작성될 수 있습니다. 알고리즘은 프로그램과 다릅니다. 프로그램은 구현 시간에 작성되며 하드웨어 및 소프트웨어에 의존합니다. 알고리즘은 시간 및 공간 복잡성 측면에서 효율성을 분석합니다. 테스트는 프로그램에 대해 수행되며 알고리즘에 대해서는 수행되지 않습니다. 이것이 알고리즘과 프로그램의 차이점입니다. 알고리즘은 주로 C 언어로 작성됩니다. C 언어는 프로그래머들에게 널리 알려져 있고 이해하기 쉽기 때문입니다."
+    },
+    {
+      "timestamp": "00:04:06",
+      "section_title": "📚 알고리즘 작성 언어의 구문",
+      "content": "이제 알고리즘 작성에 사용되는 언어의 구문에 대해 알아보겠습니다."
+    }
+  ],
+  "questions": [
+    {
+      "question": "알고리즘은 무엇인가요?",
+      "answer": "알고리즘은 계산 문제를 해결하기 위한 단계별 절차입니다."
+    },
+    {
+      "question": "알고리즘과 프로그램의 차이점은 무엇인가요?",
+      "answer": "알고리즘은 설계 시간에 작성되며 하드웨어 및 소프트웨어와 독립적입니다. 프로그램은 구현 시간에 작성되며 하드웨어 및 소프트웨어에 의존합니다."
+    },
+    {
+      "question": "알고리즘은 주로 어떤 언어로 작성되나요?",
+      "answer": "알고리즘은 주로 C 언어로 작성됩니다."
+    }
+  ],
+  "script": [
+    {
+      "timestamp": "0:00:00",
+      "content": "Hello friends, I'm going to start a course on algorithms."
+    },
+    {
+      "timestamp": "0:00:05",
+      "content": "Algorithm is a common subject for computer science engineering students."
+    },
+    {
+      "timestamp": "0:00:13",
+      "content": "Most universities offer this course as a part of the syllabus."
+    },
+    {
+      "timestamp": "0:00:19",
+      "content": "It is a very cool and important subject, but students often face difficulties in understanding some topics."
+    },
+    {
+      "timestamp": "0:00:24",
+      "content": "They could not understand them very clearly."
+    },
+    {
+      "timestamp": "0:00:30",
+      "content": "So, here I am going to make the subject more simple for you to understand and practice."
+    },
+    {
+      "timestamp": "0:00:37",
+      "content": "The importance of the subject is not just limited to theoretical examinations."
+    },
+    {
+      "timestamp": "0:00:43",
+      "content": "It is also important for competitive exams and programming contests."
+    },
+    {
+      "timestamp": "0:00:50",
+      "content": "Most programming challenges are designed from this subject."
+    },
+    {
+      "timestamp": "0:00:59",
+      "content": "It is a challenging subject for students as they get a chance to solve different types of problems and develop strategies."
+    },
+    {
+      "timestamp": "0:01:10",
+      "content": "Some students fail to understand it properly and struggle with developing logic and strategies for programming."
+    },
+    {
+      "timestamp": "0:01:26",
+      "content": "I will be covering each and everything in depth, from basics to advanced topics."
+    },
+    {
+      "timestamp": "0:01:35",
+      "content": "You will be able to answer any type of question related to algorithms."
+    },
+    {
+      "timestamp": "0:01:41",
+      "content": "I will cover the topics in a sequence, so make sure to follow the order."
+    },
+    {
+      "timestamp": "0:01:50",
+      "content": "Your feedback is very important to me as I am new to making videos."
+    },
+    {
+      "timestamp": "0:02:00",
+      "content": "I want to improve the video and audio quality, so please provide your feedback."
+    },
+    {
+      "timestamp": "0:02:09",
+      "content": "Let's start with the introduction of algorithms."
+    },
+    {
+      "timestamp": "0:02:17",
+      "content": "An algorithm is a step-by-step procedure for solving a computational problem."
+    },
+    {
+      "timestamp": "0:02:26",
+      "content": "It is written at the design time and is independent of hardware and software."
+    },
+    {
+      "timestamp": "0:02:39",
+      "content": "The person who writes the algorithm should have domain knowledge and understanding of the problem."
+    },
+    {
+      "timestamp": "0:02:51",
+      "content": "The algorithm can be written in any language or mathematical notations."
+    },
+    {
+      "timestamp": "0:03:03",
+      "content": "The algorithm is different from a program, which is written at the implementation time and is dependent on hardware and software."
+    },
+    {
+      "timestamp": "0:03:18",
+      "content": "The algorithm is analyzed for efficiency in terms of time and space complexity."
+    },
+    {
+      "timestamp": "0:03:32",
+      "content": "Testing is done on the program, not the algorithm."
+    },
+    {
+      "timestamp": "0:03:42",
+      "content": "These are the differences between an algorithm and a program."
+    },
+    {
+      "timestamp": "0:03:54",
+      "content": "Algorithms are mostly written in C language, as it is widely known and understood by programmers."
+    },
+    {
+      "timestamp": "0:04:06",
+      "content": "Now, let's move on to the syntax of the language used for writing algorithms."
+    }
+  ]
+}

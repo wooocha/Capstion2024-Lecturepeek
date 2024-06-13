@@ -1,0 +1,195 @@
+소요시간 : 27.679094791412354 
+영상링크 : https://www.youtube.com/watch?v=qph77bTKJTM
+추출방식 : 1
+{
+  "videoTitle": "공개 키 암호화에 대한 설명",
+  "videoDescription": "공개 키 암호화에 대한 설명",
+  "Lecture Note": [
+    {
+      "timestamp": "00:00:05",
+      "section_title": "📚 공개 키 암호화란?",
+      "content": "공개 키 암호화는 현대 통신에서 널리 사용되며, 소수와 모듈러 산술에 기반합니다."
+    },
+    {
+      "timestamp": "00:00:16",
+      "section_title": "🔍 소수와 모듈러 산술",
+      "content": "소수는 자기 자신과 1로만 나눌 수 있는 숫자입니다. 무한히 많은 소수가 있지만 아직 많은 것을 알지 못하고 있습니다. 소수를 찾는 것은 쉽지만 소인수분해는 어렵습니다. 이러한 비대칭성이 공개 키 암호화에 중요합니다. 모듈러 산술은 시계와 같이 산술을 하는 것으로, 12까지만 기록합니다."
+    },
+    {
+      "timestamp": "00:02:09",
+      "section_title": "📈 공개 키 암호화 작동 방식",
+      "content": "공개 키 암호화는 일반적으로 설명한 후 몇 가지 예를 들어 설명합니다. 첫 번째 예에서 p는 5이고 q는 11입니다. 두 번째 예에서 p는 23이고 q는 41입니다. 숫자 n은 p와 q의 곱으로, 즉 p * q입니다. 공개 키는 숫자 n입니다. 메시지를 인코딩하기 위해 메시지를 e의 거듭제곱으로 계산하고 n으로 모듈러 산술을 수행합니다. 인코딩된 메시지는 산술의 결과입니다. 메시지를 디코딩하기 위해 d * e가 1과 p-1 * q-1에 대해 합동인 숫자 d를 찾습니다. 인코딩된 메시지를 d의 거듭제곱으로 계산하고 n으로 모듈러 산술을 수행하여 원래 메시지를 얻습니다."
+    },
+    {
+      "timestamp": "00:08:16",
+      "section_title": "📚 RSA 암호화",
+      "content": "RSA 암호화는 비밀 메시지를 암호화하는 하나의 방법에 불과합니다."
+    },
+    {
+      "timestamp": "00:09:26",
+      "section_title": "🔍 추가 자료",
+      "content": "Simon Singh의 'The Code Book'은 비밀 통신의 역사를 살펴볼 수 있는 자료입니다."
+    },
+    {
+      "timestamp": "00:19:05",
+      "section_title": "📈 공개 키 암호화와 관련된 이론",
+      "content": "공개 키 암호화는 페르마의 소정리와 오일러 함수와 관련이 있습니다."
+    }
+  ],
+  "questions": [
+    {
+      "question": "공개 키 암호화는 어떤 원리로 작동하나요?",
+      "answer": "공개 키 암호화는 소수와 모듈러 산술을 기반으로 하며, 메시지를 인코딩하여 암호화하고 디코딩하여 원래 메시지를 얻는 방식입니다."
+    },
+    {
+      "question": "RSA 암호화란 무엇인가요?",
+      "answer": "RSA 암호화는 비밀 메시지를 암호화하는 하나의 방법입니다."
+    },
+    {
+      "question": "공개 키 암호화와 어떤 이론이 관련되어 있나요?",
+      "answer": "공개 키 암호화는 페르마의 소정리와 오일러 함수와 관련이 있습니다."
+    }
+  ],
+  "script": [
+    {
+      "timestamp": "0:00:00",
+      "content": "This video is sponsored by Blinkist."
+    },
+    {
+      "timestamp": "0:00:03",
+      "content": "I thought I'd explain public key cryptography."
+    },
+    {
+      "timestamp": "0:00:05",
+      "content": "Public key cryptography is used ubiquitously in modern communications."
+    },
+    {
+      "timestamp": "0:00:09",
+      "content": "It relies on remarkably simple mathematics, prime numbers, and modular arithmetic."
+    },
+    {
+      "timestamp": "0:00:16",
+      "content": "Prime numbers are numbers divisible only by themselves and one."
+    },
+    {
+      "timestamp": "0:00:22",
+      "content": "There are infinitely many prime numbers, but there is still a lot we don't know about them."
+    },
+    {
+      "timestamp": "0:00:29",
+      "content": "Finding prime numbers is easy, but breaking numbers down into their prime factors is difficult."
+    },
+    {
+      "timestamp": "0:00:37",
+      "content": "This asymmetry is critical to public key cryptography."
+    },
+    {
+      "timestamp": "0:00:44",
+      "content": "Public key cryptography is like making a cake."
+    },
+    {
+      "timestamp": "0:00:48",
+      "content": "It's easy to find the constituent parts, but hard to separate them back out again once they're mixed together."
+    },
+    {
+      "timestamp": "0:01:07",
+      "content": "Public key cryptography also relies on modular arithmetic."
+    },
+    {
+      "timestamp": "0:01:13",
+      "content": "Modular arithmetic is like doing arithmetic with a clock, where you only record the time up to 12."
+    },
+    {
+      "timestamp": "0:01:23",
+      "content": "The two key components of public key cryptography are prime numbers and modular arithmetic."
+    },
+    {
+      "timestamp": "0:02:09",
+      "content": "To explain how public key cryptography works, I'll first describe it in general and then give a couple of examples."
+    },
+    {
+      "timestamp": "0:02:19",
+      "content": "In the first example, p is 5 and q is 11."
+    },
+    {
+      "timestamp": "0:02:34",
+      "content": "In the second example, p is 23 and q is 41."
+    },
+    {
+      "timestamp": "0:02:43",
+      "content": "The number n is the product of p and q, which is p times q."
+    },
+    {
+      "timestamp": "0:03:02",
+      "content": "The public key is the number n."
+    },
+    {
+      "timestamp": "0:03:07",
+      "content": "To encode a message, you raise it to the power of e and do arithmetic modulo n."
+    },
+    {
+      "timestamp": "0:03:29",
+      "content": "The encoded message is the result of the arithmetic."
+    },
+    {
+      "timestamp": "0:03:49",
+      "content": "To decode the message, you find a number d such that d times e is congruent to 1 modulo p minus 1 times q minus 1."
+    },
+    {
+      "timestamp": "0:04:07",
+      "content": "You raise the encoded message to the power of d and do arithmetic modulo n to get the original message back."
+    },
+    {
+      "timestamp": "0:08:16",
+      "content": "RSA cryptography is just one method of encrypting secret messages."
+    },
+    {
+      "timestamp": "0:08:34",
+      "content": "The Code Book by Simon Singh provides a look at the history of secret communication."
+    },
+    {
+      "timestamp": "0:09:26",
+      "content": "With Blinkist Connect, you can share your premium account with another user."
+    },
+    {
+      "timestamp": "0:09:43",
+      "content": "Start your seven-day free trial and enjoy 25% off Blinkist Premium by clicking on the link below."
+    },
+    {
+      "timestamp": "0:14:41",
+      "content": "In the second example, p is 23 and q is 41."
+    },
+    {
+      "timestamp": "0:15:06",
+      "content": "The number n is p times q, which is 23 times 41."
+    },
+    {
+      "timestamp": "0:15:19",
+      "content": "The number e is chosen to be co-prime to p minus 1 times q minus 1."
+    },
+    {
+      "timestamp": "0:15:46",
+      "content": "The message is 35."
+    },
+    {
+      "timestamp": "0:16:02",
+      "content": "The encoded message is 545."
+    },
+    {
+      "timestamp": "0:16:17",
+      "content": "To decode the message, you find a number d such that d times e is congruent to 1 modulo p minus 1 times q minus 1."
+    },
+    {
+      "timestamp": "0:17:28",
+      "content": "The number d is 503."
+    },
+    {
+      "timestamp": "0:17:51",
+      "content": "The decoded message is 35."
+    },
+    {
+      "timestamp": "0:19:05",
+      "content": "Public key cryptography is related to Fermat's Little Theorem and the Euler function."
+    }
+  ]
+}

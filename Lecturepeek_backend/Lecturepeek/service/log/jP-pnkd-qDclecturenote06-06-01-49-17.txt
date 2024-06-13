@@ -1,0 +1,84 @@
+소요시간 : 12.02922511100769 
+영상링크 : https://www.youtube.com/watch?v=jP-pnkd-qDc
+추출방식 : 1
+{
+  "videoTitle": "반사와 굴절 실험",
+  "videoDescription": "반사와 굴절 실험에 대한 강의 노트",
+  "Lecture Note": [
+    {
+      "timestamp": "00:00:00",
+      "section_title": "📚 실험 설명",
+      "content": "이 강의에서는 반사와 굴절 실험을 소개합니다. 강사는 상단 거울과 하단 탁자를 사용하여 실험을 진행합니다."
+    },
+    {
+      "timestamp": "00:00:24",
+      "section_title": "🔍 실험 과정",
+      "content": "강사는 탄탄한 공을 사용하여 탁자 아래로 던지고, 반대쪽으로 나오는 것을 보여줍니다. 이후, 장식용으로 쌓인 안경들을 제거하고 실험을 다시 진행합니다."
+    },
+    {
+      "timestamp": "00:01:05",
+      "section_title": "📈 실험 결과",
+      "content": "강사는 공을 던지기 전에 공이 이미 다시 돌아오는 것을 확인합니다. 이를 통해 실험 결과를 분석하고 설명합니다."
+    }
+  ],
+  "questions": [
+    {
+      "question": "강사는 실험에 어떤 도구를 사용하나요?",
+      "answer": "강사는 상단 거울과 하단 탁자를 사용합니다."
+    },
+    {
+      "question": "실험 결과는 어떻게 나타났나요?",
+      "answer": "공이 던져지기 전에 이미 돌아오는 것을 확인했습니다."
+    },
+    {
+      "question": "안경들은 실험에 어떤 역할을 하나요?",
+      "answer": "안경들은 실험의 장식용으로 사용되었습니다."
+    }
+  ],
+  "script": [
+    {
+      "timestamp": "0:00:00",
+      "content": "Well, I'm going to try and reproduce this experiment here with this table."
+    },
+    {
+      "timestamp": "0:00:09",
+      "content": "Representing the top mirror if you like, and this table here representing the bottom mirror."
+    },
+    {
+      "timestamp": "0:00:24",
+      "content": "And I'm going to throw a ball, a bouncy ball. I've got one here, wouldn't he bounce a ball, and I'm going to throw that under the table and it's going to go out the other side like this."
+    },
+    {
+      "timestamp": "0:00:36",
+      "content": "Now, to make my job a bit more difficult, I've got a pile of glasses here which I'm going to stack up."
+    },
+    {
+      "timestamp": "0:00:53",
+      "content": "And there's a neat little gap through here which I think I can aim for."
+    },
+    {
+      "timestamp": "0:01:05",
+      "content": "Alright, here goes when the ball is still in my hand, so there's something funny going on here."
+    },
+    {
+      "timestamp": "0:01:24",
+      "content": "Maybe this table is the wrong way around."
+    },
+    {
+      "timestamp": "0:01:30",
+      "content": "Hmm, maybe the glasses don't have anything to do with it. I'll move the glasses away."
+    },
+    {
+      "timestamp": "0:01:36",
+      "content": "Of course, the glasses don't have anything to do with it. They're just there for effect."
+    },
+    {
+      "timestamp": "0:01:44",
+      "content": "But we have to think a little bit about what's going on because we can see now that the ball going in here, it's not going out the other end."
+    },
+    {
+      "timestamp": "0:01:58",
+      "content": "But it's coming back the way it came."
+    }
+  ]
+}

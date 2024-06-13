@@ -1,0 +1,74 @@
+소요시간 : 25.737414121627808 
+영상링크 : https://www.youtube.com/watch?v=kM9ASKAni_s
+추출방식 : 1
+{
+  "videoTitle": "알고리즘에 대한 이해",
+  "videoDescription": "알고리즘의 개념과 사용 예시에 대해 설명합니다.",
+  "Lecture Note": [
+    {
+      "timestamp": "00:00:00",
+      "section_title": "📚 알고리즘의 개념",
+      "content": "알고리즘은 특정 작업을 완료하기 위해 사용되는 단계의 집합입니다. 프로그래밍의 기본 구성 요소이며, 컴퓨터, 스마트폰, 웹사이트 등이 작동하고 결정을 내리는 데 사용됩니다."
+    },
+    {
+      "timestamp": "00:00:25",
+      "section_title": "🔍 일상 생활에서의 알고리즘",
+      "content": "일상 생활에서도 알고리즘과 유사한 작업을 많이 수행합니다. 스파게티를 만들기 위해서는 특정한 순서로 일련의 단계를 따라야 합니다. 물을 끓이고 스파게티를 넣고 일정 시간 동안 삶은 후, 가끔씩 저어주고 물을 빼면 완성됩니다. 이 모든 과정은 사실상 알고리즘입니다. 이러한 단계를 순서대로 따라가면 원하는 결과물인 맛있는 파스타 요리를 얻을 수 있습니다."
+    },
+    {
+      "timestamp": "00:01:15",
+      "section_title": "📈 프로그램에서의 알고리즘",
+      "content": "프로그램도 마찬가지로 알고리즘을 사용하여 작동합니다. 예를 들어, 길 안내 앱을 사용하여 목적지까지의 경로를 찾고 싶다고 가정해봅시다. 앱은 여러 가지 경로를 확인하기 위해 알고리즘을 사용하고, 현재 교통 상황을 확인하기 위해 다른 알고리즘을 사용합니다. 그리고 이 정보를 바탕으로 최적의 경로를 계산하는 세 번째 알고리즘이 사용됩니다. 이러한 알고리즘은 앱의 코드에 내장되어 있습니다. 코드에 오류가 있다면 앱은 알고리즘을 올바르게 따르지 못하므로 경로 안내를 제공할 수 없습니다."
+    },
+    {
+      "timestamp": "00:01:51",
+      "section_title": "🔍 인간과 컴퓨터의 알고리즘",
+      "content": "이 두 가지 예시는 인간과 컴퓨터가 모두 알고리즘을 사용하여 일상적인 작업을 수행할 수 있다는 것을 보여줍니다. 다른 점은 컴퓨터가 우리보다 더 나은, 빠르고 효율적으로 알고리즘을 사용하고 계산할 수 있다는 것입니다."
+    },
+    {
+      "timestamp": "00:02:05",
+      "section_title": "📚 알고리즘의 중요성",
+      "content": "기술은 계속해서 발전하고 더 나은 성능을 발휘할 것입니다. 코딩과 프로그래밍이 계속 사용되는 한, 알고리즘은 이러한 기술의 핵심이며 그들이 하는 일과 방법을 안내하는 역할을 할 것입니다."
+    }
+  ],
+  "questions": [
+    {
+      "question": "알고리즘은 무엇을 의미하나요?",
+      "answer": "알고리즘은 특정 작업을 완료하기 위해 사용되는 단계의 집합입니다."
+    },
+    {
+      "question": "알고리즘은 어디에 사용되나요?",
+      "answer": "알고리즘은 컴퓨터, 스마트폰, 웹사이트 등의 작동과 결정에 사용됩니다."
+    },
+    {
+      "question": "컴퓨터와 인간의 알고리즘 사용에 어떤 차이가 있나요?",
+      "answer": "컴퓨터는 알고리즘을 더 나은, 빠르고 효율적으로 사용하고 계산할 수 있습니다."
+    }
+  ],
+  "script": [
+    {
+      "timestamp": "0:00:00",
+      "content": "You may have heard the term Algorithm recently, whether it was online or maybe in some conversation about technology."
+    },
+    {
+      "timestamp": "0:00:07",
+      "content": "It's a word that gets thrown around a lot. But what exactly does it mean? Well, simply put an algorithm is a set of steps used to complete a specific task. They're the building blocks for programming and they allow things like computers, smartphones, and websites to function and make decisions."
+    },
+    {
+      "timestamp": "0:00:25",
+      "content": "But in addition to being used by technology, a lot of things we do on a daily basis are also similar to algorithms. Let's say you want to make some spaghetti. In order to do this successfully, there's a certain set of steps you need to follow in a particular order. First you need to boil a pot of water. Once it's boiling you then add the spaghetti and cook it for a set amount of time, stirring occasionally. Once it's finished you drain the water and then it's ready to be served with a sauce of your choice. That entire process is actually an algorithm. Because you followed those steps in that order, you reached your desired outcome, a delicious pasta dish. But, if you were to make a mistake, say over or under cooking your noodles, it probably wouldn't be as good."
+    },
+    {
+      "timestamp": "0:01:15",
+      "content": "Programs work in a similar way. Their code is made up of algorithms telling them what to do. Let's say that we want to use a navigation app to get directions. When we punch in a destination, the app uses an algorithm to look at the various available routes. Next, it uses a different algorithm to check the current traffic. And then a third one takes that information and calculates the best available route. All of these algorithms are built right into the app's code. If there were any kind of error in that code, the app wouldn't be able to follow these algorithms correctly. Meaning, you wouldn't receive your directions."
+    },
+    {
+      "timestamp": "0:01:51",
+      "content": "Both of these examples show how both humans and computers can use algorithms to perform everyday tasks. The difference is that computers can use algorithms and calculate things better, faster, and more efficiently than we can."
+    },
+    {
+      "timestamp": "0:02:05",
+      "content": "Technology is only going to continue to evolve and get even better at what it does. As long as coding and programming continue to be used, algorithms will be at the heart of these technologies guiding what they do and how they do it."
+    }
+  ]
+}

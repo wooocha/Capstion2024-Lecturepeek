@@ -1,0 +1,134 @@
+소요시간 : 16.01451349258423 
+영상링크 : https://www.youtube.com/watch?v=I37kGX-nZEI
+추출방식 : 1
+{
+  "videoTitle": "단어에 대한 프로젝트 발표",
+  "videoDescription": "이 강의에서는 장애물과 발표에 대해 논의하고, 사실의 맥락을 소개하며, 특정 용어의 정의를 탐구합니다.",
+  "Lecture Note": [
+    {
+      "timestamp": "00:00:00",
+      "section_title": "📚 소개",
+      "content": "강의는 장애물과 발표 주제에 대한 소개로 시작됩니다."
+    },
+    {
+      "timestamp": "00:00:18",
+      "section_title": "🔍 용어의 정의",
+      "content": "강사는 '실생활 구독'과 '작전 그린 헌트'를 포함한 특정 용어의 정의에 대해 논의합니다."
+    },
+    {
+      "timestamp": "00:00:35",
+      "section_title": "🔔 구독",
+      "content": "강의에서는 구독의 개념을 양적으로와 사회적 임무 측면에서 간단히 언급합니다."
+    },
+    {
+      "timestamp": "00:01:05",
+      "section_title": "❓ 질문",
+      "content": "강사는 투표와 요청에 대한 질문을 제기하고, 구독 버튼을 언급합니다."
+    },
+    {
+      "timestamp": "00:01:44",
+      "section_title": "📚 책 접근하기",
+      "content": "강사는 구독하거나 특정 단계를 따라 화학, 물리학, 수학 등 다양한 책에 접근하는 방법을 설명합니다."
+    },
+    {
+      "timestamp": "00:03:05",
+      "section_title": "🔒 객체 삽입 및 삭제",
+      "content": "강사는 디스크 작업과 사용자 정의 작업과 관련하여 객체를 삽입하고 삭제하는 과정에 대해 논의합니다."
+    },
+    {
+      "timestamp": "00:04:57",
+      "section_title": "👍 페이지 구독하기",
+      "content": "강사는 시청자가 비디오를 좋아한다면 페이지를 구독하도록 언급합니다."
+    },
+    {
+      "timestamp": "00:06:05",
+      "section_title": "💡 요소 소개하기",
+      "content": "강사는 요소를 소개하고 구독하는 방법, 그리고 구독 목록에서 요소를 제거하는 방법에 대해 설명합니다."
+    },
+    {
+      "timestamp": "00:08:04",
+      "section_title": "📝 명령어 목록",
+      "content": "강사는 구독과 요소와 관련된 명령어 목록을 언급합니다."
+    }
+  ],
+  "questions": [
+    {
+      "question": "강의는 무엇에 대해 이야기하고 있나요?",
+      "answer": "장애물과 발표"
+    },
+    {
+      "question": "'용어의 정의' 섹션에서는 무엇에 대해 논의하고 있나요?",
+      "answer": "'실생활 구독'과 '작전 그린 헌트'"
+    },
+    {
+      "question": "다양한 책에 어떻게 접근할 수 있나요?",
+      "answer": "구독하거나 특정 단계를 따라 접근할 수 있습니다."
+    }
+  ],
+  "script": [
+    {
+      "timestamp": "0:00:00",
+      "content": "Kar do."
+    },
+    {
+      "timestamp": "0:00:05",
+      "content": "Yeh project presentation on words."
+    },
+    {
+      "timestamp": "0:00:07",
+      "content": "Starting with a new chapter of obstacles and your presentation, I will introduce you to the context of facts, some without any further delay, the State Institute in this presentation."
+    },
+    {
+      "timestamp": "0:00:18",
+      "content": "First look into the definition of what's what. We'll look into real-life subscribe and finally looked into operation green hunt."
+    },
+    {
+      "timestamp": "0:00:35",
+      "content": "Operation in which not only and should stop."
+    },
+    {
+      "timestamp": "0:00:49",
+      "content": "Subscribe to quantity and subscribe."
+    },
+    {
+      "timestamp": "0:00:58",
+      "content": "In social missions and only and subscribe the channel."
+    },
+    {
+      "timestamp": "0:01:05",
+      "content": "Question, simple vote anyway in case of and request here minute button, suction sand dunes and finger add depend cold stop."
+    },
+    {
+      "timestamp": "0:01:44",
+      "content": "All this time, subscribe and width top, most obscure the thing which can be only from top, at the top."
+    },
+    {
+      "timestamp": "0:01:56",
+      "content": "Oh, so it's possible to access the chemistry before accepting off a pocket you might give this is can access chemistry book, Vivek Singh physics book and can access mathematics book place in super cops to subscribe to me on Twitter, subscribe button."
+    },
+    {
+      "timestamp": "0:02:29",
+      "content": "I don't like subscribe blouse and subscribe now, like subscribe now to do, do, do."
+    },
+    {
+      "timestamp": "0:03:05",
+      "content": "I'm office click close your eyes closed and bottom right you can see but it's open the top 10 way to insert and delete and objects from disk president only want to talk about subscribe only interested in knowing operations from user to define IT only interested in knowing operations which users only interested for B ID to understand what type of operations can not interested details this movement where only interested in knowing what type of operations for."
+    },
+    {
+      "timestamp": "0:04:57",
+      "content": "Jesus, like it's true is the present cities for subscribe now to family function simply returns the video then subscribe to the page if you liked the video then subscribe to the page if you liked the video then subscribe to our."
+    },
+    {
+      "timestamp": "0:06:05",
+      "content": "Quantum of thing you to introduce element inside the soldier sports element inside talk about dashrath acid operation is used to the time this push difficult element subscribe this video please subscribe channel top most element subscribe element outside so called upon to remove this element and it subscribe subscribe subscribe."
+    },
+    {
+      "timestamp": "0:07:28",
+      "content": "This video please subscribe channel top most element outside so called upon to remove this element and it subscribe subscribe subscribe."
+    },
+    {
+      "timestamp": "0:08:04",
+      "content": "Elementary mid IT should * elements and tigers not full price there all the list of commands subscribe 100 rooms person person has."
+    }
+  ]
+}

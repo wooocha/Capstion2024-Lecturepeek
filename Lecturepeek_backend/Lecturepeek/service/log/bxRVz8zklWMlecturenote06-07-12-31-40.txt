@@ -1,0 +1,156 @@
+소요시간 : 16.610490798950195 
+영상링크 : https://www.youtube.com/watch?v=bxRVz8zklWM
+추출방식 : 1
+{
+  "videoTitle": "스택 데이터 구조 소개",
+  "videoDescription": "스택 데이터 구조의 기본 개념 이해",
+  "Lecture Note": [
+    {
+      "timestamp": "00:00:00",
+      "section_title": "📚 데이터 구조 소개",
+      "content": "배열과 연결 리스트에 대해 설명\n데이터 저장 및 연산에 대해 설명"
+    },
+    {
+      "timestamp": "00:00:19",
+      "section_title": "📚 스택이란?",
+      "content": "스택은 선형 데이터 구조\n제한된 접근이 가능\n삽입 및 삭제 규칙을 가진 순서가 있는 목록\nLIFO (Last In, First Out) 규칙을 따름"
+    },
+    {
+      "timestamp": "00:02:27",
+      "section_title": "📚 스택의 연산",
+      "content": "기본 연산: push (삽입) 및 pop (삭제)\n다른 연산: peak, 비어 있는지 확인, 가득 차 있는지 확인\n추가적인 연산: 검색, 역순, 최소/최대 요소 찾기"
+    },
+    {
+      "timestamp": "00:03:43",
+      "section_title": "📚 스택의 논리적 표현",
+      "content": "한 쪽이 열려 있는 컨테이너\n데이터를 삽입하고 삭제할 수 있음"
+    },
+    {
+      "timestamp": "00:04:25",
+      "section_title": "📚 스택 구현",
+      "content": "메모리 할당: 정적 (배열) 또는 동적 (연결 리스트)"
+    },
+    {
+      "timestamp": "00:08:52",
+      "section_title": "📚 스택의 응용",
+      "content": "문자열 뒤집기, 실행 취소 메커니즘, 재귀, 괄호 균형 확인, 중위 표기법을 후위/전위 표기법으로 변환, 알고리즘"
+    },
+    {
+      "timestamp": "00:17:36",
+      "section_title": "📚 다음 동영상",
+      "content": "배열과 연결 리스트를 사용하여 스택 구현하기\n스택 연산 코딩"
+    }
+  ],
+  "questions": [
+    {
+      "question": "스택이 따르는 주요 규칙은 무엇인가요?",
+      "answer": "LIFO"
+    },
+    {
+      "question": "스택의 기본 연산은 무엇인가요?",
+      "answer": "Push와 pop"
+    },
+    {
+      "question": "스택의 일부 응용은 무엇인가요?",
+      "answer": "문자열 뒤집기, 실행 취소 메커니즘, 재귀, 괄호 균형 확인, 중위 표기법을 후위/전위 표기법으로 변환, 알고리즘"
+    }
+  ],
+  "script": [
+    {
+      "timestamp": "0:00:00",
+      "content": "Yeah right we have discussed few data structures like array and linked lists."
+    },
+    {
+      "timestamp": "0:00:05",
+      "content": "We have learned how data is stored in an array and the different operations on an array."
+    },
+    {
+      "timestamp": "0:00:10",
+      "content": "We have also discussed linked lists and the different operations on linked lists."
+    },
+    {
+      "timestamp": "0:00:14",
+      "content": "Now we will see what is the stack data structure."
+    },
+    {
+      "timestamp": "0:00:19",
+      "content": "A stack is a linear data structure."
+    },
+    {
+      "timestamp": "0:00:23",
+      "content": "In an array, random access is possible, meaning you can directly access any data in constant time."
+    },
+    {
+      "timestamp": "0:00:29",
+      "content": "In a linked list, only sequential access is possible."
+    },
+    {
+      "timestamp": "0:00:32",
+      "content": "What about a stack?"
+    },
+    {
+      "timestamp": "0:00:36",
+      "content": "In a stack, only limited access is possible."
+    },
+    {
+      "timestamp": "0:00:39",
+      "content": "It is an ordered list or a container that follows a rule for insertion and deletion of data."
+    },
+    {
+      "timestamp": "0:00:48",
+      "content": "The rule that a stack data structure follows is that insertion and deletion is possible only from one end."
+    },
+    {
+      "timestamp": "0:01:04",
+      "content": "For example, if you have a CD stand, you can only insert CDs from the top and take out CDs from the top."
+    },
+    {
+      "timestamp": "0:02:00",
+      "content": "If you want to take out a CD from the middle, you have to first remove all the CDs above it."
+    },
+    {
+      "timestamp": "0:02:13",
+      "content": "The principle that a stack data structure follows is that insertion and deletion is possible only from one end."
+    },
+    {
+      "timestamp": "0:02:19",
+      "content": "This is known as the last in, first out (LIFO) rule."
+    },
+    {
+      "timestamp": "0:02:27",
+      "content": "The stack is a collection of similar data types."
+    },
+    {
+      "timestamp": "0:02:37",
+      "content": "The fundamental operations on a stack are push and pop."
+    },
+    {
+      "timestamp": "0:02:40",
+      "content": "Push is used to insert data into the stack, while pop is used to remove the topmost element from the stack."
+    },
+    {
+      "timestamp": "0:02:55",
+      "content": "Other operations on a stack include peak (returns the topmost element without removing it), is empty (checks if the stack is empty), and is full (checks if the stack is full)."
+    },
+    {
+      "timestamp": "0:03:18",
+      "content": "There are many more operations that can be performed on a stack, such as search, reverse, finding the minimum or maximum element, etc."
+    },
+    {
+      "timestamp": "0:03:43",
+      "content": "The logical representation of a stack is a container with only one open end, where data can be inserted and deleted."
+    },
+    {
+      "timestamp": "0:04:25",
+      "content": "To implement a stack, you need to allocate memory to the stack. This can be done using static memory allocation (arrays) or dynamic memory allocation (linked lists)."
+    },
+    {
+      "timestamp": "0:08:52",
+      "content": "The applications of a stack include reversing a string, undo mechanism in text editors, recursion, checking the balance of parentheses, infix to postfix/prefix conversion, and many algorithms."
+    },
+    {
+      "timestamp": "0:17:36",
+      "content": "In the next video, we will discuss how to implement a stack using arrays and linked lists, and also code the operations on a stack."
+    }
+  ]
+}

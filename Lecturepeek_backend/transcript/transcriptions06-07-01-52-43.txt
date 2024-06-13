@@ -1,0 +1,263 @@
+0:00:00 : The following content is provided under a Creative Commons license your support will help MIT, opencourseware continue to offer high-quality educational resources for free to make a donation or view additional materials from hundreds of MIT courses visit MIT opencourseware at ocw. Mit.edu.
+0:00:22 :  Hi, I'm swinging David. Also, I'm a professor of electrical engineering and computer science. I'm going to be cool X-Ring 60060 introduction to algorithms the storm with Professor Eric Domaine, Eric. Say hi.
+0:00:38 :  And that we hope by you can have a fun time in 60069. I've already of algorithms. What I want to do today is spend literally a minute or so on administrative details. I may be even less. What I like to do is to tell you to go to the website that's listed up there and read it.
+0:01:00 :  And you'll get all the information you need about what this class is about from a standpoint of syllabus what's expected off you?
+0:01:10 :  Add a problem set schedule the Chris schedule and so on and so forth. I want to Dive Right In and tell you about interesting things like algorithms and complexity of algorithms. I want to spend some time giving you an overview of the course content and then we going to Dive Right In and look at a particular problem of peak finding both a one-dimensional version and a two-dimensional version and talk about algorithms to solve the speak finding problem and you'll find that there's really a difference between these various out with them is that we look at in terms of their complexity.
+0:01:56 :  And what I mean by that is you going to have a different wrong time. So he's out of them's depending on input size.
+0:02:05 :  Based on how efficient these albums are.
+0:02:10 :  A prerequisite for this class is a 60 42 and in 60 42 you learned about asymptotic complexity and you'll see that in this lecture will analyze relatively simple algorithms today in terms of their asymptotic complexity and you'll be able to compare and say that this out with them is faster than this other one is your mean that you have large inputs because it's as likely less complex.
+0:02:40 :  So, let's Dive Right In and talk about the class.
+0:02:52 :  So the one sentence summary of this class is that this is about efficient procedures for solving problems on large inputs.
+0:03:04 :  And when I say large inputs, I mean things like
+0:03:08 :  The US Highway System a map of all of the highways in the United States the human genome which has a million letters in its alphabet is social network responding to Facebook that I guess has 500 million nodes or so. So these are large inputs. Now I definition of large is really changed with the times and so relieved the 21st century definition of of large is I guess a trillion right back when I was your age large was like a thousand. I guess. I'm dating myself here back when Eric was your age was a million, right? But what's happening really the world is moving faster things are getting bigger. We have the capability of computing on large inputs, but that doesn't mean that efficiency isn't of Paramount concern.
+0:04:05 :  Are the fact of the matter is that you can maybe scan a billion elements in a matter of seconds. But if you had an algorithm that required to be complexity suddenly, you're not talking about 10 Race 29, you're talkin about 10 razor 27 and even Karan computers can't really handle that kind of those kind of numbers.
+0:04:28 :  so efficiency is a concern and as inputs get larger, it becomes more so
+0:04:37 :  We concerned about.
+0:04:43 :  efficient procedures
+0:04:49 :  for solving large-scale problems in this class
+0:04:58 :  and a song about scalability
+0:05:01 :  because
+0:05:03 :  just ask
+0:05:06 :  in a 1000 was a big number a couple of decades ago. And now it's it's kind of a small number quite possible that
+0:05:14 :  by by the time you guys are professors teaching this class in some University that a trillion is going to be a small number and they're going to be talking about 18 as as being something bad.
+0:05:29 :  Be concerned with from a standpoint of a common case input for an algorithm is important and we want to be able to track. How are out isn't going to do as inputs get larger and larger.
+0:05:47 :  You going to learn a bunch of different data structures will call him.
+0:05:54 :  classic data structures
+0:05:56 :  like binary search tree hash tables medical dictionary in Python
+0:06:03 :  and
+0:06:05 :  data structures such as balanced binary search tree that are more efficient than just a regular binary search trees and these are all data structures that were invented many decades ago, but there stood the test of time and they continue to be useful. I'll be able to augment these data structures in various ways to make them more efficient for certain kinds of problems. And while you're not going to be doing a whole lot of algorithm design in this class. You will be doing some design and a whole lot of analysis.
+0:06:40 :  The class was following this 16046 design and Analysis of algorithms is a class that you should take if you like this one and you can do a whole lot more design of algorithms in 60046.
+0:06:57 :  But you will look at Classic data structures and classical out resumes.
+0:07:03 :  for these data structures including things like
+0:07:08 :  Sorting and matching and so on.
+0:07:12 :  And one of the nice things about this class.
+0:07:17 :  Is that you'll be doing real implementations?
+0:07:21 :  of these data structures and algorithms in Python
+0:07:28 :  and in particular each of the problem sets.
+0:07:32 :  In this class are going to have both a part to them and a programming part to them. So hopefully they'll all tied together the kinds of things were going to be talking about and lectures and presentations are going to be directly connected to the Terry farce of the problem sets and you'll be programming the algorithms that we talked about in lecture or inventing them running them figuring out whether they work well on large inputs or not.
+0:08:06 :  So let me talk a little bit about the modules in this class and the problem sets and we hope that these problems that's going to be fun for you or end by fun. I don't mean easy. I mean challenging and worthwhile. So at the end of it, you'll feel like you've learned something and you had some fun along the way.
+0:08:28 :  so constant wise
+0:08:37 :  we have it.
+0:08:38 :  8 modules into class Each of which roughly speaking has a problem set associated with it by the first of these.
+0:08:49 :  Is what we call algorithmic thinking.
+0:08:55 :  And with Kik stopped at 1 today.
+0:08:58 :  I've been look at a particular problem as I mentioned the feet finding and as part of this you're going to have a plum set that's going to go out today as well and you'll find that in this problem set.
+0:09:12 :  Some of these albums have talked about today will be coded in Python and give them to you a couple of I'm not going to have bugs in them.
+0:09:19 :  You have to analyze the complexity of these algorithms figure out which ones to correct an efficient and write a proof for one of them. I'd so that's sort of an example problem set and you can expect that. Most of the problem sets are going to follow that sort of template so
+0:09:42 :  You'll get a better sense of this in by the end of the day today for sure or the concrete fence of this because we'll be done with lecture and you'll see your first problem set.
+0:09:52 :  We're going to be doing a module on sorting and trees starting, you know about starting a bunch of numbers. Imagine if you had a trillion numbers and you wanted to start them.
+0:10:04 :  What kind of album could you use for that trees are a wonderful day to structure a different varieties the most common being binary tree's and there's ways of doing all sorts of things like scheduling and sorting using various kinds of trees including binary tree's and we have a problem set on stimulating.
+0:10:29 :  A logic network using a particular kind of sorting out with them on and I did a structure at that that is going to be your second problem set.
+0:10:41 :  and more quickly we going to have
+0:10:45 :  Modules on hashing where we do things like genome comparison in pass terms are they compared to human genome to Iraq genome and discovered. They are pretty similar 99% similar to this kind of amazing. I'll bet against these things are so large. I bet you have to have the efficiency and the comparison methods that you use and you'll find that if you don't get the complexity low enough, you just won't be able to complete your program won't be able to finish running within the time that you probably said is you right which is a bit of a problem. So so that's something to keep in mind as you test your code the factors that you will get large inputs run you a code and you want to keep complexity in mind as your coding and thinking about the the pseudocode if you will be around with himself.
+0:11:43 :  Are we will talk about a lot of the time you talk about such large numbers that 32-bit isn't enough or 64-bit and enough to represent these numbers. These numbers have thousands of bits a good example does RSA encryption that is used in ASL for example, and then you use HTTP on websites. Irsa is used at the back end and typically your work with prime numbers that are thousands of bits long in RSA. So, how do you handle that? How does python handled at how do you write algorithms that can deal with waterfall infinite position numbers? So we have a module on numerics in the middle of the term that talks about that grass.
+0:12:33 :  Really fundamental data structure in all of computer signs. You might have heard of the famous Rubik's Cube assignment from double o six two by two by two Rubik's Cube. I what's the minimum number of moves necessary to go from a given starting configuration do the Final End configuration? We're all of the faces each of the faces has uniform color. I am that can be posed as a graph problem. I will probably do that one the storm in previous rounds, you've done other things like the 15 puzzle. And so some of these are tentative. I will definitely know what the first problem seems like, but the rest of them are at this moment tentative.
+0:13:18 :  Our shortest path again until I'm fast. We've asked you to write code using a particular out with them that finds the shortest bad from Caltech to MIT.
+0:13:30 :  This time you may do things a little differently Avira thinking I maybe will give you a street map of Boston and you know, go figure out of Paul Revere used to shut his fat to get the ready was going or things like that. You're trying to make it fun programming is
+0:13:51 :  An important algorithm design technique that's used in many many problems and it can be used to do a variety of things including image compression.
+0:14:06 :  How do you compress an image? So the number of pixels reduces but it still looks like the image that you started out with that had many more pixels. I think it is dynamic programming for that and finally Advanced topics complexity Theory research and algorithms.
+0:14:25 :  Hopefully, bye. Bye. Bye this time in the in the course. You'd have been sold and most if not all the field 14 Seer and what else is just scratching the surface in this class and there's many many classes that you can possibly take. If you want to continue to learn about some sort to pursue a career in art.
+0:14:51 :  So that's the story of the class of the synopsis of the class and I encourage you to go spend a few minutes on the left side in particular. Please read the collaboration policy and get a sense of what is expected of you of what the rules are in terms of doing the problem sets and the court agreed and break down to the grading policies are all listed on the website as well.
+0:15:22 :  Okay, so let's get started. I want to talk about specific problem and talk about algorithms for a specific problem. We picked this problem because it's so easy to understand and they're fairly straightforward algorithms that are not particularly efficient to solve this problem. And so this is a problem but like a lot of toy problems. It's very evocative in that it points out the issues involved in designing a fish and algorithms dimensional version of what we call Pig finding.
+0:16:05 :  And a pic finder is something in the one-dimensional case.
+0:16:14 :  ramzan an array of numbers
+0:16:18 :  and I'm just putting
+0:16:22 :  symbols for each of these numbers here
+0:16:26 :  and
+0:16:28 :  the numbers are positive and negative will just assume they're all positive. It doesn't really matter for them to be described with work.
+0:16:38 :  And so we have this one dimensional array that has nine different positions and
+0:16:44 :  hoi numbers
+0:16:49 :  and we want to find a peak and so we have to Define what we mean by a peek and so in particular as an example position to
+0:17:02 :  is a peek.
+0:17:06 :  if and only if
+0:17:11 :  be greater than or equal to a
+0:17:14 :  And be greater than or equal to see local property responding to a peak in the one-dimensional case. It's trivial look to your left to right if your equal or greater than
+0:17:31 :  both of the elements that you see on the left and the right you repeat. Okay, and in the case of the edges, you only have to look to one side so position 9
+0:17:44 :  Is a peek.
+0:17:48 :  if
+0:17:50 :  I greater than equal to a h.
+0:17:53 :  So you just have to look to your left there because you're all the way on the right hand side. All right, so that's it and the statement of the problem the one-dimensional version is.
+0:18:08 :  Find a peak.
+0:18:12 :  If it exists.
+0:18:21 :  That's all the rest of it.
+0:18:24 :  I'm going to give you a straightforward out with them.
+0:18:27 :  And then see if you can prove it you can imagine to the straightforward out with them. Is it something that just wiener walks across that array?
+0:18:39 :  But we need that as a starting point.
+0:18:42 :  For building something more sophisticated.
+0:18:49 :  So let me start from left.
+0:18:56 :  and all we have
+0:18:59 :  Is one traversal really?
+0:19:05 :  So they say we have 12 and then we have an over to over here. There's wanting to the middle of this m element array and then we have in mind as one.
+0:19:17 :  And then what I'm interested in doing is not only coming up with a straightforward out with them, but also precisely characterizing what is complexity is in relation to M. Which is the number of inputs question.
+0:19:41 :  That's exactly right. I was going to get to that so if you look at the definition of peak
+0:19:50 :  Then what I have here is a greater than or equal to. Okay. And so this that's a great question that was asked. Why is there if it exists in this problem now in the case where I have greater than or equal to then this is a homework question for for you and the rest of you argued that any array.
+0:20:17 :  We'll always have a peek. Okay. Now if you didn't have the greater than or equal to and you had a greater then then I can you make that argument. Right? So great question in this case is just a question. You would want to modify this problem statement to find a peek. But if I if I had a different definition of a peek and this is part of algorithmic thinking you want to be able to create out of them. Is that a general? So if the problem definition changes on you, you still have a starting point to go attack the second version of the problem, so
+0:20:59 :  You could eliminate breast in the case of the greater than or equal to definition that if it exists because the people always exist, but you probably want to argue that when you want to show the correctness of your out with them. And if in fact you had a different definition about you would have to create an algorithm that tells you for sure that a pig doesn't exist or find a peek if it exists, right? So that's only the general case many a time is possible that you were at your ass to do something and you can actually give an answer to the to the to the question or find something that satisfies all the constraints required. And in that case you want to be able to put up your hand and say, you know what I searched long and hard I searched exhaustively here's my argument that I searched exhaustively and I can find it right you do that you get to keep your job, right? Otherwise, it's always the case that you didn't search hard enough.
+0:21:59 :  Nice to have that argument.
+0:22:02 :  Alright great. Thanks for the question. Feel free to interrupt raise your hand and and I'm watching you guys and I'm happy to answer questions at any time.
+0:22:10 :  So let's talk about the straightforward album The straightforward algorithm is something that starts from the left and just walks across and you might have something that looks like that. All right by that by this. I mean the numbers are increasing as you start from the left the peak is somewhere in the middle and then things. Decreasing right? So in this case, this might be the peak.
+0:22:46 :  It you also may have a situation where the big is all the way on the right you're starting from the left and is 1 2 3 4 5 6 literally in terms of the numbers and you're going to look at them and elements going all the way to the right in order to find the pee. So in the case of the middle.
+0:23:07 :  you look at
+0:23:09 :  Andover two elements
+0:23:13 :  if it was right in the middle.
+0:23:18 :  And the complexity worst case complexity.
+0:23:26 :  Is what we call Sarah Ann.
+0:23:29 :  and its beta end because in the worst-case you may have to look at all and elements and that would be the case ready starting from the left and he had to go all the way to the right now is essentially something that says of the order of them so gives you about the lower bound and upper bound big event is just a bong and what we're saying here this we're saying the sound of them to start from the left is going to essentially
+0:24:01 :  Requiring the worst case something. That's a constant X am. Okay, and you know that constant could be could be one you could send me set things up that way honored if you had a different kind of outgrew them. Maybe you could work on the on the on the constant but bottom line we are only concerned at this moment about is as its complexity and 2013 complexity of this algorithm is Linnea.
+0:24:31 :  Okay, so
+0:24:36 :  Someone help me do better. How can we do better? How can we lower the azimzadeh complexity of a one-dimensional peakfinder?
+0:24:46 :  Anybody want to take a stab at that got back there?
+0:24:58 :  You know, there's a peak during the middle of the right side. There's a higher number on the right side. Then you would just look at that until the key somewhere in there and you can can you cut it in half so you can you can do something different which is essentially try and break up this problem use a divide-and-conquer strategy and recursive we break up this one dimensional array into smaller erase and and try and get this complexity down. Yeah.
+0:25:31 :  one piece
+0:25:33 :  No, they're not if it's a find a peek. If it exists in this case is fine up here because of the definition. We don't really need this as it was. All right. Okay, so that was a great answer and you know this class after why I was going to get boring right every class gets boring. I saw you trying to break the monotony here a bit. And so and then the other thing that we realize was that these seats you're sitting on does the nice classroom, but the seats are sitting on our kind of hard, right? So whatever and I did was I was inside of you help you guys out especially the ones who are who are interacting with us and we have these
+0:26:18 :  Christian's that are six double o six cushions and invited to buy two by two Rubik's Cube here. And since you answered the first question, you got a question. This is kind of like a frisbee but not really. So, I'm not sure. I'm not sure I'm going to get it to you, but I don't think I want to say is this is not a baseball game right where you just grab the balls that can bite. This is meant for him my my friend in the red shirt. So here you go.
+0:26:45 :  Too bad. All right, so it won't hurt you if it hits you all right, he's at and raise your hands. You know, there's going to be I think I did a trivial questions if you want to ask just to make sure you're awake. So in answer to that doesn't get you a question, but you don't answer like what's the name Jace. Jace just gave is that's a good answer to trivia question that gets you a question. Okay. All right, great. So, let's put up a Jason sounded in my PR. I'm going to ride it out for the 1D version.
+0:27:41 :  So what we have here is a recursive algorithm.
+0:28:01 : Send a picture you want to keep in your head is this picture that I put up there? And this is a divide-and-conquer algorithm. You going to see this over and over the Paradigm over and over in 60006?
+0:28:21 :  the end over to position
+0:28:25 :  and I'll be going to look to the left and we're going to look to the right and you can do that in sequence.
+0:28:33 :  so
+0:28:36 :  if a n / 2
+0:28:40 :  is less than
+0:28:42 :  a n / 2 - 1
+0:28:45 :  then
+0:28:50 :  only look at
+0:28:53 :  laptop
+0:28:57 :  one through 10 / 2 - 1
+0:29:01 :  to look for paint
+0:29:03 :  corapeake
+0:29:08 :  I'd say that's step one on the right hand side of the left hand side doesn't really matter.
+0:29:15 :  I chose to do the left hand side first the left half.
+0:29:20 :  So what I've done is through that one step if in fact
+0:29:26 :  you have that condition and over to is less than the end of it you might as well then you move your left and your work on one half of the problem. But if that's not the case then if staying over and over to is less than a over and over and buy 2 + 1 then.
+0:29:49 :  only look at
+0:29:52 :  + 2 + 1 through an for a pic. So I haven't bothered writing out all the words. They're exactly the same as the left inside. You just look to the right inside.
+0:30:05 :  Otherwise, if both of these conditions don't fire, you're actually dumb. Okay, that's actually the best case and some finishing early at least in this recursive step because now that I know where to position
+0:30:21 :  is a p
+0:30:27 :  but your phone is that they know what your position is greater than or equal to both of its adjacent positions and that's exactly the definition of a pee. So you're done. Okay, so
+0:30:41 :  All of this is good.
+0:30:43 :  you want to
+0:30:46 :  right
+0:30:50 :  an argument that this album is correct, and I'm not going to bother with that. I just
+0:30:56 :  Wave my hands a bit and you also noted that but the point being you will see in your problem set a precise argument for more complicated. I'll do them the 22d version of this and then that should be a template for you to go write a proof or an argument or formal argument that happened to go around them is cracked but it does what it claims to do. And in this case, it's two three lines of careful reasoning that essentially say given the definition of the peak that this is going to find o peak in the area that you're given. So we all believe that this is correct. Alex talk now about the complexity of this out with them.
+0:31:48 :  Because the whole point of this out of them was because we didn't like the stator and complexity corresponding to the straightforward. I wasn't so it's like to do better.
+0:32:08 :  So what I like to do is ask one of you to give me a recurrence relation of the kind Unity of n equals blah blah blah.
+0:32:17 :  Add that would correspond to this recursive album this divide-and-conquer out with them. And then using that I'd like to get to the actual complexity in terms of what the Tater of complexity corresponds to.
+0:32:45 :  investigate
+0:32:48 :  Andover to Great exactly, right this is acting right. So if you look at this album in you you say from a computation standpoint. Can I write an equation responding to the execution of this algorithm? And you say to your band is the work that this out of them does on as input of size are okay?
+0:33:25 : Then I can ride.
+0:33:27 :  this equation
+0:33:31 :  and this date of one corresponds to the two comparisons that you do looking at potentially the two comparisons that you do looking at the left hand side and the right hand side. So that's why she was a constant. So that's like a potato one. All right, so you got a question to watch out guys.
+0:33:49 :  Why should I want to so bad beers left? And you start.
+0:34:02 :  Expanding it. Eventually you're going to get through the base case, which is
+0:34:09 :  Do you have one instead of one because you have a 1 elements and Ray you just for that as a peek?
+0:34:19 :  And so if you do that in your expanded all the way out are then you can ride tfn equals 1.
+0:34:28 :  Last date of one and you going to do this.
+0:34:33 :  Log in the base 2 of an X.
+0:34:39 :  And adding this all up.
+0:34:43 :  Gives you a complexity that along to a fan.
+0:34:48 :  So now you can pair this with that.
+0:34:53 :  And this really a huge difference this in exponential difference if you cut it off this out of them in Python.
+0:35:01 :  And I did both these out of them for the one diversion and if you wanted.
+0:35:08 :  On am being 10 million or so.
+0:35:14 :  Then this out with them takes 13 seconds. Okay, the pita and out of them takes 13 seconds. And this one takes the point 0 0 1 seconds. Okay. I'm so there is a big difference between theater and then they to log in and it's usually the difference between two ways to end in m. It makes sense to try.
+0:35:38 :  And reduce complexity as you can see especially if you're talking about a large inputs and you'll see that more clearly as we go to a 2d version of this problem. All right, so you can truly do better for the onesie. The one day is a straightforward problem. It gets a little more interesting the problems get a little more sophisticated been relocated to new version of finding
+0:36:08 :  so let's talk about the 2D version.
+0:36:15 :  So as you can imagine it that you need words and you have a matrix or a two-dimensional array.
+0:36:23 :  And will say this thing has and Rose and M columns.
+0:36:34 :  And now we have to Define what a peak is and it's a hill. It's the obvious definition of a peek. So if you had a in here cbdee man as you can guess.
+0:36:53 :  Is a 2d Peak?
+0:36:59 :  if and only if
+0:37:02 :  a greater than or equal to be a greater than or equal to.
+0:37:07 :  See any up there. So that's the case that you'll always find a peek in any 2D Matrix.
+0:37:23 :  No again, I'll give you the straight forward out of them.
+0:37:28 :  I think we call it the greedy essential rhythm.
+0:37:41 :  And the greediest sent out with him essentially picks the direction or and tries to follow that direction.
+0:37:50 :  In order to find a peek. So for example if I had this particular
+0:38:01 :  Matrix 14 13 12
+0:38:06 :  15 9/11
+0:38:16 :  then what might happen is if I started at some other jewelry midpoint, so the video I sent out with them has to make choices as to where to start just like we had different cases here. Are you have to make a choice as to where to start you might want to start in the middle and you might want to work your left first or you could just keep going left like that or keep going right? And if you hit an edge you go down so you make some choices as to what the default traversal directions are. And so if you say you want to start with 12, are you going to go look for something to your left and it was greater?
+0:38:55 :  Again, are you going to follow that direction? If it's not if it's less than you going to go in another Direction in this case, for example, send this case 12 13, 14, 15, 16, 17 19 and 20 and you'll find your finder's fee.
+0:39:17 :  I haven't given you a specific details of a greedy Ascent out with them, but
+0:39:25 :  I think if you
+0:39:29 :  look at the
+0:39:31 :  worst-case possibility is here with respect to a given Matrix and for any given starting point and for any given strategy in terms of choosing left first, right first or down first versus up first, you will have a situation where I'm just like we had in the ones in case you may end up watching.
+0:39:57 :  A large fraction of the elements in the studio Ray. Okay. So in this case, I'll be ended up touching a bunch of different elements and it's quite possible that you could end up touching starting from the midpoint. You could end up searching half the elements and in some cases touching all of the elements. So if you do a worse case analysis of this algorithm
+0:40:22 :  epitec around Earth with particular choice of symptoms of the starting point and the direction of search ingredients sent out with them would have pizza and M complexity and in case where an equal or unequal
+0:40:42 :  You have data and square to plastic.
+0:40:46 :  I want to spend way too much time on this because I wanted to talk to you about the divide-and-conquer versions of this out with them for the to DP but hopefully you're all with me with respect to what the worst-case complexity is. All right.
+0:41:04 :  people buy that? There
+0:41:14 :  So there are specific media center and specific matrices. If I give you the code for the alderman I give you a specific metrics that I could make your touch. I all of these elements. That's correct. So you're being very paranoid when you talk about worst-case complexity and so I'm simply because I haven't given you the specifics of Alder them yet. This is really a on a set of algorithms because I haven't given you the code. I haven't told you about it starts and which direction that goes but you go do that fix it and then I would be the person who tries to find the worst-case complexity suddenly. It's very easy to get to Pita & M in terms of having some constant multiplying and times about you can definitely get to that constant being very close to 1, okay.
+0:42:09 :  If not one, alright, so let's talk about divide and conquer let's say that I did something like this where I just tried to Jim binary search algorithm into the to Diversion.
+0:42:37 :  So what I'm going to do is
+0:42:43 :  I'm going to pick.
+0:42:46 :  the middle
+0:42:49 :  Call O.
+0:42:51 :  J equals m / 2
+0:42:55 :  And I'm going to find.
+0:42:57 :  at 1 D Peak
+0:43:00 :  using water, but I'll do them I want and I'll probably end up using the more efficient algorithm the binary search version that's gone all the way to the left of the word there.
+0:43:10 :  And let's say I find wine replica thaij take the column and I'm just finding the one DP.
+0:43:19 :  This is Jay Cole's. That's all I
+0:43:25 :  No, I use.
+0:43:29 :  IGA in particular Road, I
+0:43:32 :  as a star
+0:43:37 :  Define
+0:43:40 :  At 1 DP Conroe. I
+0:43:47 :  And I stand up here and I'm really happy. Okay, because I say wow. I picked the middle call him. I found a 1D Peak that is taida and complexity to find a 1D because we argued and once I'd like to be all that's what this was better have that your login complexity. And then once I do that, I can find a 1tb Conroe. I in this case, I would be a m w o g log and complexity if n equals m that have a couple of steps of log in and I'm done I am I done.
+0:44:38 :  No, can someone tell someone tell me why I'm not done at precisely yet.
+0:44:54 :  That's exactly correct. So it doesn't work. It's okay you want to be correct in a being got correct an inefficient? This is definitely better than being inefficient and being Incorrect and efficient. So this is efficient dealt with them in the sense that it would only take
+0:45:20 :  log in time, but it doesn't work and I'll I'll give you a simple example here where it doesn't work.
+0:45:32 :  the problem is
+0:45:35 :  a2dp
+0:45:39 :  may not exist.
+0:45:43 :  Conroe I
+0:45:45 :  and there's an example of that.
+0:45:53 : I took this is this is exactly the example of that. Let's say that I started with this row since it's the middle row and I can start with this one or that one. It's a I started with them, but that one I end up finding a peek. And if this where can I buy pure I choose 12 as a peek and it's quite possible that I've returned 12 is a peek. Even though 19 is bigger because 12 is a peek given 10 and 11 up here. And then when I choose this particular, oh and I find a peek on this road. It would be 14. That is a 1D pecan this road, but 14 is not a true teepee. Okay. So this particular example 1414
+0:46:47 :  and 14 is not a charity.
+0:46:53 :  You can collect your question after the class.
+0:46:57 :  abso
+0:46:59 :  Not so good.
+0:47:01 :  Look like an efficient out with him but doesn't work. All right, so, how can we get to something that actually works? So the last out of them that I'm going to show you?
+0:47:14 :  And you'll see a four different albums in your problem set.
+0:47:21 :  That you'll have to analyze the complexity for and decided they're efficient. And if that correct my tears up.
+0:47:30 :  a recursive version
+0:47:33 :  is better than in terms of complexity than the greedy is sent out with them and this one work.
+0:47:43 :  So what I'm going to do is pick a middle column.
+0:47:49 :  Jake was Mo virtue as before.
+0:47:53 :  I'm going to find.
+0:47:56 :  the global maximum
+0:48:00 :  on Call of J.
+0:48:05 :  And that's what I'll be at IGA.
+0:48:09 :  Android compare
+0:48:12 :  I, j minus one.
+0:48:16 :  Hi, Jay.
+0:48:18 :  And I G + 1 which means that once I found the maximum in this row all I'm going to I'm going to look to the left and the right and compare.
+0:48:27 :  I'm going to pick.
+0:48:29 :  the left columns
+0:48:33 :  if i, j - 1 is greater than
+0:48:38 :  hi, Jay.
+0:48:40 :  And similarly for the right.
+0:48:49 :  and if in fact I either of these two
+0:48:55 :  conditions don't fire that and what I have is I, Jay is greater than or equal to i, j minus one and I G A J + 1 then I'm done. Just like I had
+0:49:10 :  for the one diversion if is greater than or equal to -1 + 8 + 1
+0:49:22 :  Employs IGA is a2dp.
+0:49:28 :  Text reason that's the case is because I, J was the maximum element in that column. So, you know that I am compared it to all of the adjacent elements looking up and looking down. That's the maximum element. Now, you've looked at the left and the right and in fact is greater than or equal to the elements on the left and the right and so therefore is it to DP? Okay. So in this case when you pick the left or the right column going to pick one of them you going to solve?
+0:50:01 :  the new problem
+0:50:06 :  half the number of columns
+0:50:16 :  All right, and again and you have to go through an analysis or an argument to make sure that this algorithm is correct, but it's totally correct simply because it matches the one diversion much more closely and you also have your condition that you break away.
+0:50:37 :  Right here where you have a 2d pink just like the one diversion and what you've done is break this Matrix up into half the size and that's essentially why this out of the works. I've been you have a single column.
+0:51:01 :  find
+0:51:02 :  the global maximum
+0:51:07 :  and you're done.
+0:51:09 :  Bites the Dust up the bass case. So I let me end with just riding out what the recurrence relation for the complexity of this is and argue.
+0:51:20 :  What the overall complexity of the sound of The Miz?
+0:51:25 :  And then I'll give you the bad news.
+0:51:30 :  All right. So over all what you have is you have something like T of NM equals T of n m / 2 + data and why is that well and is the number of Rose Amazon number of columns in one case you will be breaking things down into half the number of columns, which is m / 2 and in order to find the global maximum. You'll be doing pizza and work cuz you finding the global maximum, right? You just have to scan it this that's the way that's what it's going to take.
+0:52:08 :  And so if you do that and you go running through you and you know that she of anwan is stated in which is this last part over here.
+0:52:19 :  I got your base case you got T of NM is fed up and
+0:52:26 :  add potatoes and log of m x
+0:52:32 :  log two of them times, which is theater of n
+0:52:39 :  Talk to a fan.
+0:52:43 :  So you're not done the thick finding what you see is at 4 out of them is coded in Python.
+0:52:53 :  I'm not going to get away with this out cuz I'm sorry but you have to recognize them. You will have seen versions of those out rhythms already in lecture and your job is going to be too and like I said before prove that one of them is correct and find concrete samples for the ones that are incorrect are the core staff of stick around here to answer questions logistical questions are questions about lecture.

@@ -1,0 +1,372 @@
+소요시간 : 283.7664473056793 
+영상링크 : https://www.youtube.com/watch?v=qph77bTKJTM
+추출방식 : 2
+{
+  "videoTitle": "공개 키 암호화란 무엇인가?",
+  "videoDescription": "공개 키 암호화에 대한 간단한 수학적 원리와 예시에 대해 설명합니다.",
+  "Lecture Note": [
+    {
+      "timestamp": "00:00:00",
+      "section_title": "📚 공개 키 암호화란?",
+      "content": "공개 키 암호화는 소수의 특성과 모듈러 산술에 기반한 매우 간단한 수학적 원리를 사용하여 암호화하는 방법입니다. 소수와 관련된 수학은 여전히 매우 어렵기 때문에 소수를 찾는 것은 컴퓨터로 해결할 수 있지만, 소인수분해는 여전히 어려운 과제입니다."
+    },
+    {
+      "timestamp": "00:01:00",
+      "section_title": "🔍 비대칭성과 공개 키 암호화",
+      "content": "공개 키 암호화에서 비대칭성은 중요한 역할을 합니다. 공개 키 암호화는 케이크를 만드는 것과 비슷합니다. 재료를 찾는 것은 쉽지만, 섞은 후에는 다시 분리하기가 매우 어렵습니다. 공개 키 암호화에서는 두 개의 주요 구성 요소인 공개 키와 개인 키를 사용합니다. 공개 키는 누구나 볼 수 있지만, 개인 키는 공개 키를 이용하여 다시 분리하기가 매우 어렵습니다."
+    },
+    {
+      "timestamp": "00:02:00",
+      "section_title": "📈 공개 키 암호화의 원리",
+      "content": "공개 키 암호화의 원리는 다음과 같습니다:\n1. 두 개의 소수를 선택합니다.\n2. 이 소수를 곱하여 공개 키를 형성합니다.\n3. 공개 키는 암호화할 때 사용되는 숫자입니다.\n4. 암호화된 메시지를 복호화하기 위해 개인 키를 사용합니다."
+    }
+  ],
+  "questions": [
+    {
+      "question": "공개 키 암호화의 핵심은 무엇인가요?",
+      "answer": "공개 키 암호화의 핵심은 소수와 모듈러 산술에 기반한 비대칭성입니다."
+    },
+    {
+      "question": "공개 키 암호화에서 공개 키와 개인 키의 역할은 무엇인가요?",
+      "answer": "공개 키는 암호화할 때 사용되는 숫자로 누구나 볼 수 있지만, 개인 키는 공개 키를 이용하여 암호화된 메시지를 복호화하기 위해 사용되는 숫자로 다시 분리하기가 매우 어렵습니다."
+    },
+    {
+      "question": "공개 키 암호화의 원리를 간단히 설명해보세요.",
+      "answer": "공개 키 암호화의 원리는 두 개의 소수를 선택하여 곱하여 공개 키를 형성하고, 이 공개 키를 이용하여 메시지를 암호화한 후, 개인 키를 사용하여 암호화된 메시지를 복호화하는 것입니다."
+    }
+  ],
+  "script": [
+    {
+      "timestamp": "0:00:00",
+      "content": "This video is sponsored by blinkist. What is public key cryptography was used mostly in in modern Communications. I didn't realize on remarkably simple mathematics relies on properties of prime numbers and do modular arithmetic sell prime numbers is divisible by themselves, but there's a huge amount. We don't know about the primes a lot of mathematics that involve Prime's is still extremely difficult to us so we can find prime numbers message for doing that with computers, but we don't have a good method for breaking numbers up in terms of that prime factor."
+    },
+    {
+      "timestamp": "0:01:00",
+      "content": "Asymmetry is critical to a public key cryptography. So it's a bit like making a cake is easy to find the constituent Parts. But once you mix them together, it's very hard to separate them back after K. Components of public key cryptography number and subtract from it and multiples of some other number and do arithmetic a bit like you would with a with a clock where the you do arithmetic modular 12. We tend to only record the time in terms of up to 12. 15:00 is the same as 3 cuz you can subtract 2 of 12 and 2/3. So for example 10 is is we would take congruent to 3 mudgett of seven because if you subtract 7 from 10 you get three and"
+    },
+    {
+      "timestamp": "0:02:00",
+      "content": "And 17 is congruent to 3 mode 7 because you can subtract off twice 7 and you get to 3. So there's there's the two key components. So what is involved I feels to hold describe in general and then I'll give a couple of examples."
+    },
+    {
+      "timestamp": "0:02:17",
+      "content": "So we start with two prime numbers."
+    },
+    {
+      "timestamp": "0:02:22",
+      "content": "Add to queue and the jumpers I'll give later. We'll have small prime numbers just to make the manageable but in practice you use quite large prime numbers, maybe with a hundred digits that say."
+    },
+    {
+      "timestamp": "0:02:35",
+      "content": "And you multiply these together to form a number and is p times Q."
+    },
+    {
+      "timestamp": "0:02:43",
+      "content": "And and is cooled the public. So this is something this is a number which we will advertise."
+    },
+    {
+      "timestamp": "0:02:54",
+      "content": "Anyone can see an but it's very hard for people to separate and back in terms of the product of pink you to find p and Q for them. That's extremely difficult. So it's easy if you know pink you to find an you smell some fun together, but if you know and don't know p&q, it's exceedingly difficult to find pink you it would be a computational tasks if pink you allow me enough of it would take longer than the age of the universe give him nothing compared to this one go Prime to this number but has no common factors in common with it. So we'll choose a number 89"
+    },
+    {
+      "timestamp": "0:03:44",
+      "content": "Add to that to that number. I'll give some examples."
+    },
+    {
+      "timestamp": "0:03:49",
+      "content": "And then let's say we want to encode something. We want to send a number that's in some coded way. That's very hard for other people to get to decode umbral cool number app."
+    },
+    {
+      "timestamp": "0:04:05",
+      "content": "So this is the number that we want to transmit to somebody else and we don't want a third party to be able to to find M given the way we encode it. So what you do is quite simple you phone M get end the message you want to send you raise it to the power a Sim number so you X selfie times and then you do your arithmetic."
+    },
+    {
+      "timestamp": "0:04:32",
+      "content": "mature and"
+    },
+    {
+      "timestamp": "0:04:34",
+      "content": "I'm the coolest number c."
+    },
+    {
+      "timestamp": "0:04:39",
+      "content": "This is the encoded message. This is the encoded number. So you've taken the number you want to encode you multiply by self e x and you do this you do this much either and so you subtract 12 multiples of an until you get a number sea that lies between 0 and + -"
+    },
+    {
+      "timestamp": "0:05:04",
+      "content": "I'm not to do this all you need to know the number and that you want to send the number e and the number and"
+    },
+    {
+      "timestamp": "0:05:15",
+      "content": "so the way that public key cryptography works is that if you if someone wants to send me an encrypted message, I tell them and Andy."
+    },
+    {
+      "timestamp": "0:05:27",
+      "content": "and they want to send me their number and so they know em, they know that my to my public key is an 1/8 those things. But I would advertise until they can form C from them sh and my public key which is and and a"
+    },
+    {
+      "timestamp": "0:05:51",
+      "content": "do only then reconstruct the number M. He was sent."
+    },
+    {
+      "timestamp": "0:06:02",
+      "content": "How do I from the number c getting the number am I?"
+    },
+    {
+      "timestamp": "0:06:12",
+      "content": "D conversation I can do such that d x e is equal to 1"
+    },
+    {
+      "timestamp": "0:06:22",
+      "content": "modular"
+    },
+    {
+      "timestamp": "0:06:25",
+      "content": "the number P - 1 times Q - 1"
+    },
+    {
+      "timestamp": "0:06:33",
+      "content": "so I know my eat and I have to find a number Dion one always exists such that when I x d i get one if I subtract of multiples of P - 1 Q - 1/10 Q - 1"
+    },
+    {
+      "timestamp": "0:06:49",
+      "content": "and then what I do is I get a socket C."
+    },
+    {
+      "timestamp": "0:06:53",
+      "content": "And I raise it to the parody."
+    },
+    {
+      "timestamp": "0:06:58",
+      "content": "Undo my arithmetic."
+    },
+    {
+      "timestamp": "0:07:02",
+      "content": "modular add"
+    },
+    {
+      "timestamp": "0:07:06",
+      "content": "so I'm not I have somebody sent me the number to see the encoded number. They were the way they've been coded the number to and they want me to know that I raised my see to have a d I know cuz I solve this equation beforehand and I compute c250d much of a by a miracle. The answer is always an easy trick lyrics of the way that prime numbers what that if I do this I get my number and I get the number and back that they sent me and for them to send me see only require knowledge of it and"
+    },
+    {
+      "timestamp": "0:07:45",
+      "content": "And a witch I've ever ties so they can easily do that. So need to decode this. I need to know p&q and that's very hard for other people tonight. So my knowledge is very hard for the people to discover p and Q from an so I have a way of security decrypting the message given the information I have is very hard for other people to do that. We just heard about our essay cryptography from John but this is of course not the first message humans have used to encrypt secret messages the code book by Simon sing provides an entertaining look at the longer intriguing history of secret communication from ancient Greece to the modern-day NSA and this is just one example from over 5,500 titles available on blinkist the app which helps you to understand the most important ideas for Noah."
+    },
+    {
+      "timestamp": "0:08:45",
+      "content": "Fiction books and podcast in only 15 minutes and you can see the eight blinks present in the code book each one comprising of a digestible segment which you can read or listen to RSA cryptography app is in blank numbers 7, which adds some historical contacts to the algorithm that John has just been talkin about and there's more with the new blinkist Kinect feature. You can share your premium account with another user giving full access to two different accounts for the price of one. So the only can you lend some amazing. You must you can share it with your friends to start your 7-Day free trial and enjoy 25% off blinkist premium by clicking on the link below. I'm going to start with an ultra simple example."
+    },
+    {
+      "timestamp": "0:09:35",
+      "content": "And then do some that require a little more arithmetic for this Panorama Tech."
+    },
+    {
+      "timestamp": "0:09:41",
+      "content": "Set the example I'm going to start with is wet."
+    },
+    {
+      "timestamp": "0:09:46",
+      "content": "Is 5"
+    },
+    {
+      "timestamp": "0:09:49",
+      "content": "and a q is 11 times with maybe a hundred digits, but I'm doing this just finished your purposes."
+    },
+    {
+      "timestamp": "0:10:06",
+      "content": "So I know pink you that things on my phone and which is 50 * q55."
+    },
+    {
+      "timestamp": "0:10:20",
+      "content": "That's the number I advertise anybody who wants to send me a message. I tell them use 55 fan."
+    },
+    {
+      "timestamp": "0:10:30",
+      "content": "I also want to fool an MBA. I want to choose a number eight and for that I need to compute P -1."
+    },
+    {
+      "timestamp": "0:10:40",
+      "content": "Tom's coupon as well"
+    },
+    {
+      "timestamp": "0:10:43",
+      "content": "and that's obviously 4 * 10 + 40."
+    },
+    {
+      "timestamp": "0:10:52",
+      "content": "I need to choose a number which is co-prime 24th have no prime factors and come with 40. So I'm going to choose the"
+    },
+    {
+      "timestamp": "0:11:04",
+      "content": "MP3"
+    },
+    {
+      "timestamp": "0:11:06",
+      "content": "I'm going to advertise that as well. So what I advertise to the world outside is n55 and if you want to send me a message use those two numbers that say somebody wants to send me the message server simple message the message 7 a.m. They want to send me the number 7 in safe what and but they don't want anyone else to know that I sent me the number seven. What do they do so I get sent."
+    },
+    {
+      "timestamp": "0:11:43",
+      "content": "the number 7"
+    },
+    {
+      "timestamp": "0:11:47",
+      "content": "to the power of 3"
+    },
+    {
+      "timestamp": "0:11:51",
+      "content": "modular 55"
+    },
+    {
+      "timestamp": "0:11:57",
+      "content": "which which is 13."
+    },
+    {
+      "timestamp": "0:12:09",
+      "content": "So that's the number I get sent. This is C."
+    },
+    {
+      "timestamp": "0:12:14",
+      "content": "Encrypted number on somebody who went to a who who who if they were interested and they said they want to try to understand how to go from 2:13 to 7, but that's difficult unless you know pinky Rose. I'm going to demonstrate. How do I go from 13 back to 70. All I need my ID. I need to solve d x e d times 3 3D"
+    },
+    {
+      "timestamp": "0:12:44",
+      "content": "is Wang"
+    },
+    {
+      "timestamp": "0:12:47",
+      "content": "mojilife 40"
+    },
+    {
+      "timestamp": "0:12:54",
+      "content": "So I need to find the number D. Would you find * 3 is a multiple of 40 + 1 oz simple his solution is."
+    },
+    {
+      "timestamp": "0:13:12",
+      "content": "2727 * 381 and that twice 40 + 130 is 27 is an is a number that I can use and then to decode I'm Scentsy, which is 13."
+    },
+    {
+      "timestamp": "0:13:32",
+      "content": "And I meant to get 13 and raise it to the power 27."
+    },
+    {
+      "timestamp": "0:13:37",
+      "content": "help undo that"
+    },
+    {
+      "timestamp": "0:13:41",
+      "content": "How much you like 55?"
+    },
+    {
+      "timestamp": "0:13:46",
+      "content": "And if you do that exercise exercise that you might want to try at home and you might want to try to think of clever method you can do this on a piece of paper I did last night, but I invite you to think about clever ways to do that. It's not as hard as it looks the answer you'll find is that that gives you back?"
+    },
+    {
+      "timestamp": "0:14:11",
+      "content": "So this is how somebody can send me the number seven and Cryptid in 213 in a way that I can decrypt if I know p&q because I needed to construct might be here between us which involved team is 1 Q - 1 but which unless you know pnq is very hard to do. I'll tell you what the mathematics is that sort of Independence."
+    },
+    {
+      "timestamp": "0:14:41",
+      "content": "Is the second example is sweat pee?"
+    },
+    {
+      "timestamp": "0:14:45",
+      "content": "is 23"
+    },
+    {
+      "timestamp": "0:14:47",
+      "content": "computer"
+    },
+    {
+      "timestamp": "0:14:50",
+      "content": "Is 41 a prime number?"
+    },
+    {
+      "timestamp": "0:15:03",
+      "content": "41"
+    },
+    {
+      "timestamp": "0:15:05",
+      "content": "which is 943"
+    },
+    {
+      "timestamp": "0:15:10",
+      "content": "do I tell tell the world use 943 if you want to send me a message via thing I tell the world is a number 80, which I want to be co-prime to P -1 * cumin as well as 880."
+    },
+    {
+      "timestamp": "0:15:28",
+      "content": "And so I'm going to choose a number of just cope run to that. I'm going to choose to eat at 7."
+    },
+    {
+      "timestamp": "0:15:34",
+      "content": "and this case"
+    },
+    {
+      "timestamp": "0:15:37",
+      "content": "then I suppose my message that I want to send is my house number."
+    },
+    {
+      "timestamp": "0:15:44",
+      "content": "To the message is the number of my house 35 so they sending me 35. What did they send me there? Send me the number see which is 35 ^ 7."
+    },
+    {
+      "timestamp": "0:16:02",
+      "content": "mojilife 943"
+    },
+    {
+      "timestamp": "0:16:08",
+      "content": "Which according to my calculations is 545?"
+    },
+    {
+      "timestamp": "0:16:15",
+      "content": "So that's what they send me and they can send me that publicly. They can tell me I'm used your I used your n943. Are you sure he's seven and the secret message I want to send you is encrypted to be 545 and they can take out a full-page advertisement in the newspaper robot information in the whole point. Is that the principal only I can take to decode the message we need to find a day."
+    },
+    {
+      "timestamp": "0:16:58",
+      "content": "section d x"
+    },
+    {
+      "timestamp": "0:17:04",
+      "content": "but you seven."
+    },
+    {
+      "timestamp": "0:17:08",
+      "content": "Is congruent to one?"
+    },
+    {
+      "timestamp": "0:17:11",
+      "content": "modular P - 1 * 2 - 1 which is 818"
+    },
+    {
+      "timestamp": "0:17:21",
+      "content": "so we need to find a search that seven times Diaz Walmart 880 and one solution to that is D is 503"
+    },
+    {
+      "timestamp": "0:17:36",
+      "content": "Again, that's a challenge that you may wish that you can leave. You can check this very easily but the question is how you would find that day. I'll leave that an exercise. So now what we do is compute."
+    },
+    {
+      "timestamp": "0:17:51",
+      "content": "The message I'm sent 545."
+    },
+    {
+      "timestamp": "0:17:56",
+      "content": "I'm with we going to raise that to the power deep is 503."
+    },
+    {
+      "timestamp": "0:18:05",
+      "content": "We're going to do this monkey life."
+    },
+    {
+      "timestamp": "0:18:09",
+      "content": "943"
+    },
+    {
+      "timestamp": "0:18:12",
+      "content": "on the claim is that if you do this sum and The Rock tricks to do it. I wouldn't do it for you that you can put this on and picking up computer turns out to be"
+    },
+    {
+      "timestamp": "0:18:27",
+      "content": "So I would get back my message and this is how public key cryptography works. I advertise something very publicly advertised and and a anyone can send me a message a number or a text message has converted into a number by signing numbers to the letters in the message. They can send me that I get the number they send me the number see what you gain any one can interfere but it's only me who can decrypt this to get back to 35. You need to know P&K and only I know this and why does all this work? Well, it's related to a very beautiful piece of of seventeenth-century mathematics tutu from a from a little fear of a generalization of that to the oil function or Distortion function. You'll find that all of this can be done in a very Elementary why but I do"
+    }
+  ]
+}

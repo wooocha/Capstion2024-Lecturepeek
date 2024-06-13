@@ -1,0 +1,490 @@
+소요시간 : 38.737025022506714 
+영상링크 : https://www.youtube.com/watch?v=4zahvcJ9glg
+추출방식 : 1
+{
+  "videoTitle": "RSA 암호 시스템 설명",
+  "videoDescription": "RSA 암호 시스템의 작동 방식과 메시지를 암호화하고 복호화하는 방법을 배워보세요.",
+  "Lecture Note": [
+    {
+      "timestamp": "00:00:00",
+      "section_title": "📝 소개",
+      "content": "강사는 설명에서 실제 숫자를 사용하지 않아서 사과합니다. 그는 RSA의 개념에 집중하고자 합니다."
+    },
+    {
+      "timestamp": "00:00:25",
+      "section_title": "🔒 RSA 암호 시스템",
+      "content": "RSA는 Rivest, Shamir, Adelman의 약자입니다. 그들은 RSA 암호 시스템을 개발했습니다. 암호화와 복호화를 위해 숫자 쌍이 필요합니다."
+    },
+    {
+      "timestamp": "00:00:47",
+      "section_title": "🔐 암호화",
+      "content": "메시지를 암호화하려면 숫자로 변환하세요. 그런 다음, 해당 숫자를 암호화 키의 첫 번째 숫자의 거듭제곱으로 올리세요. 결과를 암호화 키의 두 번째 숫자로 나눈 나머지를 취하세요."
+    },
+    {
+      "timestamp": "00:02:57",
+      "section_title": "🔓 복호화",
+      "content": "암호문을 복호화하려면 복호화 키를 사용하세요. 암호문을 복호화 키의 첫 번째 숫자의 거듭제곱으로 올리세요. 결과를 복호화 키의 두 번째 숫자로 나눈 나머지를 취하세요."
+    },
+    {
+      "timestamp": "00:05:21",
+      "section_title": "🔢 나머지 계산",
+      "content": "나머지를 계산하려면 거듭제곱의 결과를 모듈러스 숫자로 나누세요. 그런 다음, 정수 부분을 빼고 소수 부분을 모듈러스로 곱하세요. 결과는 나머지입니다."
+    }
+  ],
+  "questions": [
+    {
+      "question": "RSA는 무엇의 약자인가요?",
+      "answer": "Rivest, Shamir, Adelman"
+    },
+    {
+      "question": "암호화의 첫 번째 단계는 무엇인가요?",
+      "answer": "메시지를 숫자로 변환하기"
+    },
+    {
+      "question": "나머지란 무엇인가요?",
+      "answer": "소수 부분을 모듈러스로 곱한 후의 결과"
+    }
+  ],
+  "script": [
+    {
+      "timestamp": "0:00:00",
+      "content": "I have to kind of apologize. [I] thought about how to do this, right?"
+    },
+    {
+      "timestamp": "0:00:03",
+      "content": "I could have done this with actual"
+    },
+    {
+      "timestamp": "0:00:05",
+      "content": "How the Irsa system would actually work with actual numbers?"
+    },
+    {
+      "timestamp": "0:00:08",
+      "content": "With an actual like long message and all that kind of thing and we could do with computers"
+    },
+    {
+      "timestamp": "0:00:12",
+      "content": "I could show you how to do it, and I thought no"
+    },
+    {
+      "timestamp": "0:00:14",
+      "content": "No, I actually want you to see the maps of what's going on"
+    },
+    {
+      "timestamp": "0:00:16",
+      "content": "So I have picked simple simple things like a one letter message okay, so forgive me for that. I should"
+    },
+    {
+      "timestamp": "0:00:22",
+      "content": "Okay, yeah, so so now let me start"
+    },
+    {
+      "timestamp": "0:00:25",
+      "content": "So the RSA Cryptosystem right RSA stands for these three names on rivest. That's a V rivest shamir"
+    },
+    {
+      "timestamp": "0:00:32",
+      "content": "Adelman these guys were geniuses okay, [and] you'll see why as you as the method unfold"
+    },
+    {
+      "timestamp": "0:00:38",
+      "content": "But no one no one remembers their names, so we just call it rSA. Okay the rSA Cryptosystem"
+    },
+    {
+      "timestamp": "0:00:44",
+      "content": "it works like so"
+    },
+    {
+      "timestamp": "0:00:47",
+      "content": "What you need is an encryption?"
+    },
+    {
+      "timestamp": "0:00:50",
+      "content": "Pair of numbers okay, and this is kind of like the pair of locks"
+    },
+    {
+      "timestamp": "0:00:54",
+      "content": "[that's] sorry not the pair of lock the pair of numbers is the lock that I hand out to everyone okay, so I?"
+    },
+    {
+      "timestamp": "0:00:59",
+      "content": "This pair of numbers okay, and I say look you want to send me you want to send me any message you like okay?"
+    },
+    {
+      "timestamp": "0:01:06",
+      "content": "Use this this lock right to lock up your message"
+    },
+    {
+      "timestamp": "0:01:10",
+      "content": "And then I'll be able to decipher it and only I will be able to separate so just as an example suppose you want [to]"
+    },
+    {
+      "timestamp": "0:01:16",
+      "content": "Very secretive you want to send you the letter b. Okay, so go home my boat all right?"
+    },
+    {
+      "timestamp": "0:01:21",
+      "content": "So how do we do this let me show you then that saab is deceptively simple"
+    },
+    {
+      "timestamp": "0:01:26",
+      "content": "But you do need to remember a little bit about what we did with modular arithmetic on the Caesar cipher"
+    },
+    {
+      "timestamp": "0:01:30",
+      "content": "I promised our dear heart okay, so here's what we're going to do"
+    },
+    {
+      "timestamp": "0:01:34",
+      "content": "First there, this is this is text, but we need to deal with numbers right so I'll convert this to a number okay, so numerically"
+    },
+    {
+      "timestamp": "0:01:42",
+      "content": "Like we can decide whatever, but I suppose"
+    },
+    {
+      "timestamp": "0:01:44",
+      "content": "We'll call it - what are we okay so - that's the actual definite text for number. We're going to send okay"
+    },
+    {
+      "timestamp": "0:01:51",
+      "content": "Now I want to I"
+    },
+    {
+      "timestamp": "0:01:53",
+      "content": "Want to use the cipher on this thing okay? So [I'm] going to do is I'm going to take this number - okay"
+    },
+    {
+      "timestamp": "0:01:59",
+      "content": "I'm going to raise it to the first power the power of the first number as you said, right"
+    },
+    {
+      "timestamp": "0:02:05",
+      "content": "So to the power of five and then I'm going to say more"
+    },
+    {
+      "timestamp": "0:02:10",
+      "content": "The second number this is what I'm going to calculate"
+    },
+    {
+      "timestamp": "0:02:13",
+      "content": "This is how I'm using the numbers so first if you set the letter C"
+    },
+    {
+      "timestamp": "0:02:16",
+      "content": "Which would be 3 then what you would calculate is 3 to the power of five more 14, okay?"
+    },
+    {
+      "timestamp": "0:02:22",
+      "content": "Let's just quickly do this because the numbers are okay. That's how I chose them right to the power of 5"
+    },
+    {
+      "timestamp": "0:02:27",
+      "content": "To 2 notice that's 32 good right mod 14 now"
+    },
+    {
+      "timestamp": "0:02:31",
+      "content": "Do you remember what Mod means [no] [sugar] is knitted right this number 14 is called the modulus"
+    },
+    {
+      "timestamp": "0:02:37",
+      "content": "What I want is the remainder that I get that's left after I divide 32 by 14, okay?"
+    },
+    {
+      "timestamp": "0:02:43",
+      "content": "So of course the biggest number the biggest multiple the 14 you can fit into this is 28"
+    },
+    {
+      "timestamp": "0:02:47",
+      "content": "And so what's left over is 4 does that make sense? Yeah, so that's a 4 mod"
+    },
+    {
+      "timestamp": "0:02:54",
+      "content": "14 okay, so now for"
+    },
+    {
+      "timestamp": "0:02:57",
+      "content": "This is my ciphertext okay, so the ciphertext"
+    },
+    {
+      "timestamp": "0:03:02",
+      "content": "My encrypted message, okay will be 4 which is D"
+    },
+    {
+      "timestamp": "0:03:07",
+      "content": "I guess [ok] so that's what you send to me right and now it's a secret the original message is lost"
+    },
+    {
+      "timestamp": "0:03:15",
+      "content": "How do I decipher this okay? Well?"
+    },
+    {
+      "timestamp": "0:03:19",
+      "content": "You don't use this pair of numbers, okay?"
+    },
+    {
+      "timestamp": "0:03:22",
+      "content": "I have the R value of the key right the key is related to this the second number [the] 14 is the same"
+    },
+    {
+      "timestamp": "0:03:28",
+      "content": "But for decryption the first number is different"
+    },
+    {
+      "timestamp": "0:03:31",
+      "content": "Right so in some sense is this first number. It's the secret. It's the it's the key if you find it out"
+    },
+    {
+      "timestamp": "0:03:36",
+      "content": "You can decipher everything that comes to me okay? So in this case"
+    },
+    {
+      "timestamp": "0:03:41",
+      "content": "The decryption Key is 11 14 like I said this number here the modulus is the same"
+    },
+    {
+      "timestamp": "0:03:47",
+      "content": "but this number here this one is the key"
+    },
+    {
+      "timestamp": "0:03:52",
+      "content": "Now what do I do with this well?"
+    },
+    {
+      "timestamp": "0:03:54",
+      "content": "I'm going to go through the same process, but I'm going to use this pair of numbers instead [of] this pair of numbers, okay?"
+    },
+    {
+      "timestamp": "0:03:59",
+      "content": "I take your ciphertext right which was the ladder deep and I'm going to go through this whole person again"
+    },
+    {
+      "timestamp": "0:04:04",
+      "content": "I have to convert it to a number which is 4 [ok] then I raise [it] to this power, and I say more"
+    },
+    {
+      "timestamp": "0:04:13",
+      "content": "14 okay now to the power of 5 you could do that in your head [before] [the] power of 11"
+    },
+    {
+      "timestamp": "0:04:18",
+      "content": "Maybe not so get your calculator out"
+    },
+    {
+      "timestamp": "0:04:27",
+      "content": "Yes, well, how do you get [Eleven]? I'll get to that, but the point is I know what it is"
+    },
+    {
+      "timestamp": "0:04:31",
+      "content": "And you don't talk"
+    },
+    {
+      "timestamp": "0:04:32",
+      "content": "That's part of the point that you can't just you can't just see oh, yeah"
+    },
+    {
+      "timestamp": "0:04:36",
+      "content": "Five means Eleven right the point is that no one can work it out?"
+    },
+    {
+      "timestamp": "0:04:41",
+      "content": "In fact, it's I'll show I'll tell you how hard is to a gap in the end"
+    },
+    {
+      "timestamp": "0:04:47",
+      "content": "So I have this can yep"
+    },
+    {
+      "timestamp": "0:04:49",
+      "content": "No, no, and you also think what if it was always going to be [11], it'll be a pretty lousy education"
+    },
+    {
+      "timestamp": "0:04:57",
+      "content": "All [right]. See you guys later there now. Yeah, so the first thing you do"
+    },
+    {
+      "timestamp": "0:05:02",
+      "content": "The first thing you do is for the power of 11 okay for to the power of 11?"
+    },
+    {
+      "timestamp": "0:05:07",
+      "content": "Okay now then you get out this monstrous number"
+    },
+    {
+      "timestamp": "0:05:14",
+      "content": "Okay, and this is Mod 14"
+    },
+    {
+      "timestamp": "0:05:17",
+      "content": "okay, Mod 14"
+    },
+    {
+      "timestamp": "0:05:20",
+      "content": "so"
+    },
+    {
+      "timestamp": "0:05:21",
+      "content": "Unfortunately or maybe fortunately um our calculators don't have a mod button on there, okay?"
+    },
+    {
+      "timestamp": "0:05:27",
+      "content": "So I will short show you a sort of a quick and dirty"
+    },
+    {
+      "timestamp": "0:05:31",
+      "content": "Shortcut that will work out what this number is and actually part of your homework"
+    },
+    {
+      "timestamp": "0:05:34",
+      "content": "[I'm] going to make a star here, so I don't forget it"
+    },
+    {
+      "timestamp": "0:05:37",
+      "content": "Part of your homework in a post after this lesson is to explain"
+    },
+    {
+      "timestamp": "0:05:44",
+      "content": "What I'm about to do, so you want to take note of what I do fairly carefully, okay? Why does what I do?"
+    },
+    {
+      "timestamp": "0:05:50",
+      "content": "What is why is what? I will do why does it work and it introduces there's a problem with the method"
+    },
+    {
+      "timestamp": "0:05:57",
+      "content": "It's easy to solve by what you work out number one. Why does it work number, two?"
+    },
+    {
+      "timestamp": "0:06:00",
+      "content": "Why does it introduce this problem to strange kind of problem all right? So here's what we going to do remember?"
+    },
+    {
+      "timestamp": "0:06:05",
+      "content": "This is about remainders right [and] division all I kind of think so the first thing I'll do is"
+    },
+    {
+      "timestamp": "0:06:08",
+      "content": "I'll take that number which is on my display and I'll divide by the modulus 14, so you divide by 14"
+    },
+    {
+      "timestamp": "0:06:15",
+      "content": "[and] it'll give you like I gives you a fraction, but I want the decimal okay"
+    },
+    {
+      "timestamp": "0:06:20",
+      "content": "So this shows me two nine nine"
+    },
+    {
+      "timestamp": "0:06:22",
+      "content": "five nine three point one four two nine blah blah blah blah blah, okay"
+    },
+    {
+      "timestamp": "0:06:27",
+      "content": "[so] I see that number okay now what I want to do is just mentally take note of the"
+    },
+    {
+      "timestamp": "0:06:32",
+      "content": "Integer part of that no which is two nine [nine] five nine three"
+    },
+    {
+      "timestamp": "0:06:37",
+      "content": "Okay, so what I'm going to do is"
+    },
+    {
+      "timestamp": "0:06:40",
+      "content": "Actually should put that off on the side"
+    },
+    {
+      "timestamp": "0:06:41",
+      "content": "But I'm running in a space swimming what I'm going to do is I'm going to subtract the integer part from the whole number"
+    },
+    {
+      "timestamp": "0:06:46",
+      "content": "Okay, so on my calculator [with] this on the display. I say minus two nine [nine]. Five nine three"
+    },
+    {
+      "timestamp": "0:06:53",
+      "content": "Okay, and what's left is a decimal in fact it's this decimal. Okay now once I've got that decimal there"
+    },
+    {
+      "timestamp": "0:06:59",
+      "content": "I want to multiply back by this [modulars] fourteen okay, if I multiply by fourteen"
+    },
+    {
+      "timestamp": "0:07:06",
+      "content": "What my calculator then says is no [money] cookies my calculator then says this?"
+    },
+    {
+      "timestamp": "0:07:12",
+      "content": "and"
+    },
+    {
+      "timestamp": "0:07:13",
+      "content": "There's an eight or a couple of eights on the end. Okay. Now. What number is this close to 2 so this is 2 mod?"
+    },
+    {
+      "timestamp": "0:07:22",
+      "content": "14 okay, let me just remind you what's going to go in that hand [word] person number one why does this work?"
+    },
+    {
+      "timestamp": "0:07:27",
+      "content": "It's not that that's not the hard part okay. Why does this spit out the correct this is called the residue"
+    },
+    {
+      "timestamp": "0:07:32",
+      "content": "What's left over okay? Why does [that] work and secondly? Why does it do this?"
+    },
+    {
+      "timestamp": "0:07:37",
+      "content": "Hmm you think about it. You can work it out. Okay? That's that's going to go into your home"
+    },
+    {
+      "timestamp": "0:07:41",
+      "content": "if you have a it's up I"
+    },
+    {
+      "timestamp": "0:07:44",
+      "content": "Know there's an easy way. I this is a particular way that there's being for all of us suffering. Yeah, okay, all right. So yeah"
+    },
+    {
+      "timestamp": "0:07:53",
+      "content": "yeah, why doesn't he give us two why doesn't it give [it] to because the shit gives [to]"
+    },
+    {
+      "timestamp": "0:07:59",
+      "content": "Okay"
+    },
+    {
+      "timestamp": "0:08:01",
+      "content": "So now how about what just happened I?"
+    },
+    {
+      "timestamp": "0:08:04",
+      "content": "Finished the process the process is Done. I"
+    },
+    {
+      "timestamp": "0:08:07",
+      "content": "Started with your cipher texts you sent me d right and so I went through this process and at the end"
+    },
+    {
+      "timestamp": "0:08:14",
+      "content": "I end up with this which is your original text"
+    },
+    {
+      "timestamp": "0:08:18",
+      "content": "B, and I have deciphered it it would and you can go [ahead] and you [can] test out what you need is"
+    },
+    {
+      "timestamp": "0:08:27",
+      "content": "you need to"
+    },
+    {
+      "timestamp": "0:08:29",
+      "content": "Encrypt it like this and"
+    },
+    {
+      "timestamp": "0:08:31",
+      "content": "Then decipher it with this using this interesting combination of the power and this module of the relative"
+    }
+  ]
+}

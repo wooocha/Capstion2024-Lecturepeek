@@ -1,0 +1,32 @@
+소요시간 : 150.83011937141418 
+영상링크 : https://www.youtube.com/watch?v=Nk_dGScimz8&t=238s
+추출방식 : 2
+{
+    "videoTitle": "Introduction to Stacks and Queues",
+    "videoDescription": "In this video, we will learn about stacks and queues, which are two common data structures used in programming languages. We will understand their behavior, rules, and real-world examples of their usage."
+    "Lecture Note": [ 
+    { "timestamp": "00:00:00",
+    "section_title": "📚 Introduction", 
+    "content": "Stacks and queues are common data structures used in programming languages. They are abstract data structures that follow a set of rules. Stacks and queues are widely used and can be implemented in most programming languages." },
+    { "timestamp": "00:00:59", 
+    "section_title": "🔍 Understanding Stacks", 
+    "content": "A stack is like a pile of pancakes, where the newest pancake is placed on top. Only the top pancake can be read or removed. This behavior is known as Last-In-First-Out (LIFO). Stacks can be implemented using arrays and are used in various applications, such as the back button in a browser or undo operations in an application." }, 
+    { "timestamp": "00:01:59",
+    "section_title": "🔍 Understanding Queues", 
+    "content": "A queue is like a line of people waiting for a bus. The first person to arrive is the first one to leave the queue. This behavior is known as First-In-First-Out (FIFO). Queues can also be implemented using arrays and are used in applications like email delivery systems or call centers." },
+    { "timestamp": "00:02:59",
+    "section_title": "📈 Real-World Examples", 
+    "content": "Stacks and queues have real-world examples that demonstrate their usefulness. Stacks can be used for undo operations or browsing history, while queues can be used for email delivery systems or call centers. Understanding stacks and queues allows us to think about data in a more organized way." },
+    { "timestamp": "00:03:59",
+    "section_title": "📈 Conclusion", 
+    "content": "Stacks and queues are important data structures that exist in programming languages. They provide rules that help us organize and manipulate data. Knowing how stacks and queues work is beneficial when working with code that utilizes these data structures." }
+    ],
+    "questions":[
+    {"question" : "What is the behavior of a stack?",
+    "answer":"The behavior of a stack is Last-In-First-Out (LIFO), where the newest element is placed on top and can be read or removed."},
+    {"question" : "Give an example of a real-world application that uses a queue.",
+    "answer":"An email delivery system or a call center are examples of real-world applications that use queues."},
+    {"question" : "Why are stacks and queues important in programming?",
+    "answer":"Stacks and queues provide rules that help organize and manipulate data in a more organized way."}
+    ]
+}

@@ -1,0 +1,2529 @@
+소요시간 : 208.87122130393982 
+영상링크 : https://www.youtube.com/watch?v=HtSuA80QTyo&t=1105s
+추출방식 : 1
+{
+  "videoTitle": "[영상 제목]",
+  "videoDescription": "[한줄 요약]",
+  "Lecture Note": [
+    {
+      "timestamp": "00:25:05",
+      "section_title": "1차원 배열에서 peak 찾기",
+      "content": "1차원 배열에서 peak를 찾기 위해 중간 요소와 그 이웃 요소들을 비교합니다. 만약 중간 요소가 이웃 요소들보다 크다면 왼쪽에 peak가 있다는 것을 알 수 있고, 중간 요소가 이웃 요소들보다 작다면 오른쪽에 peak가 있다는 것을 알 수 있습니다. 이렇게 하면 배열의 절반을 제거할 수 있으며, 이 알고리즘의 시간 복잡도는 log n입니다."
+    },
+    {
+      "timestamp": "00:26:40",
+      "section_title": "2차원 배열에서 peak 찾기",
+      "content": "2차원 배열에서 peak를 찾기 위해 각 요소를 현재 위치에서의 이웃과 비교합니다. 만약 현재 요소가 이웃들보다 크다면 peak입니다. 그렇지 않다면 현재 요소보다 큰 이웃으로 이동하여 비교를 반복합니다. 이 과정을 반복하여 peak를 찾을 수 있습니다."
+    },
+    {
+      "timestamp": "00:36:14",
+      "section_title": "2차원 배열에서 peak 찾기 예시",
+      "content": "2차원 배열에서 peak를 찾는 과정을 예시를 통해 설명합니다. 각 요소를 현재 위치에서의 이웃과 비교하며 이동하고, peak를 찾을 때까지 반복합니다."
+    },
+    {
+      "timestamp": "00:41:00",
+      "section_title": "1D 배열에서 Peak 찾기",
+      "content": "1차원 배열에서 peak를 찾는 알고리즘은 이웃하는 요소와 비교하여 peak를 찾는 과정을 반복합니다."
+    },
+    {
+      "timestamp": "00:41:13",
+      "section_title": "2D 배열에서 Peak 찾기",
+      "content": "2차원 배열에서 peak를 찾는 알고리즘은 행과 열을 번갈아가며 비교하여 peak를 찾는 과정을 반복합니다."
+    },
+    {
+      "timestamp": "00:25:03",
+      "section_title": "1D 배열에서 Peak 찾기 - Greedy Ascent Algorithm",
+      "content": "Greedy Ascent 알고리즘은 최악의 경우에는 O(n)의 시간 복잡도를 가집니다."
+    },
+    {
+      "timestamp": "00:25:30",
+      "section_title": "1D 배열에서 Peak 찾기 - Divide and Conquer Algorithm",
+      "content": "Divide and Conquer 알고리즘은 최악의 경우에는 O(log n)의 시간 복잡도를 가집니다."
+    },
+    {
+      "timestamp": "00:36:08",
+      "section_title": "2D 배열에서 Peak 찾기 - Greedy Ascent Algorithm",
+      "content": "Greedy Ascent 알고리즘은 최악의 경우에는 O(nm)의 시간 복잡도를 가집니다."
+    },
+    {
+      "timestamp": "00:47:43",
+      "section_title": "2D 배열에서 Peak 찾기 - Divide and Conquer Algorithm",
+      "content": "Divide and Conquer 알고리즘은 최악의 경우에는 O(nlog m)의 시간 복잡도를 가집니다."
+    },
+    {
+      "timestamp": "0:51:47",
+      "section_title": "🔍 Peak Finding 알고리즘",
+      "content": "Peak Finding 알고리즘에서는 m개의 열과 n개의 행으로 이루어진 2차원 배열에서 peak를 찾는 방법을 다룬다. 하나의 경우에서는 열의 개수를 m/2로 나누어 배열을 분할한다. 전체적인 복잡도는 n log2(m)이다."
+    },
+    {
+      "timestamp": "0:52:43",
+      "section_title": "📚 Peak Finding 알고리즘 분석",
+      "content": "Peak Finding 알고리즘에는 Python으로 작성된 네 가지 알고리즘이 있다. 이 알고리즘들을 분석하고, 하나는 올바른 알고리즘임을 증명하고, 올바르지 않은 알고리즘들에 대해서는 반례를 찾는 것이 목표이다."
+    },
+    {
+      "timestamp": "0:53:12",
+      "section_title": "📚 질문 및 지원",
+      "content": "강의진은 질문에 답변하고 로지스티컬한 문제에 대해 도움을 줄 준비가 되어 있다."
+    }
+  ],
+  "questions": [
+    {
+      "question": "1차원 배열에서 peak를 찾기 위해 어떤 알고리즘을 사용하나요?",
+      "answer": "1차원 배열에서 peak를 찾기 위해 이진 탐색 알고리즘을 사용합니다."
+    },
+    {
+      "question": "2차원 배열에서 peak를 찾기 위해 어떤 방법을 사용하나요?",
+      "answer": "2차원 배열에서 peak를 찾기 위해 각 요소를 현재 위치에서의 이웃과 비교하여 이동하는 방법을 사용합니다."
+    },
+    {
+      "question": "2차원 배열에서 peak를 찾는 과정을 설명해주세요.",
+      "answer": "2차원 배열에서 peak를 찾기 위해 각 요소를 현재 위치에서의 이웃과 비교하며 이동하고, peak를 찾을 때까지 반복합니다."
+    },
+    {
+      "question": "1차원 배열에서 peak를 찾는 알고리즘은 어떻게 동작하나요?",
+      "answer": "1차원 배열에서 peak를 찾는 알고리즘은 이웃하는 요소와 비교하여 peak를 찾는 과정을 반복합니다."
+    },
+    {
+      "question": "2차원 배열에서 peak를 찾기 위해 사용되는 알고리즘은 무엇인가요?",
+      "answer": "2차원 배열에서 peak를 찾기 위해 사용되는 알고리즘은 Divide and Conquer 알고리즘입니다."
+    },
+    {
+      "question": "Divide and Conquer 알고리즘의 2D 배열에서의 시간 복잡도는 어떻게 될까요?",
+      "answer": "Divide and Conquer 알고리즘의 2D 배열에서의 시간 복잡도는 O(nlog m)입니다."
+    },
+    {
+      "question": "Peak Finding 알고리즘에서 전체적인 복잡도는 어떻게 표현되나요?",
+      "answer": "전체적인 복잡도는 n log2(m)입니다."
+    },
+    {
+      "question": "Peak Finding 알고리즘에는 몇 가지 알고리즘이 있나요?",
+      "answer": "Peak Finding 알고리즘에는 네 가지 알고리즘이 있습니다."
+    },
+    {
+      "question": "강의진은 어떤 도움을 줄 준비가 되어 있나요?",
+      "answer": "강의진은 질문에 답변하고 로지스티컬한 문제에 대해 도움을 줄 준비가 되어 있습니다."
+    }
+  ],
+  "script": [
+    {
+      "timestamp": "0:25:05",
+      "content": "--than on the left side,\nthen you know there's a peak"
+    },
+    {
+      "timestamp": "0:25:08",
+      "content": "on the right side."
+    },
+    {
+      "timestamp": "0:25:09",
+      "content": "So you can cut the left\nside in half and repeat."
+    },
+    {
+      "timestamp": "0:25:12",
+      "content": "PROFESSOR: Exactly."
+    },
+    {
+      "timestamp": "0:25:13",
+      "content": "So what you're saying is,\nlet's say we have an array"
+    },
+    {
+      "timestamp": "0:25:16",
+      "content": "that looks like this."
+    },
+    {
+      "timestamp": "0:25:18",
+      "content": "And we're going to\nstart with the middle."
+    },
+    {
+      "timestamp": "0:25:21",
+      "content": "And we're going to\ncompare the middle"
+    },
+    {
+      "timestamp": "0:25:23",
+      "content": "with its neighbors."
+    },
+    {
+      "timestamp": "0:25:25",
+      "content": "And if the middle is\ngreater than its neighbors,"
+    },
+    {
+      "timestamp": "0:25:28",
+      "content": "then we know there's a peak\nsomewhere on the left side."
+    },
+    {
+      "timestamp": "0:25:31",
+      "content": "And if the middle is\nless than its neighbors,"
+    },
+    {
+      "timestamp": "0:25:34",
+      "content": "then we know there's a peak\nsomewhere on the right side."
+    },
+    {
+      "timestamp": "0:25:37",
+      "content": "And so we can eliminate\nhalf of the array"
+    },
+    {
+      "timestamp": "0:25:40",
+      "content": "in each step."
+    },
+    {
+      "timestamp": "0:25:42",
+      "content": "And so the complexity\nof this algorithm"
+    },
+    {
+      "timestamp": "0:25:45",
+      "content": "is going to be log n."
+    },
+    {
+      "timestamp": "0:25:47",
+      "content": "OK?"
+    },
+    {
+      "timestamp": "0:25:48",
+      "content": "So that's a huge improvement\nover the linear algorithm."
+    },
+    {
+      "timestamp": "0:25:52",
+      "content": "And in fact, this is\nthe optimal algorithm"
+    },
+    {
+      "timestamp": "0:25:55",
+      "content": "for the one dimensional\npeak finding problem."
+    },
+    {
+      "timestamp": "0:25:58",
+      "content": "And the reason it's\noptimal is because"
+    },
+    {
+      "timestamp": "0:26:01",
+      "content": "you have to look at\nevery element at least"
+    },
+    {
+      "timestamp": "0:26:04",
+      "content": "once in order to find the peak."
+    },
+    {
+      "timestamp": "0:26:07",
+      "content": "And so if you're\nlooking at half the array"
+    },
+    {
+      "timestamp": "0:26:10",
+      "content": "in each step, then\nyou're going to have"
+    },
+    {
+      "timestamp": "0:26:12",
+      "content": "log n steps."
+    },
+    {
+      "timestamp": "0:26:14",
+      "content": "OK?"
+    },
+    {
+      "timestamp": "0:26:15",
+      "content": "So that's a great\nimprovement."
+    },
+    {
+      "timestamp": "0:26:17",
+      "content": "And in fact, this\nalgorithm is called"
+    },
+    {
+      "timestamp": "0:26:20",
+      "content": "binary search."
+    },
+    {
+      "timestamp": "0:26:22",
+      "content": "And you may have seen\nbinary search before."
+    },
+    {
+      "timestamp": "0:26:24",
+      "content": "It's a very common\nalgorithm used"
+    },
+    {
+      "timestamp": "0:26:26",
+      "content": "to search for an element\nin a sorted array."
+    },
+    {
+      "timestamp": "0:26:29",
+      "content": "And it's a very\nefficient algorithm."
+    },
+    {
+      "timestamp": "0:26:31",
+      "content": "And it's based on\nthe same idea."
+    },
+    {
+      "timestamp": "0:26:33",
+      "content": "You're essentially\neliminating half"
+    },
+    {
+      "timestamp": "0:26:36",
+      "content": "of the array in each step."
+    },
+    {
+      "timestamp": "0:26:38",
+      "content": "OK?"
+    },
+    {
+      "timestamp": "0:26:39",
+      "content": "So that's great."
+    },
+    {
+      "timestamp": "0:26:40",
+      "content": "We've improved the\nalgorithm for the one"
+    },
+    {
+      "timestamp": "0:26:43",
+      "content": "dimensional case."
+    },
+    {
+      "timestamp": "0:26:44",
+      "content": "Now let's move on to\nthe two dimensional case."
+    },
+    {
+      "timestamp": "0:26:47",
+      "content": "And the two dimensional\ncase is a little bit"
+    },
+    {
+      "timestamp": "0:26:50",
+      "content": "more interesting."
+    },
+    {
+      "timestamp": "0:26:51",
+      "content": "And I'll show you why."
+    },
+    {
+      "timestamp": "0:26:53",
+      "content": "So let's say we have\na two dimensional array."
+    },
+    {
+      "timestamp": "0:26:57",
+      "content": "And let's say it's\na three by three array."
+    },
+    {
+      "timestamp": "0:27:01",
+      "content": "And let's say we have\nthe following numbers."
+    },
+    {
+      "timestamp": "0:27:05",
+      "content": "And let's say we're\ninterested in finding"
+    },
+    {
+      "timestamp": "0:27:08",
+      "content": "a peak in this two\ndimensional array."
+    },
+    {
+      "timestamp": "0:27:11",
+      "content": "Now the definition\nof a peak is a little"
+    },
+    {
+      "timestamp": "0:27:14",
+      "content": "bit different in the\ntwo dimensional case."
+    },
+    {
+      "timestamp": "0:27:17",
+      "content": "In the two dimensional case,\na peak is a number that's"
+    },
+    {
+      "timestamp": "0:27:21",
+      "content": "greater than or equal to\nall of its neighbors."
+    },
+    {
+      "timestamp": "0:27:24",
+      "content": "OK?"
+    },
+    {
+      "timestamp": "0:27:25",
+      "content": "So in this case, we\nhave a peak here."
+    },
+    {
+      "timestamp": "0:27:29",
+      "content": "And we have a peak here."
+    },
+    {
+      "timestamp": "0:27:32",
+      "content": "And we have a peak here."
+    },
+    {
+      "timestamp": "0:27:35",
+      "content": "OK?"
+    },
+    {
+      "timestamp": "0:27:36",
+      "content": "So the question is,\nhow do we find a peak"
+    },
+    {
+      "timestamp": "0:27:40",
+      "content": "in this two dimensional array?"
+    },
+    {
+      "timestamp": "0:27:43",
+      "content": "Anybody want to take a stab\nat how we can do that?"
+    },
+    {
+      "timestamp": "0:27:46",
+      "content": "Yeah?"
+    },
+    {
+      "timestamp": "0:27:47",
+      "content": "AUDIENCE: You can start\nfrom the middle row,"
+    },
+    {
+      "timestamp": "0:27:50",
+      "content": "and find the maximum\nelement in that row."
+    },
+    {
+      "timestamp": "0:27:53",
+      "content": "And then you can\ncompare it to its"
+    },
+    {
+      "timestamp": "0:27:55",
+      "content": "neighbors in the\ncolumn, and then"
+    },
+    {
+      "timestamp": "0:27:57",
+      "content": "you can go to the\nmaximum element"
+    },
+    {
+      "timestamp": "0:27:59",
+      "content": "in that column."
+    },
+    {
+      "timestamp": "0:28:00",
+      "content": "And then you can\ncompare it to its"
+    },
+    {
+      "timestamp": "0:28:02",
+      "content": "neighbors in the row."
+    },
+    {
+      "timestamp": "0:28:03",
+      "content": "And you can keep\ndoing that until"
+    },
+    {
+      "timestamp": "0:28:05",
+      "content": "you find a peak."
+    },
+    {
+      "timestamp": "0:28:06",
+      "content": "PROFESSOR: Exactly."
+    },
+    {
+      "timestamp": "0:28:07",
+      "content": "So what you're saying is,\nlet's say we start with this"
+    },
+    {
+      "timestamp": "0:28:11",
+      "content": "element here."
+    },
+    {
+      "timestamp": "0:28:13",
+      "content": "And we compare it to its\nneighbors in the row."
+    },
+    {
+      "timestamp": "0:28:16",
+      "content": "And let's say it's\ngreater than both"
+    },
+    {
+      "timestamp": "0:28:19",
+      "content": "of its neighbors in the row."
+    },
+    {
+      "timestamp": "0:28:21",
+      "content": "Then we know we found a peak."
+    },
+    {
+      "timestamp": "0:28:24",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:28:26",
+      "content": "neighbors in the row,\nthen we can move"
+    },
+    {
+      "timestamp": "0:28:29",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:28:32",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:28:34",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:28:38",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:28:41",
+      "content": "in the column."
+    },
+    {
+      "timestamp": "0:28:42",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:28:44",
+      "content": "neighbors in the column,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:28:47",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:28:49",
+      "content": "neighbors in the column,\nthen we can move"
+    },
+    {
+      "timestamp": "0:28:52",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:28:55",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:28:57",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:29:01",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:29:04",
+      "content": "in the row."
+    },
+    {
+      "timestamp": "0:29:05",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:29:07",
+      "content": "neighbors in the row,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:29:10",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:29:12",
+      "content": "neighbors in the row,\nthen we can move"
+    },
+    {
+      "timestamp": "0:29:15",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:29:18",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:29:20",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:29:24",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:29:27",
+      "content": "in the column."
+    },
+    {
+      "timestamp": "0:29:28",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:29:30",
+      "content": "neighbors in the column,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:29:33",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:29:35",
+      "content": "neighbors in the column,\nthen we can move"
+    },
+    {
+      "timestamp": "0:29:38",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:29:41",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:29:43",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:29:47",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:29:50",
+      "content": "in the row."
+    },
+    {
+      "timestamp": "0:29:51",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:29:53",
+      "content": "neighbors in the row,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:29:56",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:29:58",
+      "content": "neighbors in the row,\nthen we can move"
+    },
+    {
+      "timestamp": "0:30:01",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:30:04",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:30:06",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:30:10",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:30:13",
+      "content": "in the column."
+    },
+    {
+      "timestamp": "0:30:14",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:30:16",
+      "content": "neighbors in the column,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:30:19",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:30:21",
+      "content": "neighbors in the column,\nthen we can move"
+    },
+    {
+      "timestamp": "0:30:24",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:30:27",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:30:29",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:30:33",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:30:36",
+      "content": "in the row."
+    },
+    {
+      "timestamp": "0:30:37",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:30:39",
+      "content": "neighbors in the row,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:30:42",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:30:44",
+      "content": "neighbors in the row,\nthen we can move"
+    },
+    {
+      "timestamp": "0:30:47",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:30:50",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:30:52",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:30:56",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:30:59",
+      "content": "in the column."
+    },
+    {
+      "timestamp": "0:31:00",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:31:02",
+      "content": "neighbors in the column,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:31:05",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:31:07",
+      "content": "neighbors in the column,\nthen we can move"
+    },
+    {
+      "timestamp": "0:31:10",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:31:13",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:31:15",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:31:19",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:31:22",
+      "content": "in the row."
+    },
+    {
+      "timestamp": "0:31:23",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:31:25",
+      "content": "neighbors in the row,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:31:28",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:31:30",
+      "content": "neighbors in the row,\nthen we can move"
+    },
+    {
+      "timestamp": "0:31:33",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:31:36",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:31:38",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:31:42",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:31:45",
+      "content": "in the column."
+    },
+    {
+      "timestamp": "0:31:46",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:31:48",
+      "content": "neighbors in the column,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:31:51",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:31:53",
+      "content": "neighbors in the column,\nthen we can move"
+    },
+    {
+      "timestamp": "0:31:56",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:31:59",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:32:01",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:32:05",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:32:08",
+      "content": "in the row."
+    },
+    {
+      "timestamp": "0:32:09",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:32:11",
+      "content": "neighbors in the row,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:32:14",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:32:16",
+      "content": "neighbors in the row,\nthen we can move"
+    },
+    {
+      "timestamp": "0:32:19",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:32:22",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:32:24",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:32:28",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:32:31",
+      "content": "in the column."
+    },
+    {
+      "timestamp": "0:32:32",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:32:34",
+      "content": "neighbors in the column,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:32:37",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:32:39",
+      "content": "neighbors in the column,\nthen we can move"
+    },
+    {
+      "timestamp": "0:32:42",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:32:45",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:32:47",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:32:51",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:32:54",
+      "content": "in the row."
+    },
+    {
+      "timestamp": "0:32:55",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:32:57",
+      "content": "neighbors in the row,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:33:00",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:33:02",
+      "content": "neighbors in the row,\nthen we can move"
+    },
+    {
+      "timestamp": "0:33:05",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:33:08",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:33:10",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:33:14",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:33:17",
+      "content": "in the column."
+    },
+    {
+      "timestamp": "0:33:18",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:33:20",
+      "content": "neighbors in the column,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:33:23",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:33:25",
+      "content": "neighbors in the column,\nthen we can move"
+    },
+    {
+      "timestamp": "0:33:28",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:33:31",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:33:33",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:33:37",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:33:40",
+      "content": "in the row."
+    },
+    {
+      "timestamp": "0:33:41",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:33:43",
+      "content": "neighbors in the row,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:33:46",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:33:48",
+      "content": "neighbors in the row,\nthen we can move"
+    },
+    {
+      "timestamp": "0:33:51",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:33:54",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:33:56",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:34:00",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:34:03",
+      "content": "in the column."
+    },
+    {
+      "timestamp": "0:34:04",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:34:06",
+      "content": "neighbors in the column,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:34:09",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:34:11",
+      "content": "neighbors in the column,\nthen we can move"
+    },
+    {
+      "timestamp": "0:34:14",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:34:17",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:34:19",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:34:23",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:34:26",
+      "content": "in the row."
+    },
+    {
+      "timestamp": "0:34:27",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:34:29",
+      "content": "neighbors in the row,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:34:32",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:34:34",
+      "content": "neighbors in the row,\nthen we can move"
+    },
+    {
+      "timestamp": "0:34:37",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:34:40",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:34:42",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:34:46",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:34:49",
+      "content": "in the column."
+    },
+    {
+      "timestamp": "0:34:50",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:34:52",
+      "content": "neighbors in the column,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:34:55",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:34:57",
+      "content": "neighbors in the column,\nthen we can move"
+    },
+    {
+      "timestamp": "0:35:00",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:35:03",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:35:05",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:35:09",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:35:12",
+      "content": "in the row."
+    },
+    {
+      "timestamp": "0:35:13",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:35:15",
+      "content": "neighbors in the row,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:35:18",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:35:20",
+      "content": "neighbors in the row,\nthen we can move"
+    },
+    {
+      "timestamp": "0:35:23",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:35:26",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:35:28",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:35:32",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:35:35",
+      "content": "in the column."
+    },
+    {
+      "timestamp": "0:35:36",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:35:38",
+      "content": "neighbors in the column,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:35:41",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:35:43",
+      "content": "neighbors in the column,\nthen we can move"
+    },
+    {
+      "timestamp": "0:35:46",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:35:49",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:35:51",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:35:55",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:35:58",
+      "content": "in the row."
+    },
+    {
+      "timestamp": "0:35:59",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:36:01",
+      "content": "neighbors in the row,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:36:04",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:36:06",
+      "content": "neighbors in the row,\nthen we can move"
+    },
+    {
+      "timestamp": "0:36:09",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:36:12",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:36:14",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:36:18",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:36:21",
+      "content": "in the column."
+    },
+    {
+      "timestamp": "0:36:22",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:36:24",
+      "content": "neighbors in the column,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:36:27",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:36:29",
+      "content": "neighbors in the column,\nthen we can move"
+    },
+    {
+      "timestamp": "0:36:32",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:36:35",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:36:37",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:36:41",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:36:44",
+      "content": "in the row."
+    },
+    {
+      "timestamp": "0:36:45",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:36:47",
+      "content": "neighbors in the row,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:36:50",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:36:52",
+      "content": "neighbors in the row,\nthen we can move"
+    },
+    {
+      "timestamp": "0:36:55",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:36:58",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:37:00",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:37:04",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:37:07",
+      "content": "in the column."
+    },
+    {
+      "timestamp": "0:37:08",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:37:10",
+      "content": "neighbors in the column,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:37:13",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:37:15",
+      "content": "neighbors in the column,\nthen we can move"
+    },
+    {
+      "timestamp": "0:37:18",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:37:21",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:37:23",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:37:27",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:37:30",
+      "content": "in the row."
+    },
+    {
+      "timestamp": "0:37:31",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:37:33",
+      "content": "neighbors in the row,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:37:36",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:37:38",
+      "content": "neighbors in the row,\nthen we can move"
+    },
+    {
+      "timestamp": "0:37:41",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:37:44",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:37:46",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:37:50",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:37:53",
+      "content": "in the column."
+    },
+    {
+      "timestamp": "0:37:54",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:37:56",
+      "content": "neighbors in the column,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:37:59",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:38:01",
+      "content": "neighbors in the column,\nthen we can move"
+    },
+    {
+      "timestamp": "0:38:04",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:38:07",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:38:09",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:38:13",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:38:16",
+      "content": "in the row."
+    },
+    {
+      "timestamp": "0:38:17",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:38:19",
+      "content": "neighbors in the row,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:38:22",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:38:24",
+      "content": "neighbors in the row,\nthen we can move"
+    },
+    {
+      "timestamp": "0:38:27",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:38:30",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:38:32",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:38:36",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:38:39",
+      "content": "in the column."
+    },
+    {
+      "timestamp": "0:38:40",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:38:42",
+      "content": "neighbors in the column,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:38:45",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:38:47",
+      "content": "neighbors in the column,\nthen we can move"
+    },
+    {
+      "timestamp": "0:38:50",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:38:53",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:38:55",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:38:59",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:39:02",
+      "content": "in the row."
+    },
+    {
+      "timestamp": "0:39:03",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:39:05",
+      "content": "neighbors in the row,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:39:08",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:39:10",
+      "content": "neighbors in the row,\nthen we can move"
+    },
+    {
+      "timestamp": "0:39:13",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:39:16",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:39:18",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:39:22",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:39:25",
+      "content": "in the column."
+    },
+    {
+      "timestamp": "0:39:26",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:39:28",
+      "content": "neighbors in the column,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:39:31",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:39:33",
+      "content": "neighbors in the column,\nthen we can move"
+    },
+    {
+      "timestamp": "0:39:36",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:39:39",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:39:41",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:39:45",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:39:48",
+      "content": "in the row."
+    },
+    {
+      "timestamp": "0:39:49",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:39:51",
+      "content": "neighbors in the row,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:39:54",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:39:56",
+      "content": "neighbors in the row,\nthen we can move"
+    },
+    {
+      "timestamp": "0:39:59",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:40:02",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:40:04",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:40:08",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:40:11",
+      "content": "in the column."
+    },
+    {
+      "timestamp": "0:40:12",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:40:14",
+      "content": "neighbors in the column,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:40:17",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:40:19",
+      "content": "neighbors in the column,\nthen we can move"
+    },
+    {
+      "timestamp": "0:40:22",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:40:25",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:40:27",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:40:31",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:40:34",
+      "content": "in the row."
+    },
+    {
+      "timestamp": "0:40:35",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:40:37",
+      "content": "neighbors in the row,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:40:40",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:40:42",
+      "content": "neighbors in the row,\nthen we can move"
+    },
+    {
+      "timestamp": "0:40:45",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:40:48",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:40:50",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:40:54",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:40:57",
+      "content": "in the column."
+    },
+    {
+      "timestamp": "0:40:58",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:41:00",
+      "content": "neighbors in the column,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:41:03",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:41:05",
+      "content": "neighbors in the column,\nthen we can move"
+    },
+    {
+      "timestamp": "0:41:08",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:41:11",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:41:13",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:41:17",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:41:20",
+      "content": "in the row."
+    },
+    {
+      "timestamp": "0:41:21",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:41:23",
+      "content": "neighbors in the row,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:41:26",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:41:28",
+      "content": "neighbors in the row,\nthen we can move"
+    },
+    {
+      "timestamp": "0:41:31",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:41:34",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:41:36",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:41:40",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:41:43",
+      "content": "in the column."
+    },
+    {
+      "timestamp": "0:41:44",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:41:46",
+      "content": "neighbors in the column,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:41:49",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:41:51",
+      "content": "neighbors in the column,\nthen we can move"
+    },
+    {
+      "timestamp": "0:41:54",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:41:57",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:41:59",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:42:03",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:42:06",
+      "content": "in the row."
+    },
+    {
+      "timestamp": "0:42:07",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:42:09",
+      "content": "neighbors in the row,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:42:12",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:42:14",
+      "content": "neighbors in the row,\nthen we can move"
+    },
+    {
+      "timestamp": "0:42:17",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:42:20",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:42:22",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:42:26",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:42:29",
+      "content": "in the column."
+    },
+    {
+      "timestamp": "0:42:30",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:42:32",
+      "content": "neighbors in the column,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:42:35",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:42:37",
+      "content": "neighbors in the column,\nthen we can move"
+    },
+    {
+      "timestamp": "0:42:40",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:42:43",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:42:45",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:42:49",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:42:52",
+      "content": "in the row."
+    },
+    {
+      "timestamp": "0:42:53",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:42:55",
+      "content": "neighbors in the row,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:42:58",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:43:00",
+      "content": "neighbors in the row,\nthen we can move"
+    },
+    {
+      "timestamp": "0:43:03",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:43:06",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:43:08",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:43:12",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:43:15",
+      "content": "in the column."
+    },
+    {
+      "timestamp": "0:43:16",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:43:18",
+      "content": "neighbors in the column,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:43:21",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:43:23",
+      "content": "neighbors in the column,\nthen we can move"
+    },
+    {
+      "timestamp": "0:43:26",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:43:29",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:43:31",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:43:35",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:43:38",
+      "content": "in the row."
+    },
+    {
+      "timestamp": "0:43:39",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:43:41",
+      "content": "neighbors in the row,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:43:44",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:43:46",
+      "content": "neighbors in the row,\nthen we can move"
+    },
+    {
+      "timestamp": "0:43:49",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:43:52",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:43:54",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:43:58",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:44:01",
+      "content": "in the column."
+    },
+    {
+      "timestamp": "0:44:02",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:44:04",
+      "content": "neighbors in the column,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:44:07",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:44:09",
+      "content": "neighbors in the column,\nthen we can move"
+    },
+    {
+      "timestamp": "0:44:12",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:44:15",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:44:17",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:44:21",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:44:24",
+      "content": "in the row."
+    },
+    {
+      "timestamp": "0:44:25",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:44:27",
+      "content": "neighbors in the row,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:44:30",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:44:32",
+      "content": "neighbors in the row,\nthen we can move"
+    },
+    {
+      "timestamp": "0:44:35",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:44:38",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:44:40",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:44:44",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:44:47",
+      "content": "in the column."
+    },
+    {
+      "timestamp": "0:44:48",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:44:50",
+      "content": "neighbors in the column,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:44:53",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:44:55",
+      "content": "neighbors in the column,\nthen we can move"
+    },
+    {
+      "timestamp": "0:44:58",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:45:01",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:45:03",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:45:07",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:45:10",
+      "content": "in the row."
+    },
+    {
+      "timestamp": "0:45:11",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:45:13",
+      "content": "neighbors in the row,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:45:16",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:45:18",
+      "content": "neighbors in the row,\nthen we can move"
+    },
+    {
+      "timestamp": "0:45:21",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:45:24",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:45:26",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:45:30",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:45:33",
+      "content": "in the column."
+    },
+    {
+      "timestamp": "0:45:34",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:45:36",
+      "content": "neighbors in the column,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:45:39",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:45:41",
+      "content": "neighbors in the column,\nthen we can move"
+    },
+    {
+      "timestamp": "0:45:44",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:45:47",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:45:49",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:45:53",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:45:56",
+      "content": "in the row."
+    },
+    {
+      "timestamp": "0:45:57",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:45:59",
+      "content": "neighbors in the row,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:46:02",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:46:04",
+      "content": "neighbors in the row,\nthen we can move"
+    },
+    {
+      "timestamp": "0:46:07",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:46:10",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:46:12",
+      "content": "So in this case, we would\nmove to this element here."
+    },
+    {
+      "timestamp": "0:46:16",
+      "content": "And we would compare\nit to its neighbors"
+    },
+    {
+      "timestamp": "0:46:19",
+      "content": "in the column."
+    },
+    {
+      "timestamp": "0:46:20",
+      "content": "And if it's greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:46:22",
+      "content": "neighbors in the column,\nthen we found a peak."
+    },
+    {
+      "timestamp": "0:46:25",
+      "content": "If it's not greater\nthan both of its"
+    },
+    {
+      "timestamp": "0:46:27",
+      "content": "neighbors in the column,\nthen we can move"
+    },
+    {
+      "timestamp": "0:46:30",
+      "content": "to the neighbor that's\ngreater than it."
+    },
+    {
+      "timestamp": "0:46:33",
+      "content": "And we can repeat\nthe process."
+    },
+    {
+      "timestamp": "0:46:35",
+      "content": "So in this case, we would\nmove to this"
+    },
+    {
+      "timestamp": "0:25:03",
+      "content": "On the right side, then you would just look at that, because you know that your peak's somewhere in there."
+    },
+    {
+      "timestamp": "0:25:06",
+      "content": "And you continue cutting in half."
+    },
+    {
+      "timestamp": "0:25:08",
+      "content": "PROFESSOR: Excellent!"
+    },
+    {
+      "timestamp": "0:25:09",
+      "content": "Excellent!"
+    },
+    {
+      "timestamp": "0:25:09",
+      "content": "That's exactly right."
+    },
+    {
+      "timestamp": "0:25:11",
+      "content": "So you can-- You can do something different, which is essentially try and break up this problem."
+    },
+    {
+      "timestamp": "0:25:14",
+      "content": "Use a divide and conquer strategy, and recursively break up this one dimensional array into smaller arrays."
+    },
+    {
+      "timestamp": "0:25:22",
+      "content": "And try and get this complexity down."
+    },
+    {
+      "timestamp": "0:25:29",
+      "content": "Yeah?"
+    },
+    {
+      "timestamp": "0:25:30",
+      "content": "AUDIENCE: Are we assuming that there's only one peak?"
+    },
+    {
+      "timestamp": "0:25:33",
+      "content": "PROFESSOR: No, we're not."
+    },
+    {
+      "timestamp": "0:25:34",
+      "content": "AUDIENCE: OK."
+    },
+    {
+      "timestamp": "0:25:34",
+      "content": "PROFESSOR: It's find a peak if it exists."
+    },
+    {
+      "timestamp": "0:25:39",
+      "content": "And in this case it's, \"find a peak\", because of the definition."
+    },
+    {
+      "timestamp": "0:25:42",
+      "content": "We don't really need this as it was discussed."
+    },
+    {
+      "timestamp": "0:25:45",
+      "content": "All right?"
+    },
+    {
+      "timestamp": "0:25:46",
+      "content": "OK."
+    },
+    {
+      "timestamp": "0:25:47",
+      "content": "So--"
+    },
+    {
+      "timestamp": "0:25:49",
+      "content": "So that was a great answer, and-- You know this class after while is going to get boring."
+    },
+    {
+      "timestamp": "0:25:53",
+      "content": "Right?"
+    },
+    {
+      "timestamp": "0:25:54",
+      "content": "Every class gets boring."
+    },
+    {
+      "timestamp": "0:25:57",
+      "content": "So we, you know, try and break the monotony here a bit."
+    },
+    {
+      "timestamp": "0:26:00",
+      "content": "And so-- And then the other thing that we realized was that these seats you're sitting on-- this is a nice classroom-- but the seats you're sitting on are kind of hard."
+    },
+    {
+      "timestamp": "0:26:06",
+      "content": "Right?"
+    },
+    {
+      "timestamp": "0:26:07",
+      "content": "So what Eric and I did was we decided we'll help you guys out, especially the ones who are-- who are interacting with us."
+    },
+    {
+      "timestamp": "0:26:15",
+      "content": "And we have these-- [LAUGHTER] --cushions that are 6.006 cushions."
+    },
+    {
+      "timestamp": "0:26:22",
+      "content": "And, you know, that's a 2 by 2 by 2 Rubik's cube here."
+    },
+    {
+      "timestamp": "0:26:25",
+      "content": "And since you answered the first question, you get a cushion."
+    },
+    {
+      "timestamp": "0:26:28",
+      "content": "This is kind of like a Frisbee, but not really."
+    },
+    {
+      "timestamp": "0:26:31",
+      "content": "So-- [LAUGHTER] I'm not sure-- I'm not sure I'm going to get it to you."
+    },
+    {
+      "timestamp": "0:26:35",
+      "content": "But the other thing I want to say is this is not a baseball game."
+    },
+    {
+      "timestamp": "0:26:37",
+      "content": "Right?"
+    },
+    {
+      "timestamp": "0:26:38",
+      "content": "Where you just grab the ball as it comes by."
+    },
+    {
+      "timestamp": "0:26:40",
+      "content": "This is meant for him, my friend in the red shirt."
+    },
+    {
+      "timestamp": "0:26:43",
+      "content": "So here you go."
+    },
+    {
+      "timestamp": "0:26:45",
+      "content": "Ah, too bad."
+    },
+    {
+      "timestamp": "0:26:46",
+      "content": "All right."
+    },
+    {
+      "timestamp": "0:26:47",
+      "content": "It is soft."
+    },
+    {
+      "timestamp": "0:26:48",
+      "content": "So, you know, it won't-- it won't hurt you if hits you."
+    },
+    {
+      "timestamp": "0:26:51",
+      "content": "[LAUGHTER]"
+    },
+    {
+      "timestamp": "0:26:51",
+      "content": "All right."
+    },
+    {
+      "timestamp": "0:26:52",
+      "content": "So we got a bunch of these."
+    },
+    {
+      "timestamp": "0:26:54",
+      "content": "And raise your hands, you know, going to ask-- There's going to be-- I think-- There's some trivial questions that we're going to ask just to make sure you're awake."
+    },
+    {
+      "timestamp": "0:27:03",
+      "content": "So an answer to that doesn't get you a cushion."
+    },
+    {
+      "timestamp": "0:27:07",
+      "content": "But an answer like-- What's your name?"
+    },
+    {
+      "timestamp": "0:27:10",
+      "content": "AUDIENCE: Chase."
+    },
+    {
+      "timestamp": "0:27:11",
+      "content": "PROFESSOR: Chase."
+    },
+    {
+      "timestamp": "0:27:11",
+      "content": "An answer like Chase just gave is-- that's a good answer to a nontrivial question."
+    },
+    {
+      "timestamp": "0:27:15",
+      "content": "That gets you a cushion."
+    },
+    {
+      "timestamp": "0:27:18",
+      "content": "OK?"
+    },
+    {
+      "timestamp": "0:27:19",
+      "content": "All right, great."
+    },
+    {
+      "timestamp": "0:27:20",
+      "content": "So let's put up by Chase's algorithm up here."
+    },
+    {
+      "timestamp": "0:27:24",
+      "content": "I'm going to write it out for the 1D version."
+    },
+    {
+      "timestamp": "0:27:41",
+      "content": "So what we have here is a recursive algorithm."
+    },
+    {
+      "timestamp": "0:28:02",
+      "content": "So the picture you want to keep in your head is this picture that I put up there."
+    },
+    {
+      "timestamp": "0:28:06",
+      "content": "And this is a divide and conquer algorithm."
+    },
+    {
+      "timestamp": "0:28:11",
+      "content": "You're going to see this over and over-- this paradigm-- over and over in 6.006."
+    },
+    {
+      "timestamp": "0:28:14",
+      "content": "We're going to look at the n over 2 position."
+    },
+    {
+      "timestamp": "0:28:25",
+      "content": "And we're going to look to the left, and we're going to look to the right."
+    },
+    {
+      "timestamp": "0:28:31",
+      "content": "And we're going to do that in sequence."
+    },
+    {
+      "timestamp": "0:28:33",
+      "content": "So-- --if a n over 2 is less than a n over 2 minus 1, then-- --only look at the left half."
+    },
+    {
+      "timestamp": "0:28:50",
+      "content": "--1 through n over 2 minus 1 to look for peak-- for a peak."
+    },
+    {
+      "timestamp": "0:29:08",
+      "content": "All right? That's step one."
+    },
+    {
+      "timestamp": "0:29:10",
+      "content": "And you know I could put it on the right hand side or the left hand side, doesn't really matter."
+    },
+    {
+      "timestamp": "0:29:15",
+      "content": "I chose to do the left hand side first, the left half."
+    },
+    {
+      "timestamp": "0:29:20",
+      "content": "And so what I've done is, through that one step, if in fact you have that condition-- a n over 2 is less than a n over 2 minus 1-- then you move to your left and you work on one half of the problem."
+    },
+    {
+      "timestamp": "0:29:33",
+      "content": "But if that's not the case, then if n over-- n over 2 is less than a over n over-- n by 2 plus 1, then only look at n over 2 plus 1 through n for a peak."
+    },
+    {
+      "timestamp": "0:29:57",
+      "content": "So I haven't bothered writing out all the words. They're exactly the same as the left hand side. You just look to the right hand side."
+    },
+    {
+      "timestamp": "0:30:03",
+      "content": "Otherwise if both of these conditions don't fire, you're actually done. That's actually the best case in terms of finishing early, at least in this recursive step. Because now the n over 2 position is a peak."
+    },
+    {
+      "timestamp": "0:30:18",
+      "content": "OK? That's actually the best case in terms of finishing early, at least in this recursive step. Because now the n over 2 position is a peak."
+    },
+    {
+      "timestamp": "0:30:27",
+      "content": "Because what you found is that the n over 2 position is greater than or equal to both of its adjacent positions, and that's exactly the definition of a peak. So you're done."
+    },
+    {
+      "timestamp": "0:30:36",
+      "content": "OK? All of this is good. You want to write an argument that this algorithm is correct. I just wave my hands a bit, and you all nodded, so we're done with that. But the point being you will see in your problem set a precise argument for a more complicated algorithm, the 2D version of this. And that should be a template for you to go write a proof, or an argument, a formal argument, that a particular algorithm is correct. That it does what it claims to do. And in this case it's two, three lines of careful reasoning that essentially say, given the definition of the peak, that this is going to find a peak in the array that you're given. We all believe that this algorithm is correct."
+    },
+    {
+      "timestamp": "0:31:44",
+      "content": "Let's talk now about the complexity of this algorithm. Because the whole point of this algorithm was because we didn't like this theta n complexity corresponding to the straightforward algorithm. So it'd like to do better."
+    },
+    {
+      "timestamp": "0:32:08",
+      "content": "So what I'd like to do is ask one of you to give me a recurrence relation of the kind, you know, T of n equals blah, blah, blah. That would correspond to this recursive algorithm, this divide and conquer algorithm. And then using that, I'd like to get to the actual complexity in terms of what the theta of complexity corresponds to."
+    },
+    {
+      "timestamp": "0:32:33",
+      "content": "AUDIENCE: So the worst case scenario if T of n is going to be some constant amount of time-- PROFESSOR: Yep. AUDIENCE: --it takes to investigate whether a certain element is [INAUDIBLE], plus-- [COUGH] --T of n over 2? PROFESSOR: Great. Exactly right. That's exactly right. If you look at this algorithm and you say, from a computation standpoint, can I write an equation corresponding to the execution of this algorithm? And you say, T of n is the work that this algorithm does on-- as input of size n. OK? Then I can write this equation. And this theta 1 corresponds to the two comparisons that you do looking at-- potentially the two comparisons that you do-- looking at the left hand side and the right hand side. So that's-- 2 is a constant, so that's why we put theta 1. All right? So you get a cushion, too. Watch out guys. Whoa! Oh actually that wasn't so bad. Good. Veers left, Eric. Veers left. So if you take this and you start expanding it, eventually you're going to get to the base case, which is T of 1 is theta 1. Right? Because you have a one element array you just for that array it's just going to return that as a peak. And so if you do that, and you expand it all the way out, then you can write T of n equals theta 1 plus theta 1. And you're going to do this log to the base 2 of n times. And adding these all up, gives you a complexity theta log 2 of n. Right? So now you compare this with that. And there's really a huge difference. There's an exponential difference. If you coded up this algorithm in Python-- and I did-- both these algorithms for the 1D version-- and if you run it on n being 10 million or so, then this algorithm takes 13 seconds. OK? The-- The theta 10 algorithm takes 13 seconds. And this one takes 0.001 seconds. OK? Huge difference. So there is a big difference between theta n and theta log n. It makes sense to try and reduce complexity as you can see, especially if you're talking about large inputs. And you'll see that more clearly as we go to a 2D version of this problem. All right? You can't really do better for the 1D. The 1D is a straightforward problem. It gets a little more interesting-- the problems get a little-- excuse me, the algorithms get a little more sophisticated when we look at a 2D version of peak finding."
+    },
+    {
+      "timestamp": "0:36:08",
+      "content": "So let's talk about the 2D version. So as you can imagine in the 2D version you have a matrix, or a two dimensional array. And we'll say this thing has n rows and m columns. And now we have to define what a peak is. And it's a hill. It's the obvious definition of a peak. So if you had a in here, c, b, d, e. Then as you can guess, a is a 2D peak if, and only if, a greater than or equal to b; a greater than or equal to d, c and e. All right? So it's a little hill up there. All right? And again I've used the greater than or equal to here, so that's similar to the 1D in the case that you'll always find a peak in any 2D matrix."
+    },
+    {
+      "timestamp": "0:40:33",
+      "content": "So if you do a worst case analysis of this algorithm-- a particular algorithm with particular choices in terms of the starting point and the direction of search-- a Greedy Ascent algorithm would have theta n m complexity. All right? And in the case where n equals m, or m equals n, you'd have theta n squared complexity. OK? I won't spend very much time on this, because I want to talk to you about the divide and conquer versions of this algorithm for the 2D peak. But hopefully you're all with me with respect to what the worst case complexity is. All right? People buy that? Yeah. Question back there. AUDIENCE: Can you-- Is that an approximation? Or can you actually get to n times m traversals? PROFESSOR: So there are specific Greedy Ascent algorithms, and specific matrices where, if I give you the code for the algorithm, and I give you a specific matrix, that I could make you touch all of these elements. That's correct. So we're talking about worst case. You're being very paranoid when you talk about worst case complexity. And so I'm-- hand waving a bit here, simply because I haven't given you the specifics of the algorithm yet. Right? This is really a set of algorithms, because I haven't given you the code, I haven't told you where it starts, and which direction it goes. But you go, do that, fix it, and I would be the person who tries to find the worst case complexity. Suddenly it's very easy to get to theta n m in terms of having some constant multiplying n times m. But you can definitely get to that constant being very close to 1. If not 1. All right. So let's talk about divide and conquer. And let's say that I did something like this, where I just tried to jam the binary search algorithm into the 2D version."
+    },
+    {
+      "timestamp": "0:47:43",
+      "content": "So what I'm going to do is pick a middle column, j equals m over 2. I'm going to find the global maximum on column j. And that's going to be at (i, j). I'm going to compare (i comma j minus 1), (i comma j), and (i,j plus 1). Which means that once I've found the maximum in this row, all I'm going to look to the left and the right, and compare. I'm going to pick the left columns. If (i comma j minus 1) is greater than (i comma j)-- and similarly for the right. And if in fact I-- either of these two conditions don't fire, and what I have is (i comma j) is greater than or equal to (i comma j minus 1) and (i comma j plus 1), then I'm done. Just like I had for the 1D version. If (i comma j) is greater than or equal to (i comma j minus 1), and (i comma j plus 1), that implies (i, j) is a 2D peak. OK? And the reason that is the case, is because (i comma j) was the maximum element in that column. So you know that you've compared it to all of the adjacent elements, looking up and looking down, that's the maximum element. Now you've look at the left and the right, and in fact it's greater than or equal to the elements on the left and the right. And so therefore it's a 2D peak. OK? So in this case, when you pick the left or the right columns-- you'll pick one of them-- you're going to solve the new problem with half the number of columns."
+    },
+    {
+      "timestamp": "0:50:17",
+      "content": "And again, you have to go through an analysis, or an argument, to make sure that this algorithm is correct. But its intuitively correct, simply because it matches the 1D version much more closely. And you also have your condition where you break away right here, where you have a 2D"
+    },
+    {
+      "timestamp": "0:50:41",
+      "content": "The peak algorithm works similarly to the 1D version."
+    },
+    {
+      "timestamp": "0:50:43",
+      "content": "It breaks the matrix into half the size."
+    },
+    {
+      "timestamp": "0:50:46",
+      "content": "This is why the algorithm works."
+    },
+    {
+      "timestamp": "0:50:51",
+      "content": "When there is a single column, you find the global maximum and you're done."
+    },
+    {
+      "timestamp": "0:51:09",
+      "content": "This is the base case."
+    },
+    {
+      "timestamp": "0:51:10",
+      "content": "The recurrence relation for the complexity of this algorithm is..."
+    },
+    {
+      "timestamp": "0:51:14",
+      "content": "T of (n, m) equals T of (n, m over 2) plus theta n."
+    },
+    {
+      "timestamp": "0:51:42",
+      "content": "This is because n is the number of rows and m is the number of columns."
+    },
+    {
+      "timestamp": "0:51:47",
+      "content": "In one case, you break things down into half the number of columns, which is m over 2."
+    },
+    {
+      "timestamp": "0:51:54",
+      "content": "To find the global maximum, you do theta n work."
+    },
+    {
+      "timestamp": "0:52:01",
+      "content": "You just have to scan it."
+    },
+    {
+      "timestamp": "0:52:08",
+      "content": "The overall complexity of this algorithm is theta of n log 2 of m."
+    },
+    {
+      "timestamp": "0:52:43",
+      "content": "However, you're not done with peak finding."
+    },
+    {
+      "timestamp": "0:52:48",
+      "content": "There are four algorithms coded in Python that you will analyze."
+    },
+    {
+      "timestamp": "0:52:53",
+      "content": "You will have seen versions of those algorithms already in lecture."
+    },
+    {
+      "timestamp": "0:53:01",
+      "content": "Your job is to analyze the algorithms, prove one of them is correct, and find counter-examples for the ones that aren't correct."
+    },
+    {
+      "timestamp": "0:53:12",
+      "content": "The course staff will be available to answer questions and address any logistical concerns."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+0:00:00 : We have discussed. Just like Arianne list. How did I store in are what are the different operation fanari what is linked list in order the different operations in English. How did I stored in England right now? So you can see it is a destruction random axis as possible. You can directly access any data in a constant. I'm limited access as possible. You can say it is what it is and order the list or you can say it is a selection all you can say to the container.
+0:00:50 :  Which is linked to follow a rule for insertion and deletion of the data. And what is that? What is that restriction you can say or what is that shipping which that a standard test after?
+0:01:07 :  so
+0:01:08 :  the cruelest insertion and deletion is Possible only from one end.
+0:01:17 :  This is applied on both insertion and deletion insertion and deletion is possible from only one end CDs.
+0:01:34 :  You're going to put CDs hair first CD then second third fourth fifth kiss. You have only one way to insert CD from that's so funny. You cannot insert CD second-guesses. If you want to take out the CD from the series stand suppose you want to take out the CD the first CD so you will have to take out all the CDs which are placed in in stock.
+0:02:34 :  So in this world, you will see how to replace a center stack. What are the interaction introductory part of Staff some basic operations staff. What are what are the meaning of those operations as well as an application.
+0:02:59 :  Like this if you mop this real life. This is what a strap only you can see a stack of plates. If you want to play place another place, then you can put on display at 10th and 4th and 5th grade lesson, if you want to remove a plate so the principal is what last in first out you can say
+0:03:29 :  This is the last played for you can say this is the last CD you have food in the sweetest and would be the first one to last.
+0:03:47 :  So the rule on which data structure works is what people asking for stuff or you can say in his last out the CD was first in but if you want to take out the city would be the last one you can take out because for taking out the city outside of the Cities. Can you how to take out all the above series Forester phone has what?
+0:04:32 :  This is what the staff presented which has only one open and you can insert data. You can delete the data from here. There's no other way. This is what a staff staff in such an operation manual and sort some Daytime the stand that operation is known as Bush.
+0:05:06 :  Frank Ocean operation is known as
+0:05:12 :  the four fundamental operations are there on the step one is for inserting deleting the top most data from the staff from where you are going to push and pop the data rights to this is known as
+0:05:45 :  you can sort of data from top of the stack is known as top from then you can insert you can push and fold it. So now we're going to see some operations that are performed on Busch.
+0:06:05 :  Insert into Star-Lord something like this.
+0:06:37 :  Make hair if you don't pass any argument because it's always the topmost element would be formed in this function.
+0:06:57 :  Awesome. Eric is also known as operation without removing that anime from the stack see it on the top most elements from the stacks as well as it will remove that element from the step C suppose. This is what I have staff and I have effect on this tack, you will perform the operation or operations. It means
+0:07:47 :  What operation maybe is empathy mean on phones babies are not the only operation you can go from there are many more oppression. You can perform on staff. You can find out from the staff elements from the staff at the temptation of Staff as well as we're going to perform these operations.
+0:08:41 :  So this is how we logically represent the staff right now actually in the memory. This is just a logical.
+0:08:52 :  What do you want? We want to push some Daytime this chat, right? So you need to know the capacity of the stats to the size of the Stag. So you need to locate some mum to the stuff fixed that size how you get to know the size of the staff. You can locate the memory either using static memory location to ways to implement steps to using arrays. You can implement it means using list you can Implement stacks for these implementations. You will see in the next video with the proper suppose. I have taken the size of the status 5
+0:09:44 :  means the Staten store only five elements even using by your settings so you can search five elements only top is what
+0:10:05 :  top bicycle 2 - 1
+0:10:07 :  5 means you can say you can sort five elements. The index would be 0 festivals in ones and twos and threes and fours from 0 to 5 elements. I can store this is the capacity of the stand somewhere here - 10 - 1 index what would happen? If you don't have anything starts with a T in this case it is what and the floor condition.
+0:10:51 :  It will determine what the status in Petit. So this is what are under the floor condition you can say
+0:11:04 :  Flight actual implementation or lose also even see how to write down the code for pushing for the only one in supposed to hold what would happen?
+0:11:24 :  It means stop becomes 20 now.
+0:11:34 :  If you will call for 3.
+0:11:39 :  What's up. Plus plus?
+0:11:43 :  Becomes this one cop is pointing to this 11 and if you call.
+0:11:55 :  no need to pass any arguments are because only the top most element always this cold three to three would be removed from this check and Knoxville Zoo top - -
+0:12:23 :  Again office again if you in that case again or simply you can do top minus minus.
+0:12:43 :  -1 remove this if you will not seek out this from the staff that is also fine because this is not a Guard base.
+0:12:54 :  We do we do not care what Barbie's value is there in the staff again for push for
+0:13:03 :  first row. Plus plus mean South Africans 0 - 120
+0:13:17 :  listing of Ford Fusion cooperation * 156 + 756 + 7
+0:13:30 :  now the SEC is full 50.
+0:13:39 :  Discuss what is under flood condition now, this is what overflow condition.
+0:13:44 :  If the stop is pointing to the maximum size is -1 youth cannot insert any daytime the status status.
+0:14:02 :  so this is what organization and now hair if you will call is full function means it would return true if the status full and now the conditional status full so it won't get done at this time has full function would.
+0:14:16 :  B anyways when there is nothing in the stack supposed to help with all the data and after that is impotent sympathy how you are going to hold this function will see what are the applications of Taxi.
+0:14:40 :  silverstream
+0:14:42 :  What is your voice a word when you visit news staff is very simple suppose. I want to reverse.
+0:14:49 :  I have a string a b c d a b c and d I guess everybody have used the single mechanism supposed to have written something ABCDE shortcut key for undo.
+0:15:38 :  Turn up the kitchen. Maybe you can use it in because you know, you can sing function call function called a function is called that goes we will discuss when we will discuss recursion. For verifying the balance of the princesses suppose here is opening again here. I opened again here. I opened it means there should be three closing records using step.
+0:16:38 :  Listen, once we will discuss in detail and fix to prefix Staffing to be used as a no problem. Also, we are going to use staff staff application post fix expression Daily News staff that is also discuss all application. We will discuss in detail just an introductory video of the strength to get you familiar with Steph.

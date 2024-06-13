@@ -1,0 +1,162 @@
+소요시간 : 18.784499883651733 
+영상링크 : https://www.youtube.com/watch?v=knV86FlSXJ8
+추출방식 : 1
+{
+  "videoTitle": "해시 테이블 소개",
+  "videoDescription": "해시 함수와 체이닝을 사용하여 해시 테이블과 그 구현에 대해 배워보세요.",
+  "Lecture Note": [
+    {
+      "timestamp": "00:00:01",
+      "section_title": "📚 해시 테이블 소개",
+      "content": "해시 테이블은 동적 데이터 집합을 나타내며, 삽입, 삭제 및 검색 작업을 지원합니다."
+    },
+    {
+      "timestamp": "00:00:15",
+      "section_title": "🔍 해시 테이블의 이점",
+      "content": "해시 테이블은 평균 검색 시간이 O(1)로, 검색 작업에 효율적입니다. 그러나 최악의 경우 검색 시간은 O(n)으로 저하될 수 있습니다."
+    },
+    {
+      "timestamp": "00:00:29",
+      "section_title": "📖 해시 테이블 vs 사전",
+      "content": "해시 테이블과 사전은 때때로 교환해서 사용되지만, 해시 테이블은 해싱 함수를 사용하여 사전의 특정 구현입니다."
+    },
+    {
+      "timestamp": "00:01:02",
+      "section_title": "🔑 직접 접근 테이블",
+      "content": "직접 접근 테이블은 해시 테이블의 대체 개념입니다. 삽입, 삭제 및 검색 작업이 모두 상수 시간인 키-값 매핑을 나타내기 위해 배열을 사용합니다."
+    },
+    {
+      "timestamp": "00:01:46",
+      "section_title": "🗂️ 해시 테이블과 공간 요구 사항",
+      "content": "해시 테이블은 키의 수인 k에 대한 공간 요구 사항이 O(k)입니다. 이는 해시 함수를 사용하여 키를 데이터를 보유하는 테이블의 위치로 매핑함으로써 달성됩니다."
+    },
+    {
+      "timestamp": "00:02:23",
+      "section_title": "🔗 충돌 처리: 체이닝",
+      "content": "두 개의 다른 키가 테이블의 동일한 위치로 매핑될 때 충돌이 발생합니다. 체이닝은 링크드 리스트를 사용하여 충돌을 처리하는 방법입니다."
+    },
+    {
+      "timestamp": "00:02:38",
+      "section_title": "🎲 무작위성 최대화: 해시 함수",
+      "content": "검색 시간을 O(1)에 가깝게 유지하기 위해 해시 함수는 무작위성을 최대화하고 충돌을 최소화해야 합니다."
+    },
+    {
+      "timestamp": "00:02:51",
+      "section_title": "🔢 해시 함수 예제",
+      "content": "해시 함수의 예로는 나눗셈에 의한 해싱이 있습니다. 예를 들어, h(k) = k mod m이고, 여기서 m은 테이블의 크기입니다."
+    },
+    {
+      "timestamp": "00:03:33",
+      "section_title": "🔗 추가 자료",
+      "content": "해시 테이블을 다른 데이터 구조와 함께 구축하는 코드 샘플과 기사를 확인하려면 설명란의 GitHub 링크를 참조하세요."
+    }
+  ],
+  "questions": [
+    {
+      "question": "해시 테이블의 평균 검색 시간은 얼마인가요?",
+      "answer": "O(1)"
+    },
+    {
+      "question": "해시 테이블의 공간 요구 사항은 어떻게 되나요?",
+      "answer": "O(k)"
+    },
+    {
+      "question": "해시 테이블에서 충돌은 어떻게 처리되나요?",
+      "answer": "체이닝"
+    }
+  ],
+  "script": [
+    {
+      "timestamp": "0:00:01",
+      "content": "Today, we're going to learn about hash tables. Similar to stacks and queues, hash tables represent a dynamic set of data."
+    },
+    {
+      "timestamp": "0:00:06",
+      "content": "Hash tables support insert, delete, and search operations."
+    },
+    {
+      "timestamp": "0:00:15",
+      "content": "Where hash tables really shine is search, as they have an average search time of O(1)."
+    },
+    {
+      "timestamp": "0:00:22",
+      "content": "Although this degrades to O(n) in the worst case, I'll start by noting that the term \"hash table\" is sometimes used interchangeably with \"dictionary\"."
+    },
+    {
+      "timestamp": "0:00:29",
+      "content": "Dictionaries represent a generic way to map keys to values. Hash tables are a specific way to implement a dictionary using a hashing function."
+    },
+    {
+      "timestamp": "0:00:46",
+      "content": "You've probably seen or worked with dictionaries or hash tables if you've done basic programming."
+    },
+    {
+      "timestamp": "0:00:52",
+      "content": "Here's Python code showing dictionary usage."
+    },
+    {
+      "timestamp": "0:00:58",
+      "content": "Let's talk about our key-value mapping implementation."
+    },
+    {
+      "timestamp": "0:01:02",
+      "content": "To do this, we'll start by exploring a similar concept to hash tables called direct access tables."
+    },
+    {
+      "timestamp": "0:01:10",
+      "content": "With direct access tables, we have a universe of keys shown on the left."
+    },
+    {
+      "timestamp": "0:01:17",
+      "content": "Some of the keys are in use and they point to data."
+    },
+    {
+      "timestamp": "0:01:22",
+      "content": "With direct access tables, insert, delete, and search are all constant time operations."
+    },
+    {
+      "timestamp": "0:01:32",
+      "content": "In other words, a direct access table is an array, and if you need to represent every key in the universe (u), which is unbounded and impractical to store in memory."
+    },
+    {
+      "timestamp": "0:01:46",
+      "content": "Enter hash tables. With hash tables, the space requirement is O(k), where k is the number of keys."
+    },
+    {
+      "timestamp": "0:01:56",
+      "content": "To achieve this, we introduce a hash function that maps keys to a location in the table that holds data."
+    },
+    {
+      "timestamp": "0:02:10",
+      "content": "Because our universe of keys is no longer unbounded, it's possible that hashing two different keys may result in the same value, called a collision."
+    },
+    {
+      "timestamp": "0:02:23",
+      "content": "One method to accommodate collisions is called chaining."
+    },
+    {
+      "timestamp": "0:02:28",
+      "content": "To support chaining, we introduce linked lists, and our table locations become a bucket of values."
+    },
+    {
+      "timestamp": "0:02:38",
+      "content": "To keep search as close as possible to O(1), we need a hash function that maximizes randomness and produces the least amount of collisions."
+    },
+    {
+      "timestamp": "0:02:51",
+      "content": "Here are some examples of hash functions. We won't explore these at length, but let's take a look at hashing by division."
+    },
+    {
+      "timestamp": "0:03:01",
+      "content": "Using division, our hash function is the following: h(k) = k mod m, where m is the size of the table. Let's say we have a hash table of size 13."
+    },
+    {
+      "timestamp": "0:03:20",
+      "content": "If the key is 50, then h(k) = 50 mod 13, which equals 11."
+    },
+    {
+      "timestamp": "0:03:33",
+      "content": "Take a look at the GitHub link in the description for code samples. I also linked an article that shows how to build hash tables with other primitive data structures. Thank you for watching. I hope this video helps you on your computer science journey. Please like and subscribe."
+    }
+  ]
+}

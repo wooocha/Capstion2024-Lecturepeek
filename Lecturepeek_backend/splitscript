@@ -1,0 +1,276 @@
+**********1part************
+0:00:04: This is a 3.
+0:00:06: It's sloppily written and rendered at an extremely low resolution of 28x28 pixels, 
+0:00:10: but your brain has no trouble recognizing it as a 3.
+0:00:14: And I want you to take a moment to appreciate how 
+0:00:16: crazy it is that brains can do this so effortlessly.
+0:00:19: I mean, this, this and this are also recognizable as 3s, 
+0:00:23: even though the specific values of each pixel is very different from one 
+0:00:27: image to the next.
+0:00:28: The particular light-sensitive cells in your eye that are firing when 
+0:00:32: you see this 3 are very different from the ones firing when you see this 3.
+0:00:37: But something in that crazy-smart visual cortex of yours resolves these as representing 
+0:00:42: the same idea, while at the same time recognizing other images as their own distinct 
+0:00:47: ideas.
+0:00:49: But if I told you, hey, sit down and write for me a program that takes in a grid of 
+0:00:54: 28x28 pixels like this and outputs a single number between 0 and 10, 
+0:00:59: telling you what it thinks the digit is, well the task goes from comically trivial to 
+0:01:04: dauntingly difficult.
+0:01:07: Unless you've been living under a rock, I think I hardly need to motivate the relevance 
+0:01:10: and importance of machine learning and neural networks to the present and to the future.
+0:01:15: But what I want to do here is show you what a neural network actually is, 
+0:01:19: assuming no background, and to help visualize what it's doing, 
+0:01:22: not as a buzzword but as a piece of math.
+0:01:25: My hope is that you come away feeling like the structure itself is motivated, 
+0:01:28: and to feel like you know what it means when you read, 
+0:01:31: or you hear about a neural network quote-unquote learning.
+0:01:35: This video is just going to be devoted to the structure component of that, 
+0:01:38: and the following one is going to tackle learning.
+0:01:40: What we're going to do is put together a neural 
+0:01:43: network that can learn to recognize handwritten digits.
+0:01:49: This is a somewhat classic example for introducing the topic, 
+0:01:52: and I'm happy to stick with the status quo here, 
+0:01:54: because at the end of the two videos I want to point you to a couple good 
+0:01:57: resources where you can learn more, and where you can download the code that 
+0:02:00: does this and play with it on your own computer.
+0:02:05: There are many many variants of neural networks, 
+0:02:07: and in recent years there's been sort of a boom in research towards these variants, 
+0:02:12: but in these two introductory videos you and I are just going to look at the simplest 
+0:02:16: plain vanilla form with no added frills.
+0:02:19: This is kind of a necessary prerequisite for understanding any of the more powerful 
+0:02:23: modern variants, and trust me it still has plenty of complexity for us to wrap our minds 
+0:02:28: around.
+0:02:29: But even in this simplest form it can learn to recognize handwritten digits, 
+0:02:33: which is a pretty cool thing for a computer to be able to do.
+0:02:37: And at the same time you'll see how it does fall 
+0:02:39: short of a couple hopes that we might have for it.
+0:02:43: As the name suggests neural networks are inspired by the brain, but let's break that down.
+0:02:48: What are the neurons, and in what sense are they linked together?
+0:02:52: Right now when I say neuron all I want you to think about is a thing that holds a number, 
+0:02:58: specifically a number between 0 and 1.
+0:03:00: It's really not more than that.
+0:03:03: For example the network starts with a bunch of neurons corresponding to 
+0:03:08: each of the 28x28 pixels of the input image, which is 784 neurons in total.
+0:03:14: Each one of these holds a number that represents the grayscale value of the 
+0:03:19: corresponding pixel, ranging from 0 for black pixels up to 1 for white pixels.
+0:03:25: This number inside the neuron is called its activation, 
+0:03:28: and the image you might have in mind here is that each neuron is lit up when its 
+0:03:32: activation is a high number.
+0:03:36: So all of these 784 neurons make up the first layer of our network.
+0:03:46: Now jumping over to the last layer, this has 10 neurons, 
+0:03:49: each representing one of the digits.
+0:03:52: The activation in these neurons, again some number that's between 0 and 1, 
+0:03:56: represents how much the system thinks that a given image corresponds with a given digit.
+0:04:03: There's also a couple layers in between called the hidden layers, 
+0:04:06: which for the time being should just be a giant question mark for 
+0:04:09: how on earth this process of recognizing digits is going to be handled.
+0:04:14: In this network I chose two hidden layers, each one with 16 neurons, 
+0:04:17: and admittedly that's kind of an arbitrary choice.
+0:04:21: To be honest I chose two layers based on how I want to motivate the structure 
+0:04:24: in just a moment, and 16, well that was just a nice number to fit on the screen.
+0:04:28: In practice there is a lot of room for experiment with a specific structure here.
+0:04:33: The way the network operates, activations in one 
+0:04:35: layer determine the activations of the next layer.
+0:04:39: And of course the heart of the network as an information processing mechanism comes down 
+0:04:43: to exactly how those activations from one layer bring about activations in the next layer.
+0:04:49: It's meant to be loosely analogous to how in biological networks of neurons, 
+0:04:53: some groups of neurons firing cause certain others to fire.
+0:04:58: Now the network I'm showing here has already been trained to recognize digits, 
+0:05:01: and let me show you what I mean by that.
+0:05:03: It means if you feed in an image, lighting up all 784 neurons of the input layer 
+0:05:08: according to the brightness of each pixel in the image, 
+0:05:11: that pattern of activations causes some very specific pattern in the next layer 
+0:05:16: which causes some pattern in the one after it, 
+0:05:18: which finally gives some pattern in the output layer.
+0:05:22: And the brightest neuron of that output layer is the network's choice, 
+0:05:26: so to speak, for what digit this image represents.
+0:05:32: And before jumping into the math for how one layer influences the next, 
+0:05:36: or how training works, let's just talk about why it's even reasonable 
+0:05:40: to expect a layered structure like this to behave intelligently.
+0:05:44: What are we expecting here?
+0:05:45: What is the best hope for what those middle layers might be doing?
+0:05:48: Well, when you or I recognize digits, we piece together various components.
+0:05:54: A 9 has a loop up top and a line on the right.
+0:05:57: An 8 also has a loop up top, but it's paired with another loop down low.
+0:06:01: A 4 basically breaks down into three specific lines, and things like that.
+0:06:07: Now in a perfect world, we might hope that each neuron in the second 
+0:06:11: to last layer corresponds with one of these subcomponents, 
+0:06:15: that anytime you feed in an image with, say, a loop up top, 
+0:06:18: like a 9 or an 8, there's some specific neuron whose activation is going to be close to 1.
+0:06:24: And I don't mean this specific loop of pixels, 
+0:06:26: the hope would be that any generally loopy pattern towards the top sets off this neuron.
+0:06:32: That way, going from the third layer to the last one just requires 
+0:06:36: learning which combination of subcomponents corresponds to which digits.
+0:06:41: Of course, that just kicks the problem down the road, 
+0:06:43: because how would you recognize these subcomponents, 
+0:06:45: or even learn what the right subcomponents should be?
+0:06:48: And I still haven't even talked about how one layer influences the next, 
+0:06:51: but run with me on this one for a moment.
+0:06:53: Recognizing a loop can also break down into subproblems.
+0:06:57: One reasonable way to do this would be to first 
+0:06:59: recognize the various little edges that make it up.
+0:07:03: Similarly, a long line, like the kind you might see in the digits 1 or 4 or 7, 
+0:07:08: is really just a long edge, or maybe you think of it as a certain pattern of several 
+0:07:13: smaller edges.
+0:07:15: So maybe our hope is that each neuron in the second layer of 
+0:07:18: the network corresponds with the various relevant little edges.
+0:07:23: Maybe when an image like this one comes in, it lights up all of the 
+0:07:27: neurons associated with around 8 to 10 specific little edges, 
+0:07:31: which in turn lights up the neurons associated with the upper loop 
+0:07:35: and a long vertical line, and those light up the neuron associated with a 9.
+0:07:40: Whether or not this is what our final network actually does is another question, 
+0:07:44: one that I'll come back to once we see how to train the network, 
+0:07:47: but this is a hope that we might have, a sort of goal with the layered structure 
+0:07:52: like this.
+0:07:53: Moreover, you can imagine how being able to detect edges and patterns 
+0:07:56: like this would be really useful for other image recognition tasks.
+0:08:00: And even beyond image recognition, there are all sorts of intelligent 
+0:08:04: things you might want to do that break down into layers of abstraction.
+0:08:08: Parsing speech, for example, involves taking raw audio and picking out distinct sounds, 
+0:08:12: which combine to make certain syllables, which combine to form words, 
+0:08:16: which combine to make up phrases and more abstract thoughts, etc.
+0:08:21: But getting back to how any of this actually works, 
+0:08:23: picture yourself right now designing how exactly the activations in one layer might 
+0:08:27: determine the activations in the next.
+0:08:30: The goal is to have some mechanism that could conceivably combine pixels into edges, 
+0:08:36: or edges into patterns, or patterns into digits.
+0:08:39: And to zoom in on one very specific example, let's say the 
+0:08:43: hope is for one particular neuron in the second layer to pick 
+0:08:46: up on whether or not the image has an edge in this region here.
+0:08:51: The question at hand is what parameters should the network have?
+0:08:55: What dials and knobs should you be able to tweak so that it's expressive 
+0:08:59: enough to potentially capture this pattern, or any other pixel pattern, 
+0:09:03: or the pattern that several edges can make a loop, and other such things?
+0:09:08: Well, what we'll do is assign a weight to each one of the 
+0:09:11: connections between our neuron and the neurons from the first layer.
+0:09:16: These weights are just numbers.
+0:09:18: Then take all of those activations from the first layer 
+0:09:21: and compute their weighted sum according to these weights.
+0:09:27: I find it helpful to think of these weights as being organized into a 
+0:09:31: little grid of their own, and I'm going to use green pixels to indicate positive weights, 
+0:09:35: and red pixels to indicate negative weights, where the brightness of 
+0:09:38: that pixel is some loose depiction of the weight's value.
+0:09:42: Now if we made the weights associated with almost all of the pixels zero 
+0:09:46: except for some positive weights in this region that we care about, 
+0:09:50: then taking the weighted sum of all the pixel values really just amounts 
+0:09:53: to adding up the values of the pixel just in the region that we care about.
+0:09:59: And if you really wanted to pick up on whether there's an edge here, 
+0:10:02: what you might do is have some negative weights associated with the surrounding pixels.
+0:10:07: Then the sum is largest when those middle pixels 
+0:10:10: are bright but the surrounding pixels are darker.
+0:10:14: When you compute a weighted sum like this, you might come out with any number, 
+0:10:18: but for this network what we want is for activations to be some value between 0 and 1.
+0:10:24: So a common thing to do is to pump this weighted sum into some function 
+0:10:28: that squishes the real number line into the range between 0 and 1.
+0:10:32: And a common function that does this is called the sigmoid function, 
+0:10:35: also known as a logistic curve.
+0:10:38: Basically very negative inputs end up close to 0, 
+0:10:41: positive inputs end up close to 1, and it just steadily increases around the input 0.
+0:10:49: So the activation of the neuron here is basically a 
+0:10:52: measure of how positive the relevant weighted sum is.
+0:10:57: But maybe it's not that you want the neuron to 
+0:10:59: light up when the weighted sum is bigger than 0.
+0:11:02: Maybe you only want it to be active when the sum is bigger than say 10.
+0:11:06: That is, you want some bias for it to be inactive.
+0:11:11: What we'll do then is just add in some other number like negative 10 to this 
+0:11:15: weighted sum before plugging it through the sigmoid squishification function.
+0:11:20: That additional number is called the bias.
+0:11:23: So the weights tell you what pixel pattern this neuron in the second 
+0:11:27: layer is picking up on, and the bias tells you how high the weighted 
+0:11:31: sum needs to be before the neuron starts getting meaningfully active.
+0:11:36: And that is just one neuron.
+0:11:38: Every other neuron in this layer is going to be connected to 
+0:11:42: all 784 pixel neurons from the first layer, and each one of 
+0:11:46: those 784 connections has its own weight associated with it.
+0:11:51: Also, each one has some bias, some other number that you add 
+0:11:54: on to the weighted sum before squishing it with the sigmoid.
+0:11:58: And that's a lot to think about!
+0:11:59: With this hidden layer of 16 neurons, that's a total of 784 times 16 weights, 
+0:12:06: along with 16 biases.
+0:12:08: And all of that is just the connections from the first layer to the second.
+0:12:12: The connections between the other layers also have 
+0:12:14: a bunch of weights and biases associated with them.
+0:12:18: All said and done, this network has almost exactly 13,000 total weights and biases.
+0:12:23: 13,000 knobs and dials that can be tweaked and 
+0:12:26: turned to make this network behave in different ways.
+0:12:31: So when we talk about learning, what that's referring to is 
+0:12:34: getting the computer to find a valid setting for all of these 
+0:12:37: many many numbers so that it'll actually solve the problem at hand.
+0:12:42: One thought experiment that is at once fun and kind of horrifying is to imagine sitting 
+0:12:47: down and setting all of these weights and biases by hand, 
+0:12:50: purposefully tweaking the numbers so that the second layer picks up on edges, 
+0:12:54: the third layer picks up on patterns, etc.
+0:12:56: I personally find this satisfying rather than just treating the network as a total 
+0:13:01: black box, because when the network doesn't perform the way you anticipate, 
+0:13:04: if you've built up a little bit of a relationship with what those weights and biases 
+0:13:09: actually mean, you have a starting place for experimenting with how to change the 
+0:13:13: structure to improve.
+0:13:14: Or when the network does work but not for the reasons you might expect, 
+0:13:18: digging into what the weights and biases are doing is a good way to challenge 
+0:13:22: your assumptions and really expose the full space of possible solutions.
+0:13:26: By the way, the actual function here is a little cumbersome to write down, 
+0:13:30: don't you think?
+0:13:32: So let me show you a more notationally compact way that these connections are represented.
+0:13:37: This is how you'd see it if you choose to read up more about neural networks. 214 00:13:41,380 --> 00:13:40,520 Organize all of the activations from one layer into a column as a vector.
+0:13:41: Then organize all of the weights as a matrix, where each row of that matrix corresponds 
+0:13:50: to the connections between one layer and a particular neuron in the next layer.
+0:13:58: What that means is that taking the weighted sum of the activations in 
+0:14:02: the first layer according to these weights corresponds to one of the 
+0:14:05: terms in the matrix vector product of everything we have on the left here.
+0:14:14: By the way, so much of machine learning just comes down to having a 
+0:14:17: good grasp of linear algebra, so for any of you who want a nice visual 
+0:14:21: understanding for matrices and what matrix vector multiplication means, 
+0:14:24: take a look at the series I did on linear algebra, especially chapter 3.
+0:14:29: Back to our expression, instead of talking about adding the bias to each one of 
+0:14:33: these values independently, we represent it by organizing all those biases into a vector, 
+0:14:38: and adding the entire vector to the previous matrix vector product.
+0:14:43: Then as a final step, I'll wrap a sigmoid around the outside here, 
+0:14:46: and what that's supposed to represent is that you're going to apply the 
+0:14:50: sigmoid function to each specific component of the resulting vector inside.
+0:14:55: So once you write down this weight matrix and these vectors as their own symbols, 
+0:15:00: you can communicate the full transition of activations from one layer to the next in an 
+0:15:05: extremely tight and neat little expression, and this makes the relevant code both a lot 
+0:15:10: simpler and a lot faster, since many libraries optimize the heck out of matrix 
+0:15:14: multiplication.
+0:15:17: Remember how earlier I said these neurons are simply things that hold numbers?
+0:15:22: Well of course the specific numbers that they hold depends on the image you feed in, 
+0:15:27: so it's actually more accurate to think of each neuron as a function, 
+0:15:31: one that takes in the outputs of all the neurons in the previous layer and spits out a 
+0:15:36: number between 0 and 1.
+0:15:39: Really the entire network is just a function, one that takes in 
+0:15:43: 784 numbers as an input and spits out 10 numbers as an output.
+0:15:47: It's an absurdly complicated function, one that involves 13,000 parameters 
+0:15:51: in the forms of these weights and biases that pick up on certain patterns, 
+0:15:55: and which involves iterating many matrix vector products and the sigmoid 
+0:15:59: squishification function, but it's just a function nonetheless.
+0:16:03: And in a way it's kind of reassuring that it looks complicated.
+0:16:07: I mean if it were any simpler, what hope would we have 
+0:16:09: that it could take on the challenge of recognizing digits?
+0:16:13: And how does it take on that challenge?
+0:16:15: How does this network learn the appropriate weights and biases just by looking at data?
+0:16:20: Well that's what I'll show in the next video, and I'll also dig a little 
+0:16:23: more into what this particular network we're seeing is really doing.
+0:16:27: Now is the point I suppose I should say subscribe to stay notified 
+0:16:30: about when that video or any new videos come out, 
+0:16:33: but realistically most of you don't actually receive notifications from YouTube, do you?
+0:16:38: Maybe more honestly I should say subscribe so that the neural networks 
+0:16:41: that underlie YouTube's recommendation algorithm are primed to believe 
+0:16:44: that you want to see content from this channel get recommended to you.
+0:16:48: Anyway, stay posted for more.
+0:16:50: Thank you very much to everyone supporting these videos on Patreon.
+0:16:54: I've been a little slow to progress in the probability series this summer, 
+0:16:57: but I'm jumping back into it after this project, 
+0:16:59: so patrons you can look out for updates there.
+0:17:03: To close things off here I have with me Lisha Li who did her PhD work on the 
+0:17:07: theoretical side of deep learning and who currently works at a venture capital 
+0:17:10: firm called Amplify Partners who kindly provided some of the funding for this video.
+0:17:15: So Lisha one thing I think we should quickly bring up is this sigmoid function.
+0:17:19: As I understand it early networks use this to squish the relevant weighted 
+0:17:23: sum into that interval between zero and one, you know kind of motivated 
+0:17:26: by this biological analogy of neurons either being inactive or active.
+0:17:30: Exactly.
+0:17:30: But relatively few modern networks actually use sigmoid anymore.
+0:17:34: Yeah.
+0:17:34: It's kind of old school right?
+0:17:35: Yeah or rather ReLU seems to be much easier to train.
+0:17:39: And ReLU, ReLU stands for rectified linear unit?

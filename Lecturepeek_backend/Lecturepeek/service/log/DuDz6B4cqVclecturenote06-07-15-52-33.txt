@@ -1,0 +1,119 @@
+소요시간 : 347.04731583595276 
+영상링크 : https://www.youtube.com/watch?v=DuDz6B4cqVc
+추출방식 : 2
+{
+  "videoTitle": "자료 구조 - 컴퓨터 과학",
+  "videoDescription": "이 비디오는 자료 구조의 개념을 설명하고 컴퓨터 과학에서 사용되는 다양한 유형의 자료 구조를 소개합니다.",
+  "Lecture Note": [
+    {
+      "timestamp": "00:00:02",
+      "section_title": "📚 자료 구조 소개",
+      "content": "자료 구조는 컴퓨터 메모리에 데이터를 저장하고 조직화하는 데 사용됩니다. 효율적인 데이터 조작과 검색을 위해 필수적입니다."
+    },
+    {
+      "timestamp": "00:00:38",
+      "section_title": "🔢 배열",
+      "content": "배열은 메모리에 일련의 값을 저장하는 기본적인 자료 구조입니다. 각 값은 인덱스를 사용하여 액세스됩니다. 배열은 일차원 또는 다차원일 수 있습니다."
+    },
+    {
+      "timestamp": "00:02:38",
+      "section_title": "🔡 문자열",
+      "content": "문자열은 문자의 배열입니다. 텍스트를 저장하는 데 사용되며 프로그래밍 언어에서 특정 문자열 함수로 처리됩니다."
+    },
+    {
+      "timestamp": "00:03:38",
+      "section_title": "🔢 행렬",
+      "content": "행렬은 다차원 배열입니다. 스프레드시트의 숫자나 컴퓨터 화면의 픽셀과 같은 그리드 형태의 구조를 저장하는 데 사용됩니다."
+    },
+    {
+      "timestamp": "00:04:38",
+      "section_title": "📦 구조체",
+      "content": "구조체는 관련 변수를 하나의 데이터 구조로 묶는 데 사용됩니다. 구조체 배열을 생성하는 데 사용될 수 있습니다."
+    },
+    {
+      "timestamp": "00:05:38",
+      "section_title": "🔗 연결 리스트",
+      "content": "연결 리스트는 각 요소가 값과 다음 요소에 대한 참조를 포함하는 유연한 자료 구조입니다. 쉽게 조작하고 크기를 조정할 수 있습니다."
+    },
+    {
+      "timestamp": "00:06:38",
+      "section_title": "📚 스택과 큐",
+      "content": "스택과 큐는 연결 리스트 위에 구축된 추상 데이터 유형입니다. 스택은 후입선출(LIFO) 원칙을 따르고, 큐는 선입선출(FIFO) 원칙을 따릅니다."
+    },
+    {
+      "timestamp": "00:07:38",
+      "section_title": "🌳 트리",
+      "content": "트리는 노드로 구성된 계층적인 자료 구조입니다. 각 노드는 자식 노드를 가질 수 있으며 맨 위에 루트 노드가 있습니다. 이진 트리는 일반적인 유형의 트리입니다."
+    },
+    {
+      "timestamp": "00:08:38",
+      "section_title": "🔀 그래프",
+      "content": "그래프는 엣지로 연결된 노드의 집합입니다. 객체 간의 관계를 모델링하는 데 사용될 수 있습니다."
+    },
+    {
+      "timestamp": "00:09:29",
+      "section_title": "📚 결론",
+      "content": "자료 구조를 이해하는 것은 컴퓨터 과학에서 중요합니다. 프로그래밍 언어는 구현을 쉽게하기 위해 내장된 자료 구조를 제공합니다."
+    }
+  ],
+  "questions": [
+    {
+      "question": "자료 구조의 목적은 무엇인가요?",
+      "answer": "데이터를 저장하고 조직화하는 것입니다."
+    },
+    {
+      "question": "스택과 큐의 차이점은 무엇인가요?",
+      "answer": "LIFO vs FIFO"
+    },
+    {
+      "question": "트리에서 루트 노드란 무엇인가요?",
+      "answer": "맨 위의 노드입니다."
+    }
+  ],
+  "script": [
+    {
+      "timestamp": "0:00:02",
+      "content": "Hi on carry-on, welcome to crash course Computer Science episode. We discussed a few examples of why don't we stored in computer memory to be like John Green's college dorm room with food play instead of the best computer scientist use data structures."
+    },
+    {
+      "timestamp": "0:00:38",
+      "content": "We already introduced one basic data structure Lost episode a raise in some languages things are a series of value stored in memory of just a single value being Satan's were very very like Jake. We can define a whole series of numbers and say that intuitive a variable to be able to find a particular value in this right. We have to specify an index. I need a square bracket send text to daniyah re-access. So for example, if we want to add the value is in the first and third thoughts about Ray J and save that into variable a Wii with white line of code like this race to remember he's pretty straightforward for Simplicity that memory location 1000 the array contains seven numbers and these are stored one offer and every memory as seen him. So when we write J index of the day, right the computer goes to memory location 1000 with an offset 10, we get the value of 5, if we wanted to retrieve J index of 5, I'll program goes to memory vacation 1000."
+    },
+    {
+      "timestamp": "0:01:38",
+      "content": "Personal staff in this case holder value for his easy to confuse the fifth number in the array with the number index 5 they are not the same. Remember the number index 5 is a six number in the right cuz the first number is 0 a razor extremely fast Talk data structures used all the time and said there are many functions that can handle them to be useful things or it's awful pretty much every programming language comes with a built-in sole function where you just passing your right and it comes back suited and there's no need to write the algorithm from scratch very closely related of strings, which is just a raise of characters like messes numbers punctuation in other words and symbols we talked about. How come he stole characters way back inside. Then to say the string its memory. You just put it in quite as like psych will do it doesn't look like it is behind the scenes the memory looks like they zero in memory. It's not the character Zero for the binary value zero. This is cold the null character and two nightstands of history and memory this is important because"
+    },
+    {
+      "timestamp": "0:02:38",
+      "content": "It prints out his card Springtime saucing the first memory location, but he needs to know when to stop otherwise, it would print out every single thing in memories text. The zero tells us bring functions went to spell because computers wetprotect so often there are many functions that specifically handle strings. For example, many programming languages have a string concatenation functions Austrian cat which takes him two strings and copies a second one for the end of the fact that we can use a race will make you one dimension with me. But sometimes you want some manipulate they took his two dimensional like a grid of numbers in a spreadsheet all the pixels on your computer screen for this. We need a matrix you can think of a matrix is an array of a raise. So a three-by-three matrix is really an array of fly 3 with each index during an array of size 3, we could initialize a matrix like so in memory, this is tied together in the valley you need to specify to indexes like Jay index of tooth pain index of one this tells the computer you were looking for the item in subarray to that position one. And this would give us the bunny."
+    },
+    {
+      "timestamp": "0:03:38",
+      "content": "The cool thing about make sure it's a free by 3 we can make them any supplies we want we could also make them any number if I mentioned we walked for example, we can create a 50 bucks right now. They're Halifax the fly by Mitchell Matrix. Tell your friends so far. We've been storing individual numbers or letters into our raise on mattresses, but often it seems with the store block of related variables together like you might want to start bank account number along with its balance groups are variables. Like these can be bundled together into a struct now, we can create variables on a single numbers but a compound a two structures able to store several pieces of data at once we can even make a raise of struts that we Define which ultimately bundle together in memory if we access for example, j and x and zero we get back the whole strut store that we can pull the specific account number and balance days. We want this array of struts like any other arrangements created a Big Slice of coffee and locked add more items. Also erase memory making it hard to add a new license."
+    },
+    {
+      "timestamp": "0:04:38",
+      "content": "But the strong facial structure can be use the building more complicated data structures to avoid these restrictions. Let's take a look at the variable. Like a number of points are the special very bullet points has the name to location in memory using this truck. We can create a linked list, which is a flexible date. So it doesn't matter we have three notes truck saved in memory allocations 1000 1002 and 1008. They might be spaced apart because they were created at different times and other days I can sit between them. So you see that the first note contains the bunny 7, I'm going to Tatian 1008 and its next point of this means that the next note in the link to that memory location 1812 and points to another night at location 1002 if we follow that we know that contains the Volume 14."
+    },
+    {
+      "timestamp": "0:05:38",
+      "content": "What happened to be Sekulow but it could also have been terminated by using the next point the value of 0 the null value which would indicate we reach the end of the list when program instead they can use an abstraction of Allen place looks like this which is much easier to conceptualize. It has to be pretty to find a shortened. We can I locate a new note in memory and is set to introduce this just by changing. The next points has any place can also easily be real to trim split reverse and so on which is pretty nasty. I'm pretty useful for algorithms likes old things which we talked about last week to this flexibility many more compact data structures are built on top of me list the most famous in Universal accused and stack stack you like the line at your post office goes in the person who's been waiting a long kiss get subs first no matter how frustrating it is. Only wants to buy stamps."
+    },
+    {
+      "timestamp": "0:06:38",
+      "content": "Confessed out fifo. That's the best part 23 packages that we have appointed names post office Cube that points to the first note and I linked list and update. I'll post office key points to the next person in the line. We successfully DQ tank he's going to end to someone that is at them to the 9th. We have to turn down the base until we hit the end and then change that mix pointed to point to the new person which is the small change we can use meatless has sex with in life. Oh not infest out you can think of this like a stack of pancakes as you make them about them to the top of the site when you want to eat when you take them from the top of the stack Licious instead of entering and a caring they pushed and pulled from the stock if we update our notes truck to contain not just one but two points has we can build trees another day to structure that she's doing many algorithms again program is ready to cut the values of these princes."
+    },
+    {
+      "timestamp": "0:07:38",
+      "content": "Streets like this note is cooled the route and then he knows that hang from other nodes a cool children notes as you might expect notes above children Paradise office in is the parent of our own bed. I'll leave that to your fanfiction to decide. I'm fine in the end. He knows that have no children by the tree ends at least notes up to two children and two structures code of binary tree, but you could just as easily have trees with free for any number children by modifying the day to structure accordingly. You can even have Trina's that use mink place to store all the notes. I point to an important property of trees Byron real life any day. So structures is that lives in one way Paul from Greece to eat it be weird if it's connected to leave the connected to Roots, but they said that means I'll prepare everything that includes things like we can either grow facial structure instead. Remember I brought from Lost episode of cities connectify rights restored his nose with many points has very much like a tree there is no notion of roots and leaves and children."
+    },
+    {
+      "timestamp": "0:08:38",
+      "content": "Anythink complete to anything so that's a low wind over your pretty much all of the fundamental data structures used in computer science on top of these basic building blocks data structures, like red black trees in heat, which we don't have time to cover these different data structures have the right choice of date, but you have to think about how you instruct your dates before you jump in fortunately most programming languages come with instructions, for example, C+ pacifist and a template library and Jehovah has a job across Library. The evening program is don't have to waste time in Clementon things from scratch and kind of said will the power of days instructed to do more interesting things once again of abstraction. I'll see you next week."
+    },
+    {
+      "timestamp": "0:09:29",
+      "content": "Crash course computer science and produced in association with PBS digital Studios logo studio in Indianapolis, Indiana. It was made with the help of all these nice people and that wonderful Graphics team suit Cafe. Thanks for the random access memories. I'll see you next time."
+    }
+  ]
+}

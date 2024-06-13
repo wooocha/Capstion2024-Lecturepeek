@@ -1,0 +1,1232 @@
+소요시간 : 106.95733380317688 
+영상링크 : https://www.youtube.com/watch?v=aircAruvnKk
+추출방식 : 1
+{
+  "videoTitle": "신경망에서의 활성화 함수",
+  "videoDescription": "ReLU 활성화 함수 사용 동기 이해하기",
+  "Lecture Note": [
+    {
+      "timestamp": "00:00:04",
+      "section_title": "📝 소개",
+      "content": "뇌는 동일한 개념의 다른 표현을 쉽게 인식할 수 있습니다."
+    },
+    {
+      "timestamp": "00:00:49",
+      "section_title": "📝 신경망의 동기",
+      "content": "신경망은 기계 학습과 미래에 관련이 있고 중요합니다."
+    },
+    {
+      "timestamp": "00:01:25",
+      "section_title": "📝 신경망의 구조",
+      "content": "신경망은 입력층, 은닉층 및 출력층으로 구성됩니다."
+    },
+    {
+      "timestamp": "00:02:37",
+      "section_title": "📝 손글씨 숫자 인식을 위한 신경망",
+      "content": "손글씨 숫자를 인식하기 위한 신경망 구축하기"
+    },
+    {
+      "timestamp": "00:04:05",
+      "section_title": "📝 가장 간단한 형태의 신경망",
+      "content": "추가 기능이 없는 일반적인 신경망에 대한 소개"
+    },
+    {
+      "timestamp": "00:08:39",
+      "section_title": "📝 뉴런과 연결",
+      "content": "뉴런은 숫자를 저장하고 가중치와 편향을 통해 다른 뉴런에 연결됩니다."
+    },
+    {
+      "timestamp": "00:12:31",
+      "section_title": "📝 신경망에서의 학습",
+      "content": "학습은 문제를 해결하기 위해 적절한 가중치와 편향을 찾는 것을 의미합니다."
+    },
+    {
+      "timestamp": "00:15:17",
+      "section_title": "📝 신경망의 함수로서의 역할",
+      "content": "신경망은 매개변수가 많은 복잡한 함수입니다."
+    },
+    {
+      "timestamp": "00:16:15",
+      "section_title": "📝 다음 단계",
+      "content": "다음 비디오에서는 신경망이 어떻게 학습하는지와 네트워크 구조에 대해 자세히 다룰 예정입니다."
+    },
+    {
+      "timestamp": "00:17:42",
+      "section_title": "🔘 ReLU 활성화 함수의 동기",
+      "content": "ReLU 활성화 함수는 함수가 0과 주어진 값 'a' 중에서 최댓값을 취하는 신경망에서 사용됩니다. 이 함수는 뉴런의 활성화 여부와 생물학적 유사성에 기반합니다. 뉴런이 특정 임계값을 넘으면 항등 함수가 됩니다. 그렇지 않으면 비활성화되어 0을 출력합니다. 이 단순화된 방법은 깊은 신경망을 훈련하는 데 잘 작동하는 것으로 확인되었습니다."
+    },
+    {
+      "timestamp": "00:18:11",
+      "section_title": "🔘 ReLU vs Sigmoid",
+      "content": "시그모이드 함수를 활성화 함수로 사용하는 것은 깊은 신경망을 훈련하기 어려웠습니다. 어느 시점에서 연구자들은 ReLU 활성화 함수를 사용해보고 이 함수가 이러한 깊은 신경망에 대해 매우 잘 작동하는 것을 발견했습니다."
+    }
+  ],
+  "questions": [
+    {
+      "question": "신경망의 동기는 무엇인가요?",
+      "answer": "기계 학습과 미래"
+    },
+    {
+      "question": "신경망의 구성 요소는 무엇인가요?",
+      "answer": "입력층, 은닉층 및 출력층"
+    },
+    {
+      "question": "신경망에서의 학습은 무엇을 포함하나요?",
+      "answer": "적절한 가중치와 편향 찾기"
+    },
+    {
+      "question": "ReLU는 무엇의 약자인가요?",
+      "answer": "Rectified Linear Unit"
+    },
+    {
+      "question": "ReLU 활성화 함수 사용의 동기는 무엇인가요?",
+      "answer": "뉴런 활성화의 생물학적 유사성"
+    },
+    {
+      "question": "시그모이드 함수는 깊은 신경망 훈련에 어려움을 겪은 이유는 무엇인가요?",
+      "answer": "지정되지 않음"
+    }
+  ],
+  "script": [
+    {
+      "timestamp": "0:00:04",
+      "content": "This is a 3."
+    },
+    {
+      "timestamp": "0:00:06",
+      "content": "It's sloppily written and rendered at an extremely low resolution of 28x28 pixels,"
+    },
+    {
+      "timestamp": "0:00:10",
+      "content": "but your brain has no trouble recognizing it as a 3."
+    },
+    {
+      "timestamp": "0:00:14",
+      "content": "And I want you to take a moment to appreciate how"
+    },
+    {
+      "timestamp": "0:00:16",
+      "content": "crazy it is that brains can do this so effortlessly."
+    },
+    {
+      "timestamp": "0:00:19",
+      "content": "I mean, this, this and this are also recognizable as 3s,"
+    },
+    {
+      "timestamp": "0:00:23",
+      "content": "even though the specific values of each pixel is very different from one"
+    },
+    {
+      "timestamp": "0:00:27",
+      "content": "image to the next."
+    },
+    {
+      "timestamp": "0:00:28",
+      "content": "The particular light-sensitive cells in your eye that are firing when"
+    },
+    {
+      "timestamp": "0:00:32",
+      "content": "you see this 3 are very different from the ones firing when you see this 3."
+    },
+    {
+      "timestamp": "0:00:37",
+      "content": "But something in that crazy-smart visual cortex of yours resolves these as representing"
+    },
+    {
+      "timestamp": "0:00:42",
+      "content": "the same idea, while at the same time recognizing other images as their own distinct"
+    },
+    {
+      "timestamp": "0:00:47",
+      "content": "ideas."
+    },
+    {
+      "timestamp": "0:00:49",
+      "content": "But if I told you, hey, sit down and write for me a program that takes in a grid of"
+    },
+    {
+      "timestamp": "0:00:54",
+      "content": "28x28 pixels like this and outputs a single number between 0 and 10,"
+    },
+    {
+      "timestamp": "0:00:59",
+      "content": "telling you what it thinks the digit is, well the task goes from comically trivial to"
+    },
+    {
+      "timestamp": "0:01:04",
+      "content": "dauntingly difficult."
+    },
+    {
+      "timestamp": "0:01:07",
+      "content": "Unless you've been living under a rock, I think I hardly need to motivate the relevance"
+    },
+    {
+      "timestamp": "0:01:10",
+      "content": "and importance of machine learning and neural networks to the present and to the future."
+    },
+    {
+      "timestamp": "0:01:15",
+      "content": "But what I want to do here is show you what a neural network actually is,"
+    },
+    {
+      "timestamp": "0:01:19",
+      "content": "assuming no background, and to help visualize what it's doing,"
+    },
+    {
+      "timestamp": "0:01:22",
+      "content": "not as a buzzword but as a piece of math."
+    },
+    {
+      "timestamp": "0:01:25",
+      "content": "My hope is that you come away feeling like the structure itself is motivated,"
+    },
+    {
+      "timestamp": "0:01:28",
+      "content": "and to feel like you know what it means when you read,"
+    },
+    {
+      "timestamp": "0:01:31",
+      "content": "or you hear about a neural network quote-unquote learning."
+    },
+    {
+      "timestamp": "0:01:35",
+      "content": "This video is just going to be devoted to the structure component of that,"
+    },
+    {
+      "timestamp": "0:01:38",
+      "content": "and the following one is going to tackle learning."
+    },
+    {
+      "timestamp": "0:01:40",
+      "content": "What we're going to do is put together a neural"
+    },
+    {
+      "timestamp": "0:01:43",
+      "content": "network that can learn to recognize handwritten digits."
+    },
+    {
+      "timestamp": "0:01:49",
+      "content": "This is a somewhat classic example for introducing the topic,"
+    },
+    {
+      "timestamp": "0:01:52",
+      "content": "and I'm happy to stick with the status quo here,"
+    },
+    {
+      "timestamp": "0:01:54",
+      "content": "because at the end of the two videos I want to point you to a couple good"
+    },
+    {
+      "timestamp": "0:01:57",
+      "content": "resources where you can learn more, and where you can download the code that"
+    },
+    {
+      "timestamp": "0:02:00",
+      "content": "does this and play with it on your own computer."
+    },
+    {
+      "timestamp": "0:02:05",
+      "content": "There are many many variants of neural networks,"
+    },
+    {
+      "timestamp": "0:02:07",
+      "content": "and in recent years there's been sort of a boom in research towards these variants,"
+    },
+    {
+      "timestamp": "0:02:12",
+      "content": "but in these two introductory videos you and I are just going to look at the simplest"
+    },
+    {
+      "timestamp": "0:02:16",
+      "content": "plain vanilla form with no added frills."
+    },
+    {
+      "timestamp": "0:02:19",
+      "content": "This is kind of a necessary prerequisite for understanding any of the more powerful"
+    },
+    {
+      "timestamp": "0:02:23",
+      "content": "modern variants, and trust me it still has plenty of complexity for us to wrap our minds"
+    },
+    {
+      "timestamp": "0:02:28",
+      "content": "around."
+    },
+    {
+      "timestamp": "0:02:29",
+      "content": "But even in this simplest form it can learn to recognize handwritten digits,"
+    },
+    {
+      "timestamp": "0:02:33",
+      "content": "which is a pretty cool thing for a computer to be able to do."
+    },
+    {
+      "timestamp": "0:02:37",
+      "content": "And at the same time you'll see how it does fall"
+    },
+    {
+      "timestamp": "0:02:39",
+      "content": "short of a couple hopes that we might have for it."
+    },
+    {
+      "timestamp": "0:02:43",
+      "content": "As the name suggests neural networks are inspired by the brain, but let's break that down."
+    },
+    {
+      "timestamp": "0:02:48",
+      "content": "What are the neurons, and in what sense are they linked together?"
+    },
+    {
+      "timestamp": "0:02:52",
+      "content": "Right now when I say neuron all I want you to think about is a thing that holds a number,"
+    },
+    {
+      "timestamp": "0:02:58",
+      "content": "specifically a number between 0 and 1."
+    },
+    {
+      "timestamp": "0:03:00",
+      "content": "It's really not more than that."
+    },
+    {
+      "timestamp": "0:03:03",
+      "content": "For example the network starts with a bunch of neurons corresponding to"
+    },
+    {
+      "timestamp": "0:03:08",
+      "content": "each of the 28x28 pixels of the input image, which is 784 neurons in total."
+    },
+    {
+      "timestamp": "0:03:14",
+      "content": "Each one of these holds a number that represents the grayscale value of the"
+    },
+    {
+      "timestamp": "0:03:19",
+      "content": "corresponding pixel, ranging from 0 for black pixels up to 1 for white pixels."
+    },
+    {
+      "timestamp": "0:03:25",
+      "content": "This number inside the neuron is called its activation,"
+    },
+    {
+      "timestamp": "0:03:28",
+      "content": "and the image you might have in mind here is that each neuron is lit up when its"
+    },
+    {
+      "timestamp": "0:03:32",
+      "content": "activation is a high number."
+    },
+    {
+      "timestamp": "0:03:36",
+      "content": "So all of these 784 neurons make up the first layer of our network."
+    },
+    {
+      "timestamp": "0:03:46",
+      "content": "Now jumping over to the last layer, this has 10 neurons,"
+    },
+    {
+      "timestamp": "0:03:49",
+      "content": "each representing one of the digits."
+    },
+    {
+      "timestamp": "0:03:52",
+      "content": "The activation in these neurons, again some number that's between 0 and 1,"
+    },
+    {
+      "timestamp": "0:03:56",
+      "content": "represents how much the system thinks that a given image corresponds with a given digit."
+    },
+    {
+      "timestamp": "0:04:03",
+      "content": "There's also a couple layers in between called the hidden layers,"
+    },
+    {
+      "timestamp": "0:04:06",
+      "content": "which for the time being should just be a giant question mark for"
+    },
+    {
+      "timestamp": "0:04:09",
+      "content": "how on earth this process of recognizing digits is going to be handled."
+    },
+    {
+      "timestamp": "0:04:14",
+      "content": "In this network I chose two hidden layers, each one with 16 neurons,"
+    },
+    {
+      "timestamp": "0:04:17",
+      "content": "and admittedly that's kind of an arbitrary choice."
+    },
+    {
+      "timestamp": "0:04:21",
+      "content": "To be honest I chose two layers based on how I want to motivate the structure"
+    },
+    {
+      "timestamp": "0:04:24",
+      "content": "in just a moment, and 16, well that was just a nice number to fit on the screen."
+    },
+    {
+      "timestamp": "0:04:28",
+      "content": "In practice there is a lot of room for experiment with a specific structure here."
+    },
+    {
+      "timestamp": "0:04:33",
+      "content": "The way the network operates, activations in one"
+    },
+    {
+      "timestamp": "0:04:35",
+      "content": "layer determine the activations of the next layer."
+    },
+    {
+      "timestamp": "0:04:39",
+      "content": "And of course the heart of the network as an information processing mechanism comes down"
+    },
+    {
+      "timestamp": "0:04:43",
+      "content": "to exactly how those activations from one layer bring about activations in the next layer."
+    },
+    {
+      "timestamp": "0:04:49",
+      "content": "It's meant to be loosely analogous to how in biological networks of neurons,"
+    },
+    {
+      "timestamp": "0:04:53",
+      "content": "some groups of neurons firing cause certain others to fire."
+    },
+    {
+      "timestamp": "0:04:58",
+      "content": "Now the network I'm showing here has already been trained to recognize digits,"
+    },
+    {
+      "timestamp": "0:05:01",
+      "content": "and let me show you what I mean by that."
+    },
+    {
+      "timestamp": "0:05:03",
+      "content": "It means if you feed in an image, lighting up all 784 neurons of the input layer"
+    },
+    {
+      "timestamp": "0:05:08",
+      "content": "according to the brightness of each pixel in the image,"
+    },
+    {
+      "timestamp": "0:05:11",
+      "content": "that pattern of activations causes some very specific pattern in the next layer"
+    },
+    {
+      "timestamp": "0:05:16",
+      "content": "which causes some pattern in the one after it,"
+    },
+    {
+      "timestamp": "0:05:18",
+      "content": "which finally gives some pattern in the output layer."
+    },
+    {
+      "timestamp": "0:05:22",
+      "content": "And the brightest neuron of that output layer is the network's choice,"
+    },
+    {
+      "timestamp": "0:05:26",
+      "content": "so to speak, for what digit this image represents."
+    },
+    {
+      "timestamp": "0:05:32",
+      "content": "And before jumping into the math for how one layer influences the next,"
+    },
+    {
+      "timestamp": "0:05:36",
+      "content": "or how training works, let's just talk about why it's even reasonable"
+    },
+    {
+      "timestamp": "0:05:40",
+      "content": "to expect a layered structure like this to behave intelligently."
+    },
+    {
+      "timestamp": "0:05:44",
+      "content": "What are we expecting here?"
+    },
+    {
+      "timestamp": "0:05:45",
+      "content": "What is the best hope for what those middle layers might be doing?"
+    },
+    {
+      "timestamp": "0:05:48",
+      "content": "Well, when you or I recognize digits, we piece together various components."
+    },
+    {
+      "timestamp": "0:05:54",
+      "content": "A 9 has a loop up top and a line on the right."
+    },
+    {
+      "timestamp": "0:05:57",
+      "content": "An 8 also has a loop up top, but it's paired with another loop down low."
+    },
+    {
+      "timestamp": "0:06:01",
+      "content": "A 4 basically breaks down into three specific lines, and things like that."
+    },
+    {
+      "timestamp": "0:06:07",
+      "content": "Now in a perfect world, we might hope that each neuron in the second"
+    },
+    {
+      "timestamp": "0:06:11",
+      "content": "to last layer corresponds with one of these subcomponents,"
+    },
+    {
+      "timestamp": "0:06:15",
+      "content": "that anytime you feed in an image with, say, a loop up top,"
+    },
+    {
+      "timestamp": "0:06:18",
+      "content": "like a 9 or an 8, there's some specific neuron whose activation is going to be close to 1."
+    },
+    {
+      "timestamp": "0:06:24",
+      "content": "And I don't mean this specific loop of pixels,"
+    },
+    {
+      "timestamp": "0:06:26",
+      "content": "the hope would be that any generally loopy pattern towards the top sets off this neuron."
+    },
+    {
+      "timestamp": "0:06:32",
+      "content": "That way, going from the third layer to the last one just requires"
+    },
+    {
+      "timestamp": "0:06:36",
+      "content": "learning which combination of subcomponents corresponds to which digits."
+    },
+    {
+      "timestamp": "0:06:41",
+      "content": "Of course, that just kicks the problem down the road,"
+    },
+    {
+      "timestamp": "0:06:43",
+      "content": "because how would you recognize these subcomponents,"
+    },
+    {
+      "timestamp": "0:06:45",
+      "content": "or even learn what the right subcomponents should be?"
+    },
+    {
+      "timestamp": "0:06:48",
+      "content": "And I still haven't even talked about how one layer influences the next,"
+    },
+    {
+      "timestamp": "0:06:51",
+      "content": "but run with me on this one for a moment."
+    },
+    {
+      "timestamp": "0:06:53",
+      "content": "Recognizing a loop can also break down into subproblems."
+    },
+    {
+      "timestamp": "0:06:57",
+      "content": "One reasonable way to do this would be to first"
+    },
+    {
+      "timestamp": "0:06:59",
+      "content": "recognize the various little edges that make it up."
+    },
+    {
+      "timestamp": "0:07:03",
+      "content": "Similarly, a long line, like the kind you might see in the digits 1 or 4 or 7,"
+    },
+    {
+      "timestamp": "0:07:08",
+      "content": "is really just a long edge, or maybe you think of it as a certain pattern of several"
+    },
+    {
+      "timestamp": "0:07:13",
+      "content": "smaller edges."
+    },
+    {
+      "timestamp": "0:07:15",
+      "content": "So maybe our hope is that each neuron in the second layer of"
+    },
+    {
+      "timestamp": "0:07:18",
+      "content": "the network corresponds with the various relevant little edges."
+    },
+    {
+      "timestamp": "0:07:23",
+      "content": "Maybe when an image like this one comes in, it lights up all of the"
+    },
+    {
+      "timestamp": "0:07:27",
+      "content": "neurons associated with around 8 to 10 specific little edges,"
+    },
+    {
+      "timestamp": "0:07:31",
+      "content": "which in turn lights up the neurons associated with the upper loop"
+    },
+    {
+      "timestamp": "0:07:35",
+      "content": "and a long vertical line, and those light up the neuron associated with a 9."
+    },
+    {
+      "timestamp": "0:07:40",
+      "content": "Whether or not this is what our final network actually does is another question,"
+    },
+    {
+      "timestamp": "0:07:44",
+      "content": "one that I'll come back to once we see how to train the network,"
+    },
+    {
+      "timestamp": "0:07:47",
+      "content": "but this is a hope that we might have, a sort of goal with the layered structure"
+    },
+    {
+      "timestamp": "0:07:52",
+      "content": "like this."
+    },
+    {
+      "timestamp": "0:07:53",
+      "content": "Moreover, you can imagine how being able to detect edges and patterns"
+    },
+    {
+      "timestamp": "0:07:56",
+      "content": "like this would be really useful for other image recognition tasks."
+    },
+    {
+      "timestamp": "0:08:00",
+      "content": "And even beyond image recognition, there are all sorts of intelligent"
+    },
+    {
+      "timestamp": "0:08:04",
+      "content": "things you might want to do that break down into layers of abstraction."
+    },
+    {
+      "timestamp": "0:08:08",
+      "content": "Parsing speech, for example, involves taking raw audio and picking out distinct sounds,"
+    },
+    {
+      "timestamp": "0:08:12",
+      "content": "which combine to make certain syllables, which combine to form words,"
+    },
+    {
+      "timestamp": "0:08:16",
+      "content": "which combine to make up phrases and more abstract thoughts, etc."
+    },
+    {
+      "timestamp": "0:08:21",
+      "content": "But getting back to how any of this actually works,"
+    },
+    {
+      "timestamp": "0:08:23",
+      "content": "picture yourself right now designing how exactly the activations in one layer might"
+    },
+    {
+      "timestamp": "0:08:27",
+      "content": "determine the activations in the next."
+    },
+    {
+      "timestamp": "0:08:30",
+      "content": "The goal is to have some mechanism that could conceivably combine pixels into edges,"
+    },
+    {
+      "timestamp": "0:08:36",
+      "content": "or edges into patterns, or patterns into digits."
+    },
+    {
+      "timestamp": "0:08:39",
+      "content": "And to zoom in on one very specific example, let's say the"
+    },
+    {
+      "timestamp": "0:08:43",
+      "content": "hope is for one particular neuron in the second layer to pick"
+    },
+    {
+      "timestamp": "0:08:46",
+      "content": "up on whether or not the image has an edge in this region here."
+    },
+    {
+      "timestamp": "0:08:51",
+      "content": "The question at hand is what parameters should the network have?"
+    },
+    {
+      "timestamp": "0:08:55",
+      "content": "What dials and knobs should you be able to tweak so that it's expressive"
+    },
+    {
+      "timestamp": "0:08:59",
+      "content": "enough to potentially capture this pattern, or any other pixel pattern,"
+    },
+    {
+      "timestamp": "0:09:03",
+      "content": "or the pattern that several edges can make a loop, and other such things?"
+    },
+    {
+      "timestamp": "0:09:08",
+      "content": "Well, what we'll do is assign a weight to each one of the"
+    },
+    {
+      "timestamp": "0:09:11",
+      "content": "connections between our neuron and the neurons from the first layer."
+    },
+    {
+      "timestamp": "0:09:16",
+      "content": "These weights are just numbers."
+    },
+    {
+      "timestamp": "0:09:18",
+      "content": "Then take all of those activations from the first layer"
+    },
+    {
+      "timestamp": "0:09:21",
+      "content": "and compute their weighted sum according to these weights."
+    },
+    {
+      "timestamp": "0:09:27",
+      "content": "I find it helpful to think of these weights as being organized into a"
+    },
+    {
+      "timestamp": "0:09:31",
+      "content": "little grid of their own, and I'm going to use green pixels to indicate positive weights,"
+    },
+    {
+      "timestamp": "0:09:35",
+      "content": "and red pixels to indicate negative weights, where the brightness of"
+    },
+    {
+      "timestamp": "0:09:38",
+      "content": "that pixel is some loose depiction of the weight's value."
+    },
+    {
+      "timestamp": "0:09:42",
+      "content": "Now if we made the weights associated with almost all of the pixels zero"
+    },
+    {
+      "timestamp": "0:09:46",
+      "content": "except for some positive weights in this region that we care about,"
+    },
+    {
+      "timestamp": "0:09:50",
+      "content": "then taking the weighted sum of all the pixel values really just amounts"
+    },
+    {
+      "timestamp": "0:09:53",
+      "content": "to adding up the values of the pixel just in the region that we care about."
+    },
+    {
+      "timestamp": "0:09:59",
+      "content": "And if you really wanted to pick up on whether there's an edge here,"
+    },
+    {
+      "timestamp": "0:10:02",
+      "content": "what you might do is have some negative weights associated with the surrounding pixels."
+    },
+    {
+      "timestamp": "0:10:07",
+      "content": "Then the sum is largest when those middle pixels"
+    },
+    {
+      "timestamp": "0:10:10",
+      "content": "are bright but the surrounding pixels are darker."
+    },
+    {
+      "timestamp": "0:10:14",
+      "content": "When you compute a weighted sum like this, you might come out with any number,"
+    },
+    {
+      "timestamp": "0:10:18",
+      "content": "but for this network what we want is for activations to be some value between 0 and 1."
+    },
+    {
+      "timestamp": "0:10:24",
+      "content": "So a common thing to do is to pump this weighted sum into some function"
+    },
+    {
+      "timestamp": "0:10:28",
+      "content": "that squishes the real number line into the range between 0 and 1."
+    },
+    {
+      "timestamp": "0:10:32",
+      "content": "And a common function that does this is called the sigmoid function,"
+    },
+    {
+      "timestamp": "0:10:35",
+      "content": "also known as a logistic curve."
+    },
+    {
+      "timestamp": "0:10:38",
+      "content": "Basically very negative inputs end up close to 0,"
+    },
+    {
+      "timestamp": "0:10:41",
+      "content": "positive inputs end up close to 1, and it just steadily increases around the input 0."
+    },
+    {
+      "timestamp": "0:10:49",
+      "content": "So the activation of the neuron here is basically a"
+    },
+    {
+      "timestamp": "0:10:52",
+      "content": "measure of how positive the relevant weighted sum is."
+    },
+    {
+      "timestamp": "0:10:57",
+      "content": "But maybe it's not that you want the neuron to"
+    },
+    {
+      "timestamp": "0:10:59",
+      "content": "light up when the weighted sum is bigger than 0."
+    },
+    {
+      "timestamp": "0:11:02",
+      "content": "Maybe you only want it to be active when the sum is bigger than say 10."
+    },
+    {
+      "timestamp": "0:11:06",
+      "content": "That is, you want some bias for it to be inactive."
+    },
+    {
+      "timestamp": "0:11:11",
+      "content": "What we'll do then is just add in some other number like negative 10 to this"
+    },
+    {
+      "timestamp": "0:11:15",
+      "content": "weighted sum before plugging it through the sigmoid squishification function."
+    },
+    {
+      "timestamp": "0:11:20",
+      "content": "That additional number is called the bias."
+    },
+    {
+      "timestamp": "0:11:23",
+      "content": "So the weights tell you what pixel pattern this neuron in the second"
+    },
+    {
+      "timestamp": "0:11:27",
+      "content": "layer is picking up on, and the bias tells you how high the weighted"
+    },
+    {
+      "timestamp": "0:11:31",
+      "content": "sum needs to be before the neuron starts getting meaningfully active."
+    },
+    {
+      "timestamp": "0:11:36",
+      "content": "And that is just one neuron."
+    },
+    {
+      "timestamp": "0:11:38",
+      "content": "Every other neuron in this layer is going to be connected to"
+    },
+    {
+      "timestamp": "0:11:42",
+      "content": "all 784 pixel neurons from the first layer, and each one of"
+    },
+    {
+      "timestamp": "0:11:46",
+      "content": "those 784 connections has its own weight associated with it."
+    },
+    {
+      "timestamp": "0:11:51",
+      "content": "Also, each one has some bias, some other number that you add"
+    },
+    {
+      "timestamp": "0:11:54",
+      "content": "on to the weighted sum before squishing it with the sigmoid."
+    },
+    {
+      "timestamp": "0:11:58",
+      "content": "And that's a lot to think about!"
+    },
+    {
+      "timestamp": "0:11:59",
+      "content": "With this hidden layer of 16 neurons, that's a total of 784 times 16 weights,"
+    },
+    {
+      "timestamp": "0:12:06",
+      "content": "along with 16 biases."
+    },
+    {
+      "timestamp": "0:12:08",
+      "content": "And all of that is just the connections from the first layer to the second."
+    },
+    {
+      "timestamp": "0:12:12",
+      "content": "The connections between the other layers also have"
+    },
+    {
+      "timestamp": "0:12:14",
+      "content": "a bunch of weights and biases associated with them."
+    },
+    {
+      "timestamp": "0:12:18",
+      "content": "All said and done, this network has almost exactly 13,000 total weights and biases."
+    },
+    {
+      "timestamp": "0:12:23",
+      "content": "13,000 knobs and dials that can be tweaked and"
+    },
+    {
+      "timestamp": "0:12:26",
+      "content": "turned to make this network behave in different ways."
+    },
+    {
+      "timestamp": "0:12:31",
+      "content": "So when we talk about learning, what that's referring to is"
+    },
+    {
+      "timestamp": "0:12:34",
+      "content": "getting the computer to find a valid setting for all of these"
+    },
+    {
+      "timestamp": "0:12:37",
+      "content": "many many numbers so that it'll actually solve the problem at hand."
+    },
+    {
+      "timestamp": "0:12:42",
+      "content": "One thought experiment that is at once fun and kind of horrifying is to imagine sitting"
+    },
+    {
+      "timestamp": "0:12:47",
+      "content": "down and setting all of these weights and biases by hand,"
+    },
+    {
+      "timestamp": "0:12:50",
+      "content": "purposefully tweaking the numbers so that the second layer picks up on edges,"
+    },
+    {
+      "timestamp": "0:12:54",
+      "content": "the third layer picks up on patterns, etc."
+    },
+    {
+      "timestamp": "0:12:56",
+      "content": "I personally find this satisfying rather than just treating the network as a total"
+    },
+    {
+      "timestamp": "0:13:01",
+      "content": "black box, because when the network doesn't perform the way you anticipate,"
+    },
+    {
+      "timestamp": "0:13:04",
+      "content": "if you've built up a little bit of a relationship with what those weights and biases"
+    },
+    {
+      "timestamp": "0:13:09",
+      "content": "actually mean, you have a starting place for experimenting with how to change the"
+    },
+    {
+      "timestamp": "0:13:13",
+      "content": "structure to improve."
+    },
+    {
+      "timestamp": "0:13:14",
+      "content": "Or when the network does work but not for the reasons you might expect,"
+    },
+    {
+      "timestamp": "0:13:18",
+      "content": "digging into what the weights and biases are doing is a good way to challenge"
+    },
+    {
+      "timestamp": "0:13:22",
+      "content": "your assumptions and really expose the full space of possible solutions."
+    },
+    {
+      "timestamp": "0:13:26",
+      "content": "By the way, the actual function here is a little cumbersome to write down,"
+    },
+    {
+      "timestamp": "0:13:30",
+      "content": "don't you think?"
+    },
+    {
+      "timestamp": "0:13:32",
+      "content": "So let me show you a more notationally compact way that these connections are represented."
+    },
+    {
+      "timestamp": "0:13:37",
+      "content": "This is how you'd see it if you choose to read up more about neural networks. 214 00:13:41,380 --> 00:13:40,520 Organize all of the activations from one layer into a column as a vector."
+    },
+    {
+      "timestamp": "0:13:41",
+      "content": "Then organize all of the weights as a matrix, where each row of that matrix corresponds"
+    },
+    {
+      "timestamp": "0:13:50",
+      "content": "to the connections between one layer and a particular neuron in the next layer."
+    },
+    {
+      "timestamp": "0:13:58",
+      "content": "What that means is that taking the weighted sum of the activations in"
+    },
+    {
+      "timestamp": "0:14:02",
+      "content": "the first layer according to these weights corresponds to one of the"
+    },
+    {
+      "timestamp": "0:14:05",
+      "content": "terms in the matrix vector product of everything we have on the left here."
+    },
+    {
+      "timestamp": "0:14:14",
+      "content": "By the way, so much of machine learning just comes down to having a"
+    },
+    {
+      "timestamp": "0:14:17",
+      "content": "good grasp of linear algebra, so for any of you who want a nice visual"
+    },
+    {
+      "timestamp": "0:14:21",
+      "content": "understanding for matrices and what matrix vector multiplication means,"
+    },
+    {
+      "timestamp": "0:14:24",
+      "content": "take a look at the series I did on linear algebra, especially chapter 3."
+    },
+    {
+      "timestamp": "0:14:29",
+      "content": "Back to our expression, instead of talking about adding the bias to each one of"
+    },
+    {
+      "timestamp": "0:14:33",
+      "content": "these values independently, we represent it by organizing all those biases into a vector,"
+    },
+    {
+      "timestamp": "0:14:38",
+      "content": "and adding the entire vector to the previous matrix vector product."
+    },
+    {
+      "timestamp": "0:14:43",
+      "content": "Then as a final step, I'll wrap a sigmoid around the outside here,"
+    },
+    {
+      "timestamp": "0:14:46",
+      "content": "and what that's supposed to represent is that you're going to apply the"
+    },
+    {
+      "timestamp": "0:14:50",
+      "content": "sigmoid function to each specific component of the resulting vector inside."
+    },
+    {
+      "timestamp": "0:14:55",
+      "content": "So once you write down this weight matrix and these vectors as their own symbols,"
+    },
+    {
+      "timestamp": "0:15:00",
+      "content": "you can communicate the full transition of activations from one layer to the next in an"
+    },
+    {
+      "timestamp": "0:15:05",
+      "content": "extremely tight and neat little expression, and this makes the relevant code both a lot"
+    },
+    {
+      "timestamp": "0:15:10",
+      "content": "simpler and a lot faster, since many libraries optimize the heck out of matrix"
+    },
+    {
+      "timestamp": "0:15:14",
+      "content": "multiplication."
+    },
+    {
+      "timestamp": "0:15:17",
+      "content": "Remember how earlier I said these neurons are simply things that hold numbers?"
+    },
+    {
+      "timestamp": "0:15:22",
+      "content": "Well of course the specific numbers that they hold depends on the image you feed in,"
+    },
+    {
+      "timestamp": "0:15:27",
+      "content": "so it's actually more accurate to think of each neuron as a function,"
+    },
+    {
+      "timestamp": "0:15:31",
+      "content": "one that takes in the outputs of all the neurons in the previous layer and spits out a"
+    },
+    {
+      "timestamp": "0:15:36",
+      "content": "number between 0 and 1."
+    },
+    {
+      "timestamp": "0:15:39",
+      "content": "Really the entire network is just a function, one that takes in"
+    },
+    {
+      "timestamp": "0:15:43",
+      "content": "784 numbers as an input and spits out 10 numbers as an output."
+    },
+    {
+      "timestamp": "0:15:47",
+      "content": "It's an absurdly complicated function, one that involves 13,000 parameters"
+    },
+    {
+      "timestamp": "0:15:51",
+      "content": "in the forms of these weights and biases that pick up on certain patterns,"
+    },
+    {
+      "timestamp": "0:15:55",
+      "content": "and which involves iterating many matrix vector products and the sigmoid"
+    },
+    {
+      "timestamp": "0:15:59",
+      "content": "squishification function, but it's just a function nonetheless."
+    },
+    {
+      "timestamp": "0:16:03",
+      "content": "And in a way it's kind of reassuring that it looks complicated."
+    },
+    {
+      "timestamp": "0:16:07",
+      "content": "I mean if it were any simpler, what hope would we have"
+    },
+    {
+      "timestamp": "0:16:09",
+      "content": "that it could take on the challenge of recognizing digits?"
+    },
+    {
+      "timestamp": "0:16:13",
+      "content": "And how does it take on that challenge?"
+    },
+    {
+      "timestamp": "0:16:15",
+      "content": "How does this network learn the appropriate weights and biases just by looking at data?"
+    },
+    {
+      "timestamp": "0:16:20",
+      "content": "Well that's what I'll show in the next video, and I'll also dig a little"
+    },
+    {
+      "timestamp": "0:16:23",
+      "content": "more into what this particular network we're seeing is really doing."
+    },
+    {
+      "timestamp": "0:16:27",
+      "content": "Now is the point I suppose I should say subscribe to stay notified"
+    },
+    {
+      "timestamp": "0:16:30",
+      "content": "about when that video or any new videos come out,"
+    },
+    {
+      "timestamp": "0:16:33",
+      "content": "but realistically most of you don't actually receive notifications from YouTube, do you?"
+    },
+    {
+      "timestamp": "0:16:38",
+      "content": "Maybe more honestly I should say subscribe so that the neural networks"
+    },
+    {
+      "timestamp": "0:16:41",
+      "content": "that underlie YouTube's recommendation algorithm are primed to believe"
+    },
+    {
+      "timestamp": "0:16:44",
+      "content": "that you want to see content from this channel get recommended to you."
+    },
+    {
+      "timestamp": "0:16:48",
+      "content": "Anyway, stay posted for more."
+    },
+    {
+      "timestamp": "0:16:50",
+      "content": "Thank you very much to everyone supporting these videos on Patreon."
+    },
+    {
+      "timestamp": "0:16:54",
+      "content": "I've been a little slow to progress in the probability series this summer,"
+    },
+    {
+      "timestamp": "0:16:57",
+      "content": "but I'm jumping back into it after this project,"
+    },
+    {
+      "timestamp": "0:16:59",
+      "content": "so patrons you can look out for updates there."
+    },
+    {
+      "timestamp": "0:17:03",
+      "content": "To close things off here I have with me Lisha Li who did her PhD work on the"
+    },
+    {
+      "timestamp": "0:17:07",
+      "content": "theoretical side of deep learning and who currently works at a venture capital"
+    },
+    {
+      "timestamp": "0:17:10",
+      "content": "firm called Amplify Partners who kindly provided some of the funding for this video."
+    },
+    {
+      "timestamp": "0:17:15",
+      "content": "So Lisha one thing I think we should quickly bring up is this sigmoid function."
+    },
+    {
+      "timestamp": "0:17:19",
+      "content": "As I understand it early networks use this to squish the relevant weighted"
+    },
+    {
+      "timestamp": "0:17:23",
+      "content": "sum into that interval between zero and one, you know kind of motivated"
+    },
+    {
+      "timestamp": "0:17:26",
+      "content": "by this biological analogy of neurons either being inactive or active."
+    },
+    {
+      "timestamp": "0:17:30",
+      "content": "Exactly."
+    },
+    {
+      "timestamp": "0:17:30",
+      "content": "But relatively few modern networks actually use sigmoid anymore."
+    },
+    {
+      "timestamp": "0:17:34",
+      "content": "Yeah."
+    },
+    {
+      "timestamp": "0:17:34",
+      "content": "It's kind of old school right?"
+    },
+    {
+      "timestamp": "0:17:35",
+      "content": "Yeah or rather ReLU seems to be much easier to train."
+    },
+    {
+      "timestamp": "0:17:39",
+      "content": "And ReLU, ReLU stands for rectified linear unit?"
+    },
+    {
+      "timestamp": "0:17:42",
+      "content": "Yes it's this kind of function where you're just taking a max of zero"
+    },
+    {
+      "timestamp": "0:17:47",
+      "content": "and a where a is given by what you were explaining in the video and"
+    },
+    {
+      "timestamp": "0:17:52",
+      "content": "what this was sort of motivated from I think was a partially by a"
+    },
+    {
+      "timestamp": "0:17:56",
+      "content": "biological analogy with how neurons would either be activated or not."
+    },
+    {
+      "timestamp": "0:18:01",
+      "content": "And so if it passes a certain threshold it would be the identity function but if it did"
+    },
+    {
+      "timestamp": "0:18:06",
+      "content": "not then it would just not be activated so it'd be zero so it's kind of a simplification."
+    },
+    {
+      "timestamp": "0:18:11",
+      "content": "Using sigmoids didn't help training or it was very difficult"
+    },
+    {
+      "timestamp": "0:18:15",
+      "content": "to train at some point and people just tried ReLU and it happened"
+    },
+    {
+      "timestamp": "0:18:20",
+      "content": "to work very well for these incredibly deep neural networks."
+    },
+    {
+      "timestamp": "0:18:25",
+      "content": "All right thank you Lisha."
+    }
+  ]
+}

@@ -1,0 +1,2040 @@
+소요시간 : 166.85343289375305 
+영상링크 : https://www.youtube.com/watch?v=HtSuA80QTyo&t=1123s
+추출방식 : 1
+{
+  "videoTitle": "알고리즘 소개",
+  "videoDescription": "이 강의는 강의 내용을 개요로 제공하며, 1차원 및 2차원 배열에서의 peak 찾기 문제를 소개합니다.",
+  "Lecture Note": [
+    {
+      "timestamp": "00:00:22",
+      "section_title": "👋 소개",
+      "content": "Srini Devadas 교수님과 Erik Domane 교수님은 함께 6.006 - 알고리즘 소개 강의를 진행합니다. 이 강의에서는 다양한 알고리즘을 다룰 예정입니다."
+    },
+    {
+      "timestamp": "00:01:15",
+      "section_title": "📚 강의 정보",
+      "content": "강의에 대한 모든 필요한 정보는 강의 웹사이트에서 확인할 수 있습니다. 강의 계획서, 문제 세트 일정 및 퀴즈 일정 등이 포함되어 있습니다."
+    },
+    {
+      "timestamp": "00:01:46",
+      "section_title": "🔍 알고리즘과 복잡도",
+      "content": "이 강의에서는 알고리즘과 그들의 복잡도에 대해 논의합니다. 복잡도는 입력 크기에 따른 알고리즘의 실행 시간을 의미합니다."
+    },
+    {
+      "timestamp": "00:02:08",
+      "section_title": "📖 선수 과목",
+      "content": "이 강의의 선수 과목은 6.042이며, 점근적 복잡도에 대해 다룹니다."
+    },
+    {
+      "timestamp": "00:02:52",
+      "section_title": "💡 강의 요약",
+      "content": "이 강의는 큰 입력에 대한 효율적인 문제 해결 절차에 초점을 맞춥니다. 고전적인 자료 구조와 알고리즘뿐만 아니라 Python에서의 분석과 구현도 다룹니다."
+    },
+    {
+      "timestamp": "00:04:58",
+      "section_title": "📚 강의 모듈",
+      "content": "이 강의는 여덟 개의 모듈로 나누어지며, 각각에는 문제 세트가 포함됩니다. 알고리즘적 사고, 정렬과 트리, 해싱, 수치, 그래프, 최단 경로, 동적 프로그래밍 및 고급 주제 등이 다루어집니다."
+    },
+    {
+      "timestamp": "00:15:23",
+      "section_title": "🔎 문제: Peak 찾기 (1D)",
+      "content": "Peak 찾기는 배열에서 peak를 찾는 작업입니다. Peak는 이웃하는 숫자보다 크거나 같은 숫자로 정의됩니다. 직관적인 알고리즘의 최악의 복잡도는 Θ(n)이며, 여기서 n은 배열의 크기입니다."
+    },
+    {
+      "timestamp": "00:25:11",
+      "section_title": "🔎 문제: Peak 찾기 (1D) - 이진 탐색",
+      "content": "이진 탐색 기반의 알고리즘을 사용하면 복잡도를 Θ(log n)으로 줄일 수 있습니다. 이 알고리즘은 중간 요소를 이웃하는 요소와 비교하고, 비교에 따라 배열의 왼쪽 또는 오른쪽 절반을 재귀적으로 탐색합니다."
+    },
+    {
+      "timestamp": "00:35:45",
+      "section_title": "🔎 문제: Peak 찾기 (1D) - 복잡도 비교",
+      "content": "이진 탐색 알고리즘은 특히 큰 입력에 대해 직관적인 알고리즘보다 훨씬 효율적입니다. 복잡도 차이는 지수적이며, Θ(log n)이 Θ(n)보다 훨씬 작습니다."
+    },
+    {
+      "timestamp": "00:35:52",
+      "section_title": "🔎 문제: Peak 찾기 (2D)",
+      "content": "2D 버전의 peak 찾기에서 peak는 2D 행렬에서의 봉우리로 정의됩니다. 행렬에서 peak를 찾는 것이 목표입니다. 2D 버전의 알고리즘은 1D 버전보다 더 복잡합니다."
+    },
+    {
+      "timestamp": "00:36:41",
+      "section_title": "2D Peak 정의",
+      "content": "2D peak는 행렬에서 (i, j)라는 점으로, (i, j)의 값이 이웃하는 요소인 (i-1, j), (i+1, j), (i, j-1), (i, j+1)보다 크거나 같은 경우입니다."
+    },
+    {
+      "timestamp": "00:37:23",
+      "section_title": "탐욕적 상승 알고리즘",
+      "content": "탐욕적 상승 알고리즘은 방향을 선택하고 그 방향을 따라 peak를 찾기 위해 노력합니다. 임의의 점에서 시작하고, 이웃하는 요소의 값에 따라 어느 방향으로 갈지 선택합니다."
+    },
+    {
+      "timestamp": "00:40:33",
+      "section_title": "탐욕적 상승 알고리즘의 복잡도",
+      "content": "탐욕적 상승 알고리즘의 최악의 복잡도는 θ(nm)입니다. 여기서 n은 행의 수이고, m은 열의 수입니다."
+    },
+    {
+      "timestamp": "00:42:12",
+      "section_title": "분할 정복 알고리즘",
+      "content": "분할 정복 알고리즘은 중간 열을 선택하고 해당 열에서 전역 최댓값을 찾습니다. 그런 다음 최댓값을 같은 행의 이웃하는 요소와 비교합니다. 최댓값이 이웃하는 요소보다 크거나 같으면 2D peak입니다. 그렇지 않으면 알고리즘은 왼쪽 또는 오른쪽 열에 대해 동일한 과정을 재귀적으로 적용합니다."
+    },
+    {
+      "timestamp": "00:50:17",
+      "section_title": "분할 정복 알고리즘의 복잡도",
+      "content": "분할 정복 알고리즘의 전체 복잡도는 θ(n log m)입니다. 여기서 n은 행의 수이고, m은 열의 수입니다."
+    }
+  ],
+  "questions": [
+    {
+      "question": "이 강의의 선수 과목은 무엇인가요?",
+      "answer": "6.042"
+    },
+    {
+      "question": "1D 배열에서 peak 찾기의 최악의 복잡도는 무엇인가요?",
+      "answer": "Θ(n)"
+    },
+    {
+      "question": "1D 배열에서 이진 탐색 기반 알고리즘의 복잡도는 무엇인가요?",
+      "answer": "Θ(log n)"
+    },
+    {
+      "question": "2D peak란 무엇인가요?",
+      "answer": "행렬에서 이웃하는 요소보다 크거나 같은 값의 점입니다."
+    },
+    {
+      "question": "탐욕적 상승 알고리즘의 최악의 복잡도는 무엇인가요?",
+      "answer": "θ(nm)"
+    },
+    {
+      "question": "분할 정복 알고리즘의 전체 복잡도는 무엇인가요?",
+      "answer": "θ(n log m)"
+    }
+  ],
+  "script": [
+    {
+      "timestamp": "0:00:00",
+      "content": "The following content is provided under a Creative Commons license."
+    },
+    {
+      "timestamp": "0:00:01",
+      "content": "Your support will help MIT OpenCourseWare continue to offer high quality educational resources for free."
+    },
+    {
+      "timestamp": "0:00:10",
+      "content": "To make a donation or view additional materials from hundreds of MIT courses, visit MIT OpenCourseWare at ocw.mit.edu."
+    },
+    {
+      "timestamp": "0:00:22",
+      "content": "PROFESSOR: Hi."
+    },
+    {
+      "timestamp": "0:00:23",
+      "content": "I'm Srini Devadas."
+    },
+    {
+      "timestamp": "0:00:24",
+      "content": "I'm a professor of electrical engineering and computer science."
+    },
+    {
+      "timestamp": "0:00:27",
+      "content": "I'm going to be co-lecturing 6.006-- Introduction to Algorithms-- this term with professor Erik Domane."
+    },
+    {
+      "timestamp": "0:00:34",
+      "content": "Eric, say hi."
+    },
+    {
+      "timestamp": "0:00:36",
+      "content": "ERIK DOMANE: Hi."
+    },
+    {
+      "timestamp": "0:00:38",
+      "content": "PROFESSOR: And we hope you're going to have a fun time in 6.006 learning a variety of algorithms."
+    },
+    {
+      "timestamp": "0:00:45",
+      "content": "What I want to do today is spend literally a minute or so on administrative details, maybe even less."
+    },
+    {
+      "timestamp": "0:00:55",
+      "content": "What I'd like to do is to tell you to go to the website that's listed up there and read it."
+    },
+    {
+      "timestamp": "0:01:00",
+      "content": "And you'll get all information you need about what this class is about from a standpoint of syllabus; what's expected of you; the problem set schedule; the quiz schedule; and so on and so forth."
+    },
+    {
+      "timestamp": "0:01:15",
+      "content": "I want to dive right in and tell you about interesting things, like algorithms and complexity of algorithms."
+    },
+    {
+      "timestamp": "0:01:24",
+      "content": "I want to spend some time giving you an overview of the course content."
+    },
+    {
+      "timestamp": "0:01:29",
+      "content": "And then we're going to dive right in and look at a particular problem of peak finding-- both the one dimensional version and a two dimensional version-- and talk about algorithms to solve this peak finding problem-- both varieties of it."
+    },
+    {
+      "timestamp": "0:01:46",
+      "content": "And you'll find that there's really a difference between these various algorithms that we'll look at in terms of their complexity."
+    },
+    {
+      "timestamp": "0:01:56",
+      "content": "And what I mean by that is you're going to have different run times of these algorithms depending on input size, based on how efficient these algorithms are."
+    },
+    {
+      "timestamp": "0:02:08",
+      "content": "And a prerequisite for this class is 6.042."
+    },
+    {
+      "timestamp": "0:02:14",
+      "content": "And in 6.042 you learned about asymptotic complexity."
+    },
+    {
+      "timestamp": "0:02:18",
+      "content": "And you'll see that in this lecture we'll analyze relatively simple algorithms today in terms of their asymptotic complexity."
+    },
+    {
+      "timestamp": "0:02:28",
+      "content": "And you'll be able to compare and say that this algorithm is faster than this other one-- assuming that you have large inputs-- because it's asymptotically less complex."
+    },
+    {
+      "timestamp": "0:02:40",
+      "content": "So let's dive right in and talk about the class."
+    },
+    {
+      "timestamp": "0:02:52",
+      "content": "So the one sentence summary of this class is that this is about efficient procedures for solving problems on large inputs."
+    },
+    {
+      "timestamp": "0:03:04",
+      "content": "And when I say large inputs, I mean things like the US highway system, a map of all of the highways in the United States; the human genome, which has a billion letters in its alphabet; a social network responding to Facebook, that I guess has 500 million nodes or so."
+    },
+    {
+      "timestamp": "0:03:28",
+      "content": "Now our definition of large has really changed with the times."
+    },
+    {
+      "timestamp": "0:03:31",
+      "content": "And so really the 21st century definition of large is, I guess, a trillion."
+    },
+    {
+      "timestamp": "0:03:36",
+      "content": "Back when I was your age large was like 1,000."
+    },
+    {
+      "timestamp": "0:03:40",
+      "content": "Back when Eric was your age, it was a million."
+    },
+    {
+      "timestamp": "0:03:48",
+      "content": "But what's happening really the world is moving faster, things are getting bigger."
+    },
+    {
+      "timestamp": "0:03:56",
+      "content": "We have the capability of computing on large inputs, but that doesn't mean that efficiency isn't of paramount concern."
+    },
+    {
+      "timestamp": "0:04:05",
+      "content": "The fact of matter is that you can, maybe, scan a billion elements in a matter of seconds."
+    },
+    {
+      "timestamp": "0:04:13",
+      "content": "But if you had an algorithm that required cubic complexity, suddenly you're not talking about 10 raised to 9, you're talking about 10 raised to 27."
+    },
+    {
+      "timestamp": "0:04:30",
+      "content": "And as inputs get larger, it becomes more of a concern."
+    },
+    {
+      "timestamp": "0:04:35",
+      "content": "All right?"
+    },
+    {
+      "timestamp": "0:04:43",
+      "content": "We're concerned about efficient procedures for solving large scale problems in this class."
+    },
+    {
+      "timestamp": "0:04:58",
+      "content": "And we're concerned about scalability, because it's quite possible that by the time you guys are professors teaching this class in some university that a trillion is going to be a small number."
+    },
+    {
+      "timestamp": "0:05:20",
+      "content": "And we're going to be talking about-- I don't know-- 10 raised to 18 as being something that we're concerned with from a standpoint of a common case input for an algorithm."
+    },
+    {
+      "timestamp": "0:05:34",
+      "content": "So scalability is important."
+    },
+    {
+      "timestamp": "0:05:47",
+      "content": "You're going to learn a bunch of different data structures."
+    },
+    {
+      "timestamp": "0:05:52",
+      "content": "We'll call them classic data structures, like binary search trees, hash tables-- that are called dictionaries in Python-- and data structures-- such as balanced binary search trees-- that are more efficient than just the regular binary search trees."
+    },
+    {
+      "timestamp": "0:06:12",
+      "content": "And these are all data structures that were invented many decades ago."
+    },
+    {
+      "timestamp": "0:06:23",
+      "content": "We're going to augment these data structures in various ways to make them more efficient for certain kinds of problems."
+    },
+    {
+      "timestamp": "0:06:30",
+      "content": "And while you're not going to be doing a whole lot of algorithm design in this class, you will be doing some design and a whole lot of analysis."
+    },
+    {
+      "timestamp": "0:06:40",
+      "content": "The class following this one, 6.046 Designing Analysis of Algorithms, is a class that you should take if you like this one."
+    },
+    {
+      "timestamp": "0:06:57",
+      "content": "But you will look at classic data structures and classical algorithms for these data structures, including things like sorting and matching, and so on."
+    },
+    {
+      "timestamp": "0:07:12",
+      "content": "And one of the nice things about this class is that you'll be doing real implementations of these data structures and algorithms in Python."
+    },
+    {
+      "timestamp": "0:07:28",
+      "content": "And in particular are each of the problem sets in this class are going to have both a theory part to them, and a programming part to them."
+    },
+    {
+      "timestamp": "0:07:41",
+      "content": "So hopefully it'll all tie together."
+    },
+    {
+      "timestamp": "0:07:43",
+      "content": "The kinds of things we're going to be talking about in lectures and recitations are going to be directly connected to the theory parts of the problem sets."
+    },
+    {
+      "timestamp": "0:07:55",
+      "content": "And you'll be programming the algorithms that we talk about in lecture, or augmenting them, running them."
+    },
+    {
+      "timestamp": "0:07:58",
+      "content": "Figuring out whether they work well on large inputs or not."
+    },
+    {
+      "timestamp": "0:08:06",
+      "content": "So let me talk a little bit about the modules in this class and the problem sets."
+    },
+    {
+      "timestamp": "0:08:11",
+      "content": "And we hope that these problem sets are going to be fun for you."
+    },
+    {
+      "timestamp": "0:08:15",
+      "content": "And by fun I don't mean easy."
+    },
+    {
+      "timestamp": "0:08:19",
+      "content": "I mean challenging and worthwhile, so at the end of it you feel like you've learned something, and you had some fun along the way."
+    },
+    {
+      "timestamp": "0:08:28",
+      "content": "So content wise we have eight modules in the class."
+    },
+    {
+      "timestamp": "0:08:41",
+      "content": "Each of which, roughly speaking, has a problem set associated with it."
+    },
+    {
+      "timestamp": "0:08:47",
+      "content": "The first of these is what we call algorithmic thinking."
+    },
+    {
+      "timestamp": "0:08:59",
+      "content": "We'll look at a particular problem, as I mentioned, of peak finding."
+    },
+    {
+      "timestamp": "0:09:07",
+      "content": "And as part of this, you're going to have a problem set that's going to go out today as well."
+    },
+    {
+      "timestamp": "0:09:17",
+      "content": "A couple of them are going to have bugs in them."
+    },
+    {
+      "timestamp": "0:09:20",
+      "content": "You'll have to analyze the complexity of these algorithms; figure out which ones are correct and efficient; and write a proof for one of them."
+    },
+    {
+      "timestamp": "0:09:30",
+      "content": "So that's sort of an example problem set."
+    },
+    {
+      "timestamp": "0:09:33",
+      "content": "And you can expect that most of the problem sets are going to follow that sort of template."
+    },
+    {
+      "timestamp": "0:09:40",
+      "content": "So you'll get a better sense of this by the end of the day today for sure."
+    },
+    {
+      "timestamp": "0:09:52",
+      "content": "We're going to be doing a module on sorting and trees."
+    },
+    {
+      "timestamp": "0:09:57",
+      "content": "Sorting you know about, sorting a bunch of numbers."
+    },
+    {
+      "timestamp": "0:10:00",
+      "content": "Imagine if you had a trillion numbers and you wanted to sort them."
+    },
+    {
+      "timestamp": "0:10:07",
+      "content": "Trees are a wonderful data structure."
+    },
+    {
+      "timestamp": "0:10:10",
+      "content": "There's different varieties, the most common being binary trees."
+    },
+    {
+      "timestamp": "0:10:14",
+      "content": "And there's ways of doing all sorts of things, like scheduling, and sorting, using various kinds of trees, including binary trees."
+    },
+    {
+      "timestamp": "0:10:24",
+      "content": "And we have a problem set on simulating a logic network using a particular kind of sorting algorithm in a data structure."
+    },
+    {
+      "timestamp": "0:10:36",
+      "content": "That is going to be your second problem set."
+    },
+    {
+      "timestamp": "0:10:41",
+      "content": "And more quickly, we're going to have modules on hashing, where we do things like genome comparison."
+    },
+    {
+      "timestamp": "0:10:51",
+      "content": "In past terms we compared a human genome to a rat genome, and discovered they were pretty similar."
+    },
+    {
+      "timestamp": "0:10:59",
+      "content": "But again, these things are so large that you have to have efficiency in the comparison methods that you use."
+    },
+    {
+      "timestamp": "0:11:11",
+      "content": "Which is a bit of a problem."
+    },
+    {
+      "timestamp": "0:11:15",
+      "content": "So that's something to keep in mind as you test your code."
+    },
+    {
+      "timestamp": "0:11:21",
+      "content": "The fact is that you will get large inputs to run your code."
+    },
+    {
+      "timestamp": "0:11:28",
+      "content": "And in particular are each of the problem sets in this class are going to have both a theory part to them, and a programming part to them."
+    },
+    {
+      "timestamp": "0:11:43",
+      "content": "The kinds of things we're going to be talking about in lectures and recitations are going to be directly connected to the theory parts of the problem sets."
+    },
+    {
+      "timestamp": "0:11:55",
+      "content": "We will talk about numerics."
+    },
+    {
+      "timestamp": "0:11:57",
+      "content": "A lot of the time we talk about such large numbers that 32 bits isn't enough."
+    },
+    {
+      "timestamp": "0:12:05",
+      "content": "So how do you handle that?"
+    },
+    {
+      "timestamp": "0:12:07",
+      "content": "How does Python handle that?"
+    },
+    {
+      "timestamp": "0:12:09",
+      "content": "How do you write algorithms that can deal with what are called infinite precision numbers?"
+    },
+    {
+      "timestamp": "0:12:18",
+      "content": "So we have a module on numerics in the middle of the term that talks about that."
+    },
+    {
+      "timestamp": "0:12:26",
+      "content": "Graphs, really a fundamental data structure in all of computer science."
+    },
+    {
+      "timestamp": "0:12:37",
+      "content": "You might have heard of the famous Rubik's cube assignment from 6.006-- a 2 by 2 by 2 Rubik's cube."
+    },
+    {
+      "timestamp": "0:12:46",
+      "content": "What's the minimum number of moves necessary to go from a given starting configuration to the final end configuration, where all of the faces-- each of the faces has uniform color?"
+    },
+    {
+      "timestamp": "0:13:01",
+      "content": "And that can be posed as a graph problem."
+    },
+    {
+      "timestamp": "0:13:04",
+      "content": "We'll probably do that one this term."
+    },
+    {
+      "timestamp": "0:13:07",
+      "content": "In previous terms we've done other things like the 15 puzzle."
+    },
+    {
+      "timestamp": "0:13:12",
+      "content": "And so some of these are tentative."
+    },
+    {
+      "timestamp": "0:13:16",
+      "content": "And to finish up shortest paths."
+    },
+    {
+      "timestamp": "0:13:20",
+      "content": "Again in terms past we've asked you to write code using a particular algorithm that finds the shortest path from Caltech to MIT."
+    },
+    {
+      "timestamp": "0:13:30",
+      "content": "This time we may do things a little bit differently."
+    },
+    {
+      "timestamp": "0:13:33",
+      "content": "We were thinking maybe we'll give you a street map of Boston and go figure out if Paul Revere used the shortest path to get to where he was going, or things like that."
+    },
+    {
+      "timestamp": "0:13:47",
+      "content": "Dynamic programming is an important algorithm design technique that's used in many, many problems."
+    },
+    {
+      "timestamp": "0:13:54",
+      "content": "And it can be used to do a variety of things, including image compression."
+    },
+    {
+      "timestamp": "0:14:00",
+      "content": "How do you compress an image so the number of pixels reduces, but it still looks like the image that you started out with, that had many more pixels?"
+    },
+    {
+      "timestamp": "0:14:12",
+      "content": "All right?"
+    },
+    {
+      "timestamp": "0:14:16",
+      "content": "And finally, advanced topics, complexity theory, research and algorithms."
+    },
+    {
+      "timestamp": "0:14:34",
+      "content": "Hopefully by now-- by this time in the course, you have been sold on algorithms."
+    },
+    {
+      "timestamp": "0:14:40",
+      "content": "And most, if not all of you, would want to pursue a career in algorithms."
+    },
+    {
+      "timestamp": "0:14:49",
+      "content": "And we'll give you a sense of what else is there."
+    },
+    {
+      "timestamp": "0:14:55",
+      "content": "We're just scratching the surface in this class, and there's many, many classes that you can possibly take if you want to continue in-- to learn about algorithms, or to pursue a career in algorithms."
+    },
+    {
+      "timestamp": "0:15:23",
+      "content": "OK."
+    },
+    {
+      "timestamp": "0:15:23",
+      "content": "So let's get started."
+    },
+    {
+      "timestamp": "0:15:26",
+      "content": "I want to talk about a specific problem."
+    },
+    {
+      "timestamp": "0:15:28",
+      "content": "And talk about algorithms for a specific problem."
+    },
+    {
+      "timestamp": "0:15:32",
+      "content": "We picked this problem, because it's so easy to understand."
+    },
+    {
+      "timestamp": "0:15:35",
+      "content": "And they're fairly straightforward algorithms that are not particularly efficient to solve this problem."
+    },
+    {
+      "timestamp": "0:15:45",
+      "content": "But like a lot of toy problems, it's very evocative in that it points out the issues involved in designing efficient algorithms."
+    },
+    {
+      "timestamp": "0:15:57",
+      "content": "So we'll start with a one dimensional version of what we call peak finding."
+    },
+    {
+      "timestamp": "0:16:05",
+      "content": "And a peak finder is something in the one dimensional case that runs on an array of numbers."
+    },
+    {
+      "timestamp": "0:16:18",
+      "content": "And I'm just putting symbols for each of these numbers here."
+    },
+    {
+      "timestamp": "0:16:27",
+      "content": "And the numbers are positive, negative."
+    },
+    {
+      "timestamp": "0:16:31",
+      "content": "We'll just assume they're all positive, it doesn't really matter."
+    },
+    {
+      "timestamp": "0:16:34",
+      "content": "And so we have this one dimensional array that has nine different positions."
+    },
+    {
+      "timestamp": "0:16:43",
+      "content": "And a through i are numbers."
+    },
+    {
+      "timestamp": "0:16:49",
+      "content": "And we want to find a peak."
+    },
+    {
+      "timestamp": "0:16:53",
+      "content": "And so we have to define what we mean by a peak."
+    },
+    {
+      "timestamp": "0:16:56",
+      "content": "And so, in particular, as an example, position 2 is a peak if, and only if, b greater than or equal to a, and b greater than or equal to c."
+    },
+    {
+      "timestamp": "0:17:18",
+      "content": "So it's really a very local property corresponding to a peak."
+    },
+    {
+      "timestamp": "0:17:27",
+      "content": "So position 9 is a peak if i greater than or equal to h."
+    },
+    {
+      "timestamp": "0:17:35",
+      "content": "OK?"
+    },
+    {
+      "timestamp": "0:17:35",
+      "content": "And that's it."
+    },
+    {
+      "timestamp": "0:18:00",
+      "content": "The statement of the problem, the one dimensional version, is to find the peak if it exists."
+    },
+    {
+      "timestamp": "0:18:19",
+      "content": "The straightforward algorithm is to walk across the array."
+    },
+    {
+      "timestamp": "0:18:24",
+      "content": "A more sophisticated algorithm is needed."
+    },
+    {
+      "timestamp": "0:18:31",
+      "content": "The straightforward algorithm is to walk across the array."
+    },
+    {
+      "timestamp": "0:18:39",
+      "content": "The worst case complexity of the straightforward algorithm is theta n."
+    },
+    {
+      "timestamp": "0:18:57",
+      "content": "The array is 1, 2, n/2, n-1, n."
+    },
+    {
+      "timestamp": "0:19:05",
+      "content": "The goal is to characterize the complexity in relation to n."
+    },
+    {
+      "timestamp": "0:19:19",
+      "content": "The definition of a peak is greater than or equal to."
+    },
+    {
+      "timestamp": "0:19:59",
+      "content": "Any array will always have a peak."
+    },
+    {
+      "timestamp": "0:20:04",
+      "content": "The \"if it exists\" is not necessary in this case."
+    },
+    {
+      "timestamp": "0:20:19",
+      "content": "The problem can be modified to find the peak."
+    },
+    {
+      "timestamp": "0:20:43",
+      "content": "It is important to create algorithms that are general."
+    },
+    {
+      "timestamp": "0:21:05",
+      "content": "It is possible that you can't find something that satisfies all the constraints required."
+    },
+    {
+      "timestamp": "0:21:39",
+      "content": "It is important to be able to say that you searched exhaustively and couldn't find it."
+    },
+    {
+      "timestamp": "0:22:02",
+      "content": "The straightforward algorithm starts from the left and walks across."
+    },
+    {
+      "timestamp": "0:22:14",
+      "content": "The straightforward algorithm has a worst case complexity of theta n."
+    },
+    {
+      "timestamp": "0:24:50",
+      "content": "A binary search subset can be used to lower the asymptotic complexity."
+    },
+    {
+      "timestamp": "0:25:11",
+      "content": "The algorithm is to look at the middle and cut the array in half based on which side is higher."
+    },
+    {
+      "timestamp": "0:26:00",
+      "content": "Cushions are given out for correct answers."
+    },
+    {
+      "timestamp": "0:26:32",
+      "content": "The cushions are soft and won't hurt if they hit you."
+    },
+    {
+      "timestamp": "0:27:01",
+      "content": "Some questions will be asked to make sure you're awake."
+    },
+    {
+      "timestamp": "0:27:19",
+      "content": "The divide and conquer algorithm starts from the left and right and recursively breaks up the array."
+    },
+    {
+      "timestamp": "0:28:02",
+      "content": "The divide and conquer algorithm is a recursive algorithm."
+    },
+    {
+      "timestamp": "0:28:11",
+      "content": "The algorithm looks at the middle and then looks to the left and right."
+    },
+    {
+      "timestamp": "0:29:08",
+      "content": "If the middle is less than the middle minus 1, look at the left half."
+    },
+    {
+      "timestamp": "0:29:43",
+      "content": "If the middle is less than the middle plus 1, look at the right half."
+    },
+    {
+      "timestamp": "0:30:12",
+      "content": "If neither condition is met, the middle is a peak and the algorithm is done."
+    },
+    {
+      "timestamp": "0:30:27",
+      "content": "The algorithm is correct because it finds a peak based on the definition."
+    },
+    {
+      "timestamp": "0:31:48",
+      "content": "The complexity of the algorithm is the reason for using it."
+    },
+    {
+      "timestamp": "0:32:10",
+      "content": "The recurrence relation for the algorithm is T(n) = 2 + T(n/2)."
+    },
+    {
+      "timestamp": "0:33:31",
+      "content": "The theta 1 corresponds to the two comparisons made in the algorithm."
+    },
+    {
+      "timestamp": "0:34:12",
+      "content": "The base case is T(1) = theta 1."
+    },
+    {
+      "timestamp": "0:34:19",
+      "content": "Expanding the equation gives T(n) = theta 1 + theta 1 log(n)."
+    },
+    {
+      "timestamp": "0:34:43",
+      "content": "A complexity theta log 2 of n."
+    },
+    {
+      "timestamp": "0:34:46",
+      "content": "Right?"
+    },
+    {
+      "timestamp": "0:34:48",
+      "content": "So now you compare this with that."
+    },
+    {
+      "timestamp": "0:34:53",
+      "content": "And there's really a huge difference."
+    },
+    {
+      "timestamp": "0:34:54",
+      "content": "There's an exponential difference."
+    },
+    {
+      "timestamp": "0:34:57",
+      "content": "If you coded up this algorithm in Python--"
+    },
+    {
+      "timestamp": "0:35:01",
+      "content": "and I did-- both these algorithms for the 1D version--"
+    },
+    {
+      "timestamp": "0:35:06",
+      "content": "and if you run it on n being 10 million or so,"
+    },
+    {
+      "timestamp": "0:35:14",
+      "content": "then this algorithm takes 13 seconds."
+    },
+    {
+      "timestamp": "0:35:17",
+      "content": "OK?"
+    },
+    {
+      "timestamp": "0:35:18",
+      "content": "The-- The theta 10 algorithm takes 13 seconds."
+    },
+    {
+      "timestamp": "0:35:21",
+      "content": "And this one takes 0.001 seconds."
+    },
+    {
+      "timestamp": "0:35:26",
+      "content": "OK?"
+    },
+    {
+      "timestamp": "0:35:26",
+      "content": "Huge difference."
+    },
+    {
+      "timestamp": "0:35:27",
+      "content": "So there is a big difference between theta n and theta log n."
+    },
+    {
+      "timestamp": "0:35:30",
+      "content": "It's literally the difference between 2 raised to n, and n."
+    },
+    {
+      "timestamp": "0:35:35",
+      "content": "It makes sense to try and reduce complexity"
+    },
+    {
+      "timestamp": "0:35:40",
+      "content": "as you can see, especially if you're"
+    },
+    {
+      "timestamp": "0:35:43",
+      "content": "talking about large inputs."
+    },
+    {
+      "timestamp": "0:35:44",
+      "content": "All right?"
+    },
+    {
+      "timestamp": "0:35:45",
+      "content": "And you'll see that more clearly as we"
+    },
+    {
+      "timestamp": "0:35:48",
+      "content": "go to a 2D version of this problem."
+    },
+    {
+      "timestamp": "0:35:51",
+      "content": "All right?"
+    },
+    {
+      "timestamp": "0:35:52",
+      "content": "So you can't really do better for the 1D."
+    },
+    {
+      "timestamp": "0:35:53",
+      "content": "The 1D is a straightforward problem."
+    },
+    {
+      "timestamp": "0:35:56",
+      "content": "It gets a little more interesting--"
+    },
+    {
+      "timestamp": "0:35:58",
+      "content": "the problems get a little-- excuse me,"
+    },
+    {
+      "timestamp": "0:36:01",
+      "content": "the algorithms get a little more sophisticated"
+    },
+    {
+      "timestamp": "0:36:03",
+      "content": "when we look at a 2D version of peak finding."
+    },
+    {
+      "timestamp": "0:36:08",
+      "content": "So let's talk about the 2D version."
+    },
+    {
+      "timestamp": "0:36:15",
+      "content": "So as you can imagine in the 2D version"
+    },
+    {
+      "timestamp": "0:36:18",
+      "content": "you have a matrix, or a two dimensional array."
+    },
+    {
+      "timestamp": "0:36:23",
+      "content": "And we'll say this thing has n rows and m columns."
+    },
+    {
+      "timestamp": "0:36:34",
+      "content": "And now we have to define what a peak is."
+    },
+    {
+      "timestamp": "0:36:37",
+      "content": "And it's a hill."
+    },
+    {
+      "timestamp": "0:36:38",
+      "content": "It's the obvious definition of a peak."
+    },
+    {
+      "timestamp": "0:36:41",
+      "content": "So if you had a in here, c, b, d, e."
+    },
+    {
+      "timestamp": "0:36:50",
+      "content": "Then as you can guess, a is a 2D peak if, and only if,"
+    },
+    {
+      "timestamp": "0:37:02",
+      "content": "a greater than or equal to b; a greater than or equal to d, c"
+    },
+    {
+      "timestamp": "0:37:08",
+      "content": "and e."
+    },
+    {
+      "timestamp": "0:37:10",
+      "content": "All right?"
+    },
+    {
+      "timestamp": "0:37:10",
+      "content": "So it's a little hill up there."
+    },
+    {
+      "timestamp": "0:37:12",
+      "content": "All right?"
+    },
+    {
+      "timestamp": "0:37:12",
+      "content": "And again I've used the greater than or equal to here,"
+    },
+    {
+      "timestamp": "0:37:15",
+      "content": "so that's similar to the 1D in the case"
+    },
+    {
+      "timestamp": "0:37:18",
+      "content": "that you'll always find a peak in any 2D matrix."
+    },
+    {
+      "timestamp": "0:37:23",
+      "content": "Now again I'll give you the straightforward algorithm,"
+    },
+    {
+      "timestamp": "0:37:29",
+      "content": "and we'll call it the Greedy Ascent algorithm."
+    },
+    {
+      "timestamp": "0:37:41",
+      "content": "And the Greedy Ascent algorithm essentially picks a direction"
+    },
+    {
+      "timestamp": "0:37:45",
+      "content": "and, you know, tries to follow that direction in order"
+    },
+    {
+      "timestamp": "0:37:50",
+      "content": "to find a peak."
+    },
+    {
+      "timestamp": "0:37:52",
+      "content": "So for example, if I had this particular--"
+    },
+    {
+      "timestamp": "0:38:01",
+      "content": "--matrix; 14, 13, 12, 15, 9, 11, 17--"
+    },
+    {
+      "timestamp": "0:38:17",
+      "content": "Then what might happen is if I started at some arbitrary"
+    },
+    {
+      "timestamp": "0:38:20",
+      "content": "midpoint-- So the Greedy Ascent algorithm"
+    },
+    {
+      "timestamp": "0:38:23",
+      "content": "has to make choices as to where to start."
+    },
+    {
+      "timestamp": "0:38:26",
+      "content": "Just like we had different cases here,"
+    },
+    {
+      "timestamp": "0:38:29",
+      "content": "you have to make a choice as to where to start."
+    },
+    {
+      "timestamp": "0:38:31",
+      "content": "You might want to start in the middle,"
+    },
+    {
+      "timestamp": "0:38:32",
+      "content": "and you might want to work your way left first."
+    },
+    {
+      "timestamp": "0:38:35",
+      "content": "Or you're going to all-- You just keep going left,"
+    },
+    {
+      "timestamp": "0:38:38",
+      "content": "our keep going right."
+    },
+    {
+      "timestamp": "0:38:39",
+      "content": "And if you hit an edge, you go down."
+    },
+    {
+      "timestamp": "0:38:42",
+      "content": "So you make some choices as to what the default traversal"
+    },
+    {
+      "timestamp": "0:38:46",
+      "content": "directions are."
+    },
+    {
+      "timestamp": "0:38:47",
+      "content": "And so if you say you want to start with 12,"
+    },
+    {
+      "timestamp": "0:38:50",
+      "content": "you are going to go look for something to left."
+    },
+    {
+      "timestamp": "0:38:54",
+      "content": "And if it's greater than, you're going to follow that direction."
+    },
+    {
+      "timestamp": "0:38:58",
+      "content": "If it's not, if it's less, then you're"
+    },
+    {
+      "timestamp": "0:39:00",
+      "content": "going to go in the other direction, in this case,"
+    },
+    {
+      "timestamp": "0:39:04",
+      "content": "for example."
+    },
+    {
+      "timestamp": "0:39:05",
+      "content": "So in this case you'll go to 12, 13 , 14, 15, 16, 17, 19,"
+    },
+    {
+      "timestamp": "0:39:13",
+      "content": "and 20."
+    },
+    {
+      "timestamp": "0:39:14",
+      "content": "And you'd find-- You 'd find this peak."
+    },
+    {
+      "timestamp": "0:39:17",
+      "content": "Now I haven't given you the specific details"
+    },
+    {
+      "timestamp": "0:39:21",
+      "content": "of a Greedy Ascent algorithm."
+    },
+    {
+      "timestamp": "0:39:23",
+      "content": "But I think if you look at the worst case possibilities"
+    },
+    {
+      "timestamp": "0:39:33",
+      "content": "here, with respect to a given matrix,"
+    },
+    {
+      "timestamp": "0:39:36",
+      "content": "and for any given starting point,"
+    },
+    {
+      "timestamp": "0:39:38",
+      "content": "and for any given strategy-- in terms of choosing left first,"
+    },
+    {
+      "timestamp": "0:39:43",
+      "content": "versus right first, or down first versus up first--"
+    },
+    {
+      "timestamp": "0:39:48",
+      "content": "you will have a situation where-- just"
+    },
+    {
+      "timestamp": "0:39:51",
+      "content": "like we had in the 1D case-- you may end up"
+    },
+    {
+      "timestamp": "0:39:55",
+      "content": "touching a large fraction of the elements in this 2D array."
+    },
+    {
+      "timestamp": "0:40:02",
+      "content": "OK?"
+    },
+    {
+      "timestamp": "0:40:02",
+      "content": "So in this case, we ended up, you know,"
+    },
+    {
+      "timestamp": "0:40:05",
+      "content": "touching a bunch of different elements."
+    },
+    {
+      "timestamp": "0:40:06",
+      "content": "And it's quite possible that you could end up touching--"
+    },
+    {
+      "timestamp": "0:40:10",
+      "content": "starting from the midpoint-- you could up touching half"
+    },
+    {
+      "timestamp": "0:40:12",
+      "content": "the elements, and in some cases, touching all the elements."
+    },
+    {
+      "timestamp": "0:40:16",
+      "content": "So if you do a worst case analysis of this algorithm--"
+    },
+    {
+      "timestamp": "0:40:23",
+      "content": "a particular algorithm with particular choices in terms"
+    },
+    {
+      "timestamp": "0:40:25",
+      "content": "of the starting point and the direction of search--"
+    },
+    {
+      "timestamp": "0:40:30",
+      "content": "a Greedy Ascent algorithm would have theta n m complexity."
+    },
+    {
+      "timestamp": "0:40:33",
+      "content": "All right?"
+    },
+    {
+      "timestamp": "0:40:34",
+      "content": "And in the case where n equals m, or m equals n,"
+    },
+    {
+      "timestamp": "0:40:42",
+      "content": "you'd have theta n squared complexity."
+    },
+    {
+      "timestamp": "0:40:44",
+      "content": "OK?"
+    },
+    {
+      "timestamp": "0:40:46",
+      "content": "I won't spend very much time on this,"
+    },
+    {
+      "timestamp": "0:40:48",
+      "content": "because I want to talk to you about the divide"
+    },
+    {
+      "timestamp": "0:40:52",
+      "content": "and conquer versions of this algorithm for the 2D peak."
+    },
+    {
+      "timestamp": "0:40:58",
+      "content": "But hopefully you're all with me with respect"
+    },
+    {
+      "timestamp": "0:41:00",
+      "content": "to what the worst case complexity is."
+    },
+    {
+      "timestamp": "0:41:03",
+      "content": "All right?"
+    },
+    {
+      "timestamp": "0:41:04",
+      "content": "People buy that?"
+    },
+    {
+      "timestamp": "0:41:06",
+      "content": "Yeah."
+    },
+    {
+      "timestamp": "0:41:06",
+      "content": "Question back there."
+    },
+    {
+      "timestamp": "0:41:07",
+      "content": "AUDIENCE: Can you-- Is that an approximation?"
+    },
+    {
+      "timestamp": "0:41:09",
+      "content": "Or can you actually get to n times m traversals?"
+    },
+    {
+      "timestamp": "0:41:14",
+      "content": "PROFESSOR: So there are specific Greedy Ascent algorithms,"
+    },
+    {
+      "timestamp": "0:41:18",
+      "content": "and specific matrices where, if I give you"
+    },
+    {
+      "timestamp": "0:41:21",
+      "content": "the code for the algorithm, and I give you a specific matrix,"
+    },
+    {
+      "timestamp": "0:41:24",
+      "content": "that I could make you touch all of these elements."
+    },
+    {
+      "timestamp": "0:41:28",
+      "content": "That's correct."
+    },
+    {
+      "timestamp": "0:41:28",
+      "content": "So we're talking about worst case."
+    },
+    {
+      "timestamp": "0:41:30",
+      "content": "You're being very paranoid when you"
+    },
+    {
+      "timestamp": "0:41:32",
+      "content": "talk about worst case complexity."
+    },
+    {
+      "timestamp": "0:41:34",
+      "content": "And so I'm-- hand waving a bit here,"
+    },
+    {
+      "timestamp": "0:41:38",
+      "content": "simply because I haven't given you the specifics"
+    },
+    {
+      "timestamp": "0:41:41",
+      "content": "of the algorithm yet."
+    },
+    {
+      "timestamp": "0:41:42",
+      "content": "Right?"
+    },
+    {
+      "timestamp": "0:41:42",
+      "content": "This is really a set of algorithms,"
+    },
+    {
+      "timestamp": "0:41:44",
+      "content": "because I haven't given you the code,"
+    },
+    {
+      "timestamp": "0:41:46",
+      "content": "I haven't told you where it starts,"
+    },
+    {
+      "timestamp": "0:41:47",
+      "content": "and which direction it goes."
+    },
+    {
+      "timestamp": "0:41:49",
+      "content": "But you go, do that, fix it, and I"
+    },
+    {
+      "timestamp": "0:41:52",
+      "content": "would be the person who tries to find the worst case complexity."
+    },
+    {
+      "timestamp": "0:41:55",
+      "content": "Suddenly it's very easy to get to theta n"
+    },
+    {
+      "timestamp": "0:41:58",
+      "content": "m in terms of having some constant multiplying n times m."
+    },
+    {
+      "timestamp": "0:42:03",
+      "content": "But you can definitely get to that constant"
+    },
+    {
+      "timestamp": "0:42:05",
+      "content": "being very close to 1."
+    },
+    {
+      "timestamp": "0:42:08",
+      "content": "OK?"
+    },
+    {
+      "timestamp": "0:42:09",
+      "content": "If not 1."
+    },
+    {
+      "timestamp": "0:42:11",
+      "content": "All right."
+    },
+    {
+      "timestamp": "0:42:12",
+      "content": "So let's talk about divide and conquer."
+    },
+    {
+      "timestamp": "0:42:14",
+      "content": "And let's say that I did something"
+    },
+    {
+      "timestamp": "0:42:18",
+      "content": "like this, where I just tried to jam the binary search"
+    },
+    {
+      "timestamp": "0:42:22",
+      "content": "algorithm into the 2D version."
+    },
+    {
+      "timestamp": "0:42:26",
+      "content": "All right?"
+    },
+    {
+      "timestamp": "0:42:37",
+      "content": "So what I'm going to do is--"
+    },
+    {
+      "timestamp": "0:42:43",
+      "content": "--I'm going to pick the middle column, j equals m over 2."
+    },
+    {
+      "timestamp": "0:42:55",
+      "content": "And I'm going to find a 1D peak using"
+    },
+    {
+      "timestamp": "0:43:00",
+      "content": "whatever algorithm I want."
+    },
+    {
+      "timestamp": "0:43:01",
+      "content": "And I'll probably end up using the more efficient algorithm,"
+    },
+    {
+      "timestamp": "0:43:04",
+      "content": "the binary search version that's gone"
+    },
+    {
+      "timestamp": "0:43:07",
+      "content": "all the way to the left of the board there."
+    },
+    {
+      "timestamp": "0:43:10",
+      "content": "And let's say I find a binary peak at (i, j)."
+    },
+    {
+      "timestamp": "0:43:14",
+      "content": "Because I've picked a column, and I'm just finding a 1D peak."
+    },
+    {
+      "timestamp": "0:43:20",
+      "content": "So this is j equals m over 2."
+    },
+    {
+      "timestamp": "0:43:23",
+      "content": "That's i."
+    },
+    {
+      "timestamp": "0:43:25",
+      "content": "Now I use (i,j)."
+    },
+    {
+      "timestamp": "0:43:29",
+      "content": "In particular row i as a start--"
+    },
+    {
+      "timestamp": "0:43:38",
+      "content": "--to find a 1D peak on row i."
+    },
+    {
+      "timestamp": "0:43:47",
+      "content": "And I stand up here, I'm really happy."
+    },
+    {
+      "timestamp": "0:43:50",
+      "content": "OK?"
+    },
+    {
+      "timestamp": "0:43:50",
+      "content": "Because I say, wow."
+    },
+    {
+      "timestamp": "0:43:53",
+      "content": "I picked a middle column, I found a 1D peak,"
+    },
+    {
+      "timestamp": "0:43:56",
+      "content": "that is theta m complexity to find a 1D peak as we argued."
+    },
+    {
+      "timestamp": "0:44:01",
+      "content": "And one side-- the theta m--"
+    },
+    {
+      "timestamp": "0:44:06",
+      "content": "AUDIENCE: Log n."
+    },
+    {
+      "timestamp": "0:44:07",
+      "content": "PROFESSOR: Oh, I'm sorry."
+    },
+    {
+      "timestamp": "0:44:08",
+      "content": "You're right."
+    },
+    {
+      "timestamp": "0:44:09",
+      "content": "The log n complexity, that's what this was."
+    },
+    {
+      "timestamp": "0:44:13",
+      "content": "So I do have that here."
+    },
+    {
+      "timestamp": "0:44:15",
+      "content": "Yeah."
+    },
+    {
+      "timestamp": "0:44:15",
+      "content": "Log n complexity."
+    },
+    {
+      "timestamp": "0:44:16",
+      "content": "Thanks, Eric."
+    },
+    {
+      "timestamp": "0:44:18",
+      "content": "And then once I do that, I can find a 1D peak on row i."
+    },
+    {
+      "timestamp": "0:44:26",
+      "content": "In this case row i would be m wide,"
+    },
+    {
+      "timestamp": "0:44:28",
+      "content": "so it would be log m complexity."
+    },
+    {
+      "timestamp": "0:44:30",
+      "content": "If n equals m, then I have a couple of steps of log n,"
+    },
+    {
+      "timestamp": "0:44:33",
+      "content": "and I'm done."
+    },
+    {
+      "timestamp": "0:44:35",
+      "content": "All right?"
+    },
+    {
+      "timestamp": "0:44:36",
+      "content": "Am I done?"
+    },
+    {
+      "timestamp": "0:44:38",
+      "content": "No."
+    },
+    {
+      "timestamp": "0:44:39",
+      "content": "Can someone tell me why I'm not done?"
+    },
+    {
+      "timestamp": "0:44:42",
+      "content": "Precisely?"
+    },
+    {
+      "timestamp": "0:44:43",
+      "content": "Yep."
+    },
+    {
+      "timestamp": "0:44:43",
+      "content": "AUDIENCE: Because when you do the second part"
+    },
+    {
+      "timestamp": "0:44:46",
+      "content": "to find the peak in row i, you might not"
+    },
+    {
+      "timestamp": "0:44:50",
+      "content": "have that column peak-- There might not"
+    },
+    {
+      "timestamp": "0:44:52",
+      "content": "be a peak on the column anymore."
+    },
+    {
+      "timestamp": "0:44:54",
+      "content": "PROFESSOR: That's exactly correct."
+    },
+    {
+      "timestamp": "0:44:56",
+      "content": "So this algorithm is incorrect."
+    },
+    {
+      "timestamp": "0:44:59",
+      "content": "OK?"
+    },
+    {
+      "timestamp": "0:44:59",
+      "content": "It doesn't work."
+    },
+    {
+      "timestamp": "0:45:01",
+      "content": "It's efficient, but incorrect."
+    },
+    {
+      "timestamp": "0:45:04",
+      "content": "OK?"
+    },
+    {
+      "timestamp": "0:45:05",
+      "content": "It's-- You want to be correct."
+    },
+    {
+      "timestamp": "0:45:07",
+      "content": "You know being correcting and inefficient"
+    },
+    {
+      "timestamp": "0:45:09",
+      "content": "is definitely better than being inefficient-- I'm sorry."
+    },
+    {
+      "timestamp": "0:45:13",
+      "content": "Being incorrect and efficient."
+    },
+    {
+      "timestamp": "0:45:15",
+      "content": "So this is an efficient algorithm,"
+    },
+    {
+      "timestamp": "0:45:17",
+      "content": "in the sense that it will only take log n time,"
+    },
+    {
+      "timestamp": "0:45:22",
+      "content": "but it doesn't work."
+    },
+    {
+      "timestamp": "0:45:22",
+      "content": "And I'll give you a simple example"
+    },
+    {
+      "timestamp": "0:45:25",
+      "content": "here where it doesn't work."
+    },
+    {
+      "timestamp": "0:45:32",
+      "content": "The problem is--"
+    },
+    {
+      "timestamp": "0:45:35",
+      "content": "--a 2D peak--"
+    },
+    {
+      "timestamp": "0:45:39",
+      "content": "--may not exist--"
+    },
+    {
+      "timestamp": "0:45:44",
+      "content": "--on row i."
+    },
+    {
+      "timestamp": "0:45:46",
+      "content": "And here's an example of that."
+    },
+    {
+      "timestamp": "0:45:53",
+      "content": "Actually this is-- This is exactly the example of that."
+    },
+    {
+      "timestamp": "0:45:58",
+      "content": "Let's say that I started with this row."
+    },
+    {
+      "timestamp": "0:46:02",
+      "content": "Since it's-- I'm starting with the middle row,"
+    },
+    {
+      "timestamp": "0:46:05",
+      "content": "and I could start with this one or that one."
+    },
+    {
+      "timestamp": "0:46:06",
+      "content": "Let's say I started with that one."
+    },
+    {
+      "timestamp": "0:46:10",
+      "content": "I end up finding a peak."
+    },
+    {
+      "timestamp": "0:46:16",
+      "content": "And if this were 10 up here, I'd choose 12 as a peak."
+    },
+    {
+      "timestamp": "0:46:22",
+      "content": "And it's quite possible that I return 12 as a peak."
+    },
+    {
+      "timestamp": "0:46:25",
+      "content": "Even though 19 is bigger, because 12"
+    },
+    {
+      "timestamp": "0:46:27",
+      "content": "is a peak given 10 and 11 up here."
+    },
+    {
+      "timestamp": "0:46:30",
+      "content": "And then when I choose this particular row,"
+    },
+    {
+      "timestamp": "0:46:33",
+      "content": "and I find a peak on this row, it would be 14."
+    },
+    {
+      "timestamp": "0:46:36",
+      "content": "That is a 1D peak on this row."
+    },
+    {
+      "timestamp": "0:46:38",
+      "content": "But 14 is not a 2D peak."
+    },
+    {
+      "timestamp": "0:46:41",
+      "content": "OK?"
+    },
+    {
+      "timestamp": "0:46:42",
+      "content": "So this particular example, 14 would return 14."
+    },
+    {
+      "timestamp": "0:46:47",
+      "content": "And 14 is not a 2D peak."
+    },
+    {
+      "timestamp": "0:46:50",
+      "content": "All right?"
+    },
+    {
+      "timestamp": "0:46:53",
+      "content": "You can collect your cushion after the class."
+    },
+    {
+      "timestamp": "0:46:57",
+      "content": "So not so good."
+    },
+    {
+      "timestamp": "0:47:01",
+      "content": "Look like an efficient algorithm, but doesn't work."
+    },
+    {
+      "timestamp": "0:47:05",
+      "content": "All right?"
+    },
+    {
+      "timestamp": "0:47:06",
+      "content": "So how can we get to something that actually works?"
+    },
+    {
+      "timestamp": "0:47:09",
+      "content": "So the last algorithm that I'm going to show you--"
+    },
+    {
+      "timestamp": "0:47:14",
+      "content": "And you'll see four different algorithms in your problem"
+    },
+    {
+      "timestamp": "0:47:16",
+      "content": "set--"
+    },
+    {
+      "timestamp": "0:47:21",
+      "content": "--that you'll have to analyze the complexity for and decide"
+    },
+    {
+      "timestamp": "0:47:24",
+      "content": "if they're efficient, and if they're correct."
+    },
+    {
+      "timestamp": "0:47:28",
+      "content": "But here's a-- a recursive version"
+    },
+    {
+      "timestamp": "0:47:33",
+      "content": "that is better than, in terms of complexity,"
+    },
+    {
+      "timestamp": "0:47:37",
+      "content": "than the Greedy Ascent algorithm."
+    },
+    {
+      "timestamp": "0:47:40",
+      "content": "And this one works."
+    },
+    {
+      "timestamp": "0:47:43",
+      "content": "So what I'm going to do is pick a middle column."
+    },
+    {
+      "timestamp": "0:47:49",
+      "content": "j equals m over 2 as before."
+    },
+    {
+      "timestamp": "0:47:54",
+      "content": "I'm going to find the global maximum on column j."
+    },
+    {
+      "timestamp": "0:48:05",
+      "content": "And that's going to be at (i, j)."
+    },
+    {
+      "timestamp": "0:48:09",
+      "content": "I'm going to compare (i,j minus 1), (i,j),"
+    },
+    {
+      "timestamp": "0:48:18",
+      "content": "and (i,j plus 1)."
+    },
+    {
+      "timestamp": "0:48:20",
+      "content": "Which means that once I've found the maximum in this row,"
+    },
+    {
+      "timestamp": "0:48:23",
+      "content": "all I'm going to look to the left and the right,"
+    },
+    {
+      "timestamp": "0:48:25",
+      "content": "and compare."
+    },
+    {
+      "timestamp": "0:48:27",
+      "content": "I'm going to pick the left columns."
+    },
+    {
+      "timestamp": "0:48:33",
+      "content": "If (i,j minus 1) is greater than (i,j)--"
+    },
+    {
+      "timestamp": "0:48:40",
+      "content": "and similarly for the right."
+    },
+    {
+      "timestamp": "0:48:49",
+      "content": "And if in fact I-- either of these two conditions"
+    },
+    {
+      "timestamp": "0:48:55",
+      "content": "don't fire, and what I have is (i,j)"
+    },
+    {
+      "timestamp": "0:49:00",
+      "content": "is greater than or equal to (i,j minus 1)"
+    },
+    {
+      "timestamp": "0:49:04",
+      "content": "and (i,j plus 1), then I'm done."
+    },
+    {
+      "timestamp": "0:49:07",
+      "content": "Just like I had for the 1D version."
+    },
+    {
+      "timestamp": "0:49:12",
+      "content": "If (i,j) is greater than or equal to (i,j minus 1),"
+    },
+    {
+      "timestamp": "0:49:17",
+      "content": "and (i,j plus 1), that implies (i, j)"
+    },
+    {
+      "timestamp": "0:49:26",
+      "content": "is a 2D peak."
+    },
+    {
+      "timestamp": "0:49:28",
+      "content": "OK?"
+    },
+    {
+      "timestamp": "0:49:29",
+      "content": "And the reason that is the case, is"
+    },
+    {
+      "timestamp": "0:49:30",
+      "content": "because (i,j) was the maximum element in that column."
+    },
+    {
+      "timestamp": "0:49:35",
+      "content": "So you know that you've compared it"
+    },
+    {
+      "timestamp": "0:49:37",
+      "content": "to all of the adjacent elements, looking up and looking down,"
+    },
+    {
+      "timestamp": "0:49:41",
+      "content": "that's the maximum element."
+    },
+    {
+      "timestamp": "0:49:43",
+      "content": "Now you've look at the left and the right,"
+    },
+    {
+      "timestamp": "0:49:45",
+      "content": "and in fact it's greater than or equal to the elements"
+    },
+    {
+      "timestamp": "0:49:47",
+      "content": "on the left and the right."
+    },
+    {
+      "timestamp": "0:49:49",
+      "content": "And so therefore it's a 2D peak."
+    },
+    {
+      "timestamp": "0:49:51",
+      "content": "OK?"
+    },
+    {
+      "timestamp": "0:49:52",
+      "content": "So in this case, when you pick the left or the right columns--"
+    },
+    {
+      "timestamp": "0:49:57",
+      "content": "you'll pick one of them-- you're going"
+    },
+    {
+      "timestamp": "0:49:59",
+      "content": "to solve the new problem with half the number of columns."
+    },
+    {
+      "timestamp": "0:50:16",
+      "content": "All right?"
+    },
+    {
+      "timestamp": "0:50:17",
+      "content": "And again, you have to go through an analysis,"
+    },
+    {
+      "timestamp": "0:50:20",
+      "content": "or an argument, to make sure that this algorithm is correct."
+    },
+    {
+      "timestamp": "0:50:24",
+      "content": "But its intuitively correct, simply because it matches"
+    },
+    {
+      "timestamp": "0:50:29",
+      "content": "the 1D version much more closely."
+    },
+    {
+      "timestamp": "0:50:33",
+      "content": "And you also have your condition where you break away right"
+    },
+    {
+      "timestamp": "0:50:37",
+      "content": "here, where you have a 2D peak, just like the 1D version."
+    },
+    {
+      "timestamp": "0:50:41",
+      "content": "And what you've done is break this matrix up"
+    },
+    {
+      "timestamp": "0:50:43",
+      "content": "into half the size."
+    },
+    {
+      "timestamp": "0:50:46",
+      "content": "And that's essentially why this algorithm works."
+    },
+    {
+      "timestamp": "0:50:51",
+      "content": "When you have a single column--"
+    },
+    {
+      "timestamp": "0:51:01",
+      "content": "--find the global maximum and you're done."
+    },
+    {
+      "timestamp": "0:51:09",
+      "content": "All right?"
+    },
+    {
+      "timestamp": "0:51:10",
+      "content": "So that's the base case."
+    },
+    {
+      "timestamp": "0:51:12",
+      "content": "So let me end with just writing out"
+    },
+    {
+      "timestamp": "0:51:14",
+      "content": "what the recurrence relation for the complexity of this"
+    },
+    {
+      "timestamp": "0:51:17",
+      "content": "is, and argue what the overall complexity of this algorithm"
+    },
+    {
+      "timestamp": "0:51:22",
+      "content": "is."
+    },
+    {
+      "timestamp": "0:51:25",
+      "content": "And then I'll give you the bad news."
+    },
+    {
+      "timestamp": "0:51:30",
+      "content": "All right."
+    },
+    {
+      "timestamp": "0:51:31",
+      "content": "So overall what you have is, you have something like T of (n, m)"
+    },
+    {
+      "timestamp": "0:51:36",
+      "content": "equals T of (n, m over 2) plus theta n."
+    },
+    {
+      "timestamp": "0:51:42",
+      "content": "Why is that?"
+    },
+    {
+      "timestamp": "0:51:43",
+      "content": "Well n is the number of rows, m is the number of columns."
+    },
+    {
+      "timestamp": "0:51:47",
+      "content": "In one case you'll be breaking things down"
+    },
+    {
+      "timestamp": "0:51:51",
+      "content": "into half the number of columns, which is m over 2."
+    },
+    {
+      "timestamp": "0:51:54",
+      "content": "And in order to find the global maximum,"
+    },
+    {
+      "timestamp": "0:51:57",
+      "content": "you'll be doing theta n work, because you're"
+    },
+    {
+      "timestamp": "0:52:00",
+      "content": "finding the global maximum."
+    },
+    {
+      "timestamp": "0:52:01",
+      "content": "Right?"
+    },
+    {
+      "timestamp": "0:52:01",
+      "content": "You just have to scan it-- this--"
+    },
+    {
+      "timestamp": "0:52:05",
+      "content": "That's the way-- That's what it's going to take."
+    },
+    {
+      "timestamp": "0:52:08",
+      "content": "And so if you do that, and you go run it through--"
+    },
+    {
+      "timestamp": "0:52:11",
+      "content": "and you know that T of (n, 1) is theta n-- which"
+    },
+    {
+      "timestamp": "0:52:16",
+      "content": "is this last part over here-- that's your base case."
+    },
+    {
+      "timestamp": "0:52:20",
+      "content": "You get T of (n, m) is theta of n added to theta of n,"
+    },
+    {
+      "timestamp": "0:52:28",
+      "content": "log of m times-- log 2 of m times."
+    },
+    {
+      "timestamp": "0:52:34",
+      "content": "Which is theta of n-- log 2 of m."
+    },
+    {
+      "timestamp": "0:52:42",
+      "content": "All right?"
+    },
+    {
+      "timestamp": "0:52:43",
+      "content": "So you're not done with peak finding."
+    },
+    {
+      "timestamp": "0:52:48",
+      "content": "What you'll see is at four algorithms coded in Python--"
+    },
+    {
+      "timestamp": "0:52:53",
+      "content": "I'm not going to give away what those algorithms are,"
+    },
+    {
+      "timestamp": "0:52:55",
+      "content": "but you'll have to recognize them."
+    },
+    {
+      "timestamp": "0:52:57",
+      "content": "You will have seen versions of those algorithms"
+    },
+    {
+      "timestamp": "0:53:00",
+      "content": "already in lecture."
+    },
+    {
+      "timestamp": "0:53:01",
+      "content": "And your job is going to be to analyze the algorithms, as I"
+    },
+    {
+      "timestamp": "0:53:06",
+      "content": "said before, prove that one of them is correct,"
+    },
+    {
+      "timestamp": "0:53:09",
+      "content": "and find counter-examples for the ones that aren't correct."
+    },
+    {
+      "timestamp": "0:53:12",
+      "content": "The course staff will stick around"
+    },
+    {
+      "timestamp": "0:53:14",
+      "content": "here to answer questions-- logistical questions--"
+    },
+    {
+      "timestamp": "0:53:17",
+      "content": "or questions about lecture."
+    },
+    {
+      "timestamp": "0:53:18",
+      "content": "And I owe that gentleman a cushion."
+    }
+  ]
+}

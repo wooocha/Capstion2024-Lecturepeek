@@ -1,0 +1,88 @@
+소요시간 : 28.214460134506226 
+영상링크 : https://www.youtube.com/watch?v=0IAPZzGSbME
+추출방식 : 1
+{
+  "videoTitle": "알고리즘 강의",
+  "videoDescription": "알고리즘에 대한 강의입니다.",
+  "Lecture Note": [
+    {
+      "timestamp": "00:00:00",
+      "section_title": "📚 강의 소개",
+      "content": "알고리즘은 컴퓨터 공학 학생들에게 일반적으로 제공되는 과목입니다. 이 강의에서는 알고리즘을 더 간단하고 이해하기 쉽게 설명하겠습니다. 기초부터 고급 주제까지 모두 다룰 예정입니다."
+    },
+    {
+      "timestamp": "00:00:23",
+      "section_title": "📚 알고리즘의 중요성",
+      "content": "알고리즘은 이론적인 시험뿐만 아니라 경쟁 시험과 프로그래밍 대회에서도 중요합니다. 많은 프로그래밍 도전 과제들이 알고리즘을 기반으로 합니다. 그러나 일부 학생들은 주제를 제대로 이해하지 못하고 문제 해결 전략에 어려움을 겪습니다. 저는 깊이 있는 설명과 문제 해결 방법을 제공할 것입니다."
+    },
+    {
+      "timestamp": "00:01:10",
+      "section_title": "📚 알고리즘의 도전성",
+      "content": "이 과목은 학생들이 다양한 유형의 문제를 해결하고 논리와 프로그래밍 기술을 개발할 수 있는 기회를 제공합니다. 저는 취업 면접, 경쟁 시험, GATE 시험과 같은 입시 시험을 해결하는 데 유용한 주제를 다룰 예정입니다."
+    },
+    {
+      "timestamp": "00:02:02",
+      "section_title": "📚 피드백 요청",
+      "content": "여러분의 피드백은 저에게 매우 중요합니다. 저는 프레젠테이션과 다른 도구를 사용하여 비디오를 준비했지만, 이제는 화이트보드에서 강의를 진행하고 있습니다. 비디오와 오디오 품질을 개선하기 위해 여러분의 피드백이 필요합니다."
+    },
+    {
+      "timestamp": "00:03:00",
+      "section_title": "🔍 알고리즘 소개",
+      "content": "알고리즘은 계산 문제를 해결하기 위한 단계별 절차입니다. 알고리즘은 간단한 영어 또는 수학적 표기법으로 작성되며 하드웨어와 소프트웨어에 독립적입니다. 알고리즘을 작성하는 사람은 해당 문제에 대한 도메인 지식과 이해력을 가져야 합니다. 알고리즘은 특정 프로그래밍 언어를 사용하여 구현된 프로그램과는 다릅니다."
+    },
+    {
+      "timestamp": "00:04:06",
+      "section_title": "🔍 알고리즘과 프로그램의 차이",
+      "content": "알고리즘은 설계 시간에 작성되는 반면, 프로그램은 구현 시간에 작성됩니다. 알고리즘은 하드웨어와 운영 체제에 독립적이며, 프로그램은 하드웨어와 운영 체제에 종속적입니다. 알고리즘은 시간 및 공간 복잡도를 기반으로 효율성이 분석되며, 프로그램은 정확성을 보장하기 위해 테스트가 수행됩니다."
+    },
+    {
+      "timestamp": "00:10:51",
+      "section_title": "📈 알고리즘과 C 언어",
+      "content": "알고리즘은 주로 C 언어를 사용하여 작성됩니다. C 언어의 구문은 알고리즘에서 사용됩니다."
+    }
+  ],
+  "questions": [
+    {
+      "question": "알고리즘은 무엇인가요?",
+      "answer": "알고리즘은 계산 문제를 해결하기 위한 단계별 절차입니다."
+    },
+    {
+      "question": "알고리즘과 프로그램의 차이점은 무엇인가요?",
+      "answer": "알고리즘은 설계 시간에 작성되고 하드웨어와 운영 체제에 독립적이며, 프로그램은 구현 시간에 작성되고 하드웨어와 운영 체제에 종속적입니다."
+    },
+    {
+      "question": "알고리즘은 주로 어떤 언어로 작성되나요?",
+      "answer": "알고리즘은 주로 C 언어를 사용하여 작성됩니다."
+    }
+  ],
+  "script": [
+    {
+      "timestamp": "0:00:00",
+      "content": "Hello friends, I'm going to start a course on algorithms. Algorithm is a common subject for computer science engineering students. Most universities offer this course as a part of the syllabus. It is a very cool and important subject. However, students often face difficulties in understanding certain topics. In this course, I will make the subject more simple and easy to understand. I will cover everything from the basics to the advanced topics."
+    },
+    {
+      "timestamp": "0:00:23",
+      "content": "Algorithms are not only important for theoretical examinations, but also for competitive exams and programming contests. Many programming challenges are based on algorithms. However, some students fail to understand the subject properly and struggle with problem-solving strategies. I will provide in-depth explanations and approaches for solving problems."
+    },
+    {
+      "timestamp": "0:01:10",
+      "content": "This subject is challenging because it allows students to solve different types of problems and develop their logic and programming skills. I will cover topics that are useful for solving job interviews, competitive exams, and entrance exams like the GATE exam."
+    },
+    {
+      "timestamp": "0:02:02",
+      "content": "Your feedback is very important to me. I have prepared videos using presentations and other tools, but now I am giving a lecture on a whiteboard. I am new to video and audio quality, so I need your feedback to improve the quality of my videos."
+    },
+    {
+      "timestamp": "0:03:00",
+      "content": "Let's start with the introduction to algorithms. An algorithm is a step-by-step procedure for solving a computational problem. It is written in simple English or mathematical notations and is independent of hardware and software. The person who writes the algorithm should have domain knowledge and understanding of the problem. The algorithm is different from a program, which is the implementation of the algorithm using a specific programming language."
+    },
+    {
+      "timestamp": "0:04:06",
+      "content": "The algorithm is written at the design time, while the program is written at the implementation time. The algorithm is hardware and operating system independent, while the program is dependent on hardware and operating system. The algorithm is analyzed for efficiency in terms of time and space complexity. Testing is done for the program to ensure its correctness."
+    },
+    {
+      "timestamp": "0:10:51",
+      "content": "Algorithms are mostly written using the C language, as it is widely known and understood by programmers. The syntax of the C language is used in algorithms.\n\nNote: The timestamps provided are approximate and may not be exact."
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+소요시간 : 15.969162464141846 
+영상링크 : https://www.youtube.com/watch?v=VAt2mR7gY0k
+추출방식 : 1
+{
+  "videoTitle": "자료 구조와 알고리즘",
+  "videoDescription": "자료 구조와 알고리즘의 개념 이해하기",
+  "Lecture Note": [
+    {
+      "timestamp": "00:00:00",
+      "section_title": "📚 자료 구조와 알고리즘 소개",
+      "content": "자료 구조와 알고리즘은 종종 복잡한 개념으로 여겨집니다. 책을 정리하는 간단한 비유를 사용하여 이해할 수 있습니다. 자료 구조는 정보를 정리하는 방법이며, 알고리즘은 목표를 향해 정보를 처리하는 과정입니다."
+    },
+    {
+      "timestamp": "00:01:24",
+      "section_title": "📚 예제 1: 책 더미",
+      "content": "비유에서 책 더미는 자료 구조를 나타냅니다. 알고리즘은 특정 책을 찾기 위해 책을 더미에서 빼는 과정입니다."
+    },
+    {
+      "timestamp": "00:01:58",
+      "section_title": "📚 예제 2: 책장",
+      "content": "알파벳 순서로 정리된 책장은 자료 구조를 나타냅니다. 알고리즘은 알파벳 순서에 따라 검색하는 과정입니다."
+    },
+    {
+      "timestamp": "00:02:37",
+      "section_title": "📚 예제 3: 계층적 구조",
+      "content": "장르별로 분류된 계층적인 책 구조는 자료 구조를 나타냅니다. 알고리즘은 장르를 식별하고 해당 장르 내에서 책을 찾는 과정을 포함합니다."
+    },
+    {
+      "timestamp": "00:02:54",
+      "section_title": "📚 간단한 정의",
+      "content": "자료 구조는 정보를 정리하는 방법이며, 알고리즘은 목표를 향해 정보를 처리하는 과정입니다."
+    },
+    {
+      "timestamp": "00:03:07",
+      "section_title": "📚 트레이드오프",
+      "content": "정보를 정리하고 사용하는 다양한 방법에는 장단점이 있습니다. 이러한 트레이드오프를 이해하는 것이 중요합니다."
+    },
+    {
+      "timestamp": "00:03:19",
+      "section_title": "📚 다음 주제",
+      "content": "다음 영상에서는 기본적인 자료 구조, 그들의 설계 및 성능에 대해 다룰 것입니다. 이러한 자료 구조를 사용하는 중요한 알고리즘도 논의될 것입니다."
+    }
+  ],
+  "questions": [
+    {
+      "question": "자료 구조란 무엇인가요?",
+      "answer": "정보를 정리하는 방법"
+    },
+    {
+      "question": "알고리즘이란 무엇인가요?",
+      "answer": "정보를 처리하는 과정"
+    },
+    {
+      "question": "강의에서 사용된 비유는 무엇인가요?",
+      "answer": "책을 정리하는 것"
+    }
+  ],
+  "script": [
+    {
+      "timestamp": "0:00:00",
+      "content": "What is a data structure? What is an algorithm?"
+    },
+    {
+      "timestamp": "0:00:02",
+      "content": "If you look at standard definitions of these terms, it's easy to think that they are super complicated concepts."
+    },
+    {
+      "timestamp": "0:00:07",
+      "content": "How do we really interpret these definitions?"
+    },
+    {
+      "timestamp": "0:00:09",
+      "content": "I like to think about data structures and algorithms using the following analogy."
+    },
+    {
+      "timestamp": "0:00:16",
+      "content": "Let's say you've been buying a few books recently."
+    },
+    {
+      "timestamp": "0:00:17",
+      "content": "Right now, you have a pretty simple organization scheme."
+    },
+    {
+      "timestamp": "0:00:20",
+      "content": "As soon as you get a book, you stack it on top of the last book."
+    },
+    {
+      "timestamp": "0:00:23",
+      "content": "This ingenious organization scheme has been patented by college students all over the world and has proved to be highly effective."
+    },
+    {
+      "timestamp": "0:00:27",
+      "content": "Now, let's say you want to find a specific book from this stack."
+    },
+    {
+      "timestamp": "0:00:30",
+      "content": "How would you do it?"
+    },
+    {
+      "timestamp": "0:00:32",
+      "content": "The most straightforward way to find a book is by taking a book off the stack until you find the book that you're looking for."
+    },
+    {
+      "timestamp": "0:00:40",
+      "content": "I know what you're thinking, what does this have to do with data structures and algorithms?"
+    },
+    {
+      "timestamp": "0:00:43",
+      "content": "But believe it or not, you just saw a textbook example of a data structure and an algorithm."
+    },
+    {
+      "timestamp": "0:00:47",
+      "content": "In this example, you can think of a data structure as our stack of books, and the algorithm we use to find a book is the process of taking books off the top of the stack until we find the book that we are looking for."
+    },
+    {
+      "timestamp": "0:01:24",
+      "content": "But as time goes on and you start getting a lot of books, you decide to become a little bit more organized."
+    },
+    {
+      "timestamp": "0:01:28",
+      "content": "You decide to buy a bookshelf and put all your books in alphabetical order by the authors."
+    },
+    {
+      "timestamp": "0:01:31",
+      "content": "What do we do now if we want to find a book?"
+    },
+    {
+      "timestamp": "0:01:35",
+      "content": "You probably would start in the middle and slowly hone in to the appropriate place of the book based on the order of the alphabet."
+    },
+    {
+      "timestamp": "0:01:38",
+      "content": "Here, the data structure would be the bookshelf organized alphabetically, and your algorithm would be your search process."
+    },
+    {
+      "timestamp": "0:01:58",
+      "content": "Now, let's say as you get even more books, you decide to change your organization scheme one more time."
+    },
+    {
+      "timestamp": "0:02:00",
+      "content": "You now basically have a small library, and each shelf is split based on fiction or nonfiction, and then the respective genre."
+    },
+    {
+      "timestamp": "0:02:06",
+      "content": "Within each genre, you keep the same alphabetical organization of authors."
+    },
+    {
+      "timestamp": "0:02:09",
+      "content": "Now, if you want to find a book, you can narrow your search to the corresponding section."
+    },
+    {
+      "timestamp": "0:02:13",
+      "content": "Here, your data structure is this hierarchical organization of books based on genre, and your algorithm is the process by which you identified the genre and then found your book."
+    },
+    {
+      "timestamp": "0:02:37",
+      "content": "So, taking a step away from this analogy, I think a really simple way to think about data structures and algorithms is the following:"
+    },
+    {
+      "timestamp": "0:02:40",
+      "content": "The data structure is a way to organize information, and an algorithm is a way to process information to reach an end goal."
+    },
+    {
+      "timestamp": "0:02:54",
+      "content": "Some of the ways of organizing and using information are not at all obvious, but they all have their strengths and weaknesses, and a lot of the subject is about understanding these trade-offs."
+    },
+    {
+      "timestamp": "0:03:07",
+      "content": "In the following videos, I'll introduce some fundamental data structures, talk about how you would go about designing them, and then talk about their performance."
+    },
+    {
+      "timestamp": "0:03:19",
+      "content": "After we get through some key data structures, we'll get into some important algorithms that use these data structures to solve a variety of problems."
+    },
+    {
+      "timestamp": "0:03:27",
+      "content": "If you enjoyed this video, I really appreciate it if you took a moment to like the video and subscribe to get notified when future videos come out."
+    },
+    {
+      "timestamp": "0:03:35",
+      "content": "If you would like to support this channel, check out the Patreon page linked in the description."
+    },
+    {
+      "timestamp": "0:03:39",
+      "content": "Thanks for watching, and I'll see you in the next video."
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg
+*.egg-info/
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.db
+*.sqlite3
+*.swp
+/media
+/staticfiles
+/static
+
+# If your build process includes running collectstatic, then you probably don't need or want to include
+# static files in the repo. If you're manually managing your static files with a `static` directory,
+# or have third-party files in a `static` directory, you might want to include them in the repo.
+# static/
+# media/
+
+# Docker
+*.dockerignore
+Dockerfile
+docker-compose.yml
+.docker
+
+# Translations
+*.mo
+*.pot
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
+# Rope
+.ropeproject
+
+# PyCharm
+.idea/
+*.idea/
+.idea/*.iml
+*.iml
+
+# VSCode
+.vscode/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Bandit
+.bandit/
+
+# Pylint
+.pylint.d/
+
+# Coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+.nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# pytest
+.cache/
+.pytest_cache/
+.pytest_cache/v/cache/
+.pytest_cache/warnings/
+
+# Flake8
+.flake8
+.installed.cfg
+*.egg-info/
+.eggs/
+*.wheel
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Environments
+.env
+.env.*
+.envrc
+.venv

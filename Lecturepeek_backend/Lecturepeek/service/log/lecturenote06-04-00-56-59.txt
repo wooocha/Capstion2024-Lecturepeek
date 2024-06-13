@@ -1,0 +1,38 @@
+소요시간 : 22.545352697372437 
+영상링크 : https://www.youtube.com/watch?v=VAt2mR7gY0k
+추출방식 : 1
+{
+    "videoTitle": "Introduction to Data Structures and Algorithms",
+    "videoDescription": "This video provides an analogy to understand data structures and algorithms and introduces the topics that will be covered in the following videos.",
+    "Lecture Note": [
+        {
+            "timestamp": "00:00:00",
+            "section_title": "📚 What are Data Structures and Algorithms?",
+            "content": "Data structures are a way to organize information, while algorithms are a way to process information to reach an end goal. They can be thought of as a system of organizing and using information. In the analogy used in the video, the data structure is represented by the organization scheme of books, and the algorithm is the process of finding a specific book from the stack."
+        },
+        {
+            "timestamp": "00:01:24",
+            "section_title": "📚 The Analogy of Books",
+            "content": "The analogy of organizing books helps to understand data structures and algorithms. Initially, the books are stacked on top of each other, representing a simple organization scheme. The algorithm to find a book is to take books off the stack until the desired book is found. As the organization scheme becomes more complex, such as using a bookshelf organized alphabetically, the algorithm changes to searching based on the order of the alphabet. Finally, with a hierarchical organization based on genre, the algorithm involves narrowing the search to the corresponding section."
+        },
+        {
+            "timestamp": "00:02:40",
+            "section_title": "🔍 Understanding Data Structures and Algorithms",
+            "content": "Data structures are ways to organize information, while algorithms are processes to process information. They have strengths and weaknesses, and understanding their trade-offs is important. The upcoming videos will cover fundamental data structures, their design, and performance. Additionally, important algorithms that use these data structures to solve various problems will be discussed."
+        }
+    ],
+    "questions": [
+        {
+            "question": "What is a data structure?",
+            "answer": "A data structure is a way to organize information."
+        },
+        {
+            "question": "What is an algorithm?",
+            "answer": "An algorithm is a way to process information to reach an end goal."
+        },
+        {
+            "question": "What will be covered in the upcoming videos?",
+            "answer": "The upcoming videos will cover fundamental data structures, their design, performance, and important algorithms that use these data structures to solve various problems."
+        }
+    ]
+}

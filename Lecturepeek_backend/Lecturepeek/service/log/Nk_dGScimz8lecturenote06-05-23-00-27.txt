@@ -1,0 +1,70 @@
+소요시간 : 110.35643076896667 
+영상링크 : https://www.youtube.com/watch?v=Nk_dGScimz8
+추출방식 : 2
+{
+  "videoTitle": "영상 제목: 데이터 구조에 대한 소개",
+  "videoDescription": "한줄 요약: 이 영상에서는 데이터 구조에 대해 소개합니다.",
+  "Lecture Note": [
+    {
+      "timestamp": "00:00:00",
+      "section_title": "📚 소개",
+      "content": "이 영상에서는 데이터 구조에 대해 소개합니다. 데이터 구조는 프로그래밍에서 중요한 개념으로, 데이터를 효율적으로 저장하고 조작하기 위한 방법을 다룹니다."
+    },
+    {
+      "timestamp": "00:00:59",
+      "section_title": "🔍 선형 함수",
+      "content": "선형 함수는 그래프 상에서 직선으로 표현되는 함수입니다. 이 함수는 입력값에 대해 일정한 비율로 증가 또는 감소합니다. 선형 함수는 데이터 구조에서 많이 사용되며, 데이터의 순서를 나타내는 데 유용합니다."
+    },
+    {
+      "timestamp": "00:01:59",
+      "section_title": "📈 배열",
+      "content": "배열은 데이터를 일렬로 저장하는 데이터 구조입니다. 배열은 각 데이터에 인덱스를 할당하여 효율적인 데이터 접근을 가능하게 합니다. 또한 배열은 데이터를 추가하거나 삭제하기 어렵지만, 데이터에 접근하는 속도가 빠르다는 장점이 있습니다."
+    },
+    {
+      "timestamp": "00:02:59",
+      "section_title": "📈 연결 리스트",
+      "content": "연결 리스트는 데이터를 노드로 구성하여 저장하는 데이터 구조입니다. 각 노드는 데이터와 다음 노드를 가리키는 포인터로 이루어져 있습니다. 연결 리스트는 데이터를 추가하거나 삭제하기 쉽지만, 데이터에 접근하는 속도는 배열보다 느립니다."
+    },
+    {
+      "timestamp": "00:03:59",
+      "section_title": "📈 스택과 큐",
+      "content": "스택과 큐는 데이터를 저장하고 접근하는 방식에 차이가 있습니다. 스택은 후입선출(LIFO) 방식으로 데이터를 저장하고 접근하는 반면, 큐는 선입선출(FIFO) 방식으로 데이터를 저장하고 접근합니다. 스택과 큐는 데이터 구조에서 자주 사용되며, 각각의 특징에 따라 다양한 애플리케이션에 활용됩니다."
+    }
+  ],
+  "questions": [
+    {
+      "question": "데이터 구조란 무엇인가요?",
+      "answer": "데이터 구조는 프로그래밍에서 데이터를 효율적으로 저장하고 조작하기 위한 방법을 다루는 개념입니다."
+    },
+    {
+      "question": "선형 함수는 어떤 특징을 가지고 있나요?",
+      "answer": "선형 함수는 그래프 상에서 직선으로 표현되며, 입력값에 대해 일정한 비율로 증가 또는 감소합니다."
+    },
+    {
+      "question": "배열과 연결 리스트의 차이점은 무엇인가요?",
+      "answer": "배열은 데이터를 일렬로 저장하는 반면, 연결 리스트는 데이터를 노드로 구성하여 저장합니다. 배열은 데이터에 접근하는 속도가 빠르지만, 데이터 추가 또는 삭제가 어렵습니다. 연결 리스트는 데이터에 접근하는 속도는 느리지만, 데이터 추가 또는 삭제가 쉽습니다."
+    }
+  ],
+  "script": [
+    {
+      "timestamp": "0:00:00",
+      "content": "안녕하십니까 니콜라스입니다. 검토 popular restaurant and very easy 운전 x is the name is listed here you can speak English I got a friend in southern institute century gothic house of Blues theater South Winchester walk. 아니면 데이터스트럭쳐 sorabada10 could not yet just behavior of structures this means that you have."
+    },
+    {
+      "timestamp": "0:00:59",
+      "content": "일산 for the right syntax to use illustrated by subsplash tony and listen to find a piece of linear function on top of the ventures 오빠한테 beta-ray 떡 paper List in out and easy to play with it is very Thank you Thank you for your must present a person."
+    },
+    {
+      "timestamp": "0:01:59",
+      "content": "Front of You are better than the hundreds of refrigerator do you go to the end of you need is used When did you Get out of here is cold Spring rest Of The Great Escape Park on top of that can also bring bring the back of the front of the hell are you doing."
+    },
+    {
+      "timestamp": "0:02:59",
+      "content": "Reaction of using any Dream Theater at localhost is what do you see US and has been there are you in stock Photo taken by the top of the story of your life, so beautiful site and the stock and operation has to be used in this was the System 쇼핑몰, weather like the executive order and other stories from the top."
+    },
+    {
+      "timestamp": "0:03:59",
+      "content": "Also You can share us in high dose rate and I swear that is it may be included in the world, Where can I come in use and cold start using it You had been working with this content used is not having. 감사합니다 사랑해요 CU!"
+    }
+  ]
+}

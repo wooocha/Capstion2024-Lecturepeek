@@ -1,0 +1,15 @@
+djangorestframework
+django
+python-dotenv
+openai
+langchain-community
+langchain-openai
+youtube_transcript_api
+pytube
+pydub
+google-cloud-storage
+google-cloud-speech
+django-cors-headers
+mysqlclient
+tiktoken
+google-api-python-client

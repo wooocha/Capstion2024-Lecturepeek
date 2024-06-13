@@ -1,0 +1,225 @@
+    소요시간 : 25.640638828277588
+영상링크 : https://www.youtube.com/watch?v=YzT8zDPihmc
+추출방식 : 1
+{
+  "videoTitle": "알고리즘과 문제 해결",
+  "videoDescription": "알고리즘을 사용하여 문제를 해결하는 방법에 대해 설명합니다.",
+  "Lecture Note": [
+    {
+      "timestamp": "00:00:00",
+      "section_title": "📚 알고리즘 소개",
+      "content": "알고리즘은 문제를 해결하기 위한 단계별 절차입니다. 예를 들어, 전화번호부에서 특정 이름을 찾는 알고리즘을 생각해볼 수 있습니다."
+    },
+    {
+      "timestamp": "00:00:29",
+      "section_title": "🔍 전화번호부 문제 해결 알고리즘",
+      "content": "전화번호부에서 특정 이름을 찾는 알고리즘은 첫 번째 페이지부터 차례대로 확인하는 방식입니다. 하지만 이 방식은 매우 느리고 비효율적입니다."
+    },
+    {
+      "timestamp": "00:01:05",
+      "section_title": "📈 개선된 알고리즘",
+      "content": "전화번호부를 빠르게 찾기 위해 두 페이지씩 건너뛰는 방식을 사용할 수 있습니다. 이 방식은 원래 방식보다 빠르지만, 여전히 시간이 오래 걸릴 수 있습니다."
+    },
+    {
+      "timestamp": "00:01:56",
+      "section_title": "📈 최적화된 알고리즘",
+      "content": "전화번호부의 중간 지점으로 이동하여 문제를 절반으로 나누는 방식을 사용하면 더욱 빠르게 찾을 수 있습니다. 이 방식을 반복하면 최종적으로 한 페이지에 도달하게 됩니다."
+    }
+  ],
+  "questions": [
+    {
+      "question": "알고리즘이란 무엇인가요?",
+      "answer": "알고리즘은 문제를 해결하기 위한 단계별 절차입니다."
+    },
+    {
+      "question": "전화번호부 문제를 해결하는 첫 번째 알고리즘은 어떻게 동작하나요?",
+      "answer": "첫 번째 페이지부터 차례대로 확인하여 특정 이름을 찾습니다."
+    },
+    {
+      "question": "전화번호부 문제를 해결하는 최적화된 알고리즘은 어떻게 동작하나요?",
+      "answer": "전화번호부의 중간 지점으로 이동하여 문제를 절반으로 나누는 방식을 사용합니다."
+    }
+  ],
+  "script": [
+    {
+      "timestamp": "0:00:00",
+      "content": "So what might an algorithm be for a problem that we might want to solve?"
+    },
+    {
+      "timestamp": "0:00:03",
+      "content": "Well, consider this."
+    },
+    {
+      "timestamp": "0:00:04",
+      "content": "This is an old school problem where you might have lots and lots of names and lots of lots of numbers, and those names are hopefully sorted alphabetically from A through Z in a book like this."
+    },
+    {
+      "timestamp": "0:00:13",
+      "content": "And even though most of us don't really reach for this technology anymore, consider that it's really the same as your iPhone or Android phone or other device, which has all of your contacts top to bottom and you can scroll through them from A to Z, or you can search for them by typing into the little autocomplete box."
+    },
+    {
+      "timestamp": "0:00:29",
+      "content": "How is even your phone solving this problem?"
+    },
+    {
+      "timestamp": "0:00:32",
+      "content": "Well let's consider a simple approach."
+    },
+    {
+      "timestamp": "0:00:34",
+      "content": "I'm going to look at the first page and look for someone on the phone book."
+    },
+    {
+      "timestamp": "0:00:37",
+      "content": "Suppose that person's name is Mike Smith, last name starting with S. Let me go ahead and look down."
+    },
+    {
+      "timestamp": "0:00:42",
+      "content": "He's not here."
+    },
+    {
+      "timestamp": "0:00:43",
+      "content": "Let me turn the page."
+    },
+    {
+      "timestamp": "0:00:47",
+      "content": "This is an algorithm. It's a step-by-step process for solving a problem, finding Mike Smith."
+    },
+    {
+      "timestamp": "0:00:51",
+      "content": "Is this algorithm correct, would you say?"
+    },
+    {
+      "timestamp": "0:00:54",
+      "content": "Yeah."
+    },
+    {
+      "timestamp": "0:00:55",
+      "content": "I mean, it's pretty slow, it's pretty stupid, in that it's going to take, my God, forever, like, hundreds of page turns to find Mike Smith."
+    },
+    {
+      "timestamp": "0:01:01",
+      "content": "But if he's there, I will find him according to this step-by-step approach."
+    },
+    {
+      "timestamp": "0:01:05",
+      "content": "What if I speed things up a bit just because it's tedious, otherwise?"
+    },
+    {
+      "timestamp": "0:01:08",
+      "content": "So I do two, four, six, eight, 10, 12, 14, 16 and so forth."
+    },
+    {
+      "timestamp": "0:01:14",
+      "content": "Is that algorithm faster?"
+    },
+    {
+      "timestamp": "0:01:16",
+      "content": "Absolutely."
+    },
+    {
+      "timestamp": "0:01:17",
+      "content": "Literally twice as fast."
+    },
+    {
+      "timestamp": "0:01:18",
+      "content": "Is it correct?"
+    },
+    {
+      "timestamp": "0:01:18",
+      "content": "AUDIENCE: No."
+    },
+    {
+      "timestamp": "0:01:19",
+      "content": "DAVID MALAN: No."
+    },
+    {
+      "timestamp": "0:01:20",
+      "content": "Why?"
+    },
+    {
+      "timestamp": "0:01:21",
+      "content": "[INTERPOSING VOICES]"
+    },
+    {
+      "timestamp": "0:01:22",
+      "content": "DAVID MALAN: Yeah, we might skip them."
+    },
+    {
+      "timestamp": "0:01:24",
+      "content": "I might get unlucky and eventually, I might get to the S's."
+    },
+    {
+      "timestamp": "0:01:26",
+      "content": "But darn it if Mike wasn't in between two pages as I turn them at once."
+    },
+    {
+      "timestamp": "0:01:31",
+      "content": "So it's not a fatal flaw."
+    },
+    {
+      "timestamp": "0:01:32",
+      "content": "That algorithm, I could fix by just saying if you hit the T section or maybe Sn instead of Sm, just back up one or so pages just to fix that bug or mistake, so to speak."
+    },
+    {
+      "timestamp": "0:01:43",
+      "content": "But it, at least, is twice as fast."
+    },
+    {
+      "timestamp": "0:01:45",
+      "content": "But if this phone book has 1,000 something pages, it's still going to take me maybe 500 pairwise turns just to find Mike Smith."
+    },
+    {
+      "timestamp": "0:01:53",
+      "content": "That's a while just to look someone up."
+    },
+    {
+      "timestamp": "0:01:56",
+      "content": "But most of us, if you've used this technology, instead, did what, back in the day?"
+    },
+    {
+      "timestamp": "0:02:01",
+      "content": "Go roughly to the middle if there aren't little letters on the side off which to cheat."
+    },
+    {
+      "timestamp": "0:02:05",
+      "content": "So roughly into the middle."
+    },
+    {
+      "timestamp": "0:02:07",
+      "content": "I'm in the M section."
+    },
+    {
+      "timestamp": "0:02:08",
+      "content": "Now the M's, of course, mean that Mike is not this way, which would be the A's."
+    },
+    {
+      "timestamp": "0:02:11",
+      "content": "He's probably this way toward the Z's because S, of course, is between the M and the Z."
+    },
+    {
+      "timestamp": "0:02:17",
+      "content": "So at this point, I can literally tear the problem in half, throw half of the problem away very dramatically and unnecessarily, making the point that we've now gone from 1,000 some odd pages to what? 500."
+    },
+    {
+      "timestamp": "0:02:31",
+      "content": "And I can do it again."
+    },
+    {
+      "timestamp": "0:02:32",
+      "content": "Ah, I went a little too far."
+    },
+    {
+      "timestamp": "0:02:33",
+      "content": "I'm now in the T section, so I can tear the problem in half again, throw that half away, and now I'm down from 1,000 to 500 to 250 pages only, after just two steps in this step-by-step process."
+    },
+    {
+      "timestamp": "0:02:46",
+      "content": "And if I repeat this again and again and again, hopefully, I'll be left, ultimately, with, say, just one page on which Mike Smith either is or is not."
+    },
+    {
+      "timestamp": "0:02:55",
+      "content": "And I can call him or quit."
+    }
+  ]
+}

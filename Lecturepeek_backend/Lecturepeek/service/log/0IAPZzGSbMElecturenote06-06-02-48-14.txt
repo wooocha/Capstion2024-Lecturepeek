@@ -1,0 +1,199 @@
+소요시간 : 20.392818689346313 
+영상링크 : https://www.youtube.com/watch?v=0IAPZzGSbME
+추출방식 : 1
+{
+  "videoTitle": "알고리즘 강의",
+  "videoDescription": "알고리즘에 대한 소개와 알고리즘과 프로그램의 차이점에 대한 설명",
+  "Lecture Note": [
+    {
+      "timestamp": "00:00:00",
+      "section_title": "📚 강의 소개",
+      "content": "알고리즘에 대한 소개와 중요성, 어려움에 대한 설명"
+    },
+    {
+      "timestamp": "00:01:15",
+      "section_title": "🔍 알고리즘 소개",
+      "content": "알고리즘의 정의와 문제 해결을 위한 단계적 절차에 대한 설명"
+    },
+    {
+      "timestamp": "00:01:43",
+      "section_title": "🔍 알고리즘과 프로그램의 차이점",
+      "content": "알고리즘은 설계 시간에 작성되고, 프로그램은 구현 시간에 작성된다는 차이점에 대한 설명"
+    },
+    {
+      "timestamp": "00:02:26",
+      "section_title": "🔍 알고리즘과 프로그램의 특징",
+      "content": "알고리즘은 하드웨어와 운영 체제에 독립적이고, 프로그램은 하드웨어와 운영 체제에 종속적이라는 특징에 대한 설명"
+    },
+    {
+      "timestamp": "00:02:45",
+      "section_title": "🔍 알고리즘 작성과 사용",
+      "content": "알고리즘은 프로그래밍 언어의 구문을 사용하여 작성되며, 알고리즘은 문제 도메인을 이해하는 프로그래머와 팀원들에 의해 사용된다는 설명"
+    },
+    {
+      "timestamp": "00:03:03",
+      "section_title": "🔍 C 언어 문법",
+      "content": "사용할 언어인 C 언어의 문법에 대한 설명"
+    }
+  ],
+  "questions": [
+    {
+      "question": "알고리즘과 프로그램의 차이점은 무엇인가요?",
+      "answer": "알고리즘은 설계 시간에 작성되고, 프로그램은 구현 시간에 작성됩니다."
+    },
+    {
+      "question": "알고리즘은 어떤 언어로 작성될 수 있나요?",
+      "answer": "알고리즘은 C, C++, Java, Python과 같은 프로그래밍 언어의 구문을 사용하여 작성될 수 있습니다."
+    },
+    {
+      "question": "알고리즘과 프로그램의 특징에는 어떤 것이 있나요?",
+      "answer": "알고리즘은 하드웨어와 운영 체제에 독립적이고, 프로그램은 하드웨어와 운영 체제에 종속적입니다."
+    }
+  ],
+  "script": [
+    {
+      "timestamp": "0:00:00",
+      "content": "Hello friends, I'm going to start a course on algorithms."
+    },
+    {
+      "timestamp": "0:00:02",
+      "content": "Whoever messes up cake algorithm is a common subject for computer science engineering students."
+    },
+    {
+      "timestamp": "0:00:05",
+      "content": "Most of the universities offer this course as a part of the syllabus."
+    },
+    {
+      "timestamp": "0:00:09",
+      "content": "This is a very cool and important subject, but students face difficulties in some topics."
+    },
+    {
+      "timestamp": "0:00:13",
+      "content": "They could not understand them very clearly."
+    },
+    {
+      "timestamp": "0:00:16",
+      "content": "So here I am going to make the subject more simple for you to understand and practice."
+    },
+    {
+      "timestamp": "0:00:19",
+      "content": "The importance of the subject is not just for theoretical examination, but also for competitive exams and programming contests."
+    },
+    {
+      "timestamp": "0:00:24",
+      "content": "Most programming challenges come from this subject."
+    },
+    {
+      "timestamp": "0:00:26",
+      "content": "Some students fail to understand it properly and struggle with developing logic and strategies for problem-solving."
+    },
+    {
+      "timestamp": "0:00:31",
+      "content": "I'll be covering each and everything in-depth, from basics to advanced topics."
+    },
+    {
+      "timestamp": "0:00:34",
+      "content": "So that you will be able to answer any type of question related to algorithms."
+    },
+    {
+      "timestamp": "0:00:40",
+      "content": "I will cover topics that are useful for solving job interviews, programming contests, and entrance exams like GATE."
+    },
+    {
+      "timestamp": "0:00:46",
+      "content": "Algorithms are also a key subject in GATE."
+    },
+    {
+      "timestamp": "0:00:50",
+      "content": "You will be able to answer any type of question from there."
+    },
+    {
+      "timestamp": "0:00:52",
+      "content": "I will not be covering all the lectures in order."
+    },
+    {
+      "timestamp": "0:00:56",
+      "content": "I'll be giving numbers for each topic so that you can follow the sequence."
+    },
+    {
+      "timestamp": "0:01:00",
+      "content": "I may break down major topics into smaller ones."
+    },
+    {
+      "timestamp": "0:01:02",
+      "content": "Your feedback is very important to me."
+    },
+    {
+      "timestamp": "0:01:04",
+      "content": "I have prepared a few videos using presentations and other tools, but now I'm giving a lecture on a whiteboard."
+    },
+    {
+      "timestamp": "0:01:10",
+      "content": "I may be new to video and audio quality, so I need your feedback to improve."
+    },
+    {
+      "timestamp": "0:01:15",
+      "content": "Let's start with just an introduction to algorithms."
+    },
+    {
+      "timestamp": "0:01:20",
+      "content": "What is the main part and what is the length of an algorithm?"
+    },
+    {
+      "timestamp": "0:01:24",
+      "content": "Why is it written and who will write it?"
+    },
+    {
+      "timestamp": "0:01:28",
+      "content": "Let's get answers for these questions."
+    },
+    {
+      "timestamp": "0:01:33",
+      "content": "An algorithm is a step-by-step procedure for solving a computational problem."
+    },
+    {
+      "timestamp": "0:01:39",
+      "content": "A program is also a step-by-step procedure for solving a problem."
+    },
+    {
+      "timestamp": "0:01:43",
+      "content": "The difference between a program and an algorithm is that an algorithm is written at the design time, while a program is written at the implementation time."
+    },
+    {
+      "timestamp": "0:01:52",
+      "content": "The person who writes the algorithm should have domain knowledge and understanding of the problem."
+    },
+    {
+      "timestamp": "0:02:01",
+      "content": "The language used for writing an algorithm can be any language, as long as it is understandable by the team working on the project."
+    },
+    {
+      "timestamp": "0:02:09",
+      "content": "An algorithm is hardware and operating system independent, while a program is dependent on hardware and operating system."
+    },
+    {
+      "timestamp": "0:02:17",
+      "content": "After writing an algorithm, we analyze its efficiency in terms of time and space complexity."
+    },
+    {
+      "timestamp": "0:02:26",
+      "content": "Testing is done for the program, not the algorithm."
+    },
+    {
+      "timestamp": "0:02:31",
+      "content": "These are the differences between an algorithm and a program."
+    },
+    {
+      "timestamp": "0:02:34",
+      "content": "Algorithms are mostly written using the syntax of programming languages like C, C++, Java, or Python."
+    },
+    {
+      "timestamp": "0:02:45",
+      "content": "Algorithms are written by programmers who have knowledge of programming languages, while algorithms are used by programmers and other team members who understand the problem domain."
+    },
+    {
+      "timestamp": "0:03:03",
+      "content": "Now, let's move on to the syntax of the language we will use, which is C language."
+    }
+  ]
+}

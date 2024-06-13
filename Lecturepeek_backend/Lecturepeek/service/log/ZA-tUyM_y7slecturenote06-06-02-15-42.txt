@@ -1,0 +1,1218 @@
+소요시간 : 151.43324542045593 
+영상링크 : https://www.youtube.com/watch?v=ZA-tUyM_y7s
+추출방식 : 1
+{
+  "videoTitle": "알고리즘 강의 1강",
+  "videoDescription": "알고리즘의 실행 시간과 계산 모델에 대한 설명",
+  "Lecture Note": [
+    {
+      "timestamp": "00:00:12",
+      "section_title": "📚 강의 소개",
+      "content": "강사 소개 및 다른 강사들과의 협업 소개"
+    },
+    {
+      "timestamp": "00:00:53",
+      "section_title": "📚 강의 내용",
+      "content": "알고리즘에 대한 소개"
+    },
+    {
+      "timestamp": "00:01:06",
+      "section_title": "🔍 강의 목표",
+      "content": "1. 계산 문제 해결\n2. 해결 방법의 정확성과 효율성 증명\n3. 의사소통"
+    },
+    {
+      "timestamp": "00:02:08",
+      "section_title": "🔍 강의 내용",
+      "content": "문제와 알고리즘에 대한 정의"
+    },
+    {
+      "timestamp": "00:05:08",
+      "section_title": "🔍 강의 내용",
+      "content": "문제 정의에 대한 예시와 알고리즘의 정의"
+    },
+    {
+      "timestamp": "00:09:05",
+      "section_title": "🔍 강의 내용",
+      "content": "알고리즘에 대한 정의"
+    },
+    {
+      "timestamp": "00:10:46",
+      "section_title": "🔍 강의 내용",
+      "content": "알고리즘 예시에 대한 질문과 답변"
+    },
+    {
+      "timestamp": "00:13:13",
+      "section_title": "🔍 강의 내용",
+      "content": "알고리즘의 순수 함수에 대한 질문과 답변"
+    },
+    {
+      "timestamp": "00:14:57",
+      "section_title": "🔍 강의 내용",
+      "content": "알고리즘의 순수 함수에 대한 질문과 답변"
+    },
+    {
+      "timestamp": "00:16:58",
+      "section_title": "🔍 강의 내용",
+      "content": "알고리즘의 증명과 관련된 내용"
+    },
+    {
+      "timestamp": "00:17:30",
+      "section_title": "🔍 강의 내용",
+      "content": "귀납법을 사용한 증명"
+    },
+    {
+      "timestamp": "00:21:46",
+      "section_title": "🔍 강의 내용",
+      "content": "귀납법을 사용한 증명의 기저 사례"
+    },
+    {
+      "timestamp": "00:23:19",
+      "section_title": "🔍 강의 내용",
+      "content": "귀납법을 사용한 증명의 귀납 단계"
+    },
+    {
+      "timestamp": "00:26:21",
+      "section_title": "🔍 강의 내용",
+      "content": "알고리즘의 효율성에 대한 내용"
+    },
+    {
+      "timestamp": "00:27:48",
+      "section_title": "🔍 강의 내용",
+      "content": "알고리즘의 성능 측정 방법"
+    },
+    {
+      "timestamp": "00:28:39",
+      "section_title": "🔍 강의 내용",
+      "content": "점근 표기법에 대한 소개"
+    },
+    {
+      "timestamp": "00:29:35",
+      "section_title": "🔍 강의 내용",
+      "content": "알고리즘의 성능을 측정하는 방법"
+    },
+    {
+      "timestamp": "00:30:50",
+      "section_title": "🔍 강의 내용",
+      "content": "일반적인 함수와 알고리즘의 성능을 비교하는 방법"
+    },
+    {
+      "timestamp": "00:00:32",
+      "section_title": "📚 실행 시간 분류",
+      "content": "알고리즘의 실행 시간은 상수 시간, 로그 시간, 선형 시간, 이차 시간, 지수 시간으로 분류됨."
+    },
+    {
+      "timestamp": "00:00:55",
+      "section_title": "🔍 실행 시간 설명",
+      "content": "상수 시간은 입력에 관계없이 항상 일정한 시간이 소요됨. 로그 시간은 입력의 크기에 따라 증가하지만 로그 함수의 형태로 증가함. 선형 시간은 입력의 크기에 비례하여 증가함. 이차 시간은 입력의 크기의 제곱에 비례하여 증가함. 지수 시간은 입력의 크기에 대해 상수의 거듭제곱으로 증가함."
+    },
+    {
+      "timestamp": "00:01:36",
+      "section_title": "📈 실행 시간의 효율성",
+      "content": "이 강의에서는 다항 시간을 효율적으로 간주함. 다항 시간에 가까울수록 더 효율적인 알고리즘이라고 할 수 있음. 지수 시간은 효율적이지 않은 알고리즘이라고 할 수 있음."
+    },
+    {
+      "timestamp": "00:02:23",
+      "section_title": "🔍 계산 모델",
+      "content": "알고리즘의 실행 시간을 측정하기 위해 계산 모델을 정의해야 함. 이 강의에서는 Word RAM 모델을 사용함. Word RAM은 메모리에 랜덤하게 접근할 수 있고, 이진 연산, 정수 산술 연산, 논리 연산, 메모리 읽기 및 쓰기 등의 연산을 지원함."
+    },
+    {
+      "timestamp": "00:03:34",
+      "section_title": "📈 Word 크기",
+      "content": "Word RAM에서는 메모리를 바이트 단위로 주소 지정함. CPU는 메모리에서 한 번에 읽고 쓸 수 있는 고정 크기의 단어를 가짐. 대부분의 컴퓨터에서는 64비트 크기의 단어를 사용함."
+    },
+    {
+      "timestamp": "00:04:32",
+      "section_title": "🔍 연산",
+      "content": "Word RAM에서는 이진 연산, 정수 산술 연산, 논리 연산, 메모리 읽기 및 쓰기 등의 연산을 사용할 수 있음. 연산은 상수 시간에 수행됨."
+    },
+    {
+      "timestamp": "00:05:17",
+      "section_title": "📚 강의 구조",
+      "content": "이 강의에서는 데이터 구조와 정렬, 최단 경로 알고리즘과 그래프, 동적 계획법에 대해 다룸. 강의는 총 3개의 퀴즈로 구성되며, 각 퀴즈는 특정 주제에 대한 문제를 해결하는 방법을 다룸."
+    }
+  ],
+  "questions": [
+    {
+      "question": "알고리즘은 무엇을 해결하기 위한 것인가요?",
+      "answer": "알고리즘은 계산 문제를 해결하기 위한 것입니다."
+    },
+    {
+      "question": "알고리즘의 효율성을 어떻게 측정하나요?",
+      "answer": "알고리즘의 효율성은 점근 표기법을 사용하여 측정합니다."
+    },
+    {
+      "question": "알고리즘의 성능 측정 방법 중 하나는 무엇인가요?",
+      "answer": "알고리즘의 성능을 측정하는 방법 중 하나는 점근 표기법입니다."
+    },
+    {
+      "question": "상수 시간은 어떤 특징을 가지고 있나요?",
+      "answer": "상수 시간은 입력에 관계없이 항상 일정한 시간이 소요됩니다."
+    },
+    {
+      "question": "Word RAM에서는 어떤 연산을 사용할 수 있나요?",
+      "answer": "Word RAM에서는 이진 연산, 정수 산술 연산, 논리 연산, 메모리 읽기 및 쓰기 등의 연산을 사용할 수 있습니다."
+    },
+    {
+      "question": "이 강의에서 다루는 주제는 무엇인가요?",
+      "answer": "이 강의에서는 데이터 구조와 정렬, 최단 경로 알고리즘과 그래프, 동적 계획법에 대해 다룹니다."
+    }
+  ],
+  "script": [
+    {
+      "timestamp": "0:00:12",
+      "content": "JASON KU: Good morning, everybody."
+    },
+    {
+      "timestamp": "0:00:14",
+      "content": "STUDENT: Morning--"
+    },
+    {
+      "timestamp": "0:00:17",
+      "content": "JASON KU: My name's Jason Ku. I'm going to be teaching this class in Introduction to Algorithms with two other instructors here-- faculty in the department-- Eric Demaine and Justin Solomon."
+    },
+    {
+      "timestamp": "0:00:31",
+      "content": "They're excellent people, and so they will be working on teaching this class with me."
+    },
+    {
+      "timestamp": "0:00:39",
+      "content": "I will be teaching the first lecture, and we'll have each of them teach one of the next two lectures, and then we'll go from there."
+    },
+    {
+      "timestamp": "0:00:53",
+      "content": "OK, so we're going to start talking about this course content now."
+    },
+    {
+      "timestamp": "0:00:56",
+      "content": "What is this course about?"
+    },
+    {
+      "timestamp": "0:00:57",
+      "content": "It's about algorithms-- introduction to algorithms."
+    },
+    {
+      "timestamp": "0:01:00",
+      "content": "Really what the course is about is teaching you to solve computational problems."
+    },
+    {
+      "timestamp": "0:01:06",
+      "content": "But it's more than that."
+    },
+    {
+      "timestamp": "0:01:07",
+      "content": "It's not just about teaching you to solve computational problems."
+    },
+    {
+      "timestamp": "0:01:12",
+      "content": "Goal 1-- solve computational problems."
+    },
+    {
+      "timestamp": "0:01:25",
+      "content": "But it's more than that."
+    },
+    {
+      "timestamp": "0:01:27",
+      "content": "It's also about communicating those solutions to others and being able to communicate that your way of solving the problem is correct and efficient."
+    },
+    {
+      "timestamp": "0:01:40",
+      "content": "So it's about two more things-- prove correctness, argue efficiency, and in general, it's about communication."
+    },
+    {
+      "timestamp": "0:02:08",
+      "content": "I can't spell, by the way-- communication of these ideas."
+    },
+    {
+      "timestamp": "0:02:12",
+      "content": "And you'll find that, over the course of this class, you'll be doing a lot more writing than you do in a lot of your other courses."
+    },
+    {
+      "timestamp": "0:02:19",
+      "content": "It really should maybe be a CI kind of class, because you'll be doing a lot more writing than you will be coding, for sure."
+    },
+    {
+      "timestamp": "0:02:27",
+      "content": "Of course, solving the computational problem is important, but really, the thing that you're getting out of this class and other theory classes that you're not getting in other classes in this department is that we really concentrate on being able to prove that the things you're doing are correct and better than other things, and being able to communicate those ideas to others, and not just to a computer-- to other people, convince them that it's correct."
+    },
+    {
+      "timestamp": "0:02:55",
+      "content": "OK, so that's what this class is about."
+    },
+    {
+      "timestamp": "0:02:59",
+      "content": "So what do I mean when I say solve a computational problem?"
+    },
+    {
+      "timestamp": "0:03:04",
+      "content": "What is a problem?"
+    },
+    {
+      "timestamp": "0:03:06",
+      "content": "What is an algorithm?"
+    },
+    {
+      "timestamp": "0:03:08",
+      "content": "People make fun of me because I start with this question, but anyone want to answer that question?"
+    },
+    {
+      "timestamp": "0:03:17",
+      "content": "No?"
+    },
+    {
+      "timestamp": "0:03:18",
+      "content": "What's a problem, computationally?"
+    },
+    {
+      "timestamp": "0:03:22",
+      "content": "No?"
+    },
+    {
+      "timestamp": "0:03:24",
+      "content": "OK, so it's not such a stupid question."
+    },
+    {
+      "timestamp": "0:03:25",
+      "content": "Yeah?"
+    },
+    {
+      "timestamp": "0:03:26",
+      "content": "STUDENT: [INAUDIBLE]"
+    },
+    {
+      "timestamp": "0:03:27",
+      "content": "JASON KU: Something you want to compute-- OK, yes, that's true."
+    },
+    {
+      "timestamp": "0:03:31",
+      "content": "Right."
+    },
+    {
+      "timestamp": "0:03:32",
+      "content": "But a little bit more abstractly, what I'm going to think of a computational problem being-- and this is where your prerequisite in discrete mathematics should come in-- a problem is-- you've got a set of inputs. Maybe I have one, two, three, four, five possible inputs I could have to my algorithm. Then I have a space of outputs. I don't know. Maybe I have more of them than I do inputs, but these are the possible outputs to my problem. And what a problem is is a binary relation between these inputs and outputs. Essentially, for each input, I specify which of these outputs is correct. It doesn't necessarily have to be one. If I say, give me the index in an array containing the value 5, there could be multiple 5's in that array, and so any of those indices would be correct. So maybe this guy maps to that output, and maybe this guy maps to-- I don't know-- two or three outputs. This input goes to one, two-- I don't know. There's some kind of mapping here. These edges represent a binary relation, and it's kind of a graph, a bipartite graph between these inputs and outputs. And these are specifying which of these outputs are correct for these inputs. That's really the formal definition of what a problem is."
+    },
+    {
+      "timestamp": "0:05:08",
+      "content": "Now, generally, if I have a problem-- a computational problem, I'm not going to specify the problem to you by saying, OK, for input 1, the correct answer is 0, and for input 2, the correct answer's 3, and so on and so forth. That would take forever, right? Usually what we do when defining a problem is specify some kind of predicate, saying that, oh, we can check-- if I give you an input and an output, I can check whether that output is correct or not. That's usually how we define a problem is, if I am checking for whether this index contains a 5, I can just go to that array, look at index 5, and-- or the index you gave me, and see if it equals 5. So usually, we're putting it in terms of predicates because, in general, we don't really want to talk about small instances of problems."
+    },
+    {
+      "timestamp": "0:06:45",
+      "content": "So let's say I had the problem of, among the students in this classroom, do any pair of you have the same birthday? All right, well, probably, if there's more than 365 of you, the answer is yes. By what? Pigeonhole principle-- two of you must have the same birthday. So let's generalize it a little bit, say that-- I don't know-- I need a bigger space of birthdays for this question to be interesting. Maybe I tack on the year. Maybe I tack on the hour that you were born. And that's a bigger space of inputs, and I wouldn't necessarily expect that two of you would be born in the same year on the same day in the same hour. That would be a little less likely. In fact, as long as that space is larger than something like the square of the number of you, then I'm less likely than even to have a pair of you. That's a birthday problem you may have seen in 042, potentially. But in general, I don't-- I'm not going to mess with probability so much here. I want a deterministic algorithm, right away of checking whether two of you have the same birth time, let's say. OK, so in general, in this class, we're not going to concentrate on inputs such as, is there a pair of you in this class that have the same birthday? That's kind of boring. I could do a lot of different things, but what we do in this class-- this is for a fixed classroom of you. I want to make algorithms that are general to any classroom-- to go to your recitation. I want an algorithm that will apply to your recitation. I want an algorithm that not only applies to this classroom, but also the machine learning class before you. I want an algorithm that can change its-- it can accept an arbitrarily sized input. Here we have a class of maybe 300, 400 students, but I want my algorithm to work for a billion students. Maybe I'm trying to check if there's a match of something in the Facebook database or something like that. So in general, we are looking for general problems that have arbitrarily sized inputs. These inputs could grow very large, but we want kind of a fixed size algorithm to solve those problems."
+    },
+    {
+      "timestamp": "0:09:05",
+      "content": "So what is an algorithm, then?"
+    },
+    {
+      "timestamp": "0:09:19",
+      "content": "I really can't spell-- told you."
+    },
+    {
+      "timestamp": "0:09:22",
+      "content": "I didn't lie to you."
+    },
+    {
+      "timestamp": "0:09:25",
+      "content": "So an algorithm is a little different than a problem. A problem specification-- I can tell you what this graph looks like. An algorithm is really-- I don't know what the outputs are. I don't know what these edges are. But I want a fixed size machine or procedure that, if I give it an input, it will generate an output. And if it generates an output, it better be one of these correct outputs. So if I have an algorithm that takes in this input, I really want it to output this output, or else it's not a correct algorithm. Similarly, for this one, it could output any of these three outputs, but if it outputs this guy for this input, that would not be a correct algorithm. And so generally, what we want is an algorithm is a function. It takes inputs to outputs. An algorithm is some kind of function that takes these inputs, maps it to a single output, and that output better be correct based on our problem. So that's what our algorithm is. It solves the problem if it returns a correct output for every problem input that is in our domain."
+    },
+    {
+      "timestamp": "0:10:46",
+      "content": "Does anyone have a possible algorithm for checking whether any two of you have the same birth time, as specified before?"
+    },
+    {
+      "timestamp": "0:11:00",
+      "content": "I'm going to let someone else have a try."
+    },
+    {
+      "timestamp": "0:11:01",
+      "content": "Sure."
+    },
+    {
+      "timestamp": "0:11:03",
+      "content": "STUDENT: Just ask everyone one by one, and every time [INAUDIBLE]"
+    },
+    {
+      "timestamp": "0:11:06",
+      "content": "JASON KU: Great-- so what your colleague has said is a great algorithm. Essentially, what it's going to do is I'm going to put you guys in some order, I'm going to give you each of you a number, one through however many number of students there are in this class. And I'm going to interview you one by one. I'm going to say, what's your birthday? And I'm going to write it down. I'm going to put it in some kind of record. And then, as I keep interviewing you, I'm going to find out your birthday. I'm going to check the record. I'm going to look through all the birthdays in the record. If I find a match, then I return, yay-- I found a pair-- and I can stop. Otherwise, if I get through the record list, I don't-- and I don't find a match, I just stick you at the end of the record-- I add you to the record, and then I move on to the next person. I keep doing this. OK, so that's a proposed algorithm for this birthday problem."
+    },
+    {
+      "timestamp": "0:13:11",
+      "content": "Sure."
+    },
+    {
+      "timestamp": "0:13:13",
+      "content": "STUDENT: Does an algorithm have to be a pure function in a mathematical sense?"
+    },
+    {
+      "timestamp": "0:13:17",
+      "content": "JASON KU: Does an algorithm have to be a pure function in a mathematical sense? As in it needs to map to a single output?"
+    },
+    {
+      "timestamp": "0:13:21",
+      "content": "STUDENT: As in it can't modify some external state. It can't take in state and it can't do I/O."
+    },
+    {
+      "timestamp": "0:13:26",
+      "content": "JASON KU: So we're talking about kind of a functional programming definition of a function."
+    },
+    {
+      "timestamp": "0:13:30",
+      "content": "I am talking about the mathematical-- I have a binary relation, and this thing has an output for every input, and there is exactly one output to every input. That's the mathematical definition of function that I'm using for when I'm defining an algorithm."
+    },
+    {
+      "timestamp": "0:13:39",
+      "content": "STUDENT: Basically, is an algorithm like a plan?"
+    },
+    {
+      "timestamp": "0:13:45",
+      "content": "JASON KU: Yeah. An algorithm's a procedure that somehow-- I can do whatever I want, but I have to take one of these inputs and I have to produce an output. And at the end, it better be correct. So it's just a procedure. You can think of it as like a recipe. It's just some kind of procedure. It's a sequence of things that you should do, and then, at the end, you will return an output."
+    },
+    {
+      "timestamp": "0:14:56",
+      "content": "Yeah."
+    },
+    {
+      "timestamp": "0:14:57",
+      "content": "STUDENT: Does an algorithm have to be a pure function in a mathematical sense?"
+    },
+    {
+      "timestamp": "0:15:01",
+      "content": "JASON KU: Does an algorithm have to be a pure function in a mathematical sense? As in it needs to map to a single output?"
+    },
+    {
+      "timestamp": "0:15:05",
+      "content": "STUDENT: As in it can't modify some external state. It can't take in state and it can't do I/O."
+    },
+    {
+      "timestamp": "0:15:10",
+      "content": "JASON KU: So we're talking about kind of a functional programming definition of a function."
+    },
+    {
+      "timestamp": "0:15:14",
+      "content": "I am talking about the mathematical-- I have a binary relation, and this thing has an output for every input, and there is exactly one output to every input. That's the mathematical definition of function that I'm using for when I'm defining an algorithm."
+    },
+    {
+      "timestamp": "0:15:24",
+      "content": "STUDENT: Basically, is an algorithm like a plan?"
+    },
+    {
+      "timestamp": "0:15:30",
+      "content": "JASON KU: Yeah."
+    },
+    {
+      "timestamp": "0:15:31",
+      "content": "An algorithm's a procedure that somehow-- I can do whatever I want, but I have to take one of these inputs and I have to produce an output."
+    },
+    {
+      "timestamp": "0:15:36",
+      "content": "And at the end, it better be correct."
+    },
+    {
+      "timestamp": "0:15:38",
+      "content": "So it's just a procedure."
+    },
+    {
+      "timestamp": "0:15:39",
+      "content": "You can think of it as like a recipe."
+    },
+    {
+      "timestamp": "0:15:43",
+      "content": "It's just some kind of procedure."
+    },
+    {
+      "timestamp": "0:15:45",
+      "content": "It's a sequence of things that you should do, and then, at the end, you will return an output."
+    },
+    {
+      "timestamp": "0:16:58",
+      "content": "And so that's another way you can arrive at this conclusion, that we're going to probably need to use recursion, induction."
+    },
+    {
+      "timestamp": "0:17:02",
+      "content": "And that's part of the reason why we ask you to take a course on proofs, and inductive reasoning, and discrete mathematics before this class."
+    },
+    {
+      "timestamp": "0:17:15",
+      "content": "OK, so how do we prove that this thing is correct?"
+    },
+    {
+      "timestamp": "0:17:29",
+      "content": "We got to use induction."
+    },
+    {
+      "timestamp": "0:17:30",
+      "content": "So how can we set up this induction?"
+    },
+    {
+      "timestamp": "0:17:38",
+      "content": "What do I need for an inductive proof?"
+    },
+    {
+      "timestamp": "0:17:42",
+      "content": "Sure."
+    },
+    {
+      "timestamp": "0:17:43",
+      "content": "STUDENT: [INAUDIBLE]"
+    },
+    {
+      "timestamp": "0:17:44",
+      "content": "JASON KU: Base case-- we need a base case."
+    },
+    {
+      "timestamp": "0:17:47",
+      "content": "We need some kind of a predicate."
+    },
+    {
+      "timestamp": "0:17:50",
+      "content": "Yeah, but we need some kind of statement of a hypothesis of something that should be maintained."
+    },
+    {
+      "timestamp": "0:17:56",
+      "content": "And then we need to have an inductive step, which basically says I take a small value of this thing, I use the inductive hypothesis, and I argue it for a larger value of my well-ordered set that I'm inducting over."
+    },
+    {
+      "timestamp": "0:18:05",
+      "content": "For this algorithm, if we're going to try to prove correctness, what I'm going to do is I'm going to-- what do I want to prove for this thing? That, at the end of interviewing all of you, that my algorithm has either already-- it has returned with a pair that match, or if we're in a case where there wasn't a pair somewhere in my set, that it returned none. Right? That would be correct. So how can I generalize that concept to make it something I can induct on?"
+    },
+    {
+      "timestamp": "0:18:47",
+      "content": "What I'm going to do is I'm going to say-- let's say, after I've interviewed the first K students, if there was a match in those first K students, I want to be sure that I've returned a pair-- because if, after I interview all of you, I've maintained that property, then, if I replace K with n, then I will have returned a match before interviewing the last student-- when I have no more students left. And then this algorithm returns none, as it should."
+    },
+    {
+      "timestamp": "0:20:41",
+      "content": "OK, so this inductive hypothesis sets up a nice variable to induct on. This K I can have increasing, up to n, starting at some base case. So what's my base case here?"
+    },
+    {
+      "timestamp": "0:21:00",
+      "content": "My base case is-- the easiest thing I can do-- sure-- 2? That's an easy thing I could do. I could check those possibilities, but there's an even easier base case."
+    },
+    {
+      "timestamp": "0:21:09",
+      "content": "Yeah?"
+    },
+    {
+      "timestamp": "0:21:10",
+      "content": "There's an even easier base case than 1."
+    },
+    {
+      "timestamp": "0:21:12",
+      "content": "STUDENT: 0--"
+    },
+    {
+      "timestamp": "0:21:15",
+      "content": "JASON KU: 0, right? After interviewing 0 students, I haven't done any work, right? Certainly, the first 0 can't have a match. This inductive hypothesis this is true just because this initial predicate is false. So I can say, base case 0-- check. Definitely, this predicate holds for that."
+    },
+    {
+      "timestamp": "0:21:46",
+      "content": "OK. Now we got to go for the meat of this thing."
+    },
+    {
+      "timestamp": "0:21:56",
+      "content": "Assume the inductive hypothesis true for K equals, say, some K prime. And we're considering K prime plus 1. Then we have two cases."
+    },
+    {
+      "timestamp": "0:22:15",
+      "content": "Then we have two cases. Either the first K already had a match-- in which case, by our inductive hypothesis, we've already returned a correct answer. The other case is the-- it doesn't have a match, and we interview the K plus 1th student-- the K prime plus 1th student. If there is a match in the first K prime plus 1 students, then it will include K plus-- the student K prime plus 1, because otherwise, there would have been a match in the things before it. So there are two cases."
+    },
+    {
+      "timestamp": "0:23:19",
+      "content": "If first K already had a match-- already returned by induction."
+    },
+    {
+      "timestamp": "0:23:44",
+      "content": "Else, if K prime plus 1 student's contains match, the algorithm checks all of the possibilities-- K prime checks against all students, essentially by brute force. It's a case analysis. I check all of the possibilities. Check if birthday is in record-- I haven't told you how to do that yet, but if I'm able to do that, I'm going to check if it's in the record. If it's in the record, then there will be a match, and I can return it. Otherwise, I have-- re-establish the inductive hypothesis for the K prime plus 1 students."
+    },
+    {
+      "timestamp": "0:25:45",
+      "content": "OK, so that's how we prove correctness. This is a little bit more formal than we would ask you to do in this class all the time, but it's definitely sufficient for the levels of arguments that we will ask you to do. The bar that we're usually trying to set is, if you communicated to someone else taking this class what your algorithm was, they would be able to code it up and tell a stupid computer how to do that thing."
+    },
+    {
+      "timestamp": "0:26:18",
+      "content": "What does efficiency mean?"
+    },
+    {
+      "timestamp": "0:26:21",
+      "content": "Efficiency just means not only how fast does this algorithm run, but how fast does it compare to other possible ways of approaching this problem?"
+    },
+    {
+      "timestamp": "0:26:29",
+      "content": "So how could we measure how fast an algorithm runs?"
+    },
+    {
+      "timestamp": "0:26:33",
+      "content": "This is kind of a silly question."
+    },
+    {
+      "timestamp": "0:26:36",
+      "content": "Yeah?"
+    },
+    {
+      "timestamp": "0:26:37",
+      "content": "STUDENT: [INAUDIBLE]"
+    },
+    {
+      "timestamp": "0:26:39",
+      "content": "JASON KU: Yeah. Well, just record the time it takes for a computer to do this thing."
+    },
+    {
+      "timestamp": "0:26:45",
+      "content": "Now, there's a problem with just coding up an algorithm, telling a computer what to do, and timing how long it takes."
+    },
+    {
+      "timestamp": "0:26:49",
+      "content": "Why?"
+    },
+    {
+      "timestamp": "0:26:53",
+      "content": "Yeah?"
+    },
+    {
+      "timestamp": "0:26:54",
+      "content": "STUDENT: [INAUDIBLE]"
+    },
+    {
+      "timestamp": "0:26:41",
+      "content": "JASON KU: It would depend on the size of your data set."
+    },
+    {
+      "timestamp": "0:26:44",
+      "content": "OK, we expect that, but there's a bigger problem there."
+    },
+    {
+      "timestamp": "0:26:48",
+      "content": "Yeah?"
+    },
+    {
+      "timestamp": "0:26:49",
+      "content": "STUDENT: [INAUDIBLE]"
+    },
+    {
+      "timestamp": "0:26:50",
+      "content": "JASON KU: It depends on the strength of your computer."
+    },
+    {
+      "timestamp": "0:26:53",
+      "content": "So I would expect that, if I had a watch calculator it to do something,"
+    },
+    {
+      "timestamp": "0:26:58",
+      "content": "that might take a lot longer to solve a problem than if I asked IBM's research computer to solve the same problem using the same algorithm,"
+    },
+    {
+      "timestamp": "0:27:14",
+      "content": "even with the same code, because its underlying operations are much faster."
+    },
+    {
+      "timestamp": "0:27:21",
+      "content": "How it runs is much faster."
+    },
+    {
+      "timestamp": "0:27:24",
+      "content": "So I don't want to count how long it would take on a real machine."
+    },
+    {
+      "timestamp": "0:27:26",
+      "content": "I want to abstract the time it takes the machine to do stuff out of the picture."
+    },
+    {
+      "timestamp": "0:27:30",
+      "content": "What I want to say is, let's assume that each kind of fundamental operation that the computer can do takes some fixed amount of time."
+    },
+    {
+      "timestamp": "0:27:42",
+      "content": "How many of those kinds of fixed operations does the algorithm need to perform to be able to solve this problem?"
+    },
+    {
+      "timestamp": "0:27:48",
+      "content": "So here we don't measure time."
+    },
+    {
+      "timestamp": "0:28:02",
+      "content": "Instead, count fundamental operations."
+    },
+    {
+      "timestamp": "0:28:10",
+      "content": "OK?"
+    },
+    {
+      "timestamp": "0:28:11",
+      "content": "We'll get to what some of those fundamental operations are in a second, but the idea is we want a measure of how well an algorithm performs, not necessarily an implementation of that algorithm--"
+    },
+    {
+      "timestamp": "0:28:24",
+      "content": "kind of an abstract notion of how well this algorithm does."
+    },
+    {
+      "timestamp": "0:28:29",
+      "content": "And so what we're going to use to measure time or efficiency is something called asymptotic analysis."
+    },
+    {
+      "timestamp": "0:28:39",
+      "content": "Anyone here understand what asymptotic analysis is?"
+    },
+    {
+      "timestamp": "0:28:43",
+      "content": "Probably, since it's in both of your prerequisites, I think-- but we will go through a formal definition of asymptotic notation in recitation tomorrow, and you'll get a lot of practice in comparing functions using an asymptotic analysis."
+    },
+    {
+      "timestamp": "0:29:01",
+      "content": "But just to give you an idea, the idea here is we don't measure time."
+    },
+    {
+      "timestamp": "0:29:09",
+      "content": "We instead measure ops."
+    },
+    {
+      "timestamp": "0:29:10",
+      "content": "And like your colleague over here was saying before, we expect performance-- I'm going to use performance, instead of time here-- we expect that to depend on size of our input."
+    },
+    {
+      "timestamp": "0:29:35",
+      "content": "If we're trying to run an algorithm to find a birthday in this section, we expect the algorithm to run in a shorter amount of time than if I were to run the algorithm on all of you."
+    },
+    {
+      "timestamp": "0:29:50",
+      "content": "So we expect it to perform differently, depending on the size of the input, and how differently is how we measure performance relative to that input."
+    },
+    {
+      "timestamp": "0:30:01",
+      "content": "Usually we use n as a variable for what the size of our input is, but that's not always the case."
+    },
+    {
+      "timestamp": "0:30:08",
+      "content": "So for example, if we have an array that I give you-- an n-by-n array, that-- we're going to say n, but what's the size of our input?"
+    },
+    {
+      "timestamp": "0:30:17",
+      "content": "How much information do I need to convey to you to give you that information?"
+    },
+    {
+      "timestamp": "0:30:23",
+      "content": "It's n squared."
+    },
+    {
+      "timestamp": "0:30:24",
+      "content": "So that's the size of our input in that context."
+    },
+    {
+      "timestamp": "0:30:40",
+      "content": "We compare how fast an algorithm is with respect to the size of the input."
+    },
+    {
+      "timestamp": "0:30:50",
+      "content": "We'll use the asymptotic notation."
+    },
+    {
+      "timestamp": "0:30:54",
+      "content": "We have big O notation, which corresponds to upper bounds."
+    },
+    {
+      "timestamp": "0:31:04",
+      "content": "We will have omega, which corresponds to lower bounds."
+    },
+    {
+      "timestamp": "0:31:12",
+      "content": "And we have theta, which corresponds to both."
+    },
+    {
+      "timestamp": "0:31:18",
+      "content": "This thing is tight. It is bounded from above and below by a function of this form."
+    },
+    {
+      "timestamp": "0:31:42",
+      "content": "We have a couple of common functions that relate an algorithm's input size to its performance, some things that we saw all the time."
+    },
+    {
+      "timestamp": "0:31:52",
+      "content": "Can anyone give me some of those?"
+    },
+    {
+      "timestamp": "0:31:54",
+      "content": "STUDENT: [INAUDIBLE]"
+    },
+    {
+      "timestamp": "0:31:55",
+      "content": "JASON KU: Say again."
+    },
+    {
+      "timestamp": "0:31:56",
+      "content": "STUDENT: [INAUDIBLE]"
+    },
+    {
+      "timestamp": "0:31:58",
+      "content": "JASON KU: Sorry."
+    },
+    {
+      "timestamp": "0:31:58",
+      "content": "Sorry."
+    },
+    {
+      "timestamp": "0:32:02",
+      "content": "I'm not asking this question well, but has anyone heard of a linear algorithm-- a linear time algorithm?"
+    },
+    {
+      "timestamp": "0:32:09",
+      "content": "That's basically saying that the running time of my algorithm-- performance of my algorithm is linear with respect to the size of my input."
+    },
+    {
+      "timestamp": "0:32:20",
+      "content": "Yeah?"
+    },
+    {
+      "timestamp": "0:32:21",
+      "content": "STUDENT: [INAUDIBLE]"
+    },
+    {
+      "timestamp": "0:32:22",
+      "content": "JASON KU: Say again."
+    },
+    {
+      "timestamp": "0:32:23",
+      "content": "STUDENT: Like putting something in a list--"
+    },
+    {
+      "timestamp": "0:32:25",
+      "content": "JASON KU: Like putting something in a list-- OK."
+    },
+    {
+      "timestamp": "0:32:27",
+      "content": "There's a lot behind that question that we'll go into later this week."
+    },
+    {
+      "timestamp": "0:32:34",
+      "content": "But that's an example of, if I do it in a silly way, I stick something in the middle of a list and I have to move everything. That's an operation that could take linear time."
+    },
+    {
+      "timestamp": "0:32:45",
+      "content": "So linear time is a type of function."
+    },
+    {
+      "timestamp": "0:32:50",
+      "content": "I'm going to start with this one."
+    },
+    {
+      "timestamp": "0:32:53",
+      "content": "Does anyone know this one is?"
+    },
+    {
+      "timestamp": "0:32:55",
+      "content": "Constant time-- basically, no matter how I change the input, the amount of time this running time-- the performance of my algorithm takes, it doesn't really depend on that."
+    },
+    {
+      "timestamp": "0:33:07",
+      "content": "The next one up is something like this."
+    },
+    {
+      "timestamp": "0:33:12",
+      "content": "This is logarithmic time."
+    },
+    {
+      "timestamp": "0:33:16",
+      "content": "We have data n, which is linear, and log n."
+    },
+    {
+      "timestamp": "0:33:25",
+      "content": "Sometimes we call this log linear, but we usually just say n log n."
+    },
+    {
+      "timestamp": "0:33:31",
+      "content": "We have a quadratic running time."
+    },
+    {
+      "timestamp": "0:33:32",
+      "content": "In general, if I have a constant power up here, it's n to the c for some constant."
+    },
+    {
+      "timestamp": "0:33:48",
+      "content": "And this right here is what we mean by efficient, in this class, usually."
+    },
+    {
+      "timestamp": "0:33:54",
+      "content": "In other classes, when you have big data sets, maybe this is efficient."
+    },
+    {
+      "timestamp": "0:33:59",
+      "content": "But in this class, generally what we mean is polynomial."
+    },
+    {
+      "timestamp": "0:34:04",
+      "content": "And as you get down this thing, things are more and more efficient."
+    },
+    {
+      "timestamp": "0:34:09",
+      "content": "There's one class I'm going to talk to you about over here, which is something like-- let's do this-- 2 to the theta of n, exponential time."
+    },
+    {
+      "timestamp": "0:34:23",
+      "content": "This is some constant to a function of n that's, let's say, super linear, that's going to be pretty bad."
+    },
+    {
+      "timestamp": "0:34:34",
+      "content": "Why is it pretty bad?"
+    },
+    {
+      "timestamp": "0:34:35",
+      "content": "If I were to plot some of these things as a function of n-- let's say I plot values of up to 1,000 on my n scale here."
+    },
+    {
+      "timestamp": "0:34:50",
+      "content": "What does constant look like?"
+    },
+    {
+      "timestamp": "0:34:52",
+      "content": "Maybe this is 1,000 up here."
+    },
+    {
+      "timestamp": "0:34:56",
+      "content": "What does a constant look like?"
+    },
+    {
+      "timestamp": "0:34:58",
+      "content": "Looks like a line-- it looks like a line over here somewhere."
+    },
+    {
+      "timestamp": "0:35:03",
+      "content": "It could be as high as I want, but eventually, anything that's an increasing function will get bigger than this."
+    },
+    {
+      "timestamp": "0:35:11",
+      "content": "And on this scale, if I use log base 2 or some reasonable small constant, what does log look like?"
+    },
+    {
+      "timestamp": "0:35:20",
+      "content": "Well, let's do an easier one."
+    },
+    {
+      "timestamp": "0:35:21",
+      "content": "What does linear look like?"
+    },
+    {
+      "timestamp": "0:35:23",
+      "content": "Yeah, this-- that's what I saw what a lot of you doing."
+    },
+    {
+      "timestamp": "0:35:29",
+      "content": "That's linear."
+    },
+    {
+      "timestamp": "0:35:33",
+      "content": "That's the kind of base that we're comparing everything against."
+    },
+    {
+      "timestamp": "0:35:36",
+      "content": "What does log look like?"
+    },
+    {
+      "timestamp": "0:35:43",
+      "content": "Like this-- OK, but at this scale, really, it's much closer to constant than linear."
+    },
+    {
+      "timestamp": "0:35:55",
+      "content": "It almost looks like a straight line."
+    },
+    {
+      "timestamp": "0:35:59",
+      "content": "So log is almost just as good as constant."
+    },
+    {
+      "timestamp": "0:36:03",
+      "content": "What does exponential look like?"
+    },
+    {
+      "timestamp": "0:36:07",
+      "content": "It's the exact inverse of this thing."
+    },
+    {
+      "timestamp": "0:36:12",
+      "content": "It's almost an exact straight line going up."
+    },
+    {
+      "timestamp": "0:36:14",
+      "content": "So this is crap."
+    },
+    {
+      "timestamp": "0:36:16",
+      "content": "This is really good."
+    },
+    {
+      "timestamp": "0:36:20",
+      "content": "Almost anything in this region over here is better right."
+    },
+    {
+      "timestamp": "0:36:25",
+      "content": "At least I'm gaining something."
+    },
+    {
+      "timestamp": "0:36:31",
+      "content": "So quadratic-- I don't know-- is something like this, and n log n is something like this."
+    },
+    {
+      "timestamp": "0:36:35",
+      "content": "n log n, after a long time, really starts just looking linear with a constant multiplied in front of it."
+    },
+    {
+      "timestamp": "0:36:43",
+      "content": "OK, so these things good, that thing bad-- OK?"
+    },
+    {
+      "timestamp": "0:36:48",
+      "content": "That's what that's trying to convey."
+    },
+    {
+      "timestamp": "0:36:50",
+      "content": "All right, so how do we measure these things if I don't know what my fundamental operations are that my computer can use?"
+    },
+    {
+      "timestamp": "0:36:58",
+      "content": "So we need to define some kind of model of computation for what our computer is allowed to do in constant time, in a fixed amount of time."
+    },
+    {
+      "timestamp": "0:37:12",
+      "content": "In general, what we use in this class is a machine called a word RAM, which we use for its theoretical brevity."
+    },
+    {
+      "timestamp": "0:37:30",
+      "content": "Word RAM is kind of a loaded term."
+    },
+    {
+      "timestamp": "0:37:36",
+      "content": "What do these things mean?"
+    },
+    {
+      "timestamp": "0:37:40",
+      "content": "Does someone know what RAM means?"
+    },
+    {
+      "timestamp": "0:37:44",
+      "content": "STUDENT: [INAUDIBLE]"
+    },
+    {
+      "timestamp": "0:37:45",
+      "content": "JASON KU: Random access memory-- it means that I can randomly access different places in memory in constant time."
+    },
+    {
+      "timestamp": "0:37:57",
+      "content": "Basically, what our model of a computer is you have memory, which is essentially just a string of bits."
+    },
+    {
+      "timestamp": "0:38:06",
+      "content": "It's just a bunch of 1's and 0's."
+    },
+    {
+      "timestamp": "0:38:10",
+      "content": "And we have a computer, like a CPU, which is really small."
+    },
+    {
+      "timestamp": "0:38:16",
+      "content": "It can basically hold a small amount of information, but it can change that information."
+    },
+    {
+      "timestamp": "0:38:22",
+      "content": "It can operate on that information, and it also has instructions to randomly access different places in memory, bring it into the CPU, act on it, and read it back."
+    },
+    {
+      "timestamp": "0:38:34",
+      "content": "Does that makes sense?"
+    },
+    {
+      "timestamp": "0:38:36",
+      "content": "But in general, we don't have an address for every bit in memory, every 0 and 1 in memory."
+    },
+    {
+      "timestamp": "0:38:44",
+      "content": "Does anyone know how modern computers are addressed?"
+    },
+    {
+      "timestamp": "0:38:51",
+      "content": "Yeah?"
+    },
+    {
+      "timestamp": "0:38:52",
+      "content": "STUDENT: [INAUDIBLE]"
+    },
+    {
+      "timestamp": "0:38:54",
+      "content": "JASON KU: OK, so we're going to get there."
+    },
+    {
+      "timestamp": "0:38:57",
+      "content": "Actually, what a modern computer is addressed in is bytes, collections of 8 bits."
+    },
+    {
+      "timestamp": "0:39:03",
+      "content": "So there's an address I have for every 8 bits in memory-- consecutive 8 bits in memory."
+    },
+    {
+      "timestamp": "0:39:11",
+      "content": "And so if I want to pull something in into the CPU, I give it an address."
+    },
+    {
+      "timestamp": "0:39:12",
+      "content": "It'll take some chunk, and bring it into the CPU, operate on it, and spit it back."
+    },
+    {
+      "timestamp": "0:39:19",
+      "content": "How big is that chunk?"
+    },
+    {
+      "timestamp": "0:39:23",
+      "content": "This goes to the answer that you were asking, which-- or saying, which is it's some sequence of some fixed number of bits, which we call a word."
+    },
+    {
+      "timestamp": "0:39:35",
+      "content": "A word is how big of a chunk that the CPU can take in from memory at a time and operate on."
+    },
+    {
+      "timestamp": "0:39:44",
+      "content": "In your computers, how big is that word size?"
+    },
+    {
+      "timestamp": "0:39:48",
+      "content": "64 bits-- that's how much I can operate on at a time."
+    },
+    {
+      "timestamp": "0:39:52",
+      "content": "When I was growing up, when I was your age, my word size was 32 bits."
+    },
+    {
+      "timestamp": "0:39:59",
+      "content": "And that actually was a problem for my computer, because in order for me to be able to read to address in memory, I need to be able to store that address in my CPU, in a word."
+    },
+    {
+      "timestamp": "0:40:08",
+      "content": "But if I have 32 bits, how many different addresses can I address?"
+    },
+    {
+      "timestamp": "0:40:23",
+      "content": "2 to the 32, right?"
+    },
+    {
+      "timestamp": "0:40:24",
+      "content": "That makes sense."
+    },
+    {
+      "timestamp": "0:40:35",
+      "content": "Well, if you do that calculation out, how big of a hard disk can I have to access?"
+    },
+    {
+      "timestamp": "0:40:42",
+      "content": "It's about 4 gigabytes."
+    },
+    {
+      "timestamp": "0:40:44",
+      "content": "So in my day, all the hard drives were limited to being partitioned-- even if you had a bigger than 4 gigabyte hard drive, I had to partition it into these 4 gigabyte chunks, which the computer could then read onto."
+    },
+    {
+      "timestamp": "0:41:02",
+      "content": "That was very limiting, actually."
+    },
+    {
+      "timestamp": "0:41:06",
+      "content": "That's a restriction."
+    },
+    {
+      "timestamp": "0:41:09",
+      "content": "With 64 bits, what's my limitation on memory that I can address-- byte addressable?"
+    },
+    {
+      "timestamp": "0:41:18",
+      "content": "Turns out to be something like 20 exabytes-- to put this in context, all data that Google stores on their servers, on all drives throughout the world-- it's about 10."
+    },
+    {
+      "timestamp": "0:41:38",
+      "content": "So what do we got we've got a CPU."
+    },
+    {
+      "timestamp": "0:41:40",
+      "content": "It can address memory."
+    },
+    {
+      "timestamp": "0:41:42",
+      "content": "What are the operations I can do in this CPU?"
+    },
+    {
+      "timestamp": "0:41:47",
+      "content": "Generally, I have binary operations."
+    },
+    {
+      "timestamp": "0:41:50",
+      "content": "I can compare to words in memory, and I can either do integer arithmetic, logical operations,"
+    },
+    {
+      "timestamp": "0:42:08",
+      "content": "bitwise operations-- but we're not going to use those so much in this class."
+    },
+    {
+      "timestamp": "0:42:14",
+      "content": "And I can write and write from an address in memory, a word in constant time."
+    },
+    {
+      "timestamp": "0:42:22",
+      "content": "Those are the operations that I have available to me on most CPUs."
+    },
+    {
+      "timestamp": "0:42:32",
+      "content": "OK?"
+    },
+    {
+      "timestamp": "0:42:36",
+      "content": "But you'll notice that my CPU is only built to operate on a constant amount of information at once-- generally, two words in memory."
+    },
+    {
+      "timestamp": "0:42:53",
+      "content": "An operation produces a third one, and I spit it out."
+    },
+    {
+      "timestamp": "0:42:51",
+      "content": "It takes a constant amount of time to operate on a constant amount of memory."
+    },
+    {
+      "timestamp": "0:43:02",
+      "content": "If I want to operate on a linear amount of memory-- n things-- how long is that going to take?"
+    },
+    {
+      "timestamp": "0:43:11",
+      "content": "If I just want to read everything in that thing, it's going to take me linear time, because I have to read every part of that thing."
+    },
+    {
+      "timestamp": "0:43:19",
+      "content": "So just before you go, I just want to give you a quick overview of the class."
+    },
+    {
+      "timestamp": "0:43:27",
+      "content": "To solve an algorithms class-- an algorithm problem in this class, we essentially have two different strategies."
+    },
+    {
+      "timestamp": "0:43:30",
+      "content": "We can either reduced to using the solution to a problem we know how to solve, or we can design our own algorithm, which is going to be recursive in nature."
+    },
+    {
+      "timestamp": "0:43:45",
+      "content": "We're going to either put stuff in the data structure and solve a sorting problem, or search in a graph."
+    },
+    {
+      "timestamp": "0:43:56",
+      "content": "And then, to design a recursive algorithm, we have various design paradigms."
+    },
+    {
+      "timestamp": "0:44:04",
+      "content": "This is all in your notes, but this is essentially the structure of the class."
+    },
+    {
+      "timestamp": "0:44:06",
+      "content": "We're going to spend quiz 1, the first eight lectures on data structures and sorting."
+    },
+    {
+      "timestamp": "0:44:19",
+      "content": "Second quiz will be on shortest paths, algorithms, and graphs, and then the last one will be on dynamic programming."
+    },
+    {
+      "timestamp": "0:44:26",
+      "content": "OK, that's the end of the first lecture."
+    },
+    {
+      "timestamp": "0:44:31",
+      "content": "Thanks for coming."
+    }
+  ]
+}
